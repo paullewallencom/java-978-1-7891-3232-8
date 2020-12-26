@@ -1,0 +1,277 @@
+WEBVTT
+
+00:01.530 --> 00:06.810
+Nice things that we would want to discuss is this tactic really well we are looking at an on access
+
+00:06.810 --> 00:14.160
+model for years and static one of the non-Access motivators and we can put static on member variables
+
+00:14.580 --> 00:17.350
+or also on method.
+
+00:17.430 --> 00:20.650
+So what would happen when I put a static on a radio.
+
+00:20.880 --> 00:26.790
+What it would happen what would happen is that these become class level variables and that you know
+
+00:26.790 --> 00:31.920
+that I can create a class and I can create multiple instances of that specific class.
+
+00:31.950 --> 00:33.650
+Those are called objects.
+
+00:33.730 --> 00:38.700
+All remember where the bills are typically object level object level in this sense.
+
+00:38.700 --> 00:47.100
+If I create 10 instances of a class then there are then instances of those variables but static variables
+
+00:47.190 --> 00:49.200
+are class level variables.
+
+00:49.200 --> 00:50.660
+So what does that mean.
+
+00:50.670 --> 00:57.660
+That means that if I'm great even if I'm creating 10 instances of that specific class there is only
+
+00:57.840 --> 01:00.470
+one static variable for that in that class.
+
+01:00.480 --> 01:08.340
+Even if they created handed variables 100 instances of that class for some very smart static then there
+
+01:08.340 --> 01:12.380
+is only one instance of that specific variable.
+
+01:12.570 --> 01:19.460
+So basically if you really want technical description of it then it means you can read this up.
+
+01:19.470 --> 01:27.720
+Each instance of class that is the object will not have a unique copy of the study query but the static
+
+01:27.720 --> 01:33.680
+variable will be shared across all instances of the class to really correct.
+
+01:33.770 --> 01:38.360
+Actually you don't even need an instance of a class to access a static media.
+
+01:38.370 --> 01:45.180
+But even if there are no answers of the class present even then you'd be able to access the static variable
+
+01:45.180 --> 01:46.050
+in a class.
+
+01:46.110 --> 01:48.330
+Let's look at a simple example.
+
+01:48.420 --> 01:55.690
+So here I have a class called cricketer where I'm marking the count as static.
+
+01:55.740 --> 02:00.470
+I want to keep track of how many cricket verbs are created.
+
+02:00.480 --> 02:08.510
+So what I'm doing is in the constructor I'm incrementing count and whenever I create a character count
+
+02:08.520 --> 02:10.670
+would increase and the count.
+
+02:10.740 --> 02:12.310
+If you look at it here.
+
+02:12.330 --> 02:17.580
+So as soon as I create for cricketer's what they can which will be printed that for.
+
+02:17.850 --> 02:19.620
+Because the count.
+
+02:19.680 --> 02:26.680
+There's only one variable called count that because we have static and then it would print four.
+
+02:26.850 --> 02:32.180
+You can play with this for example it's also present in you're going to select the one from member modifiers.
+
+02:32.190 --> 02:35.750
+Non-access and you'd see the example down here.
+
+02:35.750 --> 02:37.280
+Try and play around with it.
+
+02:37.290 --> 02:41.920
+You can also make this thing non-static now it's non-static.
+
+02:41.940 --> 02:45.550
+So I would need to make this matter also non-static.
+
+02:45.550 --> 02:50.720
+You can play around with it and see what would be the consequence when you do something of this kind.
+
+02:50.720 --> 02:54.420
+So I try and play around with this and understand this a little bit more.
+
+02:54.540 --> 03:00.020
+But to summarize the comparable here is now of a static variable.
+
+03:00.180 --> 03:06.180
+And that means the static variable is shared across these instances.
+
+03:06.180 --> 03:14.060
+Each of these instance will not have a copy of Tikhon's really but they have only a single shared instance.
+
+03:14.210 --> 03:17.420
+And whenever one class modifies the static variable.
+
+03:17.640 --> 03:23.560
+So if one object modifies the static variable even the other objects start seeing that change.
+
+03:23.730 --> 03:27.200
+Let's look at a few more things about static modifier.
+
+03:27.360 --> 03:30.450
+We are left into a class static modifier.
+
+03:30.450 --> 03:34.470
+Examples where we have all these examples present.
+
+03:34.470 --> 03:40.470
+So if what we have here is there is an instance where the A B and a static retrieval and the method
+
+03:40.710 --> 03:43.920
+is static because there's a static keyword before that.
+
+03:43.920 --> 03:48.200
+So in this Dabic method static method is a class level method.
+
+03:48.240 --> 03:54.880
+And in a class level method you cannot access member level variables so instance variables are member
+
+03:55.220 --> 03:56.160
+variables.
+
+03:56.160 --> 04:02.650
+So if you're trying to access member variable in a class level method it would give you a compiler error.
+
+04:02.830 --> 04:07.500
+However you can access class level variable so you can access that degradable.
+
+04:07.640 --> 04:13.080
+What do you cannot access instance variable so in a class element method that's a static method you
+
+04:13.080 --> 04:17.330
+can access class level variables but not membered level variables.
+
+04:17.350 --> 04:23.120
+However in member level methods so instance method is a member level method in a member level method
+
+04:23.130 --> 04:30.450
+you can access both class level things that static and instance variables that can only be applied on
+
+04:30.810 --> 04:33.160
+variables defined in a class.
+
+04:33.180 --> 04:37.050
+You cannot put static on a local variable.
+
+04:37.050 --> 04:39.170
+So this is a local variable inside the method.
+
+04:39.180 --> 04:40.860
+You cannot put that dick in there.
+
+04:40.860 --> 04:47.310
+This would give you a compiler that for static methods and static variables are also available directly
+
+04:47.400 --> 04:48.600
+on the class.
+
+04:48.840 --> 04:53.840
+So I'm using class name and trying to access the value of the static variable that I loved.
+
+04:54.090 --> 04:57.860
+And also I can use just the class name to call the static method.
+
+04:57.890 --> 04:59.180
+That's also low.
+
+04:59.340 --> 05:02.140
+You can also use object names.
+
+05:02.170 --> 05:05.640
+I mean your example is an object of the static modified example.
+
+05:05.790 --> 05:10.560
+You can also use example to access the static variable and static method.
+
+05:10.740 --> 05:17.700
+But you can already see that there are kind of seditions from Eclipse that better access it in a static
+
+05:17.700 --> 05:17.880
+way.
+
+05:17.880 --> 05:25.080
+Why are you using a static only accessing a static variable from an instance even though it does not
+
+05:25.080 --> 05:26.560
+give you a compilation error.
+
+05:26.670 --> 05:27.960
+It's a warning.
+
+05:27.970 --> 05:34.650
+So ideally we should use this class name to access the static variable but it's allowed to access it
+
+05:34.650 --> 05:37.320
+through the instance as well.
+
+05:37.390 --> 05:40.680
+Those are the different things that you would need to know about this.
+
+05:40.830 --> 05:44.900
+That the keyword to be really simple and to put it.
+
+05:44.910 --> 05:51.450
+If I have to summarize it it's basically this static method or static variables are class level methods
+
+05:51.510 --> 05:59.320
+or class level variables and these are not created for each instance of every object.
+
+05:59.340 --> 06:07.740
+These are shared between all instances of a class and therefore it's suggested to access these variables
+
+06:07.830 --> 06:15.810
+or this method using the last name directly in a static method in a class level method only class level
+
+06:15.810 --> 06:17.860
+where tables are available.
+
+06:18.000 --> 06:23.660
+So you'll not be able to access instance level variables in a class level method.
+
+06:24.060 --> 06:31.620
+However in an instance level method you can access class level variables you can access that equipment
+
+06:31.890 --> 06:33.850
+so that's a quick summary.
+
+06:33.870 --> 06:38.430
+I would really recommend you to play around with this example static modify for example because there
+
+06:38.430 --> 06:40.310
+are a ton of stuff in here.
+
+06:40.310 --> 06:46.170
+So that's an exercise that I would recommend you to do is to play around with this and trying to understand
+
+06:46.170 --> 06:48.240
+this example completely.
+
+06:48.240 --> 06:51.620
+There are also a few comments in here to explain what's happening.
+
+06:51.810 --> 06:56.810
+So you can try and spend some time with it and you should be able to understand them clearly.
+
+06:57.970 --> 06:59.270
+Until the next week or so I.

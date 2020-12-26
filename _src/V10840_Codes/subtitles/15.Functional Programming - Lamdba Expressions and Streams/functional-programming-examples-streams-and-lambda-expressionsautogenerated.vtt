@@ -1,0 +1,337 @@
+WEBVTT
+
+00:01.360 --> 00:02.200
+Welcome back.
+
+00:02.200 --> 00:06.310
+Let's now shift our attention to its functional programming.
+
+00:06.310 --> 00:12.790
+There are a lot of new concepts related to functional programming which are introduced in Java a lambda
+
+00:12.820 --> 00:16.810
+expressions streams and a lot of things like that.
+
+00:16.870 --> 00:22.510
+These are really interesting and this makes programming very very interesting.
+
+00:22.540 --> 00:26.770
+So what we'll do is in charge of taking an approach of going through this question.
+
+00:26.890 --> 00:31.630
+What we do is we go to the editor and try and play around and understand these concepts.
+
+00:31.750 --> 00:36.440
+I'm shifting to the workspace and there is a file called lambda expressions.
+
+00:36.790 --> 00:42.700
+So if you look at the workspace it's in the test package not in the code it's in the test packet and
+
+00:42.700 --> 00:48.050
+it has lambda expressions just so that's the thing that we're looking at right now.
+
+00:48.460 --> 00:54.030
+And yet this is the thing which we want to discuss right now.
+
+00:54.310 --> 00:56.860
+Let's look at a simple example.
+
+00:56.860 --> 00:59.740
+This is basically how we do things usually.
+
+00:59.770 --> 01:07.380
+So I have a list of integers and I would want to find the sum of all the odd numbers in the list.
+
+01:07.630 --> 01:13.060
+So from this list I want to pick the odd numbers and then some them up.
+
+01:13.060 --> 01:18.030
+So if you look at the logic which is right present right now it's very simple logic right.
+
+01:18.040 --> 01:18.760
+You can look at it.
+
+01:18.760 --> 01:26.020
+So some is 0 and I'm looping through the area using the enhanced for loop or I'm looking at the list
+
+01:26.140 --> 01:29.320
+using an enhanced for loop and then we have a condition.
+
+01:29.320 --> 01:36.550
+So this checks if it's odd if it's odd then I'm adding it to some and then I'm doing a said equals law
+
+01:36.560 --> 01:43.330
+when my son because I have 1 3 and 7 11 1 3 7 11.
+
+01:43.330 --> 01:45.000
+So I expect this to be 11.
+
+01:45.040 --> 01:52.780
+I'm using the unit test kind of thing in here so yes unit tests are a really good thing if you are a
+
+01:53.020 --> 01:55.920
+good programmer you have to be doing unit tests.
+
+01:55.930 --> 02:03.280
+So I mean this is a unit test example for just some logic important thing here is the fact that we have
+
+02:03.420 --> 02:05.150
+a variable called Sun.
+
+02:05.410 --> 02:06.890
+So you have some.
+
+02:06.910 --> 02:13.750
+And what would happen is some would have initially a value of zero and at a later point in time some
+
+02:13.750 --> 02:15.100
+would have a value.
+
+02:15.100 --> 02:16.080
+Simplest one.
+
+02:16.110 --> 02:17.950
+So zero plus one will become one.
+
+02:18.220 --> 02:25.600
+And then it would three would come in and then it would three would be added four not odd six not odd
+
+02:25.660 --> 02:28.410
+two not odd at the end seven will be added.
+
+02:28.630 --> 02:36.480
+So at different stages of this program execution this somebody will have different values.
+
+02:36.790 --> 02:42.730
+So it would initially have a value of 0 then it will have a value of fun then it will have a value of
+
+02:42.730 --> 02:43.860
+pantless 3 4.
+
+02:44.020 --> 02:47.920
+And then it would have a value of one plus triple 7 which is 11.
+
+02:48.100 --> 02:55.090
+And that's where we would assert it here it so this thing which we're Sam is having is called state
+
+02:55.210 --> 03:02.320
+in all the standard programming things that we do whether it's object oriented programming or procedural
+
+03:02.320 --> 03:07.030
+programming we depend a lot on the state of the program.
+
+03:07.240 --> 03:16.290
+So at a specific instance the state of some is something in the state or some keep changing with time.
+
+03:16.660 --> 03:19.810
+And that's where a new programming style came in.
+
+03:19.810 --> 03:27.150
+So the new programming style which gaming is functional programming in functional programming you are
+
+03:27.250 --> 03:35.850
+wide changes to state so in functional programming one of the things is no changes to state of a program.
+
+03:35.860 --> 03:41.120
+So that's the main concept behind functional programming.
+
+03:41.230 --> 03:47.740
+So once you assign a specific value to a variable you will not change the value of the variable at any
+
+03:47.740 --> 03:53.770
+point in time and it's not an easy style of programming to write code in.
+
+03:54.010 --> 03:58.300
+And also it brings in a lot of new concepts.
+
+03:58.390 --> 04:03.840
+The reason functional programming becomes very important is because multi-threading.
+
+04:03.970 --> 04:10.180
+So if there are no changes to state of a program the most important thing is the fact that then I can
+
+04:10.180 --> 04:14.970
+run the code in multiple threads without a problem.
+
+04:14.980 --> 04:21.120
+The problem with threads is the fact that you have a state if you have a state like some in here.
+
+04:21.140 --> 04:23.790
+Now if I'm writing this in multiple thread it isn't unique.
+
+04:23.830 --> 04:25.470
+You'll never run it in multiple threads.
+
+04:25.480 --> 04:30.230
+But consider this is really part of a code and you are running it in multiple threads.
+
+04:30.520 --> 04:35.680
+In that kind of scenario if multiple threads are running this piece of code because there is a state
+
+04:35.680 --> 04:41.390
+called some you might be ending up with a problem.
+
+04:41.620 --> 04:47.710
+But if you don't have any state in the program then it gives you a chance to run this program in multiple
+
+04:47.710 --> 04:50.640
+threads without a problem at all.
+
+04:50.830 --> 04:57.250
+So if you go for multiple functional programming and you write programs which don't have state at all
+
+04:57.580 --> 05:01.950
+then you would be able to scale them up will be easy.
+
+05:02.130 --> 05:04.940
+So you can't run them in multiple threads easily.
+
+05:05.130 --> 05:09.570
+That's the main advantage of going from functional programming style of writing.
+
+05:09.750 --> 05:12.080
+So we discussed a lot of theory.
+
+05:12.150 --> 05:14.860
+If you're not able to understand a little bit of it that's OK.
+
+05:14.880 --> 05:15.870
+That's not a problem at all.
+
+05:15.870 --> 05:19.470
+Functional Programming is not a easy thing for a beginner to grasp.
+
+05:19.470 --> 05:23.640
+So it's OK if you didn't understand the concepts until you know what we do this we'll try and make it
+
+05:23.640 --> 05:28.980
+simple and look at the code that is involved in writing functional programming.
+
+05:28.980 --> 05:32.040
+This test also does exactly the same thing.
+
+05:32.040 --> 05:37.680
+So in the previous one we are calculating some of our numbers in the usual style and in this test what
+
+05:37.680 --> 05:42.780
+we are doing is we are calculating some of our numbers in a functional programming style.
+
+05:42.900 --> 05:47.970
+So we have the same list of numbers that were in functional programming.
+
+05:48.060 --> 05:50.710
+We use something called stream.
+
+05:50.710 --> 05:53.750
+So this is basically a list of numbers right.
+
+05:53.790 --> 05:56.680
+Any list of objects is called a stream.
+
+05:56.760 --> 06:01.290
+So what I'm doing is I'm creating a stream so numbers don't stream.
+
+06:01.290 --> 06:06.740
+So I'm creating a list of these objects that you already have a list of objects from this list.
+
+06:06.750 --> 06:10.770
+I'm creating a stream so I'm creating a stream.
+
+06:10.770 --> 06:16.240
+And what I'm telling the program is what I'm telling the program right now is to feed.
+
+06:16.470 --> 06:23.100
+So basically what I'm saying is from this stream of numbers filtered those which do not match these
+
+06:23.100 --> 06:23.910
+criteria.
+
+06:24.000 --> 06:27.150
+So if this great was not meant then filter them out.
+
+06:27.150 --> 06:34.960
+So what it does is 1 3 and 7 would be the only one which would be left out and then I'm saying reduce
+
+06:35.010 --> 06:37.020
+them by using the sum function.
+
+06:37.020 --> 06:43.320
+So what it does is it would sum all the remaining things up OK if you're not understanding this program
+
+06:43.320 --> 06:43.740
+that's OK.
+
+06:43.740 --> 06:47.480
+We'll discuss that we'll discuss each line of code in detail very soon.
+
+06:47.610 --> 06:49.590
+But basically there are three steps.
+
+06:49.590 --> 06:51.530
+One is create the creation of the stream.
+
+06:51.540 --> 06:58.200
+So we are converting the list into a stream the list of objects and then we are filtering those out
+
+06:58.830 --> 07:04.320
+which do not match these conditions to filter the things which don't match this condition so I'll be
+
+07:04.320 --> 07:07.830
+left off with 1 3 and 7 2 number.
+
+07:07.830 --> 07:09.670
+Number 2 not equal to zero.
+
+07:09.930 --> 07:13.020
+This specific thing which we are using is called a lambda expression.
+
+07:13.020 --> 07:14.590
+We'll talk about it a little later.
+
+07:14.610 --> 07:23.180
+But the aim of this piece of code is to filter this list and only remain with the one which satisfies
+
+07:23.170 --> 07:24.710
+the condition 1 3 and 7.
+
+07:24.720 --> 07:26.180
+Those are the only odd numbers.
+
+07:26.490 --> 07:35.250
+And then we use a function called radius and what radius does here is just some all the meaning things
+
+07:35.420 --> 07:40.270
+and some will be assigned and some will have a value of 11.
+
+07:40.350 --> 07:43.340
+So this is the functional programming style.
+
+07:43.470 --> 07:46.660
+So you'd see that we are not using as some variable we are.
+
+07:46.660 --> 07:51.350
+I mean we are using the same variable but we are not changing the value of sum at any point in time.
+
+07:51.390 --> 07:57.320
+So after the entire calculation is done the calculated values assigned to some basically functional
+
+07:57.330 --> 08:03.180
+programming in the style of programming where we use streams and lambda expressions to make sure that
+
+08:03.180 --> 08:05.550
+your code does not have any state.
+
+08:05.550 --> 08:12.220
+So the great thing about this streams is the fact that it allows you to act on a list of items.
+
+08:12.240 --> 08:16.890
+So we are acting on a list or if we are taking a list of items we are filtering the ones which we don't
+
+08:16.890 --> 08:23.240
+need and we are summing them up and all this code is done without having any state.
+
+08:23.400 --> 08:31.380
+So let's now take a break and when we come back we'll take a look at all the questions which are related
+
+08:31.380 --> 08:33.080
+to functional programming.

@@ -1,0 +1,157 @@
+WEBVTT
+
+00:02.150 --> 00:04.570
+The next thing is about the two string mattered.
+
+00:04.670 --> 00:10.300
+So explain about the two string method basically to string is something which we saw earlier.
+
+00:10.370 --> 00:12.570
+It is inherited from object.
+
+00:12.590 --> 00:15.760
+So Object class defines the two string method.
+
+00:15.770 --> 00:18.230
+So we'll take a simple class.
+
+00:18.260 --> 00:22.500
+We have a class called animal I have name and type in here.
+
+00:22.520 --> 00:27.150
+So I'm creating a new instance of this animal name Tommy dog.
+
+00:27.380 --> 00:32.780
+So I'm trying a new scent of this animal and doing this out stumbled on the printed animal.
+
+00:33.140 --> 00:34.850
+What would be the output.
+
+00:34.970 --> 00:41.450
+The output would be something of this kind compre to the animal at 76 in 96.
+
+00:41.450 --> 00:45.830
+This is because I'm not implementing a two string method in the Animal class.
+
+00:45.890 --> 00:53.780
+It uses the default to string method which is defined in the Object class and by default a default method
+
+00:53.780 --> 00:57.250
+which is defined in the two different method in the Object class.
+
+00:57.350 --> 01:02.860
+What it does is it prints the name of the class and when it's present in memory.
+
+01:02.960 --> 01:04.280
+So that's the thing it's sure.
+
+01:04.310 --> 01:08.660
+It does not show the actual name and type of this particular class.
+
+01:08.660 --> 01:15.590
+So if you want a printed name and type of the animal then what you'd need to do we would need to override
+
+01:15.590 --> 01:16.730
+the two string method.
+
+01:16.730 --> 01:19.460
+So what we're doing here is a two string method.
+
+01:19.460 --> 01:22.820
+The important thing that you need to note is the should always be public.
+
+01:22.820 --> 01:24.530
+It should always be returning a string.
+
+01:24.710 --> 01:27.050
+And it should not accept any primitives.
+
+01:27.150 --> 01:32.200
+This signature which you are seeing here is definitely mandate to me.
+
+01:32.420 --> 01:35.630
+So you need to add it to the signature on the two string method.
+
+01:35.870 --> 01:38.750
+And then I'm defining a two string method in here.
+
+01:38.750 --> 01:43.270
+So I'm actually defining like generating the two string.
+
+01:43.280 --> 01:45.690
+I mean I've generated the two string using Eclipse.
+
+01:45.800 --> 01:48.400
+We'll look at how to generate that in a little while.
+
+01:48.620 --> 01:56.540
+What you can see that this particular thing now prints animal name is called a top dog meat type is
+
+01:56.540 --> 01:57.820
+called a dog.
+
+01:57.830 --> 02:00.950
+So this is basically overwriting the two string.
+
+02:00.950 --> 02:06.070
+So when I do this is so indolent on this animal after two string is different it would really print
+
+02:06.110 --> 02:08.430
+the content of this particular object.
+
+02:08.450 --> 02:11.400
+So what will this will quickly go to the Animal class.
+
+02:11.510 --> 02:16.350
+There are multiple animal classes in here the one which you need to peek inside the object.
+
+02:16.430 --> 02:18.610
+So come in any minutes Java object.
+
+02:18.650 --> 02:23.180
+That's the one you'd need and you would see the two string method in here.
+
+02:23.480 --> 02:26.960
+Actually I generated the string method by using Eclipso.
+
+02:27.140 --> 02:35.120
+If you do you can generate the two string by doing right click Saud's generate two string and you can
+
+02:35.130 --> 02:39.220
+say these are things that I would want to include in the string as well.
+
+02:39.500 --> 02:42.850
+You can also say how do you want to format it.
+
+02:42.980 --> 02:48.620
+So that I would want to use a string concatenation style I want to use a string buffer or use a string
+
+02:48.620 --> 02:49.360
+format.
+
+02:49.370 --> 02:53.450
+I'll just go for string concatenation for now and say OK.
+
+02:53.960 --> 02:56.080
+So it generates a method of this type.
+
+02:56.090 --> 02:59.950
+You can try playing around with the other things in the drop down there.
+
+03:00.030 --> 03:04.570
+You would see that into the string format and things like that.
+
+03:04.580 --> 03:12.140
+My preferred one would be to go for a string format because over here this would result in creating
+
+03:12.140 --> 03:14.880
+of multiple strings which is a performance overhead.
+
+03:15.050 --> 03:20.140
+So when I'm implementing a two string I would really prefer to go with the string format kind of stuff.
+
+03:20.180 --> 03:25.010
+I would definitely recommend to play around with this example and try to understand it to that much
+
+03:25.010 --> 03:25.280
+more.

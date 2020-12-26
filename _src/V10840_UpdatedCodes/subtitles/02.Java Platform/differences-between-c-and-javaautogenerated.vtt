@@ -1,0 +1,79 @@
+WEBVTT
+
+00:01.830 --> 00:06.640
+The next thing we would want to discuss the differences between C++ and Java.
+
+00:06.660 --> 00:12.830
+The main difference between C++ and Java is the fact that Java is platform independent.
+
+00:12.870 --> 00:20.340
+You can write your job programs on any operating system and take the compiled code and run it on any
+
+00:20.340 --> 00:21.620
+operating system.
+
+00:21.690 --> 00:29.010
+That's not the case with C++ because most of the motions of C++ when you'd run when you compile the
+
+00:29.010 --> 00:35.820
+code all that you would get is the object called C++ is not really platform independent but Java and
+
+00:35.820 --> 00:41.860
+C++ are not really pure object oriented programming languages in the sense that Gelhaus primitives.
+
+00:41.880 --> 00:49.830
+So it's not like Arley primitives are not really objects so it's not really object oriented and in C++
+
+00:50.100 --> 00:54.180
+you can write structural programs and you can write C programs.
+
+00:54.180 --> 00:58.210
+Basically you don't need to really use objects to write such programs.
+
+00:58.260 --> 01:00.700
+So both of these are not really pure.
+
+01:00.900 --> 01:08.490
+But in terms of purity I mean if you measure it let's say 80 percent purity 90 percent purity.
+
+01:08.690 --> 01:10.190
+In that kind of percent.
+
+01:10.250 --> 01:18.380
+Java is more object oriented than C++ because Java does not love structural programming like C++ does.
+
+01:18.390 --> 01:24.870
+The other main difference is the fact that C++ Hasparren this and Baarn does provide you a way to access
+
+01:25.220 --> 01:31.760
+what are the use which are present in memory and which could be a security problem in certain situations.
+
+01:31.770 --> 01:36.780
+Java has no concept called pointers on the same client in C++.
+
+01:36.780 --> 01:42.330
+You have to allocate memory so the programmer is responsible for allocating memory deallocating memory
+
+01:42.360 --> 01:44.430
+and things like that in Java.
+
+01:44.430 --> 01:45.300
+No such thing.
+
+01:45.330 --> 01:49.180
+Or do you need to say new object and that's it.
+
+01:49.650 --> 01:54.780
+When the object goes out of scope the garbage collection kicks in and it would take the object out of
+
+01:54.780 --> 01:55.380
+memory.
+
+01:55.380 --> 02:01.920
+The other important difference is that C++ supports multiple inheritance so you can extend to different
+
+02:01.920 --> 02:04.060
+classes from the same class.
+
+02:04.080 --> 02:05.850
+However Jowers does not.

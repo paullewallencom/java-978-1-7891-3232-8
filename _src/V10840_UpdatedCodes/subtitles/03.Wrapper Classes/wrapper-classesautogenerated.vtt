@@ -1,0 +1,442 @@
+WEBVTT
+
+00:01.390 --> 00:07.300
+Let's move on to the next topic wrapper classes in the previous section will get a lot of questions
+
+00:07.300 --> 00:14.230
+which are related to the Java platform our platform along with the primitive variables that basic in
+
+00:14.290 --> 00:20.900
+floor and things like that it provides certain things called proper classes.
+
+00:21.010 --> 00:27.190
+This wrapper classes are basically wrappers around the basic primitive variables.
+
+00:27.250 --> 00:30.210
+So you have the basic isn't an integer.
+
+00:30.250 --> 00:33.370
+It's basically a wrapper class around that.
+
+00:33.370 --> 00:41.590
+Similarly for all the primitive variable types Java provides very proper classes so you have wrapper
+
+00:41.590 --> 00:48.310
+classes that basically short integer and long you have floating type variables float and double and
+
+00:48.310 --> 00:51.240
+you have a boolean a byte and a character.
+
+00:51.310 --> 00:57.130
+So those are the different upper classes that are present in Java as we discussed earlier of wrapper
+
+00:57.130 --> 00:57.400
+class.
+
+00:57.400 --> 01:02.070
+Basically wraps around the data type and gives it an appearance of an object.
+
+01:02.230 --> 01:04.940
+Also provide a lot of utility classes.
+
+01:05.140 --> 01:11.590
+So the question might be why do we need upper classes developer classes have a lot of utility methods.
+
+01:11.770 --> 01:14.740
+So that would be one reason why you might need a wrapper class.
+
+01:14.740 --> 01:19.890
+Other than that one of the reasons why you'd need to have a wrapper class is because if let's say a
+
+01:19.900 --> 01:26.500
+specific wrapper class object you would want to put a value as NULL for a primitive de-value can never
+
+01:26.500 --> 01:27.230
+be null.
+
+01:27.400 --> 01:29.860
+So that could be a possible reason.
+
+01:29.860 --> 01:34.340
+The other reason could be that you would want to use a wrapper class in a collection.
+
+01:34.600 --> 01:43.090
+So as you know in all Java collections the only support objects and remedial classes are not really
+
+01:43.180 --> 01:47.110
+are primitive types are not really objects.
+
+01:47.350 --> 01:52.060
+So you'd not be able to add a primitive directly to a collection.
+
+01:52.060 --> 01:56.150
+Sometimes you might see code like Cashman put the key comma five.
+
+01:56.170 --> 02:01.690
+It might look like a basic primitive way but actually what would happen is auto boxing autobody auto
+
+02:01.720 --> 02:06.610
+boxing would take place and it could be converted into a wrapper class and then that could be put into
+
+02:06.610 --> 02:07.490
+the collection.
+
+02:07.540 --> 02:13.630
+So effectively in a collection you would not be able to add a pyramid to value to add a wrapper class.
+
+02:13.630 --> 02:16.800
+I mean to add a player do you into collection.
+
+02:16.840 --> 02:18.370
+It has to be a wrapper.
+
+02:18.730 --> 02:21.280
+So that might be one reason why you would.
+
+02:21.400 --> 02:23.800
+You might need to use a proper class.
+
+02:23.800 --> 02:29.680
+The other thing is you might want to use upper class to create objects from other types.
+
+02:29.770 --> 02:34.390
+For example if I have a string value 55 I would want to convert it to a number.
+
+02:34.450 --> 02:40.410
+I can do that by using integer constructor which acts that string as a argument.
+
+02:40.420 --> 02:43.550
+Those are the reasons why you might need wrapper classes in Java.
+
+02:43.570 --> 02:48.000
+The next thing we want to discuss is the different ways of creating wrapper classes.
+
+02:48.010 --> 02:53.680
+How do you create proper classes prep classes can be created in a couple of different ways.
+
+02:53.710 --> 02:57.160
+Basically one is using the proper class constructor.
+
+02:57.160 --> 03:03.790
+So here you can see in digital 55 in year of 55 using a string and you see how you can create floats
+
+03:03.880 --> 03:04.840
+as well in here.
+
+03:04.840 --> 03:07.550
+So that's basically the proper class constructor.
+
+03:07.800 --> 03:11.610
+And then you see the other things are the constructors which are present in here.
+
+03:11.620 --> 03:13.110
+Carriker of C.
+
+03:13.240 --> 03:15.020
+Which character do you want to use.
+
+03:15.240 --> 03:20.580
+And you have boolean constructors basically accepting any kind of strings as well.
+
+03:20.620 --> 03:26.890
+There are different kinds of constructors which are used to create these wrapper to access the other
+
+03:26.890 --> 03:30.520
+things which are present in Java are also the value of.
+
+03:30.820 --> 03:37.810
+Each of these wrapper classes provide a value of method which is a static method which can be used to
+
+03:37.810 --> 03:39.960
+create a wrapper class.
+
+03:39.970 --> 03:45.730
+The main difference between these two ways of creating a wrapper class is the fact that when you use
+
+03:45.760 --> 03:49.990
+use a constructor you are always creating a new object.
+
+03:49.990 --> 03:56.770
+So you always like whether you always create a new object with the constructor.
+
+03:56.770 --> 04:03.040
+However if you're using the value of static method like this one over here then there's a chance that
+
+04:03.070 --> 04:06.580
+you might be using a cached value.
+
+04:06.610 --> 04:10.940
+So there's a chance that you might not really be using a new object all the time.
+
+04:11.200 --> 04:19.090
+So if I'm actually creating value between minus 128 and 127 there's a chance that if there are two such
+
+04:19.090 --> 04:23.040
+values you would cache the value and return it back.
+
+04:23.140 --> 04:27.620
+If you look at this code here you'll understand this.
+
+04:27.640 --> 04:34.480
+So this is the code which from inside the JDK for integer value of you're seeing that it's actually
+
+04:34.480 --> 04:35.860
+creating a cache.
+
+04:35.860 --> 04:39.650
+So what is happening is there's an integer cache created with a set of values.
+
+04:39.780 --> 04:47.500
+And when I'm searching for something between that range of values what Jaguar does is give the cached
+
+04:47.620 --> 04:48.850
+value.
+
+04:48.850 --> 04:53.140
+If it's outside that range then it would return a new integer to summarize.
+
+04:53.260 --> 04:59.080
+I would really prefer to use static value or method all the time because it has a chance that you might
+
+04:59.080 --> 05:05.450
+save memory because it use the objects which are already there since classes are immutable it's not
+
+05:05.450 --> 05:09.980
+a problem to reuse those values once a proper class is created.
+
+05:09.980 --> 05:12.100
+You will not be able to change the value of it.
+
+05:12.140 --> 05:19.670
+So since that immutable you'd be able to easily reuse the references to them without having that de-valued
+
+05:19.670 --> 05:21.190
+there would change.
+
+05:21.200 --> 05:26.720
+So to summarize you can create a wrapper class using a constructor or the value of the value of is a
+
+05:26.720 --> 05:31.980
+better approach because it can't have cash a set of values and reuses objects for them.
+
+05:32.030 --> 05:33.390
+What is auto boxing.
+
+05:33.440 --> 05:38.300
+The definition you're looking at here would say or boxing is automatic Kanwisher dayjob a compiler does
+
+05:38.390 --> 05:43.090
+between primitive types and they're called spawning proper objects.
+
+05:43.100 --> 05:44.270
+What does that mean.
+
+05:44.290 --> 05:49.940
+Basically what it means is when I'm creating an integer I look at this line of code.
+
+05:50.090 --> 05:56.330
+So I'm taking a value of 9 and assuming a setting it to impeach of wrapper class what happens is this
+
+05:56.330 --> 06:05.160
+primitive integer 9 is automatically wrapped and converted into of wrapper class.
+
+06:05.270 --> 06:11.190
+Typically the value of method would be used so it's almost similar to integer that value of nine.
+
+06:11.240 --> 06:13.370
+So it creates an digit and returns it back.
+
+06:13.370 --> 06:18.660
+So in the example like the one below integer then I'm doing a 10 plus plus.
+
+06:18.660 --> 06:25.040
+This then is not really a variable to 10 plus plus in relation to Java I would have thrown a compilation
+
+06:25.040 --> 06:27.130
+error but apage are fine.
+
+06:27.130 --> 06:34.000
+What it does is it would auto blocks convert it and increment the value which is present in the Integer.
+
+06:34.010 --> 06:39.440
+I like the fact that this is a really funny example because I'm having a value of 10 here and doing
+
+06:39.440 --> 06:41.090
+it 10 plus plus.
+
+06:41.090 --> 06:44.740
+So the value of 10 would be Lerone don't worry about it.
+
+06:44.870 --> 06:51.560
+The example was not really a great coding example I would say but it's just to illustrate the concept
+
+06:51.560 --> 06:56.210
+of art of boxing the fact that he can do a 10 plus plus on Rappa integer.
+
+06:56.330 --> 06:59.730
+What are the advantages of auto boxing.
+
+06:59.740 --> 07:06.740
+The thing is what are the boxing we would use the value of metal to the static Rallye of metal would
+
+07:06.740 --> 07:08.340
+be used to create objects.
+
+07:08.540 --> 07:16.600
+So when I do integer 90s equal to 9 what would happen is integer 90 is equal to integer value of mine.
+
+07:16.760 --> 07:23.030
+And as we discussed earlier the value of method would look at the cash and if there is a similar object
+
+07:23.030 --> 07:27.940
+if there is a same object present that need to use the object instead of creating another object.
+
+07:28.010 --> 07:30.500
+So that's what you see here in this example.
+
+07:30.740 --> 07:36.770
+So if I'm doing a new integer of nine twice what you would see is both are not the same object get equal
+
+07:37.030 --> 07:40.100
+but they are not the same object they are two different objects.
+
+07:40.280 --> 07:45.920
+And here when I do 90 is equal to nine 1990s equal to nine They're both the same objects.
+
+07:45.920 --> 07:49.310
+So since they are the same object they are equal as well.
+
+07:49.520 --> 07:54.900
+So that's basically the biggest advantage of all boxing or boxing.
+
+07:54.910 --> 07:57.840
+The users the verbal objects which are already created.
+
+07:58.010 --> 08:00.870
+So it's better to go for auto boxing.
+
+08:00.980 --> 08:06.320
+The next thing we would want to discuss is what is testing basically casting is typically used when
+
+08:06.320 --> 08:10.190
+you want to come with one data type into another.
+
+08:10.830 --> 08:14.300
+Basically when you look at casting there are two types.
+
+08:14.300 --> 08:19.570
+One is implicit and explicit implicit casting is automatically done by the compiler.
+
+08:19.760 --> 08:24.460
+For example I'm saying long number is equal to value values.
+
+08:24.530 --> 08:27.590
+Typically if you look at it here it changes the value.
+
+08:27.770 --> 08:37.790
+However the Jawa pilot would implicitly cast this hundred to a long and then store the value in number.
+
+08:37.790 --> 08:44.240
+Similarly when we do floor a physical 200 100 is a number and we are storing it into a float.
+
+08:44.480 --> 08:48.780
+So it's automatically converted into a float and stored in the float.
+
+08:48.800 --> 08:58.370
+Well you this is implicit casting typically implicit castings are done when you are doing the automatic
+
+08:58.370 --> 09:00.360
+widening current conversions.
+
+09:00.430 --> 09:01.350
+OK.
+
+09:01.580 --> 09:03.610
+Typical technical jargon.
+
+09:03.920 --> 09:09.220
+So basically when you're storing smaller values into larger integer values.
+
+09:09.260 --> 09:14.270
+So I'm storing it into a long int or a byte into a float.
+
+09:14.270 --> 09:15.990
+So these are widening.
+
+09:15.980 --> 09:16.990
+So this is small.
+
+09:17.030 --> 09:18.290
+This is big.
+
+09:18.530 --> 09:22.850
+So in those kind of things implicit casting is automatically done by the compiler.
+
+09:22.910 --> 09:26.720
+Explicit casting is the casting which we do through Corde.
+
+09:26.960 --> 09:31.610
+So basically all the explicit castings are typically not in conversions.
+
+09:31.610 --> 09:32.530
+So what does that mean.
+
+09:32.530 --> 09:36.970
+So I'm taking a long and that I need to end this into here.
+
+09:36.980 --> 09:42.800
+The code will not compile because number is the number one is a long number.
+
+09:42.980 --> 09:46.100
+And you cannot take a long way to read it.
+
+09:46.130 --> 09:52.880
+So this is basically me telling the compiler that Dundreary the value in this.
+
+09:52.940 --> 09:54.020
+I know it's bigger.
+
+09:54.050 --> 09:59.030
+There's a possibility that there's a large rally in here and integer but don't worry I'll take the responsibility
+
+09:59.030 --> 09:59.360
+for it.
+
+09:59.360 --> 10:00.610
+You go ahead and cast it.
+
+10:00.810 --> 10:02.250
+A number or two.
+
+10:02.290 --> 10:09.490
+And so similarly here so with the floor as well so I'm putting the defrayed or 35 which is a float.
+
+10:09.700 --> 10:15.630
+What would happen is this would be cost to indigent and stored into the into variable which is present
+
+10:15.630 --> 10:18.250
+in here as you'd guess.
+
+10:18.300 --> 10:23.430
+This would involve a truncation because I cannot start to the five point thirty five or twenty five
+
+10:23.430 --> 10:26.800
+point three five if I have to pronounce it correctly.
+
+10:26.820 --> 10:32.820
+I can substitute if 0.3 Phi into the variable x because it ain't really a will I can only get to 35.
+
+10:32.820 --> 10:38.370
+So what happens is that if a point thirty five it's thirty five and that word would be stored into an
+
+10:38.430 --> 10:43.980
+int in this step we started with the basic wrapper classes we looked at how we create them.
+
+10:44.070 --> 10:49.980
+We looked at what the difference between a constructor and tatic value of mattered.
+
+10:50.040 --> 10:57.990
+And we look at the boxing and the advantages of boxing as well less implicit and explicit casting until
+
+10:57.990 --> 10:59.280
+the next step.

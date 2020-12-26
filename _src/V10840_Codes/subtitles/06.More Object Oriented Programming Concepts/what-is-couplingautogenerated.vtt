@@ -1,0 +1,193 @@
+WEBVTT
+
+00:01.590 --> 00:08.280
+The next thing that we would want to discuss is coupling what is coupling coupling is actually a measure
+
+00:08.280 --> 00:12.970
+of how much a specific class is dependent on other classes.
+
+00:13.230 --> 00:16.850
+Ideally there should be minimal dependencies between the classes.
+
+00:16.890 --> 00:20.830
+So the aim is always to have as low coupling as possible.
+
+00:21.000 --> 00:23.310
+This is really theoretical definition right.
+
+00:23.310 --> 00:29.860
+I mean dependencies and these kind of things are really theoretical So what we do is we'll take an example.
+
+00:30.120 --> 00:35.490
+So what we have here is a shopping cart example.
+
+00:35.730 --> 00:44.520
+So if you look at this shopping cart it contains a list of items and when there is an order you'd actually
+
+00:44.670 --> 00:53.160
+say I want to buy a list of items that I want this many quantity with this price and I have an array
+
+00:53.160 --> 00:54.380
+of those things.
+
+00:54.510 --> 01:00.990
+And while calculating the order we would want to add the sales tax in so many Claybourne although we
+
+01:00.990 --> 01:04.560
+give it to our shopping cart and also the sales tax as input.
+
+01:04.740 --> 01:08.630
+And this is one of the implementations which is present here.
+
+01:08.640 --> 01:14.790
+So our the total price this calculates the total price of all the items inside the card.
+
+01:14.970 --> 01:21.420
+So there if there are 10 items it would actually multiply pricing the quantities sum them up and then
+
+01:21.540 --> 01:24.540
+it would add the sales tax and give it back.
+
+01:24.540 --> 01:26.920
+So these are the total price.
+
+01:26.970 --> 01:33.640
+If you look at this particular method this method knows the internal details of shopping cart entry.
+
+01:33.750 --> 01:41.700
+So it is like if you look at this like the cart cart contains something called items and so it knows
+
+01:41.700 --> 01:47.000
+about that and also know that each of the items has something called price and granddaddy.
+
+01:47.220 --> 01:52.770
+So it is taking responsibility like if I'm changing the name of this table from price.
+
+01:52.920 --> 01:58.680
+So if this particular variable I'm changing it from price to price why not price to or if the type of
+
+01:58.680 --> 02:00.160
+this table changes.
+
+02:00.300 --> 02:07.070
+Then what would happen is this class the class order would also need to change the name of items to
+
+02:07.070 --> 02:08.060
+changes.
+
+02:08.220 --> 02:09.220
+Then what would happen.
+
+02:09.360 --> 02:13.750
+I would need to also change these references to items in here.
+
+02:13.980 --> 02:20.880
+So what you see here is called tight coupling you'd see that there is really tight coupling between
+
+02:20.880 --> 02:25.440
+these classes because if I change anything in this class if I change something in a shopping cart entry
+
+02:25.860 --> 02:30.270
+then I would definitely need to change something in order as well if I change something in shopping
+
+02:30.270 --> 02:34.890
+cart I would need to change it in the order class as well.
+
+02:34.890 --> 02:36.740
+This is what is called coupling.
+
+02:36.930 --> 02:42.600
+This coupling here is very tight because when I change the name or type of any of these variables it
+
+02:42.600 --> 02:47.540
+would mean that I would also need to change the corresponding things in here.
+
+02:47.640 --> 02:52.230
+This is not really good for maintenance because this would mean that when I would make a change in one
+
+02:52.230 --> 02:58.400
+of the classes I would need to touch then other classes of that consider an implementation like this.
+
+02:58.410 --> 03:07.530
+So let's say shopping cart entry has get total price and it returns price into quantity and ecarte content.
+
+03:07.530 --> 03:13.260
+It contains a list of items and also it has a method to get total price which looks at all the items
+
+03:13.950 --> 03:20.670
+calculates the total price of that item and returns that back and the order after that it's only responsible
+
+03:20.670 --> 03:26.900
+for getting the total price of the card and then sale stack adds the sales tax on top of it.
+
+03:26.910 --> 03:34.020
+So if you look at this specific implementation of this then this is very there is very low coupling.
+
+03:34.020 --> 03:40.480
+So if I change the name of the price will anything else change Nope if I change the type or if I change
+
+03:40.480 --> 03:46.030
+the name of quantity or if the items will anything change in the other classes.
+
+03:46.210 --> 03:49.670
+No nothing else will change that.
+
+03:49.680 --> 03:58.800
+The magic of low coupling so if you have the objects well defined with proper member variables and methods
+
+03:58.830 --> 04:01.320
+which act on those member variables.
+
+04:01.640 --> 04:04.970
+We're not really exposing the member variables outside this class.
+
+04:04.980 --> 04:11.670
+All that we are doing is we are exposing metrics which act so we are exposing behavior and we are not
+
+04:11.670 --> 04:17.760
+really exposing data which is inside this particular class that would help us in having no coupling
+
+04:17.760 --> 04:20.680
+between different classes.
+
+04:20.850 --> 04:25.130
+A lot of things like this instance where people should be private.
+
+04:25.170 --> 04:31.050
+They should be getters and setters for this and same for items here and cottontails Dexia So there are
+
+04:31.050 --> 04:38.490
+a few good practices that we did not really follow or we did not show in here because of limitations
+
+04:38.500 --> 04:44.590
+on terms of space but ideally they should be private getters and setters for all this kind of stuff.
+
+04:44.880 --> 04:51.960
+But the focus of this example was to show coupling between classes and this is a very good example of
+
+04:51.960 --> 04:54.510
+low coupling between classes.
+
+04:54.570 --> 05:02.360
+So don't spend some time with these two examples these two examples are also present eclipse you can
+
+05:02.360 --> 05:05.450
+search for coupling examples problem and solution.
+
+05:05.450 --> 05:10.190
+The problem has the problem and the solution has the solution because they will commit you to do is
+
+05:10.190 --> 05:18.110
+to start with the problem and friendly factor it does a shame and I'm sure that will be a real learning
+
+05:18.110 --> 05:18.760
+curve.
+
+05:18.950 --> 05:20.180
+So there you go.
+
+05:20.240 --> 05:21.300
+That coupling.
+
+05:21.380 --> 05:23.060
+And until the next video we're.

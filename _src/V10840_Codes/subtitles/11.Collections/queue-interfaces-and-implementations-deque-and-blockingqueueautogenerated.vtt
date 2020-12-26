@@ -1,0 +1,271 @@
+WEBVTT
+
+00:01.040 --> 00:06.370
+Let's now move into the cube related interfaces and classes.
+
+00:06.450 --> 00:14.480
+The thing about Q Is it extends collection as we already know so it about supports all the collection
+
+00:14.510 --> 00:15.350
+elements.
+
+00:15.360 --> 00:20.240
+Q is usually used for things like processing kind of a thing.
+
+00:20.360 --> 00:25.370
+So I want to store the elements in the order I want to process them and I would want to be able to take
+
+00:25.370 --> 00:30.000
+the top element from the collection and process it.
+
+00:30.020 --> 00:35.430
+Those are the kinds of places where we use cues as you can see.
+
+00:35.510 --> 00:39.690
+Q extant collection and it has a method to add.
+
+00:39.710 --> 00:43.420
+So this is basically to add element into a queue.
+
+00:43.460 --> 00:47.200
+This is to offer an element into the queue.
+
+00:47.210 --> 00:49.220
+So this is basically similar to add.
+
+00:49.250 --> 00:52.610
+Basically we are adding an element into the queue.
+
+00:52.700 --> 00:58.820
+Also there is a remove method which is present in the queue which is basically used to retrieve and
+
+00:58.820 --> 01:04.000
+remove the head element to the top element on the queue will be turned back and removed.
+
+01:04.030 --> 01:05.760
+Paul also does the same thing.
+
+01:05.780 --> 01:08.420
+I mean it retrieves and removes the head of the queue.
+
+01:08.630 --> 01:11.440
+But Paul returns NULL if the queue is empty.
+
+01:11.570 --> 01:16.370
+However if you look at the momentum of the movement that would throw an exception if a queue is empty.
+
+01:16.400 --> 01:18.030
+That's one thing you need to remember.
+
+01:18.110 --> 01:21.050
+Always use a pool if you don't want an exception.
+
+01:21.050 --> 01:25.850
+So if you're OK with getting an exception then go ahead and use the moment and peak would return the
+
+01:25.850 --> 01:29.930
+element but it will not remove the element from the head of the queue.
+
+01:29.930 --> 01:37.390
+A big Q is a double and a cube that's basically it supports the moving from both ends of the queue.
+
+01:37.520 --> 01:40.820
+So you'd be able to add the first or added the last.
+
+01:40.820 --> 01:43.680
+You can either offer first or for last.
+
+01:43.730 --> 01:49.310
+You can remove from first or the move from last so you can actually either do it from the front of the
+
+01:49.310 --> 01:55.340
+queue or from the back of the queue so the queue is basically that the queue is a collection where you
+
+01:55.340 --> 02:00.800
+can actually insert elements at both sides of the queue and to be more at both sides of the queue as
+
+02:00.800 --> 02:01.330
+well.
+
+02:01.340 --> 02:03.930
+So this is what is called a double ended.
+
+02:03.930 --> 02:07.390
+Q The other important interface is blocking.
+
+02:07.400 --> 02:12.560
+Q So just to summarize whatever we have this because until now as part of the queue we talked about
+
+02:12.560 --> 02:18.320
+the new interface first and then we went into the double ended queue interface and now we are looking
+
+02:18.380 --> 02:25.700
+at the blocking queue interface the blocking queue interface is used when when you want to support operations
+
+02:26.060 --> 02:29.510
+that wait for the queue to become non empty.
+
+02:29.510 --> 02:30.890
+So what does that mean.
+
+02:30.890 --> 02:37.690
+So I would want to get an element from the queue but the queue does not have any elements right now.
+
+02:37.910 --> 02:45.010
+In that kind of situation I want to rate for an element to become available in those kind of situations.
+
+02:45.020 --> 02:46.990
+We go for a blocking queue.
+
+02:47.180 --> 02:52.240
+So interface blocking queues support those kind of use cases.
+
+02:52.250 --> 02:55.110
+So basically I'm pulling at you.
+
+02:55.280 --> 03:01.780
+Q Does not have any element I would want to still wait for sometime and wait for an element to be available.
+
+03:01.910 --> 03:09.470
+Is grokking You also has a very similar method as the q interface except that it pro-white it puts more
+
+03:09.470 --> 03:10.740
+constraints.
+
+03:10.760 --> 03:18.260
+So first thing is I actually insert this element into the queue immediately but it throws an exception
+
+03:18.260 --> 03:19.970
+in case of a failure.
+
+03:20.390 --> 03:25.860
+However if you look at the offer of method it will return false in case of a failure.
+
+03:26.030 --> 03:31.570
+And as expected there are often methods with a specific wait period as well.
+
+03:31.730 --> 03:37.370
+So you can say I want to add this element to the queue but I only want to wait for a specific time.
+
+03:37.400 --> 03:39.140
+I dont want to waiting for innately.
+
+03:39.260 --> 03:41.820
+So if there is no space on the return back.
+
+03:41.870 --> 03:44.930
+So thats basically the specified wait time.
+
+03:44.930 --> 03:51.260
+So if I am if I want to insert an element into the queue and the queue is full I don't want to wait
+
+03:51.260 --> 03:54.380
+for ever so I'm specifying of vague time.
+
+03:54.380 --> 03:58.060
+So I think I would want to wait up at this time but no more.
+
+03:58.130 --> 04:05.580
+The big Tick method would wait until the element becomes available until the next event is available.
+
+04:05.860 --> 04:09.980
+The deck would wait for the elements to be available.
+
+04:09.980 --> 04:14.720
+The pull method on the other hand can take a time unit it.
+
+04:14.930 --> 04:20.630
+You can say I want to wait for this much time so I want to wait for this much time if there is no element
+
+04:20.630 --> 04:21.170
+available.
+
+04:21.170 --> 04:23.080
+So I want to wait for two minutes.
+
+04:23.210 --> 04:25.270
+If the element is not available not more.
+
+04:25.280 --> 04:30.960
+Basically we look at three interfaces right so one is the Q which is kind of the base of all the cube
+
+04:30.970 --> 04:32.810
+interfaces.
+
+04:32.940 --> 04:39.710
+Q You would want to store the elements for processing and if you have one where you would want you can
+
+04:39.710 --> 04:45.980
+take the top element from the queue and process it so that queue doubling the queue is an extension
+
+04:45.980 --> 04:52.520
+of the queue in the sense that you can actually have insertion and removal at the end.
+
+04:52.580 --> 05:00.440
+So you support inserting removing polling and everything at both ends and blocking queue extends the
+
+05:01.130 --> 05:06.070
+more for the use cases where I want to get the element from the queue.
+
+05:06.170 --> 05:10.410
+But if the queue is empty I would want to be able to wait for a certain amount of time.
+
+05:10.430 --> 05:13.890
+So in those kind of scenarios I would go for a blocking queue.
+
+05:13.940 --> 05:17.820
+Not that we looked at the differences in dequeue kind of collections.
+
+05:17.870 --> 05:20.540
+We will now look at a few implementations.
+
+05:20.540 --> 05:23.100
+The priority queue is one of the famous queues.
+
+05:23.150 --> 05:29.960
+It implements the queue interface so basically that in the priority queue the elements are sorted in
+
+05:29.960 --> 05:31.590
+the natural order.
+
+05:31.610 --> 05:39.400
+So the elements are stored according to the ordering which is natural to them that you were pretty cute.
+
+05:39.430 --> 05:41.510
+You on the other hand is a double ended.
+
+05:41.520 --> 05:48.940
+Q So as you can see it here it implements a double And cue the blocking queue.
+
+05:49.130 --> 05:51.370
+Implement blocking cue.
+
+05:51.620 --> 05:57.860
+So it uses array as the data underlying data structure but you can wait for a certain period before
+
+05:57.920 --> 05:59.930
+an element becomes available.
+
+06:00.170 --> 06:07.130
+The link blocking queue on the other hand uses linked list as the underlying data structure for blocking
+
+06:07.130 --> 06:07.560
+queue.
+
+06:07.570 --> 06:13.490
+The thing about the link blocking queue is typically they have better performance than aere blocking
+
+06:13.490 --> 06:13.990
+queue.
+
+06:14.180 --> 06:20.100
+But sometimes in very concurrent applications the performance is less predictable.
+
+06:20.120 --> 06:26.660
+What we are trying to do in this we do is try to get a overview of the queue interfaces and the queue
+
+06:26.810 --> 06:29.930
+implementations in one of the subsequent reviews in this section.
+
+06:29.930 --> 06:36.090
+We'll look at some of the chord examples for these aspirin and think the next video brewing.

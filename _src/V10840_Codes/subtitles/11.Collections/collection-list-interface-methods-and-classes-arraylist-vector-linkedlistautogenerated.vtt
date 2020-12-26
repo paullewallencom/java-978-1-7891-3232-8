@@ -1,0 +1,292 @@
+WEBVTT
+
+00:01.870 --> 00:06.640
+Let's start with the collection interface and look at what are the methods that are defined in the collection
+
+00:06.650 --> 00:07.770
+interface.
+
+00:07.780 --> 00:13.780
+So if you look at the collection interface the best methods which are all in here are to add an element
+
+00:14.140 --> 00:18.410
+remove an element and you can add all from a collection.
+
+00:18.500 --> 00:24.310
+We move all from a collection or retain only the things which are present in this collection.
+
+00:24.430 --> 00:31.420
+Other than that you can check if an object extends in a present in a collection or if a set of objects
+
+00:31.450 --> 00:35.370
+are present in a collection and you have the standard method.
+
+00:35.380 --> 00:43.710
+Size is empty and it also you have an iterator which would enable you to loop around the collection.
+
+00:43.750 --> 00:49.990
+The most important thing about the interface collection is that which all things exist in collection
+
+00:50.670 --> 00:54.730
+set interface extents collection lists interface extant collection.
+
+00:54.730 --> 00:57.000
+Q In the first instance collection.
+
+00:57.160 --> 01:06.190
+So the set list and q interfaces will also contain all the methods that are defined in here so set and
+
+01:06.250 --> 01:10.320
+list and q also contain these methods.
+
+01:10.350 --> 01:17.260
+So the easiest way to remember what a specific collection support is to remember the hierarchy of interfaces
+
+01:17.350 --> 01:23.050
+and watch each interface upward so that the collection interface collection interface basically supports
+
+01:23.080 --> 01:29.290
+adding an element checking event element exits adding a list adding a collection and removing things
+
+01:29.620 --> 01:34.510
+removing an object removing a collection and removing those of items from the collection other than
+
+01:34.510 --> 01:38.650
+the usual operation of size is empty and Pleiad function.
+
+01:38.650 --> 01:45.280
+So this all functions will also be supported by list will also be supported by set and will also be
+
+01:45.280 --> 01:47.440
+supported by the queue interfaces.
+
+01:47.440 --> 01:49.950
+So we discuss about the list interface.
+
+01:49.960 --> 01:55.070
+Next the list interface contains all the method from the collection interface.
+
+01:55.210 --> 02:01.900
+Because that what it's extending other than the methods in the collection interface list supports getting
+
+02:01.960 --> 02:05.470
+of value and setting a value based on index.
+
+02:05.500 --> 02:12.840
+So you can get a value at a specific index or you can set of value at a specific index or you can add
+
+02:12.870 --> 02:14.890
+that specific index.
+
+02:14.920 --> 02:21.760
+So those are all the kind of things index off a specific object last index of a specific code and a
+
+02:21.760 --> 02:28.520
+sublist saying I want the lists of items between this index and the next index.
+
+02:28.540 --> 02:32.980
+Those are the kinds of things that are present in the list interface.
+
+02:32.980 --> 02:38.770
+So the interface basically support adding an element removing an element adding a collection and things
+
+02:38.770 --> 02:41.750
+like that and the list interface support.
+
+02:41.770 --> 02:49.600
+In addition to that method do I that a certain position position is an important thing in a list.
+
+02:49.660 --> 02:55.180
+So the most important thing about the list interface is any implementation of the list interface will
+
+02:55.570 --> 02:59.750
+maintain the insertion order what is the insertion order.
+
+02:59.890 --> 03:07.900
+So if I'm an interesting element a first and B next then in the list is always stored before the beat.
+
+03:08.080 --> 03:12.600
+Obviously this insertion order is only maintained if you don't use a specific position.
+
+03:12.610 --> 03:20.170
+So if you just add this element then it will always be before the element which is inserted after that.
+
+03:20.290 --> 03:24.570
+Let's switch over to the ID and look at all the things which are present in here.
+
+03:24.600 --> 03:27.910
+We are looking at a specific class called collection hierarchy.
+
+03:27.910 --> 03:32.990
+It's in com in 28 minutes our collections package collection hierarchy.
+
+03:33.030 --> 03:34.740
+I mean this is what we did earlier.
+
+03:34.740 --> 03:37.660
+What are the important model to represent in the collection.
+
+03:37.660 --> 03:39.440
+These are the important methods.
+
+03:39.520 --> 03:42.880
+And next we started looking at the list.
+
+03:42.910 --> 03:46.960
+So we looked at what are the important Methot in the list interface.
+
+03:46.960 --> 03:51.970
+We saw that there are a lot of additional methods but all these methods if you look at them they would
+
+03:51.970 --> 03:53.670
+have a position in them.
+
+03:53.830 --> 03:57.830
+So in this position is what is very important.
+
+03:58.000 --> 04:03.010
+So a list of things good about the position each object is in.
+
+04:03.040 --> 04:09.580
+So the elements can be added in a specific position and also you can add elements without specifying
+
+04:09.580 --> 04:14.290
+position in case of that if the element would be added at the end.
+
+04:14.320 --> 04:22.930
+So we also saw that we can add different Batmen to the list and you can use indexing to remove the particular
+
+04:24.460 --> 04:26.150
+thing in particular Batmen.
+
+04:26.140 --> 04:32.060
+So if you want to remove searching that index zeroes you to Batmen remove zero.
+
+04:32.230 --> 04:38.260
+Similarly I mean you can use an index to remove an index to get an altered index to set the value.
+
+04:38.260 --> 04:42.210
+So I'm sitting batsmen are set to come up pointing.
+
+04:42.460 --> 04:47.200
+So it would said the second element to didn't like it is in here.
+
+04:47.470 --> 04:53.140
+So basically this is a collection where position is given a lot of importance.
+
+04:53.140 --> 04:56.630
+The best example for the list is the class aerialist.
+
+04:56.830 --> 05:03.590
+So the aerialist implemented list 8 the access time in list is very fast because the underlying data
+
+05:03.590 --> 05:05.150
+structure is an area.
+
+05:05.330 --> 05:11.780
+So in an area you can easily access the element hello world insertion and deletion at very slow because
+
+05:12.290 --> 05:17.200
+insertion and deletion might need you to create a new array.
+
+05:17.300 --> 05:21.970
+So you might need to copy stuff and things like that so insertion and deletion are really slow in an
+
+05:21.970 --> 05:24.260
+aerialist compared to link list.
+
+05:24.310 --> 05:28.540
+The one important thing about aerialist is that it's not safe.
+
+05:28.640 --> 05:36.750
+So if you access the same aerialist instance from multiple threads the results might not be as you expect.
+
+05:36.950 --> 05:40.690
+The other class which implements the list interface is a vector.
+
+05:40.850 --> 05:46.640
+So a vector is thread safe so All-Met that synchronizer a vector is basically aerialist with everything
+
+05:46.640 --> 05:47.480
+synchronize.
+
+05:47.470 --> 05:53.690
+So if I just open up the vector class here I can open a vector from the Java utility I'm opening Jawa
+
+05:53.690 --> 05:54.620
+you pull vector.
+
+05:54.740 --> 05:59.000
+And you'd see that all the method in here are thing ised.
+
+05:59.030 --> 05:59.800
+You can see it here.
+
+05:59.810 --> 06:05.830
+So synchronized copy in two synchronized to size synchronized synchronized.
+
+06:05.870 --> 06:08.510
+You'll see a lot of synchronized methods in here.
+
+06:08.900 --> 06:16.670
+So synchronization is to prevent multiple threads to be able to access to the same instance at the same
+
+06:16.670 --> 06:17.100
+time.
+
+06:17.120 --> 06:24.440
+So rectories exactly the same as an aerialist except that it's synchronized linked list has elements
+
+06:24.530 --> 06:25.920
+linked to each other.
+
+06:25.920 --> 06:27.740
+So they're doubly linked.
+
+06:27.740 --> 06:30.130
+Forward and backward to one another.
+
+06:30.320 --> 06:37.070
+So this is an ideal choice as it is to implement a stack or a queue because linked list also implements
+
+06:37.310 --> 06:39.200
+the queue interface.
+
+06:39.350 --> 06:42.110
+So earlier we loaded the queue interface as well.
+
+06:42.110 --> 06:46.670
+So linked list implement both the list and dequeue interface.
+
+06:46.820 --> 06:53.090
+The thing about linked list is I reading through a list is little flawed because you cannot directly
+
+06:53.090 --> 06:54.840
+access an element in the list.
+
+06:54.860 --> 06:59.950
+You have to go through the sequence of elements and then access the specific thing.
+
+06:59.970 --> 07:04.640
+However insertion and deletions would be faster because to insert something all that I need to do is
+
+07:04.640 --> 07:10.880
+change the link of the previous element to the element that you would want to insert and change the
+
+07:10.880 --> 07:12.050
+next link as well.
+
+07:12.050 --> 07:13.530
+So it's very simple.
+
+07:13.850 --> 07:20.660
+So it implements a queue interface so you can do a peek or a pool kind of thing to find out what is
+
+07:20.660 --> 07:22.680
+the next element in the queue.
+
+07:22.850 --> 07:29.160
+We look at that list interface and we'll build a couple of implementations of the list interface at
+
+07:29.230 --> 07:31.820
+least vector and link atlast.

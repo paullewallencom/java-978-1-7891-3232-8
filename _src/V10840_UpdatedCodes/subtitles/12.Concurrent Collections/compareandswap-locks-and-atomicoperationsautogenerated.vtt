@@ -1,0 +1,436 @@
+WEBVTT
+
+00:01.420 --> 00:05.000
+The next step you'd want to discuss the compare and scrap approach.
+
+00:05.010 --> 00:08.310
+It's again one of the new approaches which was introduced in Java.
+
+00:08.590 --> 00:16.170
+And in this like in a traditional approach let's say if I'm a member variable then it's completely synchronized.
+
+00:16.270 --> 00:23.500
+So that would make sure that the threat of not accessing a stale you incompentence wrap approach what
+
+00:23.500 --> 00:26.400
+we would do is in sort of synchronizing the Terminator.
+
+00:26.700 --> 00:30.460
+We would take the value of member variable before a calculation.
+
+00:30.460 --> 00:34.710
+So let's say there is a calculation which needs to be perform on a member variable.
+
+00:34.900 --> 00:38.940
+And I would need to return the value after the calculation.
+
+00:38.950 --> 00:43.840
+So what I would do is I would have the value of the member variable cached so I have a temporary cache
+
+00:43.840 --> 00:49.040
+of that value and I would perform the calculation on the calculation.
+
+00:49.120 --> 00:53.550
+I would compare the cached value with the current value of the member variable.
+
+00:53.740 --> 00:57.590
+So the cached value and the current value are the same then.
+
+00:57.610 --> 01:00.660
+This means that nobody has modified the thread.
+
+01:00.850 --> 01:06.360
+So that means I can go ahead and store the calculated result into the member variable.
+
+01:06.370 --> 01:12.040
+However let's say if the thread has modified the value then the cached value would be different from
+
+01:12.040 --> 01:13.510
+the current value.
+
+01:13.570 --> 01:20.380
+In this scenario what we would do is we might either do the calculation again or we might skip it because
+
+01:20.380 --> 01:24.070
+there is another thread which updated the value with the latest value.
+
+01:24.280 --> 01:28.070
+So this is what is called compare and wrap approach.
+
+01:28.240 --> 01:32.140
+This is this approach is used by concrete linked.
+
+01:32.200 --> 01:39.090
+Q basically indicum parents wrap approach instead of using synchronized keyword to prevent threats accessing
+
+01:39.160 --> 01:40.060
+Stael value.
+
+01:40.180 --> 01:46.330
+What we do is we kind of cache the initial value do the calculation and then compare the new value with
+
+01:46.330 --> 01:47.150
+the initial value.
+
+01:47.150 --> 01:50.200
+If they are the same then the value has not been modified so that's good.
+
+01:50.260 --> 01:56.830
+So we can go into they devalue the new value hollower if something has changed we need to take some
+
+01:56.830 --> 01:57.610
+other action.
+
+01:57.730 --> 02:00.900
+So that basically the compare and swap approach.
+
+02:00.910 --> 02:06.490
+The next thing is what is a lock and how is it different from using synchronized approach.
+
+02:06.490 --> 02:14.440
+The thing is about the synchronized approach let's just take a simple example get the vector class where
+
+02:14.440 --> 02:19.210
+we had a lot of method with synchronized one to have synchronized on admitted.
+
+02:19.410 --> 02:25.840
+Then it would mean that only one thread can be executing any of these hundred to that at any point in
+
+02:25.840 --> 02:32.420
+time that did not have any construct other than synchronize so either you can use a synchronize or nothing
+
+02:32.580 --> 02:38.130
+all you want really is love to access any of these hundred metrics at any given point in time.
+
+02:38.200 --> 02:40.540
+And that's a pretty severe constraint.
+
+02:40.810 --> 02:44.910
+And that's where Jowler came in with this concept called a lock.
+
+02:45.070 --> 02:48.220
+We saw the use of a lock on copy on bright areas.
+
+02:48.220 --> 02:50.170
+Right so what did we do.
+
+02:50.350 --> 02:51.880
+So we were using a log.
+
+02:51.880 --> 02:54.290
+So we had a dart lock.
+
+02:54.370 --> 03:02.110
+We have a log defined in here and we're using this lock on basic feek method where we want to lock high
+
+03:02.110 --> 03:02.670
+alert.
+
+03:02.710 --> 03:08.980
+The most important thing with locks is I can create another variable so in addition to this I can create
+
+03:08.980 --> 03:15.520
+another variable called lock 2 and I can have 50 methods synchronized in 50 minute waiting for lock
+
+03:15.520 --> 03:19.810
+one and 50 minutes waiting for lock to based on what we have waiting for.
+
+03:19.810 --> 03:27.700
+We can have different methods so you can divide the methods which are declared as synchronized in two
+
+03:28.030 --> 03:29.140
+different blocks.
+
+03:29.170 --> 03:35.230
+So all these methods when they are synchronized it means only one thread would be good and only one
+
+03:35.230 --> 03:37.900
+thread would be excluding any of them at any point in time.
+
+03:38.140 --> 03:44.710
+But with the lock and unlock kind of a thing which is introduced in Java 5 you can divide this method
+
+03:44.770 --> 03:46.980
+into groups let's extend that.
+
+03:47.110 --> 03:50.350
+All of them don't need to be synchronized at the same time.
+
+03:50.430 --> 03:56.110
+What you can do I think these three methods use this lock these four methods to use this lock and these
+
+03:56.110 --> 04:04.000
+four methods used this lock so locks brings in more flexibility to how you handle concurrency and thereby
+
+04:04.210 --> 04:09.790
+you'll be able to have multiple threads executing these methods at the same time and thereby increasing
+
+04:09.790 --> 04:15.610
+the performance the way you create a lock and use it is very simple so you can see that in the copy
+
+04:15.700 --> 04:17.270
+as well as a list.
+
+04:17.440 --> 04:21.000
+So you have a lock which is a new re-entrant block.
+
+04:21.010 --> 04:22.920
+That's what we're using to create a lock here.
+
+04:23.140 --> 04:29.160
+And you can see that in all the other places we checked for the lock so we try and get the lock one
+
+04:29.330 --> 04:31.320
+Lobert lock is called up.
+
+04:31.330 --> 04:37.540
+This method would complete execution only and we have the lock to execute this particular method.
+
+04:37.540 --> 04:41.680
+So once we have the lock then we will go and exude the logic.
+
+04:41.680 --> 04:44.560
+And at the end we would unlock it.
+
+04:44.560 --> 04:45.810
+So this is how you use the locks.
+
+04:45.830 --> 04:50.640
+We get the lock we lock it lock metal it's basically request.
+
+04:51.150 --> 04:57.320
+I would want to lock this code if there is no other method which is using this particular lock.
+
+04:57.460 --> 05:03.310
+Then I would get the lock are going to use the logic and then I would go ahead and unlock it.
+
+05:03.310 --> 05:09.010
+So the advantage of using locks is the fact that I can create three or four of these kind of knocks
+
+05:09.340 --> 05:17.150
+and in different groups of methods I can use different locks and thereby I can have more concurrency.
+
+05:17.180 --> 05:20.630
+What's this thing called unsupported operation X action.
+
+05:20.680 --> 05:24.160
+You know that all the Java collection text him collection interface.
+
+05:24.160 --> 05:28.680
+There are a lot of methods which are employed and which are defined in the collection interface.
+
+05:28.750 --> 05:34.720
+So all the collection sometimes do not implement everything that is present in the collection interface.
+
+05:34.930 --> 05:41.590
+So in these kind of scenarios what would happen is you would throw an unsupported operation exception
+
+05:41.950 --> 05:47.650
+a good example is when I use the error a lot and it's not as list when I use an address.
+
+05:47.680 --> 05:51.290
+At least what it does it creates an unmodified able list.
+
+05:51.310 --> 05:53.890
+So you cannot change this list at all.
+
+05:54.130 --> 05:56.370
+So when you try and do this we want this.
+
+05:56.390 --> 05:59.200
+It would through an unsupported operation exception.
+
+05:59.200 --> 06:05.560
+Next thing we want to discuss is the difference between fail safe and fail fast iterators fail first
+
+06:05.990 --> 06:12.320
+iteration was one of the default behaviors of the synchronous collections.
+
+06:12.370 --> 06:15.100
+That's basically the Java five things.
+
+06:15.280 --> 06:21.790
+So let's say we take a hash map and I have a list of values in the hash map I created and I traded for
+
+06:21.790 --> 06:22.510
+it.
+
+06:22.750 --> 06:28.490
+And while am looping around it and putting a new value into the map Wilen I'd written this looping.
+
+06:28.510 --> 06:30.890
+I'm trying to put a new value into the map.
+
+06:31.030 --> 06:35.300
+What happens is in this kind of scenario it would throw an exception.
+
+06:35.440 --> 06:40.540
+So it would throw a concurrent modification exception and trying to loop around and there's an iterator
+
+06:40.540 --> 06:44.460
+looping around her or somebody is trying to modify the map also.
+
+06:44.470 --> 06:49.890
+So in these kind of situations earlier we used to throw a concurrent modification exception the face
+
+06:49.890 --> 06:56.860
+if operators failsafe iterators on the other hand do not throw exceptions even when there are changes
+
+06:57.040 --> 06:57.840
+in the collection.
+
+06:57.880 --> 07:04.330
+For example if you take the concurrent hash map which is one of the latest one of the hash maps which
+
+07:04.330 --> 07:08.670
+was introduced in our file you can do this operation without a problem.
+
+07:08.690 --> 07:11.000
+So this would not throw an exception.
+
+07:11.110 --> 07:18.880
+What the fail safe or freight train does is it takes a copy of the internal data structure so it takes
+
+07:18.880 --> 07:21.480
+a copy and iterate over the copy.
+
+07:21.610 --> 07:25.450
+So that's basically the reason why it doesn't throw an exception.
+
+07:25.450 --> 07:31.030
+It is not really acting on the current object but it is taking a copy and acting on the copy of the
+
+07:31.120 --> 07:41.540
+object the failsafe operations are really efficient when the leads are much much more than.
+
+07:41.590 --> 07:42.380
+Right.
+
+07:42.400 --> 07:50.050
+So when you have more to eat then the right operations then in those kinds of situations Decameron hash
+
+07:50.050 --> 07:53.500
+map kind of things give you optimal performance.
+
+07:53.500 --> 07:57.210
+Next we would want to discuss water atomic operations in Java.
+
+07:57.410 --> 08:02.020
+SEE ADAMIC operation is basically something which happens or does not happen.
+
+08:02.020 --> 08:03.210
+There is no middle ground.
+
+08:03.340 --> 08:06.880
+So you cannot stop an atomic action in between.
+
+08:06.970 --> 08:10.230
+So it's either complete or incomplete.
+
+08:10.330 --> 08:14.440
+For example we have this operation called blissfulness.
+
+08:14.440 --> 08:15.050
+Right.
+
+08:15.220 --> 08:18.070
+The thing is I place this is not a simple operation.
+
+08:18.160 --> 08:24.450
+What we need to do is we need to read de-value off I then add 1 to it and then store it into it.
+
+08:24.520 --> 08:28.040
+So these are three different operations that need to be performed.
+
+08:28.120 --> 08:30.180
+Why not just do something simple as idlis.
+
+08:30.180 --> 08:39.580
+Plus what would happen if after I add 1 to the variable and before I started into some of that great
+
+08:39.610 --> 08:46.270
+axes the values and tries to do something with it so it can result in unexpected behavior.
+
+08:46.270 --> 08:49.600
+How do we really make this kind of stuff atomic.
+
+08:49.600 --> 08:56.650
+The reason why jawab provides these atomic operations so these atomic operations are usually performed
+
+08:56.650 --> 08:58.940
+as a single unit.
+
+08:59.020 --> 09:02.440
+So a good example for that is atomic in danger.
+
+09:02.440 --> 09:06.440
+If you look at the Java code there is a class called Atomic integer.
+
+09:06.520 --> 09:08.840
+So it in Java you take an atomic.
+
+09:08.850 --> 09:16.610
+So this particular thing as you can read here it says atoms can be used in applications like atomic
+
+09:16.640 --> 09:18.780
+only incremented counters.
+
+09:18.820 --> 09:23.350
+If you look at the method which I present in here the important method that we want to think about is
+
+09:23.620 --> 09:25.930
+increment and get decrement and get.
+
+09:25.930 --> 09:30.850
+You can see and get even add operation increment operation decrement operation.
+
+09:30.850 --> 09:37.570
+We have methods which we can do atomically when we use Anadan we can indeed we can be sure that either
+
+09:37.570 --> 09:40.480
+the operation is completely done or not at all.
+
+09:40.480 --> 09:42.760
+Next we would want to discuss about the blocking.
+
+09:42.760 --> 09:48.100
+Q So queue blocking Q is typically used in the producer consumer scenarios.
+
+09:48.100 --> 09:54.850
+So a lot of times a consumer wants to check if there is an element in the queue and would want to wait
+
+09:54.850 --> 09:57.620
+for an element to be present on the queue.
+
+09:57.680 --> 10:00.490
+I'm ok if I say a consumer click on a.
+
+10:01.070 --> 10:06.960
+Kuder get an element and I can wait for a long time for an element to be available because the consumer
+
+10:06.960 --> 10:10.090
+does not have anything to do until an element is available.
+
+10:10.290 --> 10:13.920
+So the blocking you queue is for that kind of scenario.
+
+10:14.040 --> 10:20.050
+We already discussed blocking in detail as part of the collections section.
+
+10:20.160 --> 10:20.730
+Go.
+
+10:20.790 --> 10:26.330
+Those are the important things that you need to know about the new current kind of collection.
+
+10:26.340 --> 10:28.060
+So we discuss about copyright.
+
+10:28.140 --> 10:35.610
+Comparing to app locks we discuss about also the Fail-Safe and fail fast raters other than discussing
+
+10:35.610 --> 10:39.800
+a little bit about atomic operations and blocking queue until the next step.
+
+10:39.900 --> 10:40.070
+I.

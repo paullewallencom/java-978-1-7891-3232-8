@@ -1,0 +1,373 @@
+WEBVTT
+
+00:00.940 --> 00:04.650
+In this step we will start discussing about multi-thread being.
+
+00:04.950 --> 00:10.070
+What is the need for threads in Jawa and we would look at a lot of topics related to threads.
+
+00:10.090 --> 00:11.880
+We look at how to create a thread.
+
+00:11.970 --> 00:13.260
+How can you run a thread.
+
+00:13.350 --> 00:15.970
+What are the different states that a thread can be in.
+
+00:15.970 --> 00:17.810
+We would talk about thread priority.
+
+00:17.820 --> 00:19.300
+Execute a service.
+
+00:19.410 --> 00:26.180
+We'll talk about callable and also we'll talk about synchronization of threats before we move into threat.
+
+00:26.190 --> 00:30.640
+There is something I would want to reiterate about generics.
+
+00:30.660 --> 00:33.190
+There are three examples in the work space.
+
+00:33.210 --> 00:35.410
+One is Gentex examples.
+
+00:35.520 --> 00:40.410
+The other one is generalistic generics example stew and gendered examples.
+
+00:40.830 --> 00:45.090
+There are a lot of generic examples in this specific thing as well.
+
+00:45.090 --> 00:51.030
+So you can try and spend some time with these generics examples so that you can understand generics
+
+00:51.120 --> 00:51.720
+much better.
+
+00:51.720 --> 00:57.210
+So I would really recommend to spend at least 15 minutes with these examples and read the comment which
+
+00:57.210 --> 01:01.100
+had their plan look at the examples and try and understand them perfectly.
+
+01:01.260 --> 01:05.850
+That would really give you a good background on the generics.
+
+01:05.850 --> 01:09.520
+Let's now get back to the topic at hand which is multi-threading.
+
+01:09.660 --> 01:12.910
+So what is the need for trade in Java.
+
+01:13.090 --> 01:15.840
+So what does it need for trade in general.
+
+01:15.840 --> 01:22.200
+If you look at your operating system your operating system basically has a number of processes running
+
+01:22.440 --> 01:23.110
+right.
+
+01:23.340 --> 01:27.590
+You have probably a Word document open you are playing a video in parallel.
+
+01:27.630 --> 01:30.290
+You might be listening to music in parallel.
+
+01:30.450 --> 01:36.660
+So your operating system should do multiple things in parallel to you have multiple processes running
+
+01:36.780 --> 01:42.420
+in parallel similar to that in say that jawab process instead of our program.
+
+01:42.600 --> 01:50.040
+You want to do multiple things in parallel so you want to follow multiple paths of execution multiple
+
+01:50.070 --> 01:50.820
+code.
+
+01:50.880 --> 01:57.080
+You want to execute in battle in those kind of situations you would want to go with the threat.
+
+01:57.270 --> 02:00.840
+Let's look at an example to understand why we need it.
+
+02:00.960 --> 02:03.860
+Let's say we are developing a cricket statistics application.
+
+02:03.870 --> 02:10.920
+You can kind of think of it like a bowling or baseball statistics application.
+
+02:10.920 --> 02:17.520
+So there are different departments in cricket bowling batting and fielding in baseball.
+
+02:17.520 --> 02:19.900
+You were I guess called bowling as preaching.
+
+02:20.100 --> 02:23.580
+I think batting remains the same and Fielding also remains the same.
+
+02:23.790 --> 02:29.820
+So let's say I'm developing a baseball application with the pitching batting and fielding statistics
+
+02:29.820 --> 02:34.820
+kind of a thing I would want to download the statistics and million.
+
+02:35.100 --> 02:38.200
+Let's say the current program Pachelbel is present.
+
+02:38.310 --> 02:40.340
+It's doing its sequinned sheerly let's say.
+
+02:40.350 --> 02:45.180
+Step one is to do the statistics for Boling and it takes 60 Minutes.
+
+02:45.180 --> 02:47.310
+Step two is batting 16 minutes.
+
+02:47.300 --> 02:53.520
+Step three of fielding and it takes 15 minutes to download and do all the statistics and step 4 is to
+
+02:53.520 --> 02:58.550
+margin analyze which is taking 25 minutes to do the whole thing.
+
+02:58.620 --> 03:00.710
+Step by step we are wait.
+
+03:00.750 --> 03:06.390
+We are taking a total of 160 minutes and let's say the requirement is that we should be able to run
+
+03:06.390 --> 03:08.820
+this program much much much faster.
+
+03:08.820 --> 03:15.090
+Let's say you want to run this program in half the time a thread can be one of the solutions to this
+
+03:15.090 --> 03:17.370
+problem thread.
+
+03:17.790 --> 03:22.740
+Because the downloading the bowling started districts independent of batting statistics and independent
+
+03:22.740 --> 03:30.000
+of me feelings and sticks what we can try and do is Kickoff these in Badler so you can run this thread
+
+03:30.000 --> 03:32.030
+in parallel with this thread.
+
+03:32.160 --> 03:33.980
+Step one step two step three.
+
+03:34.080 --> 03:41.520
+You can brand them in parallel and then once all these steps are completed then I can start Demerjian
+
+03:41.570 --> 03:43.380
+and Les's thread.
+
+03:43.380 --> 03:48.400
+This is typically how we do that Right-O example or download and start batting statistics.
+
+03:48.480 --> 03:52.510
+Download and store bowling districts filling statistics put in place.
+
+03:52.530 --> 03:53.780
+This is CVN.
+
+03:54.030 --> 03:56.200
+So they're just doing it the.
+
+03:56.460 --> 03:59.120
+We want to do that in parallel.
+
+03:59.130 --> 04:00.630
+How do we do that.
+
+04:00.710 --> 04:05.620
+So to be able to do that in Berlin we need to be able to create thread.
+
+04:05.730 --> 04:07.520
+So how do you create a thread.
+
+04:07.530 --> 04:10.700
+There are two ways we can create threads.
+
+04:10.860 --> 04:16.330
+One is extending the thread class so you would use inheritance and extend the thread class.
+
+04:16.380 --> 04:19.540
+The other one is by implementing an interface.
+
+04:19.680 --> 04:25.440
+So what we'll do is we'll create the battings statistics thread extending the thread class and we create
+
+04:25.440 --> 04:29.270
+the bowling statistics thread implementing the Runnable interface.
+
+04:29.400 --> 04:32.920
+So let's go into the have the batting statistics.
+
+04:32.930 --> 04:33.870
+It can be done.
+
+04:33.870 --> 04:39.110
+The basic way you can create that Baghdadi's thread is by extending the thread.
+
+04:39.210 --> 04:44.570
+So we extent thread class and we are actually doing the defining the run method.
+
+04:44.700 --> 04:47.600
+The most important thing is public wide.
+
+04:47.710 --> 04:53.610
+So this is the signature you need to adhere to and you define inside this what you want to do as part
+
+04:53.610 --> 04:55.560
+of the babbling sadistic state.
+
+04:55.590 --> 05:00.720
+So here I'm just having some dummy logic loop up 2000 and put in some.
+
+05:00.770 --> 05:05.950
+And so that's how you extend the thread class and you create a thread.
+
+05:05.970 --> 05:11.300
+So we are for the bagging sadistic thread we are extending it class and we're creating it.
+
+05:11.310 --> 05:14.840
+How do you create a threat by implementing the Runnable interface.
+
+05:14.850 --> 05:16.100
+You can look at it here.
+
+05:16.110 --> 05:22.420
+So it basically implements ramble and you would define the same precise method.
+
+05:22.420 --> 05:28.500
+So if you look at these two things batting statistics and Boling statistic that there isn't a huge difference
+
+05:28.550 --> 05:29.290
+in there.
+
+05:29.310 --> 05:31.030
+So it extends thread.
+
+05:31.200 --> 05:36.200
+This one implements are unknowable but it's precisely the same method definition for RAM.
+
+05:36.210 --> 05:38.470
+How do you run that thread in Java.
+
+05:38.670 --> 05:41.640
+Running a thread in Java is little different bears don't.
+
+05:41.640 --> 05:43.360
+Have you created the thread.
+
+05:43.500 --> 05:49.500
+So if I created the thread extending the thread class then I would run it differently.
+
+05:49.510 --> 05:53.160
+Compare to if I'm implementing the interface.
+
+05:53.160 --> 05:55.600
+Let's quickly look at it earlier.
+
+05:55.680 --> 05:58.080
+We saw that the banks had this thread.
+
+05:58.110 --> 05:59.190
+How did we create it.
+
+05:59.190 --> 06:04.860
+We created it by extending trade skills so we extended the thread class and created the batting statistics
+
+06:04.940 --> 06:05.300
+that.
+
+06:05.490 --> 06:11.670
+Anything that is extending the thread class the way you would run it is just create the instance so
+
+06:11.670 --> 06:19.140
+I'm creating babbling statistics thread is it you batting statistics thread and call Start method.
+
+06:19.140 --> 06:22.890
+The most important thing to remember is you are not calling the Line method.
+
+06:22.890 --> 06:25.460
+It's not the one method that you would need to call.
+
+06:25.500 --> 06:28.990
+You need to call the Start method.
+
+06:29.130 --> 06:34.260
+So here you are not invoking the run method you are calling the start method.
+
+06:34.320 --> 06:38.580
+Sure that this can create a new thread and run in a separate thing.
+
+06:38.610 --> 06:44.990
+The other kind of threads that we want to create are the ones created implementing this interface.
+
+06:45.000 --> 06:49.390
+We created the bowling statistics thread by implementing rentable.
+
+06:49.560 --> 06:57.840
+So the way you'd run bowling statistics thread is by creating a new thread and passing an instance of
+
+06:57.840 --> 07:00.290
+the bowling statistics thread.
+
+07:00.390 --> 07:06.030
+So we create a bowling statistics thread we cleared instance of the bowling thread statistics thread
+
+07:06.570 --> 07:13.180
+and reported to a new thread and then we can call the Start method on it.
+
+07:13.200 --> 07:18.900
+So earlier we directly called this documentary on the instance of the thread but when you implement
+
+07:18.900 --> 07:22.100
+the Runnable interface there is one more step in war.
+
+07:22.140 --> 07:28.740
+So you create an instance of the class which is implementing the RAM interface and you create an instance
+
+07:28.740 --> 07:32.000
+of the thread giving that instance to it.
+
+07:32.010 --> 07:36.370
+So it's a new thread off new Bohlig Stylistics the date.
+
+07:36.510 --> 07:39.910
+So what do you do and you can then call this document.
+
+07:40.080 --> 07:46.500
+So this is how you would start a thread when it's created using the Runnable interface when it's created.
+
+07:46.500 --> 07:49.230
+Implementing didn't interferes with your day.
+
+07:49.260 --> 07:50.130
+Two things.
+
+07:50.130 --> 07:52.170
+One is creating the batting statistics thread.
+
+07:52.170 --> 07:57.310
+The other one is creating the bowling statistics thread and we have nuff understood.
+
+07:57.320 --> 08:03.110
+Hope Kickoff those two threads in parallel so you just need to have discord and call the start.
+
+08:03.180 --> 08:10.260
+And here you create an instance of the class implementing the interface and use new thread and passed
+
+08:10.290 --> 08:11.900
+the instance we created.
+
+08:12.050 --> 08:14.840
+And on the thread object call this document.
+
+08:14.970 --> 08:19.030
+Now that we learn that we will now focus on the different states of a thread.

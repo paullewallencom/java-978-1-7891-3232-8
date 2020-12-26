@@ -1,0 +1,154 @@
+WEBVTT
+
+00:01.880 --> 00:06.980
+There are different terminologies which are used around the Java development and we don't want you hear
+
+00:06.980 --> 00:13.810
+things like JDK Jerry JVM What does this and what's the difference between each one of them.
+
+00:13.850 --> 00:16.270
+That's what we will discuss in this next question.
+
+00:16.280 --> 00:21.380
+When you talk about a job program what are the different things that you would do you'd want to compile
+
+00:21.380 --> 00:22.540
+Java programs.
+
+00:22.580 --> 00:23.290
+So that's one.
+
+00:23.300 --> 00:30.650
+So that basically you would want to be able to compile the Java code create the class files or create
+
+00:30.650 --> 00:32.660
+the jar files and things like that.
+
+00:32.660 --> 00:36.770
+The second thing you would want to typically do is to run programs.
+
+00:36.920 --> 00:43.080
+So you'd want to be able to take a Java class file and prime it or take a jar file and run it.
+
+00:43.100 --> 00:45.950
+So that's the second thing you would want to be able to do.
+
+00:45.950 --> 00:49.370
+Third thing you would typically do is alter debug programs right.
+
+00:49.370 --> 00:55.720
+You'd want to check why something is not working so you'd need if there's a performance problem you
+
+00:55.750 --> 00:58.740
+would want to check if what's going wrong.
+
+00:58.740 --> 01:05.120
+How much memory is consumed and things like that so that debugging problems or debugging programs those
+
+01:05.120 --> 01:09.380
+are the three things that you would typically want to do when you're talking about Java programmers
+
+01:09.530 --> 01:13.000
+think it from the perspective of the consumer.
+
+01:13.370 --> 01:17.140
+So there are two types of people who use the Java programs right.
+
+01:17.150 --> 01:20.420
+One is developers what the developers want to do.
+
+01:20.570 --> 01:27.950
+They would want to compile the code and run the code and the other kind of consumers are the users.
+
+01:27.950 --> 01:31.730
+So who wants to just use these Jowler programs.
+
+01:31.730 --> 01:38.550
+So these guys don't really care about running the I mean they don't care about compiling the programs.
+
+01:38.660 --> 01:45.740
+They only want to use the compiled thing so they want to be able to run the Java programs that have
+
+01:45.980 --> 01:48.160
+to play a game or something of that kind.
+
+01:48.200 --> 01:57.480
+But why Jawa has two different things that are typically used JDK and Jerry JDK is the job of devlopment
+
+01:57.510 --> 02:00.730
+kit is the jargon term and we adornment.
+
+02:00.770 --> 02:08.010
+So if you want to run any compiled Java code then all that you would need is the Jedi.
+
+02:08.030 --> 02:14.360
+If my friend doesn't have a game and he gives me a jar file to run that all that I would need is the
+
+02:14.360 --> 02:19.280
+jobber on time and we are argument because I don't want to compile and things like that I don't want
+
+02:19.280 --> 02:19.920
+to debug.
+
+02:20.060 --> 02:25.990
+But if I'm interested in developing our programs then I need the JDK.
+
+02:26.030 --> 02:33.220
+So basically you can think of Jedi as the are meant to run Java programs.
+
+02:33.330 --> 02:38.810
+So Jedi's typically consisting of at the base level or JVM Java Virtual Machine.
+
+02:38.870 --> 02:45.600
+As we discussed earlier Joel machine kind words the bytecode into executable code.
+
+02:45.860 --> 02:48.680
+So that what the JVM does along with it.
+
+02:48.710 --> 02:51.730
+The Jedi contains a list of libraries.
+
+02:51.740 --> 03:00.100
+Java comes up with a list of different library classes you have a lot of classes in our class.
+
+03:00.110 --> 03:06.200
+You have a lot of collections and a lot of other classes which are pleasant in Java.
+
+03:06.380 --> 03:10.360
+So you need all of them to be able to run the Java programs.
+
+03:10.430 --> 03:18.650
+So Jerry would contain basically the JVM plus all the libraries which are associated with Dauer JDK
+
+03:18.890 --> 03:20.580
+in addition to DGT.
+
+03:20.630 --> 03:28.280
+It contains the tools that developers would need to adjudicate Jowers devlopment kit and JDK would contain
+
+03:28.580 --> 03:30.560
+things like the Java Sea.
+
+03:30.560 --> 03:34.550
+That's basically to compile your code and you have your jar thing.
+
+03:34.570 --> 03:40.640
+So you want to create a jar file so you use the jar and you have different debugging tools like performant
+
+03:40.640 --> 03:42.250
+things and things like that.
+
+03:42.440 --> 03:46.340
+So that's basically the get basically to run our programs.
+
+03:46.460 --> 03:51.130
+You need Gerry and to develop Jallow programs you need JDK.
+
+03:51.200 --> 03:54.230
+Each one of these is a superset of the other.
+
+03:54.230 --> 03:59.140
+So Geddie contains JVM all the gifts contain Jerry.
+
+03:59.180 --> 04:03.800
+So that's basically JDK was this JVM was very.

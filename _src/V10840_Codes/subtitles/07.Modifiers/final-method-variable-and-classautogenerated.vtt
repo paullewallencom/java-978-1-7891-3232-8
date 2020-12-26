@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00.330 --> 00:01.070
+Welcome back.
+
+00:01.260 --> 00:05.360
+Let's now move our discussion into non-access modify it.
+
+00:05.400 --> 00:09.090
+The first one which you discuss is the final modified.
+
+00:09.180 --> 00:12.990
+So let's start with using Final modifier on a class.
+
+00:13.020 --> 00:18.690
+If you look at this specific class I've put a keyword qualifying on the specific class for any part
+
+00:18.780 --> 00:25.160
+of key word final on a class then it means that extending that class is not allowed.
+
+00:25.170 --> 00:30.090
+So I cannot create a subclass for this specific class.
+
+00:30.210 --> 00:35.780
+So if I'm trying to create an extending final class extending final class I would get a compiler error.
+
+00:35.910 --> 00:38.790
+Why should I create a final class.
+
+00:38.790 --> 00:43.500
+Why should I need to put you in creating subclasses for my class.
+
+00:43.530 --> 00:48.120
+If you look at the Java API the String class is final.
+
+00:48.150 --> 00:51.600
+Also we can take a look at any of the proper classes.
+
+00:51.750 --> 00:55.180
+Let's just take integer and see integer class.
+
+00:55.290 --> 00:57.320
+That also is fine.
+
+00:57.510 --> 01:02.890
+The reason is because this integer class the String class at all immutable.
+
+01:03.120 --> 01:08.820
+And you don't want a subclass to break this constraint of immutability.
+
+01:08.910 --> 01:15.180
+Also the String class is used in things like hash called calculations and things like that.
+
+01:15.600 --> 01:23.550
+And if I love this to be extended and somebody modifies the implementations of hash code or something
+
+01:23.550 --> 01:24.330
+of that kind.
+
+01:24.360 --> 01:27.270
+It might result in security related issues.
+
+01:27.330 --> 01:36.270
+So that's the reason why it's Jawa Mock's Disick string class as a final class an integer class as final
+
+01:36.270 --> 01:36.790
+as well.
+
+01:36.810 --> 01:43.140
+So if there are specific constraints on a class and if you are varry that they would be broken by subclasses
+
+01:43.440 --> 01:48.600
+then you would mark them as final defining modifier can also be used on that.
+
+01:49.320 --> 01:51.570
+The difference indicates of a method.
+
+01:51.570 --> 01:55.150
+Is that the final method cannot be overridden.
+
+01:55.200 --> 02:01.980
+That basically means the final method is the final definition for that particular method.
+
+02:02.040 --> 02:06.410
+You cannot override that method in a subclass.
+
+02:06.550 --> 02:13.200
+So if you are building some logic which you want all the subclasses to adhere to you don't want any
+
+02:13.200 --> 02:16.400
+of the subclasses to break that specific logic.
+
+02:16.480 --> 02:19.490
+You doing the things in that particular method.
+
+02:19.680 --> 02:22.830
+You want that to be followed in all subclasses.
+
+02:22.840 --> 02:28.980
+Then what you'd need to do is to model that particular method as finden once a marker method is final
+
+02:29.370 --> 02:31.620
+then the subclasses cannot override it.
+
+02:31.680 --> 02:36.030
+So they have to depend on the logic inside the superclass.
+
+02:36.120 --> 02:41.870
+Well dimethyl is my desk find it so that they use a final modifier on a method.
+
+02:41.890 --> 02:44.060
+Can we might be able to find the last one.
+
+02:44.140 --> 02:50.480
+Yes you can mark variable's as final ones you mark a variable as final.
+
+02:50.730 --> 02:53.450
+Then you cannot change the value of it.
+
+02:53.450 --> 03:00.020
+Typically we mark where they set and we mark all the constant variables as final.
+
+03:00.030 --> 03:03.190
+For example if you look at the math Jawa long math.
+
+03:03.370 --> 03:10.190
+There's a final way the call by the value of pi is not going to change so that's constants.
+
+03:10.290 --> 03:17.130
+There we would mark it as fine that finally can also be used on humans.
+
+03:17.130 --> 03:25.260
+So when I finally learn an argument then the value of that particular argument cannot be modified.
+
+03:25.260 --> 03:31.500
+So you can look at the example below where if you remove this line of code in here then this would result
+
+03:31.500 --> 03:37.140
+in a compilation error because that's a final argument you will discuss about different things that
+
+03:37.140 --> 03:42.020
+you can Margus finally starting from class method variables and arguments.

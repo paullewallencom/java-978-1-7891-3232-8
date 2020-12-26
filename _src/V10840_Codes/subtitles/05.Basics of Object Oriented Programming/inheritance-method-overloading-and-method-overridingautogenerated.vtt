@@ -1,0 +1,436 @@
+WEBVTT
+
+00:02.010 --> 00:08.720
+Welcome to the section on inheritance in this section we will discuss about inheritance with a few examples.
+
+00:08.720 --> 00:13.380
+We would look at what this method overloading and ultimate are all writing.
+
+00:13.440 --> 00:18.600
+And also you would discuss a little bit about different with able to talk whether a superclass reference
+
+00:18.600 --> 00:21.960
+where people can call an object of the subclass.
+
+00:22.260 --> 00:26.310
+And we would also discuss about multiple hitter's inheritance in Java.
+
+00:26.310 --> 00:32.160
+So those are the topics that we would discuss as part of this particular section played with inheritance
+
+00:32.340 --> 00:34.800
+inheritance is a very simple concept.
+
+00:35.010 --> 00:43.140
+So basically I have a class called actor which has an act method we call the lead character as a hero
+
+00:43.200 --> 00:44.760
+in Indian movies.
+
+00:44.760 --> 00:48.820
+Typically actor for example can act.
+
+00:49.020 --> 00:51.220
+So he would be able to act really well.
+
+00:51.540 --> 01:00.490
+What we are doing here is we are extending the actor using extents actors so public class hero extends
+
+01:00.960 --> 01:02.420
+as dirt.
+
+01:02.490 --> 01:06.460
+So that's how we extend the acting class and create a new class called Hero.
+
+01:06.630 --> 01:12.580
+And we're adding new functionality to the hero class that he would be able to fight.
+
+01:12.600 --> 01:18.290
+So now a hero would be able to both act as well as fight.
+
+01:18.300 --> 01:24.530
+So he would inherit the act from the actor and he would be able to do the fight for his implementation.
+
+01:24.540 --> 01:30.900
+You can look at it down here so I can create a hero hero is a new hero and I can do hero not act and
+
+01:30.900 --> 01:32.490
+hero not fight as well.
+
+01:32.490 --> 01:39.800
+So he nailed the method from the acting class and he added his own Stoff fight.
+
+01:39.810 --> 01:43.550
+So he does not act and he'd rather fight without a problem.
+
+01:43.560 --> 01:51.390
+And I'm extending actor game and create a new one called comedy and he performs comedy so you can see
+
+01:51.390 --> 01:59.420
+that the comedy has a new feature called new method or new behavior called BAHFEN comedy.
+
+01:59.460 --> 02:06.180
+The reason why we use inheritance in Jawa for that matter in any object oriented programming language
+
+02:06.450 --> 02:12.410
+is kind of kind of finding common ground between a number of classes.
+
+02:12.420 --> 02:20.220
+If you look at Jawa you have aerialist which is actually extending abstract list and which is extending
+
+02:20.220 --> 02:25.450
+abstract collection all the functionality that is common to all all the collection time and that's basically
+
+02:25.460 --> 02:31.310
+a list and the set are inside abstract collection if you look at the abstract collection as it does
+
+02:31.400 --> 02:38.690
+basic things so it has contained method to definition and things like that it contains the basic definitions.
+
+02:38.700 --> 02:44.340
+If you look at the list it can't abstract list this would contain the common functionality for all the
+
+02:44.340 --> 02:50.330
+list classes and any list contains this week implementation with every.
+
+02:50.490 --> 02:57.530
+So if you look at the Java internally so aerialist is a good example of where we use inheritance to
+
+02:57.790 --> 02:59.490
+the extent abstractly list.
+
+02:59.550 --> 03:04.830
+And if you go to the abstract list abstract list in its extent abstract collection we would discover
+
+03:04.830 --> 03:10.170
+what abstract classes a little later but for now you're only reusing some of the functionality from
+
+03:10.170 --> 03:16.770
+abstract list in abstract collection and from abstract collection at least this is a good example of
+
+03:16.920 --> 03:19.230
+inheritance in Java library.
+
+03:19.260 --> 03:25.920
+I mean in the Java API itself again or even on the map side there's a hierarchy present so you have
+
+03:25.920 --> 03:32.160
+a hash map which is extending abstract maps or abstract map has a common functionality and the hash
+
+03:32.160 --> 03:36.150
+map has all the hash map specific functionality.
+
+03:36.150 --> 03:39.690
+So this is another example of inheritance in Java.
+
+03:39.780 --> 03:45.270
+As you can see in this particular hierarchy the abstract map hierarchies are really complex so you have
+
+03:45.270 --> 03:51.210
+a number of classes implementing and extending the abstract class and using the common functionality
+
+03:51.210 --> 03:52.990
+which is defined in an abstract class.
+
+03:53.220 --> 04:00.810
+So you have a hash map you have I mean there are classes even extending hash map linked hash map and
+
+04:00.810 --> 04:01.940
+things like that.
+
+04:01.950 --> 04:08.710
+So jelly uses inheritance extensively to extend functionality of a particular class C hash map extents
+
+04:09.120 --> 04:16.440
+abstract map in this relationship abstract map is a superclass and hash map is a subclass subclass extends
+
+04:16.770 --> 04:17.900
+superclass.
+
+04:17.910 --> 04:23.160
+Similarly if you look at the linked hash map this extends hash map.
+
+04:23.310 --> 04:28.470
+So what do functionality which is then in the superclass that is the hash map will be inherited by the
+
+04:28.470 --> 04:33.840
+linked hash map and linked hash map can extend that functionality as it sees fit.
+
+04:33.840 --> 04:37.070
+Next let's let's discuss about method overloading.
+
+04:37.200 --> 04:45.170
+What is method overloading method overloading is basically under the method with the same name but different.
+
+04:45.310 --> 04:50.520
+Bob ammeters there are two ways you can do overloading one way you can do it is in the same place.
+
+04:50.520 --> 04:56.550
+So for example this class fool has a do it taking integer number as a parameter as well as a string
+
+04:56.550 --> 04:57.630
+string as a parameter.
+
+04:57.630 --> 05:03.690
+So there is overloading because this is basically the same method it with different parameters it's
+
+05:03.690 --> 05:09.180
+exactly the same signature public or public ward but different arguments defined here.
+
+05:09.360 --> 05:10.380
+So that's one example.
+
+05:10.380 --> 05:14.790
+The other example is when you overload something from a subclass.
+
+05:14.820 --> 05:19.320
+So what I'm doing is class bar extent foo and I'm adding another one.
+
+05:19.310 --> 05:21.440
+Do it float number.
+
+05:21.720 --> 05:25.590
+So in addition to the existing do it with number and string.
+
+05:25.740 --> 05:29.070
+What we're doing is we are adding in a do it with number.
+
+05:29.070 --> 05:35.910
+This is basically overloading from a subclass so Bart is a subclass of fool and I am extending it to
+
+05:35.970 --> 05:42.740
+add a new over loaded method called it accepting an argument flawed.
+
+05:42.930 --> 05:50.560
+So autoloading is extensively used in the Java API is if you look at the constrictors of a hash map
+
+05:50.570 --> 05:56.520
+for example if you bring up the hash map class and you look at the constructors for hash killer hash
+
+05:56.520 --> 05:59.390
+map you would see there would be a number of contributors.
+
+05:59.400 --> 06:03.780
+There's a default constructor which would typically use the result of constructor which accepts that
+
+06:03.870 --> 06:09.660
+in the initial capacity basically defining how many elements you are expecting to be there in the hash
+
+06:09.660 --> 06:12.250
+map and also load factor.
+
+06:12.360 --> 06:13.440
+This is one constructor.
+
+06:13.440 --> 06:14.550
+This is not a constructor.
+
+06:14.550 --> 06:18.360
+This is another constructor but different arguments.
+
+06:18.360 --> 06:19.920
+So this defines two arguments.
+
+06:19.920 --> 06:26.910
+This is zero arguments into one argument and even if you look at the base collections you have these
+
+06:27.300 --> 06:31.900
+methods called add oil and add or let a specific index.
+
+06:31.920 --> 06:38.950
+These are all methods which are defined as overriding inside the collection as well.
+
+06:39.150 --> 06:43.030
+So basically those are the examples for overloading in Java.
+
+06:43.200 --> 06:45.910
+Let's quickly move on to metal or writing.
+
+06:46.080 --> 06:53.290
+So what you are writing is basically all writing a code inside the superclass.
+
+06:53.520 --> 06:59.100
+So basically I would create a method in the subclass which has exactly the same signature including
+
+06:59.100 --> 07:00.690
+the arguments.
+
+07:00.720 --> 07:06.920
+So if you look at this bar here it has exactly the same signature including argument.
+
+07:06.920 --> 07:08.970
+This method does not have any arguments.
+
+07:08.970 --> 07:10.880
+This also does not have any argument.
+
+07:11.160 --> 07:13.730
+So I am all for writing the method.
+
+07:13.740 --> 07:18.290
+So we are not overloading it or loading it is when this had a pattern or a date has a different part
+
+07:18.320 --> 07:19.340
+meter or something.
+
+07:19.380 --> 07:24.350
+All writing is when you have the same signature including the paramita.
+
+07:24.450 --> 07:30.150
+So what would happen is when they create an instance of that and I call the block method then it would
+
+07:30.330 --> 07:37.560
+execute the implementation which is present inside the character so it will override the implementation
+
+07:37.560 --> 07:39.960
+which is present in the animal class.
+
+07:40.060 --> 07:44.840
+You would see metal overweighting being extensively used in Java API as well.
+
+07:45.060 --> 07:51.240
+For example if you look at the hash map implementation there is a definition for public in size the
+
+07:51.240 --> 07:57.570
+size metal has a definition which or right whatever it is defined in an abstract map hash map extant
+
+07:57.570 --> 07:58.550
+abstract map.
+
+07:58.800 --> 08:05.130
+And there's a default definition for public incise in the abstract map which is all we're in by hash
+
+08:05.130 --> 08:11.270
+map and similar to that in collections you'd see in any number of examples of or writing.
+
+08:11.490 --> 08:17.670
+So to summarize all writing is when you have exactly the same signature inside including the parameters
+
+08:18.150 --> 08:22.590
+overloading is when you have the same name for the method in the same region.
+
+08:22.830 --> 08:27.790
+But the arguments are different the type of the arguments are different.
+
+08:27.810 --> 08:31.590
+You cannot overload by just giving it a different parameter name.
+
+08:31.600 --> 08:33.080
+No that's not possible.
+
+08:33.180 --> 08:36.570
+The type of the parameter should be really different.
+
+08:36.630 --> 08:40.150
+So that's about overloading and or writing.
+
+08:40.230 --> 08:45.210
+The next thing we want to look at is whether a superclass reference where you can hold an object of
+
+08:45.210 --> 08:46.470
+the subclass.
+
+08:46.470 --> 08:50.010
+So over here you you look at Object object.
+
+08:50.010 --> 08:52.380
+This is saying a new he to it.
+
+08:52.380 --> 08:53.280
+Is it allowed.
+
+08:53.490 --> 08:58.390
+Yes it is allowed because object is the superclass of all Java classes.
+
+08:58.410 --> 09:03.810
+And I can hold a reference to the subclass hero is a subclass of object right.
+
+09:03.840 --> 09:08.390
+So object can hold the reference to zero.
+
+09:08.520 --> 09:15.390
+So similar to that we are creating an actor here extending actor and a comedian extending actor.
+
+09:15.600 --> 09:22.620
+And you can see here that in a reference variable of type actor I can hold a comedian.
+
+09:22.890 --> 09:24.520
+I can hold a hero.
+
+09:24.780 --> 09:30.930
+However through this particular act of reference you can only exude the methods which are defined in
+
+09:30.930 --> 09:31.750
+actor.
+
+09:32.030 --> 09:37.520
+Or you can only exude the methods which are inside the actor plus you not be able to extend.
+
+09:37.530 --> 09:42.550
+I mean you will not be able to use the method which represented the hero or the comedy in classes.
+
+09:42.570 --> 09:48.000
+The next thing you want to talk about is multiple inheritance multiple inheritance can result in complex
+
+09:48.000 --> 09:53.370
+programs and that's why Java was not to support multiple inheritance.
+
+09:53.370 --> 09:54.780
+If you look at declasse.
+
+09:54.960 --> 10:00.420
+I mean if you implement if you look at the popular object oriented programming language before Java
+
+10:00.420 --> 10:09.800
+C++ support multiple inheritance you can have a class dog which extant animal and pet but not in Java.
+
+10:09.840 --> 10:17.160
+In Java you can create an inheritance chain to bed is extending animal dogs extending pets a dog existence
+
+10:17.210 --> 10:23.580
+bed but extent animals that is ok but a dog cannot extend to classes animal pet at the same time.
+
+10:23.580 --> 10:25.320
+That's a compilation error.
+
+10:25.470 --> 10:32.950
+So in Java multiple inheritance is not allowed but the inheritance hierarchy is allowed didn't inherit
+
+10:33.000 --> 10:40.710
+entirely deplaned in Jawa earlier where we look at abstract collection abstract list and aerialist similar
+
+10:40.710 --> 10:41.030
+to that.
+
+10:41.040 --> 10:42.770
+Oh here we are seeing dog.
+
+10:43.100 --> 10:43.800
+Animal.
+
+10:43.950 --> 10:45.350
+That's an inheritance chain.
+
+10:45.360 --> 10:49.790
+You cannot have the same class extending to different classes at the same time.
+
+10:49.890 --> 10:54.900
+That's not allowed in Joe until we looked at a lot of things related to inheritance.
+
+10:54.900 --> 11:01.140
+All the things that we have discussed in this video are kind of the basics of inheritance.
+
+11:01.230 --> 11:08.040
+The real crux of inheritance will be when we talk about advanced Object-Oriented concepts in the future
+
+11:08.040 --> 11:14.160
+vidio is some kind of dig this as a reference for our diabetic reference for inheritance.
+
+11:14.160 --> 11:19.290
+And there are a lot of stuff on inheritance coming up in the subsequent years as well until the next
+
+11:19.290 --> 11:19.730
+review.
+
+11:19.830 --> 11:20.200
+But my.

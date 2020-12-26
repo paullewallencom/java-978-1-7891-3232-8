@@ -1,0 +1,460 @@
+WEBVTT
+
+00:00.930 --> 00:07.120
+Now that we saw how to throw an exception and we saw how to throw around time and normal exception there's
+
+00:07.140 --> 00:10.630
+an option even to create custom exceptions.
+
+00:10.650 --> 00:16.800
+So how do we throw a custom exception for example in this scenario before we would ideally want to throw
+
+00:16.800 --> 00:19.550
+an exception saying currencies do not match exception.
+
+00:19.680 --> 00:21.760
+So how do I do that.
+
+00:21.780 --> 00:29.930
+So the way you can create some exception in the way you create a custom exception is in two ways.
+
+00:29.950 --> 00:37.490
+Either you can extend exception then you're creating check the exception or the other option.
+
+00:37.500 --> 00:40.530
+You would see a little below is to extend the runtime exception.
+
+00:40.530 --> 00:44.340
+Then you are creating the unchecked exception here.
+
+00:44.370 --> 00:49.510
+If you see I'm creating a check current is not major exception extending exception so this is the check
+
+00:49.610 --> 00:50.870
+the exception.
+
+00:50.880 --> 00:56.100
+So what happens when I'm throwing a check the exception then the method which is throwing that check
+
+00:56.130 --> 01:00.710
+the exception has to declare that I'm throwing occurrences do not match exception.
+
+01:00.930 --> 01:07.170
+So I have to mandate really declare that I'm throwing an exception and also the calling methods should
+
+01:07.200 --> 01:10.540
+either handle it or should throw it out.
+
+01:10.560 --> 01:13.590
+So either men have the option to set rules.
+
+01:13.820 --> 01:20.240
+Current is not baje exception or it can handle that and kind of printed to these factories or ideally
+
+01:20.250 --> 01:23.100
+I should be using some lager or something of that kind.
+
+01:23.100 --> 01:27.660
+The other option we have to just create a custom exception is to extend one exception.
+
+01:27.660 --> 01:32.670
+The thing about runtime exception is the fact that we are now creating uncheck the exception and when
+
+01:32.670 --> 01:36.950
+we create an unchecked exception we don't really need to handle it.
+
+01:36.960 --> 01:44.990
+So if nothing if you see the code then you don't need to really define that it is trying to make characters
+
+01:45.000 --> 01:50.940
+do not match the exception and even the main method does not need to handle it me go in and check the
+
+01:50.940 --> 01:51.760
+exception.
+
+01:51.930 --> 02:00.060
+So if so it's basically we are saying that the calling method does not mandate really need to handle
+
+02:00.060 --> 02:00.390
+it.
+
+02:00.480 --> 02:03.870
+But if Maine wants to go ahead and try and handle it it can do that.
+
+02:03.870 --> 02:08.670
+I mean Maine always have has the option of doing a try catch around this and catching this exception
+
+02:09.060 --> 02:11.020
+but it is not mandatory.
+
+02:11.100 --> 02:13.850
+Let's now move on to a few code examples.
+
+02:13.860 --> 02:15.620
+What is the output of program below.
+
+02:15.720 --> 02:21.930
+So Elmont rather not an amount and catching an exception and occurrences do not match the exception.
+
+02:21.930 --> 02:24.790
+The answer is this would result in a compilation error.
+
+02:25.080 --> 02:32.580
+The order of the exception should be from specific to generic So the first exceptions in the first catches
+
+02:32.580 --> 02:38.150
+should be all specific and the later ones should be more generic.
+
+02:38.340 --> 02:42.380
+So here if you look at it currently is not magic ception is a specific exception.
+
+02:42.570 --> 02:44.580
+Exception is generally every exception.
+
+02:44.580 --> 02:50.490
+So Ideally this should be below the catch for currencies do not match exception.
+
+02:50.490 --> 02:56.030
+The next question is how do you handle multiple exception types with same exception handling block.
+
+02:56.580 --> 02:59.920
+If I want to handle I-You exception and Estulin exception the same way.
+
+02:59.940 --> 03:01.370
+How do I do that.
+
+03:01.380 --> 03:07.080
+So this was not really possible in earlier versions of Java in the oceans of Jabo what we used to do
+
+03:07.080 --> 03:16.720
+is be used to extract it to a method and call the method from catch blocks Nuff with Java 7 and beyond.
+
+03:16.830 --> 03:21.500
+It's posible So the way we do that is using a try catch with multiple exception indexes.
+
+03:21.540 --> 03:27.390
+Are you exception or obscure the exception to IO exception or skill exception.
+
+03:27.390 --> 03:28.680
+This block would handle it.
+
+03:28.680 --> 03:31.580
+So this block would handle the logic for that.
+
+03:31.590 --> 03:38.980
+This is also described is also a recent entry into Java with Java SRN what it enables us to do is we'll
+
+03:39.210 --> 03:40.400
+keep it typically right.
+
+03:40.400 --> 03:44.760
+Try the opening of the stores and then indefinably close to it.
+
+03:44.760 --> 03:48.120
+So it's kind of logic which we keep repeating everywhere.
+
+03:48.300 --> 03:54.390
+So jawab came up with this thing called Try with the resources so inside the right I'm putting the resource
+
+03:54.390 --> 03:59.430
+which I would want to hand which I would want to try catch to handle.
+
+03:59.640 --> 04:03.340
+So what that will do is cry and creating the resource here.
+
+04:03.540 --> 04:10.380
+If an exception is thrown the close connection method on this is automatically called The way this is
+
+04:10.380 --> 04:13.920
+done is by using in the fiscal or plausible.
+
+04:14.090 --> 04:20.550
+So anycast which I would want to use it in that try with the thought the buffer reader for example here
+
+04:20.790 --> 04:23.510
+implement an interface called auto Clozaril.
+
+04:23.700 --> 04:29.640
+So what happens is if an exception is thrown then Jawan knows that there's a close method which is defined
+
+04:29.640 --> 04:30.420
+on this.
+
+04:30.420 --> 04:39.320
+So giallo would directly invoke be not close to close the connection or to close the buffered reader
+
+04:39.360 --> 04:41.020
+in this particular instance.
+
+04:41.220 --> 04:47.280
+So this is great with the resources that some of these private sources helps us in writing simpler code
+
+04:47.280 --> 04:53.520
+because I don't need to have a Finally and call the closed in there and have lines before to open the
+
+04:53.800 --> 04:55.240
+details and things like that.
+
+04:55.440 --> 05:02.590
+And David try with resources it's really implemented is by making classes which we want to use and try
+
+05:02.590 --> 05:09.190
+with resources to extend or interface called Arto plausible and they also implement the clueless method
+
+05:09.460 --> 05:15.490
+and they define what needs to be closed the close method would contain the logic.
+
+05:15.670 --> 05:18.100
+If there is an exception order is not an exception.
+
+05:18.100 --> 05:20.260
+How do you close down the buffer.
+
+05:20.340 --> 05:20.890
+Um no.
+
+05:20.920 --> 05:24.440
+We looked at a lot of things related to exception handling.
+
+05:24.730 --> 05:28.370
+What are the exceptionally handling best practices.
+
+05:28.600 --> 05:34.060
+If you look at some of the methods that we created earlier because of the space constraints we were
+
+05:34.060 --> 05:37.490
+not really falling all the exception handling good practices.
+
+05:37.630 --> 05:43.030
+Some of the places we were hiding the exceptions we were not throwing them out or we were not really
+
+05:43.030 --> 05:44.760
+logging them completely.
+
+05:44.810 --> 05:53.060
+So yeah here are a list of best practices that you would need to always follow in your real world projects.
+
+05:53.060 --> 05:58.540
+So the first one is never the exceptions that's sin.
+
+05:58.660 --> 06:05.350
+So hiding exceptions is a big sin because if you're hiding exceptions then if something goes wrong then
+
+06:05.350 --> 06:07.430
+nobody knows what is going wrong.
+
+06:07.570 --> 06:15.160
+You have to definitely log the exception or stored somewhere where you can look at and find out what
+
+06:15.160 --> 06:17.040
+the exception was thrown.
+
+06:17.110 --> 06:23.260
+The second thing is do not do that to a flow control exception handling is just in case of an exception
+
+06:23.770 --> 06:29.970
+do not use exception handling to control flow in any program exception handling.
+
+06:29.980 --> 06:31.420
+It's not a free thing.
+
+06:31.420 --> 06:35.980
+I mean it definitely has a lot of significant performance impact.
+
+06:35.980 --> 06:42.660
+Also when you write code for exception handling always think about the user and this happened.
+
+06:42.690 --> 06:48.010
+So think OK if this exception happens what does the user want to see.
+
+06:48.010 --> 06:50.590
+So what what can you do about it.
+
+06:50.590 --> 06:54.490
+What information can I give it to the user of the application.
+
+06:54.520 --> 06:59.720
+The second person you always need to think about when or where you are handling exceptions is the support.
+
+07:00.040 --> 07:05.850
+What information does the support that would need to be able to handle this exception.
+
+07:05.870 --> 07:08.160
+Let's say this exception occurs in production.
+
+07:08.320 --> 07:15.560
+What information do I need for me to be able to easily identify the root cause of this exception.
+
+07:15.580 --> 07:19.080
+I can identify the scenario under which this exception is occurring.
+
+07:19.240 --> 07:25.090
+So think about that and make sure that you're giving enough information that would help the user as
+
+07:25.090 --> 07:30.160
+well as the support or put the information that user needs will be different from that of the super
+
+07:30.160 --> 07:30.770
+super.
+
+07:30.860 --> 07:31.530
+Right.
+
+07:31.560 --> 07:36.490
+A user will not be able to understand anything about Diest daiquiris or anything all that he cares about
+
+07:36.520 --> 07:37.360
+is high level.
+
+07:37.480 --> 07:42.120
+So what can who can help him with resolving this error.
+
+07:42.280 --> 07:46.720
+Upper level Apple is the one who would really be concerned about the details.
+
+07:46.780 --> 07:51.400
+Also there are security things you don't want to show the exception trace to the user because there
+
+07:51.400 --> 07:56.380
+might be some security information which is in there which you don't want to be issued to the user.
+
+07:56.380 --> 07:58.780
+Also think about the calling method.
+
+07:58.810 --> 08:04.220
+So this is when you try and make the decision whether you want to create a checked exception or unchecked
+
+08:04.240 --> 08:05.140
+exception.
+
+08:05.180 --> 08:09.280
+So I think the calling method do something about this exception.
+
+08:09.280 --> 08:15.130
+I mean can it handle the exception and do something good about it if it if it cannot do anything about
+
+08:15.130 --> 08:18.400
+it then it's better to create an exception.
+
+08:18.580 --> 08:25.780
+If you look at being Look it chooses to make most of the exceptions most of the JTB exceptions as unchecked
+
+08:25.780 --> 08:31.840
+exceptions because there isn't nothing you'd be able to do about a JEDEC exception if the exception
+
+08:31.840 --> 08:38.260
+is thrown then all that we can do is throw a sample message to the user saying OK some was it can happen
+
+08:38.620 --> 08:43.870
+and then you'd need the support Dolapo to go and look at what the cause of the exception is.
+
+08:43.870 --> 08:48.770
+There is no way of calling that that will be able to see the exception and take a preventive action.
+
+08:48.940 --> 08:54.260
+So in those kind of situations it's better to use an unchecked exception then check the exception.
+
+08:54.550 --> 08:59.020
+So I always think about whether you want to create a checked exception unchecked exception where they
+
+08:59.020 --> 09:03.070
+wanted the calling method not that you are throwing an exception in the calling method.
+
+09:03.070 --> 09:06.030
+Do something about that exception and these kind of things.
+
+09:06.070 --> 09:10.470
+And the most important best practice is have global exception handling.
+
+09:10.570 --> 09:17.080
+If you have multiple layers Let's have a viable or a business a day earlier and a lot of things like
+
+09:17.080 --> 09:18.260
+this.
+
+09:18.490 --> 09:26.110
+If they delay is having an exception don't have logic to handle that exception in they don't have and
+
+09:26.530 --> 09:27.980
+business layer and Webley.
+
+09:28.000 --> 09:34.120
+You don't need to have it everywhere because the web is the part which starts out with the request.
+
+09:34.120 --> 09:40.000
+You can have a global exception handling a deep web level and if there is any exception in the chain
+
+09:40.150 --> 09:42.220
+then the web level can handle it.
+
+09:42.280 --> 09:44.850
+And your problem is to the user.
+
+09:44.850 --> 09:50.860
+I mean this is of course except for the scenarios where there's a business logic which is failing and
+
+09:50.860 --> 09:56.200
+you want to write some business logic to handle that exception or counter that exception in that kind
+
+09:56.200 --> 09:57.010
+of scenario.
+
+09:57.160 --> 09:58.340
+Then you can read Business Law.
+
+09:58.390 --> 10:00.850
+I mean exception handling logic in this space it.
+
+10:01.090 --> 10:06.670
+But in all other kind of scenarios where all that I want to do is show a generic message the user don't
+
+10:06.670 --> 10:12.340
+have your exception handling code pleasant all through the cord had just some global exception handling
+
+10:12.340 --> 10:17.260
+mechanism to handle that and leave the rest of the code free of exception handling.
+
+10:17.270 --> 10:17.720
+OK.
+
+10:17.860 --> 10:18.630
+There you go.
+
+10:18.640 --> 10:21.030
+That's a lot of discussion about exception handling.
+
+10:21.130 --> 10:28.090
+We started with try catch finally we moved into the hierarchy of exception related classes.
+
+10:28.150 --> 10:33.400
+We looked at how to create custom exceptions and now we were discussing about the exception handling
+
+10:33.400 --> 10:34.550
+best practices.
+
+10:34.720 --> 10:41.470
+So that's a lot of ground that we covered in this specific in the specifics section.
+
+10:41.470 --> 10:46.300
+If you look at the workspace there are two examples exception handling example one and exception handling
+
+10:46.300 --> 10:46.870
+example.
+
+10:46.880 --> 10:55.390
+Do you have a lot of code in here which explains how you'd want to handle exceptions and how the exception
+
+10:55.390 --> 10:58.450
+handling hierarchy and things like that.
+
+10:58.510 --> 11:05.410
+I would really recommend you to do this as an exercise just good this piece of code and try and understand
+
+11:05.410 --> 11:12.250
+everything that is happening in these two classes because it would give you a clear idea of everything
+
+11:12.250 --> 11:14.680
+that is related to exception handling.
+
+11:14.680 --> 11:18.060
+So good luck and I'll see you in the next with you.

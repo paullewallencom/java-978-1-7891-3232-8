@@ -1,0 +1,466 @@
+WEBVTT
+
+00:02.030 --> 00:02.870
+You come back.
+
+00:02.950 --> 00:06.700
+No let's discuss the use of equal time at the intro.
+
+00:06.840 --> 00:11.840
+Basically when you create objects in Java.
+
+00:11.840 --> 00:18.170
+So here I have a client class so it's basically a simple class which has an ID and a constructor accepting
+
+00:18.170 --> 00:18.810
+that ID.
+
+00:18.890 --> 00:23.310
+So what I'm doing here is creating two instances of these objects.
+
+00:23.330 --> 00:26.410
+Both of these have the same value twenty five twenty five.
+
+00:26.410 --> 00:32.000
+So the claim that they are representing is the same I would want to be able to compare these two objects
+
+00:32.360 --> 00:34.550
+and tell that they're equal.
+
+00:34.580 --> 00:39.990
+If you look at it here claimed one is not equal to plain two because they are two different objects.
+
+00:39.990 --> 00:42.650
+These are the client one is one object.
+
+00:42.650 --> 00:47.360
+This kind to is another object so these are two different objects so they are never equal.
+
+00:47.360 --> 00:51.850
+So that's what what does is equal is equal to compare this is equal to compare.
+
+00:51.850 --> 00:57.690
+If these two are pointing to the same objects when you use is equal is equal to.
+
+00:57.740 --> 01:02.620
+This will be true only when both plain and plain to point to the same object.
+
+01:02.660 --> 01:07.670
+But here they are not pointing the same object they are pointing are different objects that are never
+
+01:07.670 --> 01:08.820
+going to be true.
+
+01:08.840 --> 01:15.670
+However if you look at client 3 and claim to and so claim 3 is equal declined one to one object and
+
+01:15.680 --> 01:20.150
+one is pointing to the same object in threes also pointing to that.
+
+01:20.150 --> 01:21.530
+Basically this one.
+
+01:21.530 --> 01:24.500
+So if you see kind one is equal do you can play in three.
+
+01:24.500 --> 01:29.240
+This will return true because they are referring to the same object.
+
+01:29.240 --> 01:35.030
+So that is equal is equal to but what we wanted to discuss is equals on the previous one.
+
+01:35.030 --> 01:41.860
+So in this kind Gwynplaine thing if I do play into one that equals claim.
+
+01:42.110 --> 01:46.790
+So if I'm going to find one that equals claim to you'd get false.
+
+01:46.790 --> 01:53.260
+The reason is because in this particular instance of play class in this particular definition of class
+
+01:53.260 --> 01:57.070
+in class we don't really have an equal method defined.
+
+01:57.260 --> 02:02.800
+So if I don't have the equal better defined in a claimed class what equal does method does it use.
+
+02:02.810 --> 02:03.500
+Think about it.
+
+02:03.500 --> 02:05.850
+So I don't have a equals method defined here.
+
+02:05.870 --> 02:08.330
+So where does it get the ultimate that from.
+
+02:08.330 --> 02:11.010
+It gives the equal method from the object.
+
+02:11.030 --> 02:16.150
+Because object class is the superclass for all classes in Java.
+
+02:16.280 --> 02:24.260
+So it gets the definition of the equals from the object and the default definition of equals in the
+
+02:24.260 --> 02:25.210
+Object class.
+
+02:25.220 --> 02:26.230
+What does it do.
+
+02:26.240 --> 02:27.900
+It just compares.
+
+02:28.100 --> 02:35.690
+If they are pointing to the same objects what it does is the default implementation of equals in the
+
+02:35.690 --> 02:36.200
+Object class.
+
+02:36.200 --> 02:39.630
+We'll just see it's kind well inclined to pointing to the same object.
+
+02:39.630 --> 02:42.880
+No they are not so it returns back false.
+
+02:43.070 --> 02:45.220
+So that the default implementation.
+
+02:45.230 --> 02:50.170
+But if I want to override that implementation then I can do that.
+
+02:50.240 --> 02:53.270
+The signature for that override is down here.
+
+02:53.270 --> 02:55.300
+So an example method is here.
+
+02:55.430 --> 02:59.300
+So the signature is public boolean equals object or B.
+
+02:59.390 --> 03:02.760
+There's this part of the definition that should exactly match.
+
+03:02.810 --> 03:06.080
+I mean actually up to the Object class it up to the Object class.
+
+03:06.290 --> 03:07.280
+Everything should match.
+
+03:07.280 --> 03:08.690
+You can use a different readable name.
+
+03:08.690 --> 03:14.920
+That's OK but up to here the thing should match for it demised the equals definition.
+
+03:14.930 --> 03:16.330
+What this is now doing.
+
+03:16.330 --> 03:22.370
+So what we are doing is we are saying if either is not equal to that Id return false or otherwise returned
+
+03:22.370 --> 03:22.940
+true.
+
+03:22.940 --> 03:30.020
+So none of what we would do when I do play one equals clone two we are competing B IDs so we are comparing
+
+03:30.020 --> 03:32.170
+ID with our dog ID.
+
+03:32.390 --> 03:35.010
+And they are both the same because language has a value.
+
+03:35.100 --> 03:39.160
+Twenty five point two has been written in sort of comparing the object references.
+
+03:39.170 --> 03:46.190
+Now we are comparing the values so you to an equal split into yes can I do an equals two.
+
+03:46.190 --> 03:48.410
+Klein three yes.
+
+03:48.410 --> 03:49.730
+So both of them will return.
+
+03:49.730 --> 03:55.010
+So when you are pointing to the same object or when a part of the different object but having the same
+
+03:55.010 --> 03:57.050
+value you'd get a return true.
+
+03:57.260 --> 04:01.460
+So basically equal method is used to compare two objects.
+
+04:01.460 --> 04:08.590
+So if I want to check if the objects has the same values or not I would need to define an equal method.
+
+04:08.600 --> 04:13.890
+Let's quickly go to Eclipse and see how you can easily create this equal method.
+
+04:14.030 --> 04:16.460
+I have this called Client open.
+
+04:16.460 --> 04:23.420
+So the way I would search for this client and come in Indeed when it's Java object there is a can and
+
+04:23.420 --> 04:24.190
+do find that.
+
+04:24.230 --> 04:26.010
+Basically what we are pulling up now.
+
+04:26.090 --> 04:30.970
+So now here if you look at it this has a hash code and equals method implemented.
+
+04:31.010 --> 04:37.580
+So let's say this equal method was not there I would want to quickly implement a default equals method
+
+04:37.580 --> 04:38.190
+here.
+
+04:38.240 --> 04:43.230
+How do I do that I can do that by using the eclipse features.
+
+04:43.370 --> 04:53.570
+So the way you can do that is that I click source and say generate hash code and equals we would look
+
+04:53.570 --> 04:55.520
+at it a little later.
+
+04:55.600 --> 04:56.980
+When we just equal.
+
+04:57.020 --> 04:58.800
+We have to generate cash.
+
+04:58.800 --> 05:00.400
+Good that's a good practice.
+
+05:00.740 --> 05:03.540
+But this contains implementation of Hoshko.
+
+05:03.560 --> 05:05.140
+I will override that.
+
+05:05.290 --> 05:12.330
+And it took for me doright what you can define when I'm different when I'm selecting the field what
+
+05:12.350 --> 05:16.100
+are the fields that I would need to compare in the equals method.
+
+05:16.100 --> 05:19.480
+So if this class had been filled all the fields would be listed.
+
+05:19.640 --> 05:24.770
+And what are fields that I would want to use in the method I would select them here.
+
+05:24.770 --> 05:29.150
+So here there is only one field so I set the ID field and just say OK.
+
+05:29.300 --> 05:33.330
+So now the equals method is generated.
+
+05:33.440 --> 05:41.630
+So this equals method would work in any kind of scenarios to compare if the IDs are the same.
+
+05:41.630 --> 05:46.630
+So if the values are same then it would return true or if the objects are the same.
+
+05:46.630 --> 05:52.250
+It was written to say Bewdley for formant as well as be a good implementation of equals.
+
+05:52.250 --> 05:59.660
+The reason why we should buy the equal method here is so complex is because any implementation of equals
+
+05:59.840 --> 06:04.460
+should satisfy a few properties that reflects the.
+
+06:04.630 --> 06:09.570
+So reflexive basically means it should be equal to itself to client one should be equal to play and
+
+06:09.560 --> 06:11.210
+one symmetric.
+
+06:11.240 --> 06:18.680
+So if x equal to y y should be equal to x transitive if x x equals Y and by equal and then should be
+
+06:18.680 --> 06:21.380
+equal to Zed consistent.
+
+06:21.440 --> 06:25.070
+So it should consistently didn't work conditionally that unfold.
+
+06:25.220 --> 06:30.990
+It should not be like X does equal to y irritants true in one condition and false in one of the condition.
+
+06:31.220 --> 06:35.990
+And for any reference from non null reference.
+
+06:35.990 --> 06:39.820
+So if for example exert equals null they should always return false.
+
+06:40.000 --> 06:43.580
+So that's basically the implementation we got generated by eclipse earlier.
+
+06:43.580 --> 06:45.050
+So if object is null.
+
+06:45.140 --> 06:45.980
+What would happen.
+
+06:45.980 --> 06:48.170
+You can see that it would return or fall here.
+
+06:48.350 --> 06:52.790
+So the first thing first check which is the equal series if they're the same object.
+
+06:52.790 --> 06:58.010
+So if this is going to object then they are the same object return true if object is equal is equal
+
+06:58.010 --> 06:58.550
+to none.
+
+06:58.550 --> 07:04.580
+That basically means the paramita which you are passing in is null so return fault if they don't belong
+
+07:04.580 --> 07:11.300
+to the same class then return false then typecast it to the specific object and compare the values that
+
+07:11.300 --> 07:12.650
+you would want to compare.
+
+07:12.650 --> 07:20.610
+So the thing is with equal method it should also accept other classes as instances of other classes.
+
+07:20.690 --> 07:27.040
+So you'll be able to compare any class with any set in any object with any instance of any of that class.
+
+07:27.140 --> 07:31.870
+So that's the reason why we would check for a class as well.
+
+07:32.090 --> 07:35.500
+So this is all about the equals method.
+
+07:36.020 --> 07:41.690
+The most important thing that you need to know about the equals method is the fact that it should satisfy
+
+07:41.720 --> 07:46.640
+these five properties and the best way to generate a method which would satisfy all these properties
+
+07:46.670 --> 07:48.680
+is generating it by eclipse.
+
+07:48.710 --> 07:50.200
+You need to understand what's happening here.
+
+07:50.420 --> 07:55.490
+But I would always use Eclipse to generate this method because this is when you do a bit of complex
+
+07:55.490 --> 07:58.290
+logic you don't want to really get this wrong.
+
+07:58.390 --> 08:01.880
+They bagle that about the equals method.
+
+08:01.880 --> 08:05.300
+Now let's move on to the hash code method.
+
+08:05.390 --> 08:10.410
+The hash good method is basically used in collections like hash map.
+
+08:10.490 --> 08:20.130
+So the hash code is used to decide which bucket an object has to be placed into in a hash map kind of
+
+08:20.570 --> 08:21.480
+collection.
+
+08:21.650 --> 08:27.110
+So there are rules that are good hashing function should adhere to.
+
+08:27.380 --> 08:33.340
+Basically if all if you always return the same value from a hash called what would happen then all the
+
+08:33.340 --> 08:35.460
+values will go into the same bucket.
+
+08:35.460 --> 08:40.220
+So the values in the hash map will not be evenly distributed.
+
+08:40.220 --> 08:43.260
+So a hashing function what does it do.
+
+08:43.340 --> 08:48.100
+It even redistributes objects in two different buckets.
+
+08:48.170 --> 08:55.070
+And also there are a few properties that it needs to adhere to that basically if two objects are equals
+
+08:55.400 --> 08:59.670
+equal then the object has scored should all be equal.
+
+08:59.780 --> 09:05.390
+So if two objects are equal their hash courts also should be equal and obviously object or hash code
+
+09:05.390 --> 09:08.660
+should return the same value when on multiple times.
+
+09:08.840 --> 09:11.530
+Otherwise you'll not be able to retrieve values from a hash map.
+
+09:11.720 --> 09:15.810
+And also if two objects are not equal.
+
+09:15.810 --> 09:23.030
+So if two objects are not equal then it does not mean that hash caught are not equal because you'd want
+
+09:23.120 --> 09:26.600
+to put different objects in the same bucket.
+
+09:26.630 --> 09:32.270
+So it does not mean that object are hash when a hash code is not equal to object to that hash.
+
+09:32.300 --> 09:34.090
+It might not be called.
+
+09:34.130 --> 09:35.500
+It might also be equal.
+
+09:35.540 --> 09:40.100
+We're looking at one of the hash code implementations right here.
+
+09:40.100 --> 09:46.400
+So the most important thing about a hash code implementation is that it should evenly distribute the
+
+09:47.060 --> 09:48.870
+objects in two different buckets.
+
+09:48.870 --> 09:55.810
+I mean there is no hard and fast way of saying this is the way you'd be able to evenly distributed.
+
+09:55.910 --> 10:00.740
+This would really depend on the business scenario where you're going to use the hash map work in values
+
+10:00.740 --> 10:02.000
+that you are going to put in.
+
+10:02.090 --> 10:07.280
+But for generating a default implementation hash code we already saw how to do that when we discussed
+
+10:07.520 --> 10:08.470
+the equals method.
+
+10:08.560 --> 10:14.240
+So similar to the equals method we get in it was the same thing so rightly so.
+
+10:14.530 --> 10:22.120
+And you can say generate hash codes and equal So that's the reason why a hash code and equals go together.
+
+10:22.120 --> 10:25.650
+So if you override equals then you have to also override hash.
+
+10:25.670 --> 10:26.620
+Good as well.
+
+10:26.680 --> 10:31.390
+So they look that small discussion about equals and hash.

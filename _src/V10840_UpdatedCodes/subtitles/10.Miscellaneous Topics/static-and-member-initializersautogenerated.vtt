@@ -1,0 +1,178 @@
+WEBVTT
+
+00:01.320 --> 00:06.240
+Industry you will start looking at a few of the initialization blocks static initializer.
+
+00:06.280 --> 00:08.510
+Instances like that and things like that.
+
+00:08.740 --> 00:10.750
+So what does initialization blocks.
+
+00:10.810 --> 00:18.400
+So the blocks are called pieces of code which run when an object is created or when a class is loaded
+
+00:18.400 --> 00:19.620
+for the first time.
+
+00:19.810 --> 00:23.120
+So these are not really constructors.
+
+00:23.150 --> 00:27.850
+Contractors are also one of things which are called when object is created.
+
+00:28.030 --> 00:32.530
+So this is additional to the constructor so additional to the constructors we have a few initialization
+
+00:32.530 --> 00:38.130
+blocks which can be run when an object is created or a specific class is ordered.
+
+00:38.320 --> 00:41.720
+So there are two kinds of initialization blocks as we discussed.
+
+00:41.770 --> 00:47.920
+So they're static initializer and instance initialisms studding usually is the code that runs when a
+
+00:47.980 --> 00:49.520
+class is loaded.
+
+00:49.540 --> 00:56.020
+So this is the situation when a class is initially loaded to read a JVM wants to load up a class then
+
+00:56.020 --> 01:00.970
+the static initializer will be called an instance in the sleazily something which would be called when
+
+01:01.090 --> 01:05.380
+an object is created when a new object is created what is called a constructor.
+
+01:05.380 --> 01:09.730
+So you should see that laisser are in addition to the constructors.
+
+01:09.730 --> 01:13.890
+So let's look at the example of a static initialize.
+
+01:14.080 --> 01:17.440
+So what we're doing in here is we have a static block.
+
+01:17.620 --> 01:19.850
+So this is how you create a static initializer.
+
+01:19.850 --> 01:27.420
+So I want when this class is loaded that this variable is initialized or something of that kind.
+
+01:27.580 --> 01:30.660
+So I can put that logic in here.
+
+01:30.700 --> 01:36.820
+So what would have is this is a static initializers system that are indolent static initializers.
+
+01:37.120 --> 01:40.250
+And we are trying to print the value of count.
+
+01:40.270 --> 01:44.670
+The important thing about a static initializer is again this is a class specific code.
+
+01:44.830 --> 01:49.310
+So in classes with code you cannot use instance this week the built in.
+
+01:49.330 --> 01:52.030
+It is a member variable that's the instance variable.
+
+01:52.030 --> 01:59.590
+So you cannot say I use equal to 6 in here in static interfaces you can only refer to static things
+
+01:59.590 --> 02:02.420
+so you can only use count and not I.
+
+02:02.650 --> 02:08.450
+So what we are doing here is we are printing out static intranasal and we think congruent static initializer
+
+02:08.560 --> 02:09.790
+is and printing.
+
+02:09.920 --> 02:18.130
+And you can see here that I'm creating a few objects of that class and the output you'd see right now
+
+02:18.250 --> 02:22.250
+is that static laser congruent static and Slezak is run is zero.
+
+02:22.420 --> 02:27.930
+So basically the static initializer is run before any of these objects is created.
+
+02:27.940 --> 02:30.810
+So this is run only when the class is first loaded.
+
+02:30.810 --> 02:35.260
+So even though I'm creating three instances how many times does it run the parent only once and that's
+
+02:35.260 --> 02:39.560
+when the class is first initialized.
+
+02:39.610 --> 02:45.430
+So when the class is first loaded by the JVM that's when the static initialisms would be called and
+
+02:45.430 --> 02:49.160
+you'd be able to only access static variables from the static insulators.
+
+02:49.180 --> 02:52.810
+You can use that degradable and static methods as well.
+
+02:52.960 --> 02:59.650
+What's an instance in chalets that so instances is that it's basically a block without the static keyword
+
+02:59.650 --> 03:00.460
+in front of it.
+
+03:00.460 --> 03:05.530
+So there is more that the key word here that this is an instance initializer you'd see that this instance
+
+03:05.530 --> 03:08.790
+initializer runs every time.
+
+03:08.920 --> 03:16.510
+So you'd see that I have a little bit of sense out in here out instances setting a specific value to
+
+03:16.540 --> 03:19.340
+I and I'm adding a conditional accomplice 1.
+
+03:19.540 --> 03:26.190
+So you can see that instance initialiser can do an instance of slavery's run it's one then it's two
+
+03:26.200 --> 03:27.540
+then it's three.
+
+03:27.550 --> 03:33.580
+The reason why count is getting incremented and the value is retained is because this is a static that's
+
+03:33.580 --> 03:34.620
+a classic liberal radio.
+
+03:34.630 --> 03:41.750
+But we are creating instance initializer in here as it says here an instance initializer that runs every
+
+03:41.750 --> 03:45.570
+time an object is created and in an instance initializer.
+
+03:45.790 --> 03:47.980
+This is object level thing.
+
+03:47.980 --> 03:53.290
+So in an object level or instance level thing you can access both static where it wants an instance
+
+03:53.290 --> 03:57.340
+variable so you'll be able to access count as well as you can access.
+
+03:57.400 --> 03:59.920
+Which is instance radio.
+
+04:00.130 --> 04:05.270
+The example which we used in this specific deal is the initialiser examples.
+
+04:05.380 --> 04:10.600
+You can actually create this static log by just saying static and just like playing around with it and
+
+04:10.600 --> 04:12.790
+remove the static and see what happens.
+
+04:12.970 --> 04:17.800
+So you can play around with this as an exercise and I will see you in the next two ETEO.

@@ -1,0 +1,214 @@
+WEBVTT
+
+00:00.210 --> 00:08.560
+In this section let's discuss about generics and how generics make easy to design more flexible programs.
+
+00:08.580 --> 00:09.880
+So what are generics.
+
+00:09.900 --> 00:14.700
+I mean the gender definition here is where the gender except basically use to create gender classes
+
+00:14.700 --> 00:17.990
+and methods which can work with different types.
+
+00:18.150 --> 00:23.100
+So you can have the same method work with different types you can have the same class work with multiple
+
+00:23.130 --> 00:23.550
+types.
+
+00:23.550 --> 00:25.460
+That's basically what Gen X is used for.
+
+00:25.530 --> 00:26.790
+What does it really mean.
+
+00:26.970 --> 00:30.840
+So let's take an example to see this.
+
+00:30.870 --> 00:33.040
+So I have a class called my list.
+
+00:33.120 --> 00:38.540
+It is having a list of string values and I can add a string to it and remove the string from it.
+
+00:38.550 --> 00:44.220
+So this is a basic my list I'm in is not really a complete list kind of functionality but it's a fairly
+
+00:44.220 --> 00:45.190
+basic thing.
+
+00:45.390 --> 00:55.050
+So if I am using let's say my list is new my list and I'm adding a value value 1 or value to this my
+
+00:55.050 --> 00:59.310
+list can be used only to store and remove string values.
+
+00:59.310 --> 01:04.860
+That's the only thing I can do with this particular my least I not be able to say I want to store integer
+
+01:04.860 --> 01:05.680
+values.
+
+01:05.730 --> 01:09.110
+I want to use a specific type of my own.
+
+01:09.270 --> 01:12.730
+Then I would not be able to use it for that particular thing.
+
+01:12.930 --> 01:18.570
+So even though the functionality looks generally great I'm adding a value removing a value from a list.
+
+01:18.570 --> 01:20.530
+It's a very generic functionality.
+
+01:20.580 --> 01:24.720
+However I want to be able to use this class for all my other requirements.
+
+01:24.720 --> 01:27.500
+So how do I make this class generic.
+
+01:27.630 --> 01:32.720
+So that's where the judge came up with this concept called genetics.
+
+01:32.730 --> 01:39.420
+So what I can say is I'm saying I can create my list generic and I'll say this is the type.
+
+01:39.420 --> 01:47.610
+So in every place where we use the type generally so here I was using string add string value instead
+
+01:47.610 --> 01:51.630
+of that I would add the value rimu the value.
+
+01:51.780 --> 01:58.200
+So I would start using this the as the class type So instead of saying list of string out a list of
+
+01:58.470 --> 01:59.190
+B.
+
+01:59.190 --> 02:03.270
+So wherever I would use string I would start putting this generic type D.
+
+02:03.480 --> 02:08.390
+Thereby I would be able to create classes of other types as well.
+
+02:08.550 --> 02:15.590
+So now if I want to use a generic thing so I can see my list of generic string is equal to.
+
+02:15.630 --> 02:21.120
+New model is generic of string and I can add string values to it.
+
+02:21.120 --> 02:27.630
+Now I can take my less generic integer of my list integer is equal to my less generic of integer and
+
+02:27.630 --> 02:34.320
+I can now add integer values not only string an integer you can add any Java class as the typing here
+
+02:34.650 --> 02:38.170
+and you can store a list with any of these types.
+
+02:38.370 --> 02:41.250
+That's what generics bring in generics.
+
+02:41.250 --> 02:50.000
+I love me to make the class type independent so I can use the same class for different types of objects.
+
+02:50.000 --> 02:52.740
+The way we declare a generic type is very simple.
+
+02:52.740 --> 02:54.900
+Right so each class name of the class.
+
+02:55.140 --> 03:00.280
+And what generic with you would want to use if you want to use multiple generic types and there are
+
+03:00.290 --> 03:02.540
+three classes then you can separate them by a comma.
+
+03:02.550 --> 03:04.220
+So I can have a B.
+
+03:04.740 --> 03:06.480
+Type 2 type 3.
+
+03:06.480 --> 03:11.220
+I mean how many how many other Jandek type that you would want to use in the previous example when we
+
+03:11.220 --> 03:18.200
+look the mail is generally of B then can be any class but it's possible that you might want to put a
+
+03:18.200 --> 03:19.210
+restriction.
+
+03:19.350 --> 03:24.240
+So you'd want only the subclasses of numbers.
+
+03:24.360 --> 03:28.760
+So in that kind of situation you can say the extent number.
+
+03:28.920 --> 03:35.790
+So in this kind of a situation then only subclasses of numbers are allowed as a type in here.
+
+03:35.790 --> 03:42.230
+So you can pass an integer that I loved but if you try and put string in here that's not really allowed
+
+03:42.240 --> 03:45.530
+because string is not extending number.
+
+03:45.540 --> 03:50.550
+So the way you restrict the types which you want to love is by using one of the ways you can do that
+
+03:50.550 --> 03:55.220
+is by using extent the other way you can do that is by extent using super.
+
+03:55.380 --> 04:02.280
+So I can take the super number then only one of the super classes of numbers can be used.
+
+04:02.280 --> 04:08.700
+So these are the two things you can use to restrict the types of which you allow in here.
+
+04:08.700 --> 04:15.620
+So you can either hit the essence number then all subclasses of number can be used to create the object
+
+04:16.020 --> 04:22.260
+or you can set the super number then only the superclasses of numbers are allowed to be used as types.
+
+04:22.260 --> 04:25.690
+Generics are not limited just to types.
+
+04:25.920 --> 04:28.080
+So you can even create a method.
+
+04:28.080 --> 04:37.650
+So here I'm saying this X Stintz number is type So this x x is a type which extends number and I can
+
+04:37.650 --> 04:40.980
+use it as a parameter and I can do operations on it.
+
+04:40.980 --> 04:48.540
+And then I can call this do something with any argument or any parameter which matches the constraint
+
+04:48.630 --> 04:51.400
+which is present in here so x extents number.
+
+04:51.420 --> 04:57.480
+If your argument is the type of your object matches that then you can use it to call the specific method.
+
+04:57.690 --> 05:03.430
+This is called Gendry met so in the short video we started with water genetics.
+
+05:03.460 --> 05:06.910
+We saw how genetics make programs more flexibly.
+
+05:06.920 --> 05:11.110
+We saw how to place restrictions using throughput and extent.
+
+05:11.420 --> 05:17.240
+And also we looked at how you make and make a generic you can create a general comment there as well.
+
+05:17.390 --> 05:21.810
+So those are the different things that we discuss as part of this step until the next do.
+
+05:21.890 --> 05:22.310
+But like.

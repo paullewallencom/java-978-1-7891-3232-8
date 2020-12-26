@@ -1,0 +1,277 @@
+WEBVTT
+
+00:01.590 --> 00:04.730
+We will now focus on the different states of a trade.
+
+00:04.920 --> 00:12.570
+So what are the different states that a thread object can be in three states New bannable running blocked
+
+00:12.720 --> 00:13.900
+or terminated.
+
+00:14.070 --> 00:17.470
+So those are the different states that a specific threat.
+
+00:18.090 --> 00:24.640
+So let's say that this piece of code the line one is banning it is to continue batting statistics thread
+
+00:25.020 --> 00:29.130
+and we are starting the batting thread here and here.
+
+00:29.270 --> 00:36.360
+BOLLING are using the we are implementing the Runnable interface so Barling statistics the way we are
+
+00:36.360 --> 00:41.020
+creating it is a little different but online fight restyled the bad things.
+
+00:41.160 --> 00:45.710
+So a trip is a new state or when an object of the trade is created.
+
+00:45.960 --> 00:48.690
+But stock better does not get called in.
+
+00:48.720 --> 00:54.450
+And what we are creating a new instance of this thread in the link do we are invoking the start method
+
+00:54.450 --> 00:55.410
+on that thread.
+
+00:55.440 --> 01:03.270
+So at the completion of line 1 execution the batting statistics thread is a new speed because the stock
+
+01:03.270 --> 01:04.940
+method is not yet called on it.
+
+01:04.960 --> 01:07.930
+So that's called a new state.
+
+01:07.930 --> 01:10.700
+Another example would be the bowling statistics thread.
+
+01:10.770 --> 01:15.960
+So we are reading the thread here and before we start this thread to just after creating the line for
+
+01:15.990 --> 01:21.150
+I've just Afflecks using line for the thread would be wrapped in a new state.
+
+01:21.150 --> 01:22.930
+So that's the new start.
+
+01:22.950 --> 01:27.650
+Basically when the thread is created instead of the thread is ready but you have not really called the
+
+01:27.720 --> 01:29.160
+stock method on it.
+
+01:29.220 --> 01:35.940
+The next two states that we would discuss are runnable and running one to kick of this door on a thread.
+
+01:35.970 --> 01:40.060
+It can be in any of these forward States.
+
+01:40.200 --> 01:47.490
+So either the threat is right of running then it's called running state.
+
+01:47.670 --> 01:49.960
+The thread is ready to run.
+
+01:49.980 --> 01:56.060
+It's not waiting for anything but it's still not running then it's in a reasonable state.
+
+01:56.160 --> 01:58.770
+The trade is waiting for some to complete.
+
+01:58.770 --> 02:03.300
+I'm waiting for some resource or some other operation to complete.
+
+02:03.300 --> 02:10.850
+So then I am in a blog or evading state if I have completed execution then I am in a terminated order.
+
+02:10.860 --> 02:11.910
+They did.
+
+02:11.940 --> 02:14.690
+So these are the five different states.
+
+02:14.760 --> 02:20.610
+So if you actually run this program back in school districts and the polling statistics together you'd
+
+02:20.610 --> 02:25.240
+see that sometimes by adding school districts run it is running sometimes Boling said districts.
+
+02:25.250 --> 02:28.280
+The red is running because they have equal priority.
+
+02:28.410 --> 02:29.630
+What DCP does.
+
+02:29.640 --> 02:36.650
+I mean the way the CPI is allocated is Scipio's allocated for sometime to this sometime sometime today.
+
+02:36.690 --> 02:37.770
+And some time to this.
+
+02:37.920 --> 02:45.120
+So when the batting trade is running then the bowling thread would be in a reasonable state but it's
+
+02:45.120 --> 02:48.800
+not running because it's not the current thread which is running.
+
+02:48.960 --> 02:55.140
+And then the bat bowling thread is running then the bowling thread is running state.
+
+02:55.200 --> 03:01.470
+If the bowling thread is running then the battings thread is innervate kind of a state then that because
+
+03:01.470 --> 03:04.310
+of bad things it is not really waiting for anything.
+
+03:04.380 --> 03:06.500
+Then it's in a state called nable.
+
+03:06.690 --> 03:11.940
+If the banning trade is waiting because it's waiting for some download to happen or some Are you then
+
+03:11.940 --> 03:19.020
+it's called it's no blog state and when debating said thread completes execution then it goes into a
+
+03:19.020 --> 03:22.690
+state called determinatives did what this parody of a thread.
+
+03:22.770 --> 03:28.290
+Plenty of this thread is very important in the sense that if a thread has higher priority than the scheduler
+
+03:28.290 --> 03:30.910
+might get more people to that thread.
+
+03:31.080 --> 03:35.260
+So by default the priority is assigned to a job where it is fine.
+
+03:35.260 --> 03:40.520
+If I'm not setting any priority then by default it gets a priority 5.
+
+03:40.680 --> 03:49.650
+What you can actually increase or decrease the priority so the range is one to 10 and if to return weighting
+
+03:49.890 --> 03:54.280
+then the scheduler ideally picks the thread with the highest ability to run.
+
+03:54.340 --> 03:59.240
+Way you can set priority on the thread is by thread that set priority.
+
+03:59.550 --> 04:05.140
+So there is a max parity min polarity constants that you can use to set the priority on the set.
+
+04:05.140 --> 04:09.740
+So then this highest priority one is the least priority that you can assign to a thread.
+
+04:09.780 --> 04:15.030
+The next thing that we want to talk about is the execute this is what is executing servies exude.
+
+04:15.090 --> 04:23.970
+So this is one of the new interfaces which is present in Java and it's a whole new way of exiting us
+
+04:24.060 --> 04:25.200
+in the background.
+
+04:25.350 --> 04:29.660
+So as you can kind of think of an excuse to service very similar.
+
+04:29.760 --> 04:31.830
+Very similar to a thread pool.
+
+04:31.830 --> 04:36.350
+You have a pool of thread and you want to pick one of them and execute them.
+
+04:36.360 --> 04:42.610
+Here we see an example of an exe this is we are creating a new thread executor's so executor's or news.
+
+04:42.760 --> 04:46.670
+Single thread executed and we are sending it to and execute us.
+
+04:46.890 --> 04:53.010
+And then we can create a new thread creating a new thread by using the Runnable interface implementing
+
+04:53.020 --> 04:58.620
+the reasonable interface and creating a new thread and I can use the executed service to execute this
+
+04:58.620 --> 04:59.450
+thread.
+
+04:59.460 --> 05:07.990
+And once this this thread will now be kicked off in badly this does or it would create off a new thread
+
+05:08.260 --> 05:10.210
+and it would complete execution.
+
+05:10.210 --> 05:13.560
+So what are the different ways of creating exude services.
+
+05:13.780 --> 05:18.420
+If I just want to create one thread then I can use exit to start new Singleton executor.
+
+05:18.520 --> 05:25.290
+If I would want to create a fixed thread pool then I would actually use the new thread pool.
+
+05:25.360 --> 05:28.150
+And how many threads that you would want to create.
+
+05:28.180 --> 05:33.520
+If you want to use this scheduling feature I mean if you want to delay execution or things like that
+
+05:33.520 --> 05:36.420
+then you can create a new scheduled thread pool.
+
+05:36.580 --> 05:41.590
+So here you can actually give some delay or execute certain trade periodically.
+
+05:41.590 --> 05:46.660
+The great thing about don't exude a service is when you use an exe you do service to exit the task.
+
+05:46.660 --> 05:51.870
+You can also check if the task has completed or not.
+
+05:51.940 --> 05:55.010
+The way we do that is use something called the future.
+
+05:55.150 --> 06:00.370
+So once you have an exe you do so with one and submit a new reasonable thing.
+
+06:00.490 --> 06:09.840
+You can get the future as the output and once the task is completed then the future get method will
+
+06:09.860 --> 06:11.210
+return null.
+
+06:11.330 --> 06:18.500
+The great thing about Dig's so is it's this new feature called callable call earlier.
+
+06:18.720 --> 06:24.540
+The only way to read can be to know value is by storing some value in a file or something of that kind.
+
+06:24.740 --> 06:30.540
+But the callable what we are able to do is we are able to return a result from the thread.
+
+06:30.560 --> 06:36.360
+So now you can say this is the result from the thread and I can take that value and print it here.
+
+06:36.380 --> 06:39.520
+So if you look at it here future from callable.
+
+06:39.620 --> 06:40.770
+I'm calling that thread.
+
+06:40.910 --> 06:47.010
+So I'm calling it thread and that thread can actually result return is back.
+
+06:47.030 --> 06:48.580
+The syntax is a little different.
+
+06:48.690 --> 06:54.530
+Instead of runnable we have callable interface and instead of run method we have a call method and we
+
+06:54.530 --> 06:55.970
+can return the result here.
+
+06:56.150 --> 07:01.740
+And you can use the get better on the future to get the result from DiCarlo but.

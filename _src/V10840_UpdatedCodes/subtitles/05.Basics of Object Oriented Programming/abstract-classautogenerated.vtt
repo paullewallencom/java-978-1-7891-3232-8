@@ -1,0 +1,373 @@
+WEBVTT
+
+00:02.720 --> 00:09.150
+So now in this we do let's look at abstract class we would look at what is an abstract class when to
+
+00:09.150 --> 00:14.030
+use an abstract class and also a few tricky things about abstract classes.
+
+00:14.220 --> 00:15.610
+Let's start with the basics.
+
+00:15.620 --> 00:22.270
+What's an abstract class abstract class is basically any class which has abstract in its signatures
+
+00:22.270 --> 00:27.010
+or abstract class that viscously what abstract class is all about.
+
+00:27.150 --> 00:31.910
+Simple is and then what way does Java has that.
+
+00:31.950 --> 00:34.660
+Has the simple concept of an abstract class.
+
+00:34.860 --> 00:41.190
+One of the things about abstract class is the fact that you can have a few abstract methods abstract
+
+00:41.190 --> 00:48.540
+methods are those methods for whom you don't need to define the method body so you don't need to define
+
+00:48.540 --> 00:49.480
+what the method does.
+
+00:49.500 --> 00:55.740
+You just need to say this abstract class has these two abstract methods and which is what classes are
+
+00:55.740 --> 01:01.320
+extending that abstract class would need to implement those methods.
+
+01:01.320 --> 01:09.480
+Abstract class kind of gives you a way to implement common functionality while leaving scope for extension
+
+01:09.870 --> 01:11.820
+so you can say these two methods.
+
+01:11.940 --> 01:16.590
+My subclasses should implement but I don't want to define them.
+
+01:16.910 --> 01:22.720
+The subclasses can define what those methods do but I'll implement the other methods which are there
+
+01:22.740 --> 01:27.550
+in here and because there is a direct method in a specific abstract class.
+
+01:27.600 --> 01:31.280
+You cannot create an instance of that specific abstract class.
+
+01:31.410 --> 01:38.560
+When I say an abstract on a class that means I don't want to create an instance of that specific class.
+
+01:38.700 --> 01:44.420
+So an abstract class usually might represent a partially implemented.
+
+01:44.560 --> 01:47.890
+So the obvious question is when you use an abstract class.
+
+01:47.910 --> 01:54.450
+So basically let's say there are a set of classes which have certain common functionality but the class
+
+01:54.450 --> 02:01.020
+which has this common functionality does not make sense on its own or does not make sense to create
+
+02:01.020 --> 02:03.770
+an instance of it on its own.
+
+02:03.780 --> 02:11.760
+Then you create an abstract as one of the examples that we already looked at is abstract map.
+
+02:11.760 --> 02:17.610
+So if you look at the subclass of abstract map its hash map tree map and hash map.
+
+02:17.820 --> 02:25.550
+This shared a lot of methods that the abstract map defined so get boot easy empty is empty Kandinsky
+
+02:25.590 --> 02:26.950
+and into value.
+
+02:26.970 --> 02:35.940
+So all these methods are the definition for these methods are used from abstract class so hash map for
+
+02:35.940 --> 02:38.190
+example will not define any of these methods.
+
+02:38.240 --> 02:45.750
+It uses the implementation from abstract map so abstract map contains the Guaman functionality between
+
+02:45.750 --> 02:51.030
+these maps but it does leave a few things down to these defining things.
+
+02:51.030 --> 02:58.850
+For example there's an abstract method called public abstracts set entries that what this forces has
+
+02:58.850 --> 03:04.560
+said to the map and can kreplach map to do is they have to give their own implementation of this entry
+
+03:04.560 --> 03:05.810
+set method.
+
+03:05.850 --> 03:14.400
+So while the abstract map defines common functionality for these maps it also says you have to give
+
+03:14.400 --> 03:17.850
+us specific functionality for this week.
+
+03:17.910 --> 03:19.420
+Another good example is this.
+
+03:19.410 --> 03:21.300
+Bring abstract control.
+
+03:21.390 --> 03:27.710
+So if you talk about putting NBT it has a number of controllers right form controller multisection controller
+
+03:27.720 --> 03:30.670
+you have a lot of very different rules.
+
+03:30.690 --> 03:35.990
+Yeah I mean these controllers are not really important now because of an addition and things like that.
+
+03:36.000 --> 03:41.700
+But let's take an earlier version of spring where spring and we see where we used to really have to
+
+03:41.700 --> 03:46.470
+create a specific form controller or image the action controller or the controller.
+
+03:46.470 --> 03:51.630
+Based on your need and build spring had something called an abstract controller.
+
+03:51.630 --> 03:56.440
+The abstract Prempro look defines the common things between these controllers.
+
+03:56.580 --> 04:04.840
+So all the controllers who speak of any of these irrespective of which when it is they have to handle
+
+04:05.060 --> 04:11.080
+the form so they have to get things from the request and set it into the binding things.
+
+04:11.100 --> 04:17.010
+So those kind of common things would be defined in the abstract controller whereas all the other specific
+
+04:17.070 --> 04:19.660
+things that needs to be done in dispossed with controllers.
+
+04:19.860 --> 04:22.710
+You would have abstract methods defined in the abstract controller.
+
+04:22.710 --> 04:23.990
+The actual definition.
+
+04:23.990 --> 04:28.390
+The actual implementation of those methods would be done in the specific controllers.
+
+04:28.650 --> 04:34.200
+So the thing about abstractly as we discussed earlier is that you not be able to create an instance
+
+04:34.200 --> 04:41.040
+of it because it the abstract class might contain abstract method and what the meaning in creating a
+
+04:41.040 --> 04:42.470
+class like that.
+
+04:42.480 --> 04:43.830
+How do you define an abstract method.
+
+04:43.830 --> 04:51.880
+It's basically very simple you just put the abstract keyword before a method so you have abstract wide
+
+04:51.900 --> 04:53.070
+abstract matter.
+
+04:53.340 --> 04:57.900
+It's not garron I mean it's non-mandatory that an abstract class has an abstract method.
+
+04:57.900 --> 05:04.710
+It's not necessary if you put an abstract on a class you will create an instant whether it has an abstract
+
+05:04.710 --> 05:11.020
+method or not but there can be extract abstract classes without any abstract method.
+
+05:11.160 --> 05:16.860
+As expected a normal class which is not abstract can not have an abstract method so you cannot take
+
+05:16.860 --> 05:23.070
+a normal class which is not really declared as an abstract and put an abstract method in there so that's
+
+05:23.250 --> 05:30.630
+all the discussion about abstract class basically abstract classes are used when you have common functionality
+
+05:30.630 --> 05:35.850
+between set of classes you want to create a specific thing but you don't want to love creation or office
+
+05:36.420 --> 05:39.320
+of that particular class in that kind of situations.
+
+05:39.330 --> 05:44.970
+You go for an abstract class an abstract class can also have these things called abstract method which
+
+05:45.060 --> 05:45.660
+you want.
+
+05:45.660 --> 05:51.100
+You are subclasses to implement your rude question of interviewers.
+
+05:51.150 --> 05:52.230
+I love this question.
+
+05:52.240 --> 05:55.720
+All this is abstract class was this interface.
+
+05:55.950 --> 06:01.390
+What is the difference between an abstract class and that phrase I would want to tell.
+
+06:01.440 --> 06:03.280
+They are not comparable.
+
+06:03.390 --> 06:06.000
+It's like comparing an apple versus an orange.
+
+06:06.000 --> 06:06.880
+They're both fruit.
+
+06:06.960 --> 06:07.930
+That's that.
+
+06:07.950 --> 06:10.740
+So it's completely different things.
+
+06:10.740 --> 06:14.270
+Abstract classes are different from interfaces.
+
+06:14.580 --> 06:21.510
+I mean there are a few similarities in terms of having abstract method so interface can have abstract
+
+06:21.510 --> 06:27.510
+methods abstract class can also have abstract methods but the purpose is why you have an abstract class
+
+06:27.780 --> 06:32.200
+and an interface are very different interface.
+
+06:32.250 --> 06:39.440
+Kind of represents the common actions that can be performed on a specific class.
+
+06:39.450 --> 06:45.210
+So when I took classes at implementing an interface it means that those two classes would implement
+
+06:45.930 --> 06:47.080
+those methods.
+
+06:47.160 --> 06:49.980
+So those actions you can perform on those classes.
+
+06:49.990 --> 06:53.750
+That's what that's when you use an interface you use an interface.
+
+06:53.760 --> 07:00.240
+When you are communicating between two different systems and one system would say that the interface
+
+07:00.270 --> 07:06.000
+I'm going to provide you and the system is just calling it would use the interface to dock to it.
+
+07:06.000 --> 07:15.720
+So it kind of decouples the implementation from the interface whereas an abstract class is more to represent
+
+07:15.870 --> 07:18.340
+common functionality between classes.
+
+07:18.510 --> 07:23.750
+So let's have five classes which have a little bit of common functionality in them.
+
+07:23.940 --> 07:29.430
+So you take those that comment functionality and put it in a class and let's say that class doesn't
+
+07:29.430 --> 07:31.010
+make sense to create it.
+
+07:31.020 --> 07:33.540
+I would then call it an abstract class.
+
+07:33.570 --> 07:42.420
+So the real difference is that abstract classes are used in different scenarios compared to interfaces.
+
+07:42.570 --> 07:48.930
+But I mean if somebody is really worried about the syntactical differences then yes let's discuss a
+
+07:48.930 --> 07:50.860
+few syntactical differences.
+
+07:50.970 --> 07:55.010
+So methods and members of abstract class can have any visibility.
+
+07:55.050 --> 08:00.120
+So basically everything in the abstract any method in the abstract class if it wants it can be private
+
+08:00.120 --> 08:01.000
+or protected.
+
+08:01.080 --> 08:07.380
+But in Endeavor's only thing which is allowed is public a complete child class or an abstract class
+
+08:07.530 --> 08:10.530
+should define all the abstract methods.
+
+08:10.530 --> 08:16.470
+However it's different with an interface extending that interface because it's just creating an interface
+
+08:16.980 --> 08:21.490
+so it does not need to define all the methods so any interface when it's actioning the interface.
+
+08:21.540 --> 08:29.100
+It does not need to provide implementations a child class can only extend a single class so basically
+
+08:29.270 --> 08:35.360
+there is no concept called multiple inheritance but a class can implement multiple interfaces.
+
+08:35.430 --> 08:42.930
+These examples earlier as well and a child class can define an abstract method with the same or less
+
+08:42.930 --> 08:44.830
+restricted visibility.
+
+08:45.290 --> 08:51.960
+Basically what it means is if there's a method in the superclass then I cannot use the visibility of
+
+08:51.960 --> 08:59.110
+that method if a method is declared as a public in the superclass then I cannot be all right.
+
+08:59.120 --> 09:06.270
+That method with let's say private or protected because you are reducing the visibility of that particular
+
+09:06.270 --> 09:08.680
+moment that you can only override with public.
+
+09:08.890 --> 09:12.980
+But whereas in the case of an interface you don't really have an option.
+
+09:13.020 --> 09:14.170
+It's public always.
+
+09:14.220 --> 09:21.140
+So everything Erlick all the methods which you are implementing from an interface.
+
+09:21.240 --> 09:26.360
+They should always be defined as public like a dose of syntactical differences.
+
+09:26.370 --> 09:31.920
+But as I said earlier there is no real comparison between an abstract class and an interface you use
+
+09:31.920 --> 09:38.580
+abstract classes in completely different situations from when you would use an interface that's I guess
+
+09:38.670 --> 09:42.290
+a lot of discussion about interfaces and abstract classes.
+
+09:42.420 --> 09:47.230
+And definitely this is not the last time you are going to discuss it with abstract classes and interfaces.
+
+09:47.460 --> 09:53.310
+When we talk about Edwins object oriented concept we would get back to this and discuss this a lot more
+
+09:53.800 --> 09:54.740
+on BuildOn.
+
+09:54.900 --> 09:57.410
+Take a break and I'll see you in the next with you.

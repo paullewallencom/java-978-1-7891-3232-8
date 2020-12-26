@@ -1,0 +1,232 @@
+WEBVTT
+
+00:00.680 --> 00:03.540
+Come to have you can throw an exception from it.
+
+00:03.560 --> 00:08.340
+So this is a situation in which I would want to throw an exception here.
+
+00:08.840 --> 00:14.000
+The business logic which we are doing in this example is that we are adding to amounts of what we are
+
+00:14.000 --> 00:19.630
+doing is embattled or adamant no amount of Rupi come a five dollar income of five.
+
+00:19.700 --> 00:25.940
+And as of now my program is not ready to accept different currencies so it does not know how broken
+
+00:25.940 --> 00:27.910
+we're dollar to rupee or repeated all.
+
+00:27.930 --> 00:32.850
+So what we're doing is if the current is NOT match we want to throw an exception.
+
+00:33.050 --> 00:39.550
+So what we are doing is if the currencies do not match then we are throwing something called new runtime
+
+00:39.560 --> 00:40.700
+exception.
+
+00:40.700 --> 00:42.950
+Currencies don't match.
+
+00:42.950 --> 00:49.100
+This is how you throw an exception the highlighted line shows how you throw exceptions it's basically
+
+00:49.140 --> 00:53.450
+throw new runtime exception of currencies don't match.
+
+00:53.660 --> 00:55.310
+I could actually use exception.
+
+00:55.310 --> 01:00.940
+Also I've chosen to use runtime exception here but I could have used exception also.
+
+01:01.160 --> 01:04.470
+But how do I decide whether to do the exception or runtime exception.
+
+01:04.490 --> 01:06.900
+We'll discuss that a little later.
+
+01:07.070 --> 01:14.060
+But to be really simple this is how you would throw exception from a specific method.
+
+01:14.270 --> 01:19.210
+If you look at this method because I'm passing in different currencies this would throw an exception
+
+01:19.220 --> 01:25.310
+it this currencies don't match that the exception that I'm passing in and it would show the place as
+
+01:25.340 --> 01:25.730
+well.
+
+01:25.910 --> 01:28.990
+What would happen when you throw a check exception from it.
+
+01:29.300 --> 01:37.530
+If you look at the exception we are creating a runtime exception an exception is unchecked exception.
+
+01:37.610 --> 01:43.460
+So because it's an unchecked exception the calling method which is the method of just calling this the
+
+01:43.460 --> 01:49.460
+main method the main method does not need to do anything about this runtime exception.
+
+01:49.460 --> 01:56.090
+So what if it does not even need to worry about putting a try catch around it or throwing something
+
+01:56.130 --> 01:56.830
+out.
+
+01:56.870 --> 02:02.240
+However when you're throwing an exception the situation would change.
+
+02:02.300 --> 02:10.160
+For example now if I'm changing the runtime exception in the previous example to exception what would
+
+02:10.550 --> 02:11.180
+happen.
+
+02:11.420 --> 02:15.040
+What would happen is it would you get a compiler error.
+
+02:15.130 --> 02:19.190
+Compiler error would say unhandled exception exception.
+
+02:19.310 --> 02:24.920
+Basically what would happen is that this line would start giving you an exception.
+
+02:24.920 --> 02:26.410
+So you have two options.
+
+02:26.440 --> 02:30.460
+Either you can handle this or you can throw it.
+
+02:30.560 --> 02:34.600
+What are the options that we would discuss in the next thing.
+
+02:34.760 --> 02:40.160
+So what are the options you have to elmet compilation errors when handling check exceptions.
+
+02:40.160 --> 02:44.800
+This example is now throwing a checked exception because I'm throwing exception.
+
+02:44.840 --> 02:51.530
+So the first thing I have to do when I actually am throwing an exception is that I have to do it throws.
+
+02:51.740 --> 02:58.220
+So I would need to say throws Exception because that because I'm trying a check the exception I need
+
+02:58.220 --> 03:02.440
+to declare in my definition that I would be throwing exception.
+
+03:02.450 --> 03:08.690
+So here if you look at it now the method is saying OK I'm throwing an exception.
+
+03:08.690 --> 03:13.670
+So that's basically what the admin that is doing any method which throws an exception should see in
+
+03:13.710 --> 03:14.880
+its signature.
+
+03:14.880 --> 03:16.560
+Now the dethroning an exception.
+
+03:16.820 --> 03:22.460
+Once you add this line in code then you would see that the main method would start having a compilation
+
+03:22.520 --> 03:29.030
+error because the main method is now calling a method which is throwing an exception when a method is
+
+03:29.030 --> 03:31.910
+throwing in an exception that basically check the exception.
+
+03:32.090 --> 03:34.450
+It means this method has two options.
+
+03:34.460 --> 03:35.780
+Now Maine has two options.
+
+03:35.780 --> 03:38.600
+Men can either throw an exception throw it again.
+
+03:38.660 --> 03:43.940
+It can say I might throw an exception or the other option it has.
+
+03:43.980 --> 03:50.030
+It has to put a try catch block on it so it can only handle the exception myself.
+
+03:50.030 --> 03:54.830
+So doing it like that and actually printing out something is not really good practice that I'm actually
+
+03:54.830 --> 03:59.660
+just doing a system that are being delivered because if the exception happens I have no idea what the
+
+03:59.660 --> 04:03.830
+exception which is thrown in here is I dare i have to put in this practice.
+
+04:03.860 --> 04:08.940
+Ideally after that and put it to a local logger or an exception manager or something of that kind.
+
+04:09.140 --> 04:14.720
+So the two options that we have when we are dealing with a method which is throwing a check the exception
+
+04:14.720 --> 04:21.050
+to the amount null is throwing a check the exception so anything is not an exception is a check the
+
+04:21.050 --> 04:21.940
+exception.
+
+04:21.950 --> 04:24.830
+So this is throwing a check exception.
+
+04:24.830 --> 04:29.760
+So the main method which is calling that has two options either it can throw the exception out.
+
+04:30.020 --> 04:33.280
+So the main method itself saying I will throw an exception.
+
+04:33.290 --> 04:38.150
+I don't want to handle it or it can handle it by using that Cricut block.
+
+04:38.330 --> 04:45.950
+To summarize if you want the calling method not to worry about the exception that you are throwing then
+
+04:45.950 --> 04:51.440
+you'd create unchecked exception like a new runtime exception then mean there's no need to worry about
+
+04:51.890 --> 04:57.130
+what you are throwing because this is Stringer just the one time exception which is an unchecked exception.
+
+04:57.140 --> 04:59.910
+So main does not need to worry about that at all.
+
+05:00.250 --> 05:07.960
+But if I'm throwing a check the exception like an exception then the first thing is the method itself
+
+05:07.960 --> 05:12.720
+should say I'm throwing an exception to when entering an exception I have to declare a thing I've been
+
+05:12.730 --> 05:13.790
+through an exception.
+
+05:13.870 --> 05:19.840
+Not only that the calling method should decide whether they throw the exception or whether they would
+
+05:19.840 --> 05:23.080
+want to handle the exception as it is in here.
+
+05:23.290 --> 05:31.580
+So you cannot ignore checked exception to if a method you are calling is throwing a check exception.
+
+05:31.810 --> 05:38.260
+Then you should either declare it by saying rules or you would need to handle it by using a try catch
+
+05:38.260 --> 05:38.870
+block.
+
+05:39.010 --> 05:40.230
+So that's the summary of.
+
+05:40.230 --> 05:43.060
+Check the exception and check the exceptions.

@@ -1,0 +1,103 @@
+WEBVTT
+
+00:01.670 --> 00:07.130
+This we do really give you a quick overview of how we will discuss different questions and different
+
+00:07.130 --> 00:14.930
+topics during these cops in the schools would follow the order which is in the media guide the exact
+
+00:14.930 --> 00:20.000
+order of the questions in the guide is the order in which we will discuss things in the schools.
+
+00:20.120 --> 00:26.030
+If you are interested in a specific section then you can jump around that specific video because that's
+
+00:26.030 --> 00:27.430
+the order we would take.
+
+00:27.470 --> 00:31.580
+For example if you're not really interested in the basics and you want to skip the first 20 questions
+
+00:31.580 --> 00:35.640
+you can do that and you can move on to the other topics directly.
+
+00:35.660 --> 00:43.160
+We start off with the Java platform JDK JVM Geddie platform dependent and this kind of stuff we would
+
+00:43.160 --> 00:51.530
+move into the basics like we're apat classes trollings Jawaid an object oriented language and we would
+
+00:51.650 --> 00:54.830
+discuss the basics of object oriented programming.
+
+00:54.830 --> 01:00.580
+Next we discuss a class object to string equals and a lot of other things.
+
+01:00.620 --> 01:06.830
+During the subsequent actions we will also talk about interface abstraction and constructors.
+
+01:06.860 --> 01:12.740
+We also discuss a few Object-Oriented concepts in the Edwins or do you object to the contexts like coupling
+
+01:12.740 --> 01:19.360
+Cohon polymorphism encapsulation in classes starting in classes and anonymous class.
+
+01:19.400 --> 01:21.230
+Then we move into modifiers.
+
+01:21.230 --> 01:27.620
+The default class modifier a private package access protected static final and all that kind of good
+
+01:27.620 --> 01:28.790
+stuff.
+
+01:28.800 --> 01:35.120
+After looking at a few examples on conditions and loops we move into the all important topic of exception
+
+01:35.120 --> 01:35.810
+handling.
+
+01:35.960 --> 01:40.910
+There are a lot of miscellaneous topics that will cover as part of the miscellaneous topic section at
+
+01:40.910 --> 01:43.670
+the end of which we move into collections.
+
+01:43.670 --> 01:45.620
+We also discuss about Grant collections.
+
+01:45.630 --> 01:49.000
+Lexington nice collection concurrent collections and things like that.
+
+01:49.070 --> 01:56.240
+Then we would move into topics like generics multi-threading and functional programming with lambda
+
+01:56.240 --> 01:58.090
+expressions and streams.
+
+01:58.110 --> 02:02.840
+We in the course by discussing different new features which were introduced in previous versions of
+
+02:02.870 --> 02:09.500
+Joe Erlichman going through the PTF guide to understand the exact order of the specific topic you are
+
+02:09.500 --> 02:11.320
+interested in might be discussed.
+
+02:11.420 --> 02:16.760
+The idea behind this video was to just give you an overview of the specific order in which we discuss
+
+02:16.760 --> 02:18.430
+things in this code.
+
+02:18.470 --> 02:24.410
+If you take the guide and spend some time with it you should be able to easily figure out where a specific
+
+02:24.410 --> 02:25.880
+question might be.
+
+02:25.880 --> 02:28.490
+We are excited to start with the real questions.
+
+02:28.510 --> 02:30.880
+Indeed next we do and then we're at.

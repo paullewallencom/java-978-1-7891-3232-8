@@ -1,0 +1,232 @@
+WEBVTT
+
+00:00.810 --> 00:06.390
+This would you let's look at what is in the class what is a static in a class and can you create an
+
+00:06.390 --> 00:08.930
+inner class inside a method and things like that.
+
+00:08.970 --> 00:11.350
+So let's get started with what is in that class.
+
+00:11.380 --> 00:16.350
+So basically and in class is something which is created inside of the class.
+
+00:16.350 --> 00:22.550
+So here you you're seeing that here I'm creating this in a class inside and out of class.
+
+00:22.570 --> 00:26.460
+This is an example of fun in a class.
+
+00:26.580 --> 00:29.330
+So there are different kinds of in a class.
+
+00:29.340 --> 00:31.300
+This is typically Collen in a class.
+
+00:31.320 --> 00:35.080
+This is called a static master class because there's a static keyword.
+
+00:35.130 --> 00:36.290
+Right before it.
+
+00:36.300 --> 00:39.950
+So this is what is called a static class.
+
+00:39.990 --> 00:41.780
+So this isn't a new normal in a class.
+
+00:41.790 --> 00:43.930
+This is a static nested class.
+
+00:44.190 --> 00:47.660
+And also you can create in a class it's inside method.
+
+00:47.690 --> 00:53.260
+I have an example method where I'm creating another class so this class is method local in a class.
+
+00:53.490 --> 00:57.410
+So this is possible to create in a class as within method.
+
+00:57.570 --> 01:00.660
+So you see an example right here.
+
+01:00.750 --> 01:06.330
+So there's an outer class which contains a method called example method and in say that we have a method
+
+01:06.360 --> 01:11.490
+local in class there is a class called in a class example in the package.
+
+01:11.640 --> 01:17.100
+In a class of common 28 minutes Jawa in a class which I would really commend you to spend some time
+
+01:17.400 --> 01:23.410
+to understand what are the different things that are possible in different kinds of classes.
+
+01:23.670 --> 01:30.610
+So we have a lot of examples in here which show what are the different things that you can do in that
+
+01:30.680 --> 01:38.010
+in a class and based on the way they do of the class whether it's a class a static class or a method
+
+01:38.010 --> 01:39.810
+in a class the way it is done.
+
+01:39.830 --> 01:46.670
+It's a little different to give you a high level all of you what we have here is a method Local this
+
+01:48.000 --> 01:49.450
+method local in the class.
+
+01:49.950 --> 01:54.390
+And also we have static nested glassing here.
+
+01:54.400 --> 01:56.230
+So that's the names.
+
+01:56.280 --> 02:00.330
+I mean that's basically a new class but it has a static world.
+
+02:00.630 --> 02:04.050
+And also we have an entire class in here.
+
+02:04.050 --> 02:10.170
+And as you can see in each one of these there is a private variable that is a method and also there
+
+02:10.170 --> 02:11.500
+is a guaranteed amateur's.
+
+02:11.670 --> 02:16.110
+And also we are trying to access different things in here.
+
+02:16.410 --> 02:23.600
+If you go to the main method let's quickly look at what are all the things that I described in here.
+
+02:23.790 --> 02:31.440
+One of the things that is important is that static nested classes can be created directly without an
+
+02:31.440 --> 02:33.270
+instance of its parent.
+
+02:33.480 --> 02:36.760
+So you can see that outlook is not static nested class.
+
+02:36.790 --> 02:39.900
+I am able to directly create a variable effect.
+
+02:39.900 --> 02:46.590
+I don't need to create a variable of outer class and then create an instance of the class to be able
+
+02:46.590 --> 02:47.480
+to do that.
+
+02:47.490 --> 02:52.590
+However that's not the case for normal in that class.
+
+02:52.620 --> 02:58.860
+So if I want to create an orderly class I would definitely need to have an instance of the outer class
+
+02:59.310 --> 03:02.060
+so only once you have an instance of the outer class.
+
+03:02.060 --> 03:10.500
+Here it's an example and only then you be able to create the instance of the other things and also the
+
+03:10.590 --> 03:16.650
+other important thing that you need to note is that even though it's a static nested class the member
+
+03:16.650 --> 03:21.870
+variables are not really static so the member variables are different.
+
+03:21.900 --> 03:26.340
+They are basically real member variables they're not really static member variables.
+
+03:26.340 --> 03:33.450
+The only thing static nested class extatic statically word in the nested class means is that the static
+
+03:33.450 --> 03:36.890
+class can live outside the outer class.
+
+03:37.020 --> 03:42.540
+So you can directly create an instance of the static nested class without needing any instance of the
+
+03:42.540 --> 03:43.050
+outer class.
+
+03:43.050 --> 03:45.770
+That's the only reason why you have a static keyword.
+
+03:45.870 --> 03:50.500
+It doesn't really mean that everything inside that particular class is static.
+
+03:50.610 --> 03:55.380
+A couple of important things that you need to understand so static in a class can be created without
+
+03:55.380 --> 03:58.660
+needing an instance of the outer class.
+
+03:58.660 --> 04:05.310
+However when normal inner class having one which doesn't have a static keyword if you need to create
+
+04:05.310 --> 04:10.390
+it you'd need to have an instance of the outer class.
+
+04:10.410 --> 04:16.650
+The other thing you can notice in here is that when a in a static nested class you cannot access outer
+
+04:16.650 --> 04:21.950
+class with you but it makes sense right because you don't need a instance of the outer variable.
+
+04:21.990 --> 04:27.480
+You don't need an instance of the Object class so the outer class instance variable does not make sense
+
+04:27.480 --> 04:28.090
+here.
+
+04:28.320 --> 04:36.530
+However in the case of an entire class you'd be able to access the value of the outer class instance
+
+04:36.560 --> 04:43.050
+radio but so if I know the difference between an inner class and a static nested class or a static inner
+
+04:43.050 --> 04:50.160
+class if you'd want to call it that way in a method local in a class you'd be able to access final variables
+
+04:50.160 --> 04:51.330
+from here.
+
+04:51.360 --> 04:55.980
+So in limited water available to final you'd be able to access them in the manner that local in the
+
+04:56.090 --> 04:56.730
+US.
+
+04:56.910 --> 05:04.170
+But don't the things which are find a local variable in here you would not be able to access them yet
+
+05:04.630 --> 05:12.100
+however you'd be able to access class instance variables or whatever is in the outer class instance
+
+05:12.100 --> 05:15.840
+variables that are there in the outer class would still be able to access them.
+
+05:15.850 --> 05:22.900
+So there's a lot of stuff which goes on with the class with the Nestor's class they notes and things
+
+05:22.900 --> 05:23.670
+like that.
+
+05:23.740 --> 05:29.530
+This example would be a real help if you'd want to spend some time with it so I would really recommend
+
+05:29.530 --> 05:34.890
+you to look at this example the proper Come here explaining everything that's happening in there.
+
+05:35.050 --> 05:38.190
+And if you're not able to understand any of these things please do.
+
+05:38.290 --> 05:42.520
+Please do leave a comment and I would definitely respond back.
+
+05:42.520 --> 05:45.010
+Until the next video bullae.

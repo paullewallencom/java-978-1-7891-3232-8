@@ -1,0 +1,331 @@
+WEBVTT
+
+00:00.880 --> 00:04.940
+We would now move into a section on conditions and loops.
+
+00:04.990 --> 00:09.310
+We would not really discuss the basics of Eve switch or things like that.
+
+00:09.320 --> 00:12.430
+What we look at is the corner cases.
+
+00:12.430 --> 00:19.930
+So what we start off with is why should you use blocks around a statement consider a piece of code like
+
+00:19.930 --> 00:21.780
+this here debate format.
+
+00:21.780 --> 00:26.060
+It is as if the number plus plus is part of the if statement.
+
+00:26.200 --> 00:33.310
+But really speaking it's not because when you don't have a block when you don't have braces around if
+
+00:33.670 --> 00:40.630
+then only the first statement after the if is part of the If so this is same as making adding an open
+
+00:40.670 --> 00:41.250
+procedure.
+
+00:41.290 --> 00:49.180
+And here the number plus plus it's not part of the if and this can be confusing in certain times.
+
+00:49.180 --> 00:57.790
+So even if there is one statement in the if then it's suggested to add blocks around it so that in future
+
+00:57.790 --> 01:03.730
+somebody at a line of code there it's already part of the if otherwise it will result in code like this
+
+01:03.730 --> 01:06.280
+which will be difficult to maintain.
+
+01:06.310 --> 01:14.140
+Next let's look at a simple example so I'm sending a value of 15 to M and this is the code which is
+
+01:14.140 --> 01:17.830
+present what would be the output of this particular.
+
+01:17.940 --> 01:19.140
+You can pause the video here.
+
+01:19.150 --> 01:22.580
+Try and think about it and come back and see what they are.
+
+01:22.820 --> 01:30.490
+So actually the output is nothing is going to be printed because this and that if else is considered
+
+01:30.490 --> 01:33.320
+to be what they meant.
+
+01:33.460 --> 01:40.560
+So what would happen if M is 15 so f is if M is greater than Grantley's or 15 greater than 20 no so
+
+01:41.070 --> 01:48.550
+then that if is kept and nothing is printed to the output if you have to really look at it the chord
+
+01:48.580 --> 01:54.860
+is something like that so you kind of have a block statement around the entire If ends.
+
+01:54.970 --> 02:02.310
+Let's look at the next example triangles the output of this is true is false then what would happen
+
+02:02.320 --> 02:08.640
+which one of these statements is printed to is true it is true in this is equal to true.
+
+02:08.730 --> 02:10.250
+Print this out.
+
+02:10.270 --> 02:12.630
+But think about it and come back.
+
+02:12.670 --> 02:16.640
+Thing is it's true has a value of false so false is equal to true no.
+
+02:16.870 --> 02:19.060
+So this will not be printed.
+
+02:19.360 --> 02:22.440
+However the thing is here I am not using a comparison.
+
+02:22.450 --> 02:25.260
+So this is something which you should be cautious about.
+
+02:25.390 --> 02:28.290
+So here I am using double is equal is equal to double.
+
+02:28.300 --> 02:30.340
+The goal is to do is comparison.
+
+02:30.350 --> 02:33.460
+However single is equal to is assignment.
+
+02:33.460 --> 02:39.280
+So what we are doing here is we are saying a value of true true is true and the assignment statement
+
+02:39.310 --> 02:40.870
+also returns that value back.
+
+02:40.870 --> 02:45.370
+So the crew will be written and this statement will be printed.
+
+02:45.370 --> 02:50.890
+So the important thing to note in here is whether an assignment operator is used.
+
+02:51.030 --> 02:55.720
+I mean this is the assignment operator and this is the comparison operator you should always be careful
+
+02:55.720 --> 03:01.170
+whether a competition operator or assignment operator which one is used and you should be careful and
+
+03:01.310 --> 03:08.760
+in a if condition always you should use a comparison operator not assignment operator.
+
+03:08.860 --> 03:10.740
+Next we'll move into switch.
+
+03:10.750 --> 03:15.030
+So let's try and get the output of this Pacific's switch block.
+
+03:15.340 --> 03:17.950
+So a number is assigned a value of 2.
+
+03:17.950 --> 03:19.290
+So what would happen.
+
+03:19.300 --> 03:25.760
+The important thing to realize in here is the fact that there are no breaks in all the cases.
+
+03:25.780 --> 03:29.350
+So what would happen when this matches K-Stew.
+
+03:29.560 --> 03:34.110
+So the Fall Through happens so all of these statements are executed.
+
+03:34.130 --> 03:37.440
+So the output would be 2 3 and default.
+
+03:37.660 --> 03:44.580
+The next example we have a number which is as a value of 2 and we are doing a switch out here.
+
+03:44.680 --> 03:50.660
+So here Case 2 and case that we had the same logic so he had the end making use of default threw in
+
+03:50.670 --> 03:51.520
+a right way.
+
+03:51.640 --> 03:56.830
+So we have breaks in every statement we want to have the same logic for case in case 3.
+
+03:56.830 --> 04:04.900
+So we are letting kids to fall through and we're actually printing the statement but is 2 or 3.
+
+04:04.960 --> 04:06.910
+And after this break would happen.
+
+04:06.910 --> 04:11.980
+So you go out of the switch so the only thing which would be printed is number is 2 or 3.
+
+04:11.980 --> 04:14.950
+The next thing is should default be the last case in a switch statement.
+
+04:15.070 --> 04:21.490
+Actually not you can have default anywhere and it just acts as the default.
+
+04:21.490 --> 04:23.920
+So for example look at the switch below.
+
+04:24.070 --> 04:27.810
+So a number has a value of 10 and none of the cases match.
+
+04:27.880 --> 04:29.090
+So what will be excluded.
+
+04:29.170 --> 04:31.240
+The default is the one which would be executed.
+
+04:31.240 --> 04:36.900
+You can have a default anywhere in us which can a switch statement be used on the string.
+
+04:37.090 --> 04:42.350
+In the earlier versions of Java you were only allowed to switch around Garib by chart.
+
+04:42.400 --> 04:49.450
+And that's basically integer kind of variables but with the latest version of Java you can also switch
+
+04:49.600 --> 04:54.700
+around a string and interims what is an enhanced for loop.
+
+04:54.880 --> 04:58.670
+This Ensley for loops can be used to loop around areas and LIST.
+
+04:58.720 --> 05:00.200
+This was introduced in Java.
+
+05:00.290 --> 05:06.530
+Five and this would easily I love you to loop around numbers so you can look at it.
+
+05:06.560 --> 05:08.990
+Down here it's quite a simple thing.
+
+05:09.000 --> 05:10.600
+So you have an array.
+
+05:10.760 --> 05:16.760
+So number column numbers and you're pulling the numbers so does the output of that specific program.
+
+05:17.000 --> 05:19.340
+This code does compile.
+
+05:19.400 --> 05:28.570
+The answer is yes you can have empty but empty statement in all the three part of the for loop.
+
+05:28.700 --> 05:31.250
+This would almost act like a finite.
+
+05:31.340 --> 05:38.390
+So this will keep looping for ever what we're doing in here is we're trying to look at the logic and
+
+05:38.450 --> 05:44.590
+look at the corner cases it switch with loops and things like that.
+
+05:44.630 --> 05:50.810
+All the examples that we're talking about are in here and there's a package called common 28 minutes
+
+05:50.810 --> 05:57.440
+to our floor and there are examples continue examples do while for a loop a failed switch and why loop
+
+05:57.440 --> 05:58.090
+example.
+
+05:58.100 --> 06:03.170
+So we are looking at extract from these examples in here.
+
+06:03.170 --> 06:10.100
+If you really want to understand them fully I would really recommend you to open the code in here and
+
+06:10.100 --> 06:11.770
+try and play around with it.
+
+06:11.780 --> 06:15.820
+So this would give you a real good understanding off the floor.
+
+06:15.920 --> 06:20.940
+I mean the floor statements are basically if a switch while do while.
+
+06:21.260 --> 06:22.460
+And the for loop.
+
+06:22.520 --> 06:25.360
+So you can play around with them in here.
+
+06:25.520 --> 06:28.520
+Now Grant gets the output of this particular program.
+
+06:28.640 --> 06:30.960
+So there's a break statement here.
+
+06:30.980 --> 06:35.240
+So what would happen is it would break out of the loop.
+
+06:35.240 --> 06:43.010
+So what the big statement does is it breaks out of the innermost loop so the loop is this one.
+
+06:43.010 --> 06:48.950
+So when our case file it breaks out of this loop and it goes out to the outer loop.
+
+06:49.130 --> 06:53.580
+So that's exactly how you'd see that whenever case having a value of five.
+
+06:53.600 --> 06:59.810
+It would break out and it would go to the old Outer Loop and it would continue printing that means.
+
+06:59.990 --> 07:02.510
+So this loop will be broken out of.
+
+07:02.540 --> 07:05.300
+But it would still continue exiting the outer loop.
+
+07:05.300 --> 07:09.700
+So a break Sigmond breaks out of the inner most loop.
+
+07:09.710 --> 07:13.730
+You can also use labels on the loops.
+
+07:13.850 --> 07:20.900
+So here I have a label off outer on the first loop and when I'm breaking out I'm using outta here.
+
+07:20.930 --> 07:25.710
+So when I say break out it would actually break out when this condition is met.
+
+07:25.850 --> 07:31.720
+It would break out of this loop so it will break out of the in the loop as well as the outer loop.
+
+07:31.790 --> 07:38.150
+So basically labels are used when we want to break out of the outer loop.
+
+07:38.150 --> 07:44.170
+So not just the loop but I want to break out of the outer loop also then I would use the break statement
+
+07:44.540 --> 07:48.980
+with a label if the discussion until now seemed little at once.
+
+07:49.130 --> 07:54.350
+Then I would really recommend you to do an exercise and spend some time at least 10 to 15 minutes looking
+
+07:54.350 --> 07:57.470
+at all the examples in this specific package.
+
+07:57.470 --> 07:59.180
+There are a lot of examples in here.
+
+07:59.270 --> 08:00.300
+You can look at them.
+
+08:00.320 --> 08:03.560
+I mean there are multiple means to explain what's happening in there.
+
+08:03.770 --> 08:07.060
+So you can look at them and try and understand the basics very well.
+
+08:07.250 --> 08:08.650
+And the next step.

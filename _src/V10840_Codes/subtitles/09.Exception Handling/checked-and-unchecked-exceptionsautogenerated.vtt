@@ -1,0 +1,220 @@
+WEBVTT
+
+00:00.450 --> 00:06.150
+Welcome back in the previous we do we looked at the Greeks don't try catch finally and things like that
+
+00:06.420 --> 00:11.260
+and in this we do let's focus on the hierarchy of exception handling classes.
+
+00:11.300 --> 00:18.430
+There are a lot of knowledges which are used around the exception handling classes terrible exception
+
+00:18.480 --> 00:21.610
+runtime exception check exception unchecked exception.
+
+00:21.900 --> 00:22.820
+Oh my God.
+
+00:22.820 --> 00:28.400
+So so many things that we would want to clarify during this specific review.
+
+00:28.470 --> 00:34.550
+So let's start with the hierarchy of exception handling classes at the top of the Exception handling
+
+00:34.620 --> 00:38.010
+or the error handling hierarchy is terrible.
+
+00:38.190 --> 00:45.680
+So Trouble is the top most class and there are two types of important classes which extend trouble.
+
+00:45.720 --> 00:47.190
+One is error.
+
+00:47.400 --> 00:49.710
+The other one is exception.
+
+00:49.770 --> 00:57.360
+So it really is basically anything that you cannot handle anything that programmer can never be able
+
+00:57.360 --> 00:58.090
+to handle.
+
+00:58.230 --> 00:59.630
+That's an error.
+
+00:59.850 --> 01:02.530
+So basically you can think of things like out of memory.
+
+01:02.730 --> 01:06.480
+If JVM runs out of memory there isn't I think a programmer can do about it.
+
+01:06.480 --> 01:09.170
+So those kind of things are called errors.
+
+01:09.240 --> 01:12.740
+Exceptions are those things that programmers can do something about.
+
+01:12.930 --> 01:15.440
+I'm trying to read a file and file is not found.
+
+01:15.480 --> 01:21.850
+So you can probably retry or you can probably try for another file or something of that.
+
+01:21.860 --> 01:25.410
+And those are the things which are called exceptions.
+
+01:25.410 --> 01:28.050
+Exceptions again are classified into two types.
+
+01:28.050 --> 01:33.120
+One is check the exceptions and unchecked exceptions.
+
+01:33.160 --> 01:37.070
+Any method that is throwing an exception in Java has two options.
+
+01:37.080 --> 01:43.980
+Either it can say I'm doing a checked exception or an unchecked exception or method will throw a check
+
+01:43.980 --> 01:49.360
+the exception when it wants the calling method which are method is calling that method.
+
+01:49.440 --> 01:53.060
+It wants that method to know that I am throwing an exception.
+
+01:53.130 --> 01:54.240
+Do something about it.
+
+01:54.240 --> 02:01.050
+So if I want the calling method to try and handle this exception or do something about this exception
+
+02:01.080 --> 02:07.080
+or to know about this exception then I would use something called a check exception.
+
+02:07.260 --> 02:13.170
+Exceptions are when I'm throwing an exception but I'm not sure if the calling method would be able to
+
+02:13.170 --> 02:14.650
+do anything about it.
+
+02:14.670 --> 02:21.360
+I don't really want the calling method to mandate really handle that exception in those kinds of scenarios.
+
+02:21.500 --> 02:24.100
+I would throw in and check the exception.
+
+02:24.270 --> 02:31.040
+So when a trillion check the exception then who is calling me needs to definitely handle that exception
+
+02:31.070 --> 02:34.610
+or throw it when entering an unchecked exception.
+
+02:34.770 --> 02:41.360
+Then the calling method does not need to know and does not need to do anything about that exception.
+
+02:41.520 --> 02:46.920
+We talked about Roble we said that two kinds of things at the highest level.
+
+02:46.950 --> 02:52.110
+Error exception error is those things which the programmer can do nothing about.
+
+02:52.200 --> 02:59.190
+So out of memory exception exceptions are those things which are things which a programmer might be
+
+02:59.190 --> 03:00.670
+able to do something about.
+
+03:00.870 --> 03:06.430
+And exceptions are of two types that we talked about Check the exception and and check the exception.
+
+03:06.660 --> 03:12.050
+These things take the exception and unchecked exceptions are not really classes in Java.
+
+03:12.060 --> 03:14.520
+So they are not really Java classes.
+
+03:14.520 --> 03:19.860
+Basically the way it works is there is something called runtime exception to runtime exception again
+
+03:19.860 --> 03:28.350
+extends exception any exception that extends runtime exception is an unchecked exception.
+
+03:28.440 --> 03:32.320
+So if you look at it here I am extending an exception.
+
+03:32.370 --> 03:34.230
+It's an exception.
+
+03:34.500 --> 03:43.140
+So anything which extends runtime exception or a class that extends runtime exception is unchecked exception
+
+03:43.920 --> 03:51.530
+any exception class which does not extend runtime exception but extends exception directly.
+
+03:51.780 --> 03:53.130
+Check the exception.
+
+03:53.280 --> 03:59.940
+So if I want my method in my exception to be definitely handled by the methods which are calling me
+
+04:00.030 --> 04:06.720
+then I would create a check exception to what I would do is I would directly extend exception or extend
+
+04:06.720 --> 04:13.560
+the class which is extending exception any exception which is not in the runtime exception hierarchy
+
+04:13.860 --> 04:21.690
+is a check exception and any exception which is in the runtime exception hierarchy of classes ease up
+
+04:21.870 --> 04:23.290
+and check the exception.
+
+04:23.310 --> 04:28.150
+So that's at a high level I mean to summarize the chignon unchecked exception.
+
+04:28.170 --> 04:29.010
+Part of it.
+
+04:29.130 --> 04:35.450
+It's basically if you want to throw if you want your calling method to handle an exception to mandatorily
+
+04:35.580 --> 04:40.810
+handle the exception that you are drawing then you would throw a check exception.
+
+04:40.860 --> 04:46.710
+You can create a checked exception by directly extending exception or extending something which is already
+
+04:46.810 --> 04:50.200
+extended exception other than the runtime exception.
+
+04:50.230 --> 04:57.750
+But if I don't want the calling method do anything about the exceptions that I'm throwing the then i
+
+04:57.750 --> 05:04.530
+would actually extend a runtime exception or one of the things that extends an exception and then I
+
+05:04.530 --> 05:09.500
+would be called an exception since we now understand the basic concept.
+
+05:09.510 --> 05:12.170
+A lot of these questions would be very simple to answer.
+
+05:12.450 --> 05:17.060
+What is the difference between error and exception stack overflow out of memory.
+
+05:17.080 --> 05:21.820
+All these are things which an programmer cannot do anything about these errors.
+
+05:21.840 --> 05:24.830
+Exception is when the program can handle the exception.
+
+05:24.930 --> 05:30.390
+What is the difference between checked exception and checked exception runtime exception and classes
+
+05:30.390 --> 05:34.030
+that extend an exception are called unchecked exceptions.
+
+05:34.070 --> 05:40.500
+What are unchecked exceptions that exception clauses which do not fit the definition to anything which
+
+05:40.500 --> 05:47.500
+is not an exception or extending an exception but an exception then that check the exception.

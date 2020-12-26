@@ -1,0 +1,793 @@
+WEBVTT
+
+00:01.230 --> 00:04.920
+Not we spend some time looking at the examples.
+
+00:04.950 --> 00:09.540
+Let's spend some time looking at the questions which are related to functional programming.
+
+00:09.720 --> 00:13.790
+So what is functional programming functional programming is a programming paradigm.
+
+00:13.800 --> 00:20.670
+I mean that's basically a veil of building programs that creates a computational evaluation of mathematical
+
+00:20.670 --> 00:21.160
+functions.
+
+00:21.200 --> 00:22.910
+OK it was written at the convention.
+
+00:23.040 --> 00:27.350
+The most important thing is functional programming quite mutable data.
+
+00:27.360 --> 00:29.400
+It avoids changing state.
+
+00:29.400 --> 00:37.320
+So as we discussed earlier here some has a state of some the value of some keeps changing how in a functional
+
+00:37.320 --> 00:42.560
+programming style the value of some does not keep changing all that we do is we calculate the halting
+
+00:42.570 --> 00:44.020
+and assignment to some.
+
+00:44.250 --> 00:48.300
+So the weights achieved is through something called stream.
+
+00:48.510 --> 00:49.830
+So what is a stream.
+
+00:49.830 --> 00:54.780
+So basically as we look at earlier a stream is nothing but a source of objects.
+
+00:54.780 --> 00:57.390
+So here the objects are all that number.
+
+00:57.390 --> 01:01.650
+So it is not as list these are the sorts of objects.
+
+01:01.650 --> 01:08.910
+So in the example Abbo we are actually creating a stream from the list and streams usually have things
+
+01:08.910 --> 01:13.160
+called an intermediate operation and a terminal operation.
+
+01:13.320 --> 01:21.180
+For example in this particular example we are using fetor as intermediate operation we are think filter
+
+01:21.270 --> 01:22.320
+using this condition.
+
+01:22.330 --> 01:24.410
+What condition is art.
+
+01:24.450 --> 01:31.620
+So here we are defining a function as art which is returning if the element is altered or not.
+
+01:31.830 --> 01:34.920
+And if it's not art it would be filtered out.
+
+01:34.920 --> 01:38.450
+So this filter is called an intermediate operation.
+
+01:38.670 --> 01:42.620
+So what does the filter do filter takes a stream as an input.
+
+01:43.020 --> 01:51.410
+Basically a list of items or a set of objects as an input and it would praeter them based on the predicate.
+
+01:51.420 --> 01:55.100
+So if this predicate which is rooted in true or false.
+
+01:55.200 --> 01:59.450
+If this is returning a value true then it would be in the list.
+
+01:59.490 --> 02:02.910
+But if it's your fault it would be filtered out.
+
+02:03.030 --> 02:08.050
+And this kind of an operation is called the intermediate operation.
+
+02:08.340 --> 02:12.990
+And this one the last one which reduces the whole thing to one object.
+
+02:12.990 --> 02:17.230
+So here what we are doing is we are calculating the sum of the whole thing.
+
+02:17.250 --> 02:20.360
+So this is terminal operation.
+
+02:20.360 --> 02:26.580
+So in a stream typically what we would do is we would have a lot of intermediate operations and one
+
+02:26.760 --> 02:31.140
+terminal operation would look at them in detail a little later.
+
+02:31.260 --> 02:34.440
+Let's look at one more example with the stream.
+
+02:34.440 --> 02:40.920
+So basically if you look at this particular piece of code what it's doing it's creating a stream from
+
+02:41.010 --> 02:42.130
+an army.
+
+02:42.180 --> 02:47.340
+So it's using an airway and creating a stream so the function which is used is at is dot stream and
+
+02:47.340 --> 02:53.190
+passing and repassing but we have a stream enough then what we are doing we are filtering it.
+
+02:53.430 --> 02:54.700
+How are we filtering it.
+
+02:54.770 --> 03:02.120
+Besant this condition to big with the string S is starting with our all.
+
+03:02.250 --> 03:04.170
+So which of these are starting with arrow.
+
+03:04.200 --> 03:10.130
+So this is the only one which will be left or what all the others will get filtered out.
+
+03:10.140 --> 03:15.450
+So this expression which we are using here is called a lambda expression.
+
+03:15.630 --> 03:19.110
+What we are defining here is actually a function.
+
+03:19.170 --> 03:28.040
+So what we are saying is accept input s and see if that function in that string is starting with aro.
+
+03:28.380 --> 03:34.800
+So it's basically like creating a function and this function this style of creating function in one
+
+03:34.800 --> 03:36.840
+line is what is called a lambda expression.
+
+03:36.840 --> 03:39.030
+We'll discuss that a little later as well.
+
+03:39.270 --> 03:41.970
+So and then we are mapping.
+
+03:41.970 --> 03:47.160
+So one of the intermediate operations we are using is filter the other intermediate operation we're
+
+03:47.190 --> 03:48.520
+using with map.
+
+03:48.660 --> 03:53.820
+So what we're doing is we are taking this value and we are mapping it to what we are mapping it to string
+
+03:53.820 --> 03:55.040
+lowercase.
+
+03:55.080 --> 03:59.280
+So the string to lower case is one of the functions in a string right.
+
+03:59.280 --> 04:05.740
+It's basically a string that lowercase and you pass an S instead of using this kind of style.
+
+04:05.760 --> 04:10.560
+I could have written it in the lambda expression state as well.
+
+04:10.590 --> 04:14.600
+The same piece of code that we have here map string lowercase.
+
+04:14.610 --> 04:17.520
+So this can also be written using an expression.
+
+04:17.520 --> 04:24.150
+So I'm saying digging in S and read to me string that lower case of course and instead of using the
+
+04:24.150 --> 04:28.160
+complete lambda expression this is kind of the shot.
+
+04:28.200 --> 04:28.790
+Good.
+
+04:28.810 --> 04:31.390
+So string colon colon two lowercase.
+
+04:31.470 --> 04:34.020
+So what it does is it takes what Oprah modalist pass.
+
+04:34.020 --> 04:37.460
+Then you go to this method and returns that will you back.
+
+04:37.470 --> 04:40.150
+This is called a method reference.
+
+04:40.160 --> 04:43.170
+What we're using string Plourde guess is called a method reference.
+
+04:43.170 --> 04:44.580
+We'll discuss what method reference.
+
+04:44.580 --> 04:46.470
+Very soon to start.
+
+04:46.510 --> 04:48.270
+I'm going to take a step back.
+
+04:48.270 --> 04:48.720
+Again.
+
+04:48.780 --> 04:54.400
+What we did is we created a stream of address and we filtered out those ones we just starting with.
+
+04:54.450 --> 04:55.650
+How did we do that.
+
+04:55.650 --> 05:00.250
+We use a lambda expression and then again we are mapping the lamp.
+
+05:00.250 --> 05:01.690
+Do we have a map.
+
+05:01.700 --> 05:05.040
+We are mapping from the value to its lowercase.
+
+05:05.090 --> 05:08.960
+So we are mapping every value from its value to lowercase.
+
+05:09.170 --> 05:11.890
+And then what we are doing is we are trying to sort it.
+
+05:11.930 --> 05:15.240
+So we are trying to do so are on what are what is leftover.
+
+05:15.410 --> 05:19.560
+And then we are trying to print each value to the console.
+
+05:19.580 --> 05:27.940
+In this particular example all these three things which are present in between are intermediate operations.
+
+05:27.980 --> 05:29.670
+So this is a screen.
+
+05:29.720 --> 05:35.330
+This is an intermediate operations and this is the terminal operation the terminal operation is the
+
+05:35.330 --> 05:41.210
+one which would either consume the value which is present in here or kind of sum it up and give the
+
+05:41.210 --> 05:43.450
+resultant value and things like that.
+
+05:43.580 --> 05:49.520
+The intermediate operations on the other hand are the ones which are performed in between typical intermediate
+
+05:49.520 --> 05:55.070
+operations are things like filtering so I have 10 items I want to filter out five of them and I would
+
+05:55.070 --> 06:01.160
+want to be left with 5 or I would want to map one kind of whole value to another kind of value.
+
+06:01.160 --> 06:08.020
+So you might want to do some logic and map from one to another and all you want to sort the list do
+
+06:08.020 --> 06:14.240
+you have a list of 10 items you want to sort them by some vague operation on the other hand would consume
+
+06:14.240 --> 06:18.600
+the whole thing and either send it to an outboard summing it up or something of that.
+
+06:18.610 --> 06:25.880
+And so what we have been looking at until now is anything which is usually involving streams has a source
+
+06:26.670 --> 06:29.570
+intermediate operation and a terminal operation.
+
+06:29.570 --> 06:36.830
+The thing about intermitted operation always is it returns a new stream back to any intermediate operation
+
+06:37.220 --> 06:44.600
+usually returns and you stream back and a terminal operation would either return the result.
+
+06:44.600 --> 06:51.920
+I mean it might be a single integer or a single value or it might be a list or an array or it might
+
+06:51.920 --> 06:57.320
+be saving something to the database or you might be sending something to the output or something of
+
+06:57.320 --> 06:57.850
+that.
+
+06:58.040 --> 07:02.840
+So this is how your functional programs are streams function programs would work.
+
+07:02.840 --> 07:07.840
+So you have a source that's the stream and then you do the intermediate operations.
+
+07:07.850 --> 07:13.370
+That is you either filter them the right logic or do anything with them and then you have the terminal
+
+07:13.370 --> 07:14.010
+operation.
+
+07:14.090 --> 07:15.310
+What do I do with that operations.
+
+07:15.320 --> 07:19.880
+Basically intermitted operations are those ones which take a stream as input and return on the stream
+
+07:19.880 --> 07:20.450
+as out.
+
+07:20.450 --> 07:23.230
+But for example the examples are map.
+
+07:23.420 --> 07:30.930
+So you'd want to map one value to another you fetor you want to filter in from a set of ten.
+
+07:30.950 --> 07:34.350
+You only want to get three values distinct.
+
+07:34.460 --> 07:36.980
+You only want the set of distinct values.
+
+07:37.100 --> 07:43.120
+So if you have a set of 10 values with duplicates you want to remove the duplicate of each sorted.
+
+07:43.160 --> 07:48.290
+So basically you want to store the list of things so you can see the example with distinct here.
+
+07:48.290 --> 07:52.320
+So I'm using a distinct as intermediate operation in here.
+
+07:52.340 --> 07:58.430
+And I'm printing out de-value so you can see 5:59 three are printed because those are the distinct values
+
+07:58.430 --> 07:59.720
+in the list.
+
+07:59.800 --> 08:01.550
+For example with sorted as well.
+
+08:01.580 --> 08:08.030
+So you can see that we are sorting the values so it would be 1 1 2 2 3 6 sorted in the ascending order
+
+08:08.180 --> 08:10.370
+and we have a filter example as well.
+
+08:10.370 --> 08:16.800
+So we are filtering based on our condition to only the ones which are odd would be printed 1 3 and 7.
+
+08:16.880 --> 08:20.390
+And we were also using a lot of terminal operations earlier.
+
+08:20.540 --> 08:24.770
+So the terminal operations are basically producing a result or a side effect.
+
+08:24.770 --> 08:31.100
+So one of the terminal operation is Reduce Reuse is basically to take the values and combine them into
+
+08:31.100 --> 08:32.030
+a single value.
+
+08:32.030 --> 08:35.990
+So you would tell how to combine them into a single value.
+
+08:36.020 --> 08:39.970
+One of the functions is reduce So integer colon Collinson.
+
+08:40.100 --> 08:45.500
+So first we are filtering the order values 1 3 and 7 and then we are summing it up.
+
+08:45.500 --> 08:51.410
+So the result will be one place to replace 7 which is 11 which is to create a side effect.
+
+08:51.410 --> 08:57.770
+So either you can print it to an output story to a database or things like that for each and we of passing
+
+08:57.770 --> 09:00.860
+the function functions so we're passing a limited reference.
+
+09:00.860 --> 09:08.780
+So what happens is for each element in this list which passes the filter what would happen.
+
+09:08.780 --> 09:15.650
+This line of code would be executed and it would be like every line everything would be printed out
+
+09:15.900 --> 09:17.540
+to 1 3 7.
+
+09:17.570 --> 09:19.720
+Is that out of that particular thing.
+
+09:19.940 --> 09:24.140
+The output of a terminal operator can also be a list for example.
+
+09:24.140 --> 09:26.090
+So here we are using collect.
+
+09:26.090 --> 09:32.450
+So what we are doing is we are collecting the list and we are putting them back to our numbers.
+
+09:32.450 --> 09:38.200
+So we are taking numbers and filtering them and putting them to our numbers 1 3 7.
+
+09:38.210 --> 09:44.540
+So we're using collect and the function which is used to collect start to list what are met the differences.
+
+09:44.540 --> 09:49.570
+We only looked at a lot of metal differences on DNA test 2:59 colon is our.
+
+09:49.580 --> 09:56.120
+This is a method reference and also be used integers some system out Prindle.
+
+09:56.360 --> 10:02.810
+So these are all examples of metal differences basically metal differences and nothing but short cut
+
+10:03.350 --> 10:06.650
+for lambda expression instead of defining a function here.
+
+10:06.890 --> 10:14.600
+What we are doing is we are defining a function elsewhere and using the function using the method reference.
+
+10:14.600 --> 10:20.260
+So a lambic solution is what we have been using at a number of places until now.
+
+10:20.270 --> 10:23.010
+So this one is a lambda expression.
+
+10:23.030 --> 10:28.420
+So you take number as input and written back number but more do not equal to zero.
+
+10:28.420 --> 10:31.330
+So this is also under the lambda expression.
+
+10:31.370 --> 10:35.170
+You take number as input and you are printing it to the output.
+
+10:35.270 --> 10:40.200
+So these are all what we call as lambda expressions so they are in this state.
+
+10:40.280 --> 10:42.690
+This is the parameters which are passed to that function.
+
+10:42.920 --> 10:46.750
+And what should be the body of that particular function.
+
+10:46.940 --> 10:49.280
+That's basically the function.
+
+10:49.280 --> 10:54.100
+So it's basically like this lambda expression would translate to a function of this kind.
+
+10:54.100 --> 11:01.610
+So if I want to write a function for that the way it would be is I would say public white because this
+
+11:01.610 --> 11:11.470
+is not too of value back so public wide put in something and the input is number.
+
+11:11.480 --> 11:18.540
+So the input is number and what I want to do with that number is system that are printed and numbered.
+
+11:18.680 --> 11:22.940
+This is kind of the function that we are creating in here.
+
+11:23.000 --> 11:27.220
+The thing with lambda expressions is whether you use lambda expression you can change it to a method
+
+11:27.230 --> 11:27.690
+different.
+
+11:27.700 --> 11:31.280
+Now instead of using this I can use the method reference.
+
+11:31.280 --> 11:39.010
+So where is this method present in its lambda expressions list and colon colon.
+
+11:39.320 --> 11:40.910
+It's as simple as that.
+
+11:40.910 --> 11:42.700
+So now you are changing to a method reference.
+
+11:42.710 --> 11:48.020
+You can either use the lambda expression or a method reference but that reference is the fact that you
+
+11:48.020 --> 11:51.440
+can really use that method at number of places.
+
+11:51.440 --> 11:57.080
+The thing about lambda expression is it keeps this code very very simple and easy to read.
+
+11:57.110 --> 12:00.090
+A lamp expression is nothing but an anonymous function.
+
+12:00.120 --> 12:01.750
+So this one does not have a name.
+
+12:01.760 --> 12:05.790
+It's just has input and the code associated with it.
+
+12:05.930 --> 12:11.900
+And we are saying for each value here is your dysfunction lambda expression is an anonymous function.
+
+12:11.900 --> 12:14.690
+It's a method without a declaration.
+
+12:14.690 --> 12:18.880
+There will be no access modifiers no return value declaration and no name.
+
+12:18.890 --> 12:23.420
+It's a shorthand that allows you to write them at third in the same place you're going to use it.
+
+12:23.420 --> 12:24.730
+So I'm going to use it here.
+
+12:24.770 --> 12:30.190
+I'm going to write the function there is really useful in places where a method is used only once and
+
+12:30.190 --> 12:32.180
+the method definition is very short.
+
+12:32.230 --> 12:36.430
+As we start here this is an example of the lambda expression.
+
+12:36.550 --> 12:42.400
+The thing is there is a huge amount of relationship between lambda expression and functional interfaces.
+
+12:42.400 --> 12:44.530
+So what is a functional interface.
+
+12:44.560 --> 12:46.660
+That's one of the first questions right.
+
+12:46.680 --> 12:51.130
+So before we talk about the relationship between lambda expression and function interfaces we look at
+
+12:51.130 --> 12:57.610
+a couple of functional interfaces and we have been writing a lot of code using fetor for each and all
+
+12:57.610 --> 12:58.630
+this kind of stuff.
+
+12:58.640 --> 13:02.040
+So from the start we were using filter radials for each.
+
+13:02.050 --> 13:03.450
+And a lot of things.
+
+13:03.490 --> 13:10.990
+So if you look at this particular thing feature for example this filter actually accepts a predicate.
+
+13:11.080 --> 13:13.680
+So a predicate is something which is either true or false.
+
+13:13.690 --> 13:17.440
+It takes an input and returns whether something is true or false.
+
+13:17.440 --> 13:19.220
+So let's look at pretty good.
+
+13:19.300 --> 13:20.890
+And I'm going to predicate now.
+
+13:21.160 --> 13:27.900
+You can see that this predicate is annotated with something called functional interfaces.
+
+13:27.910 --> 13:33.220
+So basically a predicate is something which takes one input.
+
+13:33.220 --> 13:37.440
+It accepts one input and it don't whether it's true or false.
+
+13:37.450 --> 13:45.270
+So this particular thing this particular interface has only one only one function defined in here.
+
+13:45.280 --> 13:53.140
+So a functional interface is something which has only one method which is declared in this predicate
+
+13:53.230 --> 13:57.340
+has only one function which is present in here.
+
+13:57.460 --> 14:03.290
+A predicate would take an object as an input and read and true or false as output.
+
+14:03.370 --> 14:06.260
+What are the other things that we looked at radials.
+
+14:06.340 --> 14:11.830
+So if you look at the reduce it accepts a binary operator as one of the things.
+
+14:11.950 --> 14:14.690
+So binary operatively is again a functional interface.
+
+14:14.830 --> 14:17.950
+However if you look at the binary operator what it does.
+
+14:18.070 --> 14:24.080
+So redos has a binary operator and the binary operator into an extent by function.
+
+14:24.310 --> 14:30.380
+And this is the important method in the functional interface by function.
+
+14:30.610 --> 14:35.190
+So it accepts two objects as input and you can return any value.
+
+14:35.360 --> 14:36.870
+So that's a byte function.
+
+14:37.000 --> 14:38.340
+So radials uses that.
+
+14:38.350 --> 14:42.010
+So basically every integer colon colon some works.
+
+14:42.070 --> 14:44.520
+It defines how to add two entities.
+
+14:44.710 --> 14:50.400
+And what would happen is the right use operation would call that on all the integers.
+
+14:50.410 --> 14:51.830
+Next one is for each.
+
+14:51.830 --> 14:57.400
+So let's look at for each for these uses comes through consumer scans jubilees and the functional interface
+
+14:58.180 --> 14:59.360
+the consumer.
+
+14:59.500 --> 15:04.870
+If you look at it it accepts the object as an input but it does not return anything back it basically
+
+15:04.870 --> 15:05.740
+consumes it.
+
+15:05.740 --> 15:11.270
+So I use it that brings it to the output or app stores that do a database or things like that.
+
+15:11.380 --> 15:14.420
+Kazuma just is a function interface or consuming.
+
+15:14.740 --> 15:21.690
+So if you look at all these functional interfaces functionally interfaces have one method which is declared.
+
+15:21.700 --> 15:27.350
+So if you look at all the functional interfaces they have only one method declared.
+
+15:27.520 --> 15:33.320
+So the Lambeck expression is the function which is defining that method.
+
+15:33.340 --> 15:40.930
+So instead of creating a new implementation of the consumer what we're doing is we are creating implementation
+
+15:40.960 --> 15:43.850
+directly here using the lambda expression.
+
+15:43.960 --> 15:48.470
+So that's the relationship between a function interface and a lambda expression.
+
+15:48.550 --> 15:54.470
+So a function interface defines the input so far which accepts consumer.
+
+15:54.550 --> 16:01.090
+So we're creating a consumer using the lambda expressions or foraging excerpts of consumer Kazuma basically
+
+16:01.960 --> 16:07.870
+is a function which would take an object as input and return nothing as output.
+
+16:07.870 --> 16:13.480
+So what we're doing here is we are creating an implementation of a consumer what we what are we using
+
+16:13.480 --> 16:17.600
+to create the implementation of the consumer we are using a lambda expression.
+
+16:17.860 --> 16:24.910
+So instead of defining exactly the entire method we are using the lambda expression to create a implementation
+
+16:24.910 --> 16:26.190
+of the consumer.
+
+16:26.380 --> 16:31.800
+Similarly here we are creating an implementation of the predicate functional interface.
+
+16:31.960 --> 16:38.200
+So the deep predicate function interface defines one method which accepts object as input and returns
+
+16:38.290 --> 16:40.300
+a boolean as output.
+
+16:40.300 --> 16:42.370
+And we are creating a function here.
+
+16:42.380 --> 16:43.050
+Upbraids.
+
+16:43.120 --> 16:51.970
+I mean lambda expression here and this lambda expression implement the predicate interface as we discussed
+
+16:52.050 --> 16:53.870
+when we are creating a lambda expression.
+
+16:53.870 --> 17:01.340
+What we're really defining is a function which implements a predefined function interface.
+
+17:01.360 --> 17:04.510
+So here we are actually what is a predicate.
+
+17:04.510 --> 17:06.370
+A predicate is a functional interface.
+
+17:06.370 --> 17:07.240
+What does it have.
+
+17:07.240 --> 17:14.290
+It has one method which accepts object as an input entered and boolean as an interface and all here
+
+17:14.440 --> 17:20.380
+we are using we are creating a lambda expression which is implementing this functional interface pretty
+
+17:20.380 --> 17:21.310
+good.
+
+17:21.310 --> 17:23.760
+There are other kinds of functional interfaces.
+
+17:23.770 --> 17:30.730
+Function function is one which takes one it as an input and returns some other object as an output so
+
+17:30.730 --> 17:36.940
+you can translate from one object to another object a consumer on the other hand is a functional interface
+
+17:36.970 --> 17:42.100
+which accepts one element as an input and does not return anything as output to it basically consume
+
+17:42.100 --> 17:48.260
+it sends it to an output sensor to a database tacked onto a queue or something of that kind.
+
+17:48.340 --> 17:54.250
+And the other function interfaces the by function interface which we already looked at which accepts
+
+17:54.490 --> 18:01.590
+two parameters as input and returns up single value as output.
+
+18:01.660 --> 18:07.660
+In this video we looked at a lot of things related to lambda expressions streams and functional programming.
+
+18:07.690 --> 18:12.880
+If you use two sequential style of programming for a long time I'm sure functional programming will
+
+18:12.880 --> 18:14.660
+not be easy to understand.
+
+18:14.710 --> 18:16.080
+If you had a starting programmer.
+
+18:16.090 --> 18:19.990
+I would definitely recommend you to understand functional programming in detail.
+
+18:20.380 --> 18:25.720
+One of the exercises I would really want you to do is to pick up this test and try and write a lot of
+
+18:25.720 --> 18:27.060
+example code.
+
+18:27.210 --> 18:33.040
+So the only way to understand functional programming very well is by making sure that you are writing
+
+18:33.040 --> 18:39.010
+a lot of code and once you start writing code using the functional programming you will understand it
+
+18:39.010 --> 18:40.080
+with a lot.
+
+18:40.180 --> 18:46.900
+So what I would recommend you to do is to pick up some simple example of a normal procedural programming
+
+18:47.140 --> 18:50.680
+and convert it into the functional programming state.
+
+18:50.830 --> 18:56.650
+So that would be the exercise I would leave you with for this specific medium until the next step.
+
+18:56.680 --> 18:56.920
+Perec.

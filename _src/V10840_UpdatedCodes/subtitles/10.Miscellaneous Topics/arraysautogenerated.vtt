@@ -1,0 +1,229 @@
+WEBVTT
+
+00:00.930 --> 00:06.470
+You come to this section on miscellaneous topics where we would talk about a lot of different topics
+
+00:06.590 --> 00:09.720
+in Jowa we would start with things like race.
+
+00:09.730 --> 00:17.570
+We would we did things like enim where the argument is is garbage collection and initialization blocks
+
+00:17.880 --> 00:25.310
+static Schley's the serialization and then we would look at what are the different things which would
+
+00:25.310 --> 00:27.530
+happen as part of serialization.
+
+00:27.530 --> 00:30.730
+These are kind of topics which do not fit in anywhere.
+
+00:30.740 --> 00:36.060
+So what we decided to do is create this section called miscellaneous topics and discuss those questions
+
+00:36.140 --> 00:38.150
+in this specific topic.
+
+00:38.150 --> 00:42.510
+So let's get started with areas and slowly we would move on to other topics.
+
+00:42.530 --> 00:45.510
+So what are the default values in an array.
+
+00:45.770 --> 00:51.350
+So basically when you look at areas if you don't really initialize them with values then they would
+
+00:51.350 --> 00:53.810
+have certain things called default value.
+
+00:53.810 --> 00:56.520
+So here I am creating a mocs to an array.
+
+00:56.660 --> 01:02.690
+I'm just saying it's 8.5 so integer array of five containing five elements.
+
+01:02.690 --> 01:09.300
+So if you're looking I'm trying to print up a value box to have zero footprint of value zero.
+
+01:09.470 --> 01:14.050
+So any area is initialized with default values.
+
+01:14.210 --> 01:16.610
+So the default values are as shown here.
+
+01:16.610 --> 01:23.670
+So for all the integer long by chart kind of things it's zero float zero point system for Boullion.
+
+01:23.690 --> 01:24.540
+It's false.
+
+01:24.560 --> 01:26.720
+However if it's an object.
+
+01:26.720 --> 01:31.090
+So let's say there's a class and I'm creating objects or that particular class.
+
+01:31.250 --> 01:33.410
+They'll all be assigned to null.
+
+01:33.560 --> 01:40.520
+So you'd see that all the primitive values are initialized but not any objects.
+
+01:40.550 --> 01:46.910
+If you find array consists of objects and you're creating an array with a few elements the objects are
+
+01:46.910 --> 01:53.300
+not really in sheilas they would still be in the enhanced for loop is one of the easiest ways to loop
+
+01:53.300 --> 01:56.690
+around there is so you do for a Mark Marks.
+
+01:56.700 --> 01:59.320
+I mean that kind of the common thing.
+
+01:59.570 --> 02:02.060
+So how do you can print the contents of an address.
+
+02:02.060 --> 02:06.930
+So let's say I have an area and I would want to print the content to output or log or something of that.
+
+02:06.980 --> 02:09.560
+And there are a few tricky things in here.
+
+02:09.560 --> 02:11.670
+So let's discuss that right now.
+
+02:11.870 --> 02:13.870
+So I have an array max 5.
+
+02:14.040 --> 02:20.390
+And if I print it out the Prindle and modify what it print is not the content of the array but what
+
+02:20.390 --> 02:26.810
+it really prints is where this area is in memory so it kind of prints the hash code or the hash code
+
+02:26.810 --> 02:28.660
+for that particular area.
+
+02:28.910 --> 02:36.590
+So if I really want to print the Mock's content like this I would need to use areas start to string
+
+02:37.120 --> 02:41.610
+to string is this tactic method which is present in the base class.
+
+02:41.690 --> 02:48.420
+So we need to use the areas that string method to print the content of error.
+
+02:48.830 --> 02:52.060
+Let's say there is two damage Larry.
+
+02:52.220 --> 02:53.670
+The There's a metrics.
+
+02:53.780 --> 02:56.820
+So this metrics is a two dimensional matrix.
+
+02:56.960 --> 03:00.350
+So I have this do that thing and I'm printing matics.
+
+03:00.380 --> 03:03.080
+What does it print it print.
+
+03:03.380 --> 03:09.710
+As I said Of course it's printing the what is the memory address or something of that kind.
+
+03:09.870 --> 03:16.100
+So if you do resort to string on Matrix 3 what does it print it print the starting location of this
+
+03:16.150 --> 03:19.140
+area and the starting location of this.
+
+03:19.220 --> 03:21.890
+So it's printing these do stuff.
+
+03:21.900 --> 03:27.380
+But if you really want to print the content of the areas you need to use something called Erris dark
+
+03:27.800 --> 03:29.780
+deep blue string.
+
+03:29.780 --> 03:34.700
+So that's what you'd need to use to print the content off of it.
+
+03:34.770 --> 03:40.790
+So if you are really interested in printing the content of an area you need to use editor to bring or
+
+03:40.900 --> 03:46.540
+edit the two string you to one area then you can go with it or string if it's a two dimensional array.
+
+03:46.550 --> 03:49.430
+Then you need to go with that is start deep to string.
+
+03:49.550 --> 03:53.780
+This always interesting question how do you really compare to this.
+
+03:53.780 --> 03:58.400
+So the way you would compare arrays by using something called equal.
+
+03:58.400 --> 04:06.680
+So this static method call equals in areas so these equals method is used to determine where the two
+
+04:06.680 --> 04:08.120
+areas are equal.
+
+04:08.120 --> 04:10.140
+Most important thing is two areas are equal.
+
+04:10.160 --> 04:17.400
+Only if they contain the same element same numbers in all positions.
+
+04:17.420 --> 04:23.320
+So it's like if let's say every one to three and the other one is three to one.
+
+04:23.390 --> 04:25.380
+Then those are not really well.
+
+04:25.610 --> 04:31.700
+So for areas to be equal they should have the elements same elements in all position to push in zero
+
+04:31.910 --> 04:34.430
+one position to push in one.
+
+04:34.580 --> 04:36.760
+It's two position to three.
+
+04:37.040 --> 04:38.900
+And also the size of these two areas.
+
+04:38.900 --> 04:40.370
+Number one and number three matter.
+
+04:40.380 --> 04:44.790
+So when you say it is not equal to number one coming in but three to print.
+
+04:45.010 --> 04:49.740
+So those are some of the interesting things about race.
+
+04:49.790 --> 04:57.260
+What I would recommend you to do if you are interested is look at various examples in the workspace
+
+04:57.350 --> 05:03.650
+you'd have any examples class has a lot of things about it.
+
+05:03.860 --> 05:10.720
+So a lot of finer details about areas are declared or are explained in this thing.
+
+05:10.830 --> 05:17.010
+So you can take a quick look on this as a exercise you can plan understand what's happening in there
+
+05:17.340 --> 05:21.160
+and you can post any questions that you have on the form.
+
+05:21.210 --> 05:29.790
+In this video you'll get a few questions around areas and we also look at where we can find more information
+
+05:29.790 --> 05:35.310
+about race and what are the other things that you might be interested regarding Edwards ask for this
+
+05:35.310 --> 05:36.750
+interview questions or concern.

@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00.360 --> 00:04.780
+We have enough discussion about coupling and question and now we would move into another important object
+
+00:04.860 --> 00:10.470
+in the concept which is called encapsulation What does encapsulation means.
+
+00:10.470 --> 00:16.030
+Encapsulation means hiding the details of how a class is implemented.
+
+00:16.050 --> 00:17.100
+You do really.
+
+00:17.280 --> 00:23.250
+The other classes should not care about how a specific implementation is in a class all that they would
+
+00:23.340 --> 00:27.410
+need to worry about is what is the interface of a specific class.
+
+00:27.660 --> 00:34.080
+If a class exposes a well-defined interface then the even though the internal implementation changes
+
+00:34.470 --> 00:37.900
+the actually classes might not be affected.
+
+00:37.920 --> 00:41.130
+That's what encapsulation helps us to achieve.
+
+00:41.160 --> 00:48.750
+We will look at three different approaches and we'll discuss how well data is encapsulated within them.
+
+00:48.780 --> 00:55.140
+The approach one is this is a very good scorer class so you have a variable called score and you can
+
+00:55.140 --> 00:58.950
+see that in Main what we are doing is creating a new instance of this quarter.
+
+00:59.060 --> 00:59.600
+Corner.
+
+00:59.690 --> 01:04.560
+We call it scorer and we have directly accessing the values from there so yes things go to that critical
+
+01:04.560 --> 01:09.100
+discard arch CORBALLIS for the other approach is to offer getters and setters.
+
+01:09.090 --> 01:14.910
+So I'm having getters and setters and then what I'm doing is I'm getting this code and I'm setting this
+
+01:14.910 --> 01:16.620
+code to be Scorpius it.
+
+01:16.860 --> 01:19.270
+So that's approach too.
+
+01:19.290 --> 01:25.170
+So you'd see that I have encapsulated this code in the sense that nobody will be able to directly access
+
+01:25.170 --> 01:27.250
+the code will you.
+
+01:27.870 --> 01:33.270
+Because I now need to use getters and setters that's good because somebody needs to look.
+
+01:33.300 --> 01:36.270
+Nobody can directly change the value of code.
+
+01:36.270 --> 01:38.460
+Now they have to go through the gate.
+
+01:38.540 --> 01:42.010
+I mean if they want to change the value they have to go through the set method.
+
+01:42.210 --> 01:43.400
+That's the only way they can change.
+
+01:43.410 --> 01:51.270
+And if I have to access the value then I can go to get scores so that better but an even better approach
+
+01:51.450 --> 02:00.700
+would be to say cricket corer score and define a method call for and add this core in here so I know
+
+02:01.080 --> 02:02.000
+what I'm doing.
+
+02:02.250 --> 02:06.130
+Cricket scores Korea's nuclear scorer and not for.
+
+02:06.740 --> 02:07.150
+OK.
+
+02:07.410 --> 02:13.950
+The reason why if you're not a cricket follower sometimes I don't really want to create a method.
+
+02:13.950 --> 02:16.920
+One two three four five six seven eight nine ten in here.
+
+02:16.920 --> 02:25.590
+The only possible score in a cricket on a ball in cricket is one two three four five and six and four
+
+02:25.590 --> 02:27.000
+is called a boundary.
+
+02:27.030 --> 02:33.210
+So it's kind of considered to be a special thing and I would want to abstract the fact that the four
+
+02:33.300 --> 02:37.410
+represents represent four behind this interface.
+
+02:37.440 --> 02:45.810
+No you're just saying score don't for the fact that when it's a boundary and four rounds are added is
+
+02:46.110 --> 02:48.960
+encapsulated now inside the class itself.
+
+02:48.960 --> 02:56.160
+So this is much much better encapsulation because of the logic of how to do before operation is also
+
+02:56.160 --> 03:04.130
+moved to the cricket score class class and I can add more operations to this to say in 0 4 if I could
+
+03:04.210 --> 03:07.900
+call this a boundary or a sixer or a single double.
+
+03:07.980 --> 03:11.550
+So when it's a single I would add one which is a double I would add two.
+
+03:11.580 --> 03:17.950
+So all the logic of how to do the score calculations is encapsulated within the class.
+
+03:18.120 --> 03:23.220
+If I change this code with let's say I don't want to call the score and something else then I don't
+
+03:23.220 --> 03:30.770
+need to touch the beat Daschle classes which I use in this specific case as we discussed in terms of
+
+03:30.990 --> 03:36.490
+encapsulation approach three is better than approach 2 which is better than approach 1.
+
+03:36.540 --> 03:42.330
+So the push the fact that there is something called a called where the ball is also known not known
+
+03:42.540 --> 03:49.310
+to whoever is using the scorer class the addition of the scorer can change without other classes changing.
+
+03:49.320 --> 03:55.110
+You can see the complete implant implementation of the encapsulation of cricket scorer in the encapsulation
+
+03:55.170 --> 03:56.240
+example.
+
+03:56.430 --> 04:03.710
+So you see that now I have scored third fourth quarter and fourth quarter singles 6 6 6 and Prim. score.
+
+04:03.780 --> 04:09.630
+So the user of this particular cricket go to class does not know anything about how the implementation
+
+04:09.690 --> 04:12.190
+isn't all that it knows is how to use it.
+
+04:12.360 --> 04:19.500
+So if a four is it it calls for it if it's singles it it called single it for 66 It's calls 6 and it
+
+04:19.500 --> 04:21.690
+calls the printed score at the end.
+
+04:21.880 --> 04:28.860
+So this is a very encapsulated so now could get them scoring well encapsulated glass.
+
+04:28.860 --> 04:34.520
+So I would recommend to play around with this example as an exercise try and think more about encapsulation
+
+04:34.650 --> 04:37.710
+when you are doing any programming of your own.
+
+04:37.930 --> 04:39.150
+And in the next video.

@@ -1,0 +1,280 @@
+WEBVTT
+
+00:01.140 --> 00:02.120
+Welcome back.
+
+00:02.220 --> 00:05.400
+In a previous section we discuss about collections.
+
+00:05.460 --> 00:10.980
+We looked at the different basic interfaces and the different implementations for those interfaces which
+
+00:10.980 --> 00:13.580
+are present in the collections classes.
+
+00:13.690 --> 00:18.480
+What we are looking at in this specific section are advanced collections.
+
+00:18.600 --> 00:23.010
+So what are these advanced collections and how are they different from the synchronized collections
+
+00:23.010 --> 00:26.270
+that were available in earlier question to Joe.
+
+00:26.520 --> 00:32.100
+So let's get started with synchronized and concurrent collections What is the difference between them.
+
+00:32.100 --> 00:37.410
+Basically all of the synchronized connections are implemented using what they're using synchronized
+
+00:37.440 --> 00:38.220
+keyword.
+
+00:38.220 --> 00:42.740
+So if I bring up the vector class for example what does it use.
+
+00:42.780 --> 00:44.920
+A lot of synchronized.
+
+00:44.970 --> 00:46.710
+So you have synchronized method.
+
+00:46.740 --> 00:48.260
+A lot of synchronized.
+
+00:48.300 --> 00:52.090
+So you can see a lot of synchronized methods inside the vector class.
+
+00:52.140 --> 00:58.830
+David Vitter classes achieves multi-threading capabilities and the fact that it's thread safe is through
+
+00:58.830 --> 01:00.710
+this thing carbonized method.
+
+01:00.720 --> 01:08.310
+The thing about synchronized method is the thing that one thread is executing this method.
+
+01:08.310 --> 01:14.770
+So when a threat is exuding this method no other thread is allowed to be executing any other synchronized
+
+01:14.770 --> 01:16.950
+method in this space with us.
+
+01:16.950 --> 01:26.700
+So if I have 100 threads which want to execute the method on this object they have to wait until when.
+
+01:26.730 --> 01:28.990
+Until this method completes execution.
+
+01:28.990 --> 01:36.970
+So once this method completes execution then under threat will be able to execute one of the sync amazement.
+
+01:37.220 --> 01:42.070
+Well let's say this was the method it's the second third Stubb's executing one.
+
+01:42.180 --> 01:45.660
+The second thread stops exuding this method.
+
+01:45.660 --> 01:49.770
+All the other threads have to wait until the.
+
+01:49.950 --> 01:54.650
+This particular thread comes out of this particular method.
+
+01:54.690 --> 01:57.820
+So that's a very very severe restriction.
+
+01:57.960 --> 02:04.390
+And that's why synchronization using the synchronized keyword comes with a lot of cost.
+
+02:04.440 --> 02:10.350
+It's thread safe but the programs become really slow because of waiting waiting waiting all threats
+
+02:10.410 --> 02:16.580
+are waiting for getting access to the specific methods that they want to execute.
+
+02:16.980 --> 02:22.680
+As we discussed only one thread can be executing any of these increases the code at a given point in
+
+02:22.680 --> 02:23.500
+time.
+
+02:23.550 --> 02:30.120
+So this is a severe restriction on the concurrency of threat thereby affecting the performance of application.
+
+02:30.120 --> 02:36.720
+So one the Java 5 synchronized collections the cache table Waechter they use this approach of using
+
+02:36.720 --> 02:38.220
+synchronized keyword.
+
+02:38.250 --> 02:40.310
+However both jobs are fine.
+
+02:40.350 --> 02:45.000
+There are new approaches to synchronization so there are new things.
+
+02:45.000 --> 02:51.610
+New collections that are bringing new synchronization approaches other than the synchronized keyword.
+
+02:51.720 --> 02:57.030
+These collections are typically called concurrent collections.
+
+02:57.030 --> 02:59.710
+We would discuss them very soon.
+
+02:59.760 --> 03:04.150
+Let's start with what are the different types of collection that are present.
+
+03:04.200 --> 03:06.390
+There are different approaches to concurrent collections.
+
+03:06.390 --> 03:08.170
+One is called a copy on write.
+
+03:08.280 --> 03:13.140
+The other one is compared to app and the other one is locks as well.
+
+03:13.140 --> 03:15.850
+We'll discuss each one of these approaches enough.
+
+03:15.900 --> 03:21.210
+The first approach we want to discuss is to copy on write concurrent collections approach.
+
+03:21.270 --> 03:24.440
+How does the copy and right approach work.
+
+03:24.720 --> 03:29.420
+So let's take an example to what we're looking at is copy on write aerialist class.
+
+03:29.440 --> 03:35.640
+So in the copy on write release class we want to look at the method and if you look at the Add method
+
+03:35.700 --> 03:37.760
+you'll see that we're getting a lock.
+
+03:37.950 --> 03:40.980
+So we're getting a lock to this particular object.
+
+03:41.160 --> 03:42.690
+And what are we doing.
+
+03:42.780 --> 03:50.360
+We are copying the elements of the entry into a new area and returning it back.
+
+03:50.370 --> 03:57.330
+So what we are doing in here is the approach which is used in the copy on write concurrent collections
+
+03:57.420 --> 04:02.920
+is all values are stored in the internal immutable area.
+
+04:03.180 --> 04:06.450
+So the area the data store is immutable.
+
+04:06.630 --> 04:10.590
+That means it cannot be changed the values of it cannot be changed.
+
+04:10.650 --> 04:13.140
+So whenever there is a value change in the collection.
+
+04:13.140 --> 04:19.500
+For example when a new element is added what we do is we get a locked loop and we kind of copy and create
+
+04:19.590 --> 04:21.130
+a new entry.
+
+04:21.300 --> 04:26.910
+So we come up we create a new area and we use a new area.
+
+04:26.940 --> 04:35.570
+From then on the advantage of this is that the read operations does not need to be synchronized.
+
+04:35.640 --> 04:40.400
+So the write operation takes a lot of time because you have to copy the entire array.
+
+04:40.470 --> 04:46.050
+But when I'm doing a read to it when I'm doing for example or get on the thing so I'm going to the get
+
+04:46.050 --> 04:52.050
+method all they're doing is all that we are doing is returning the element back so we are looking at
+
+04:52.050 --> 04:54.350
+the array everything the element back.
+
+04:54.360 --> 04:57.390
+We're not having any synchronization code in here.
+
+04:57.390 --> 05:01.280
+So if you look at the get method here get that get index What does it do.
+
+05:01.290 --> 05:05.510
+It just gets to this method and there is no synchronisation at all.
+
+05:05.520 --> 05:13.770
+So the Get can happen without any synchronization so multiple methods can be exiting to get method at
+
+05:13.770 --> 05:20.010
+the same time only constraints are on the modifying kind of method.
+
+05:20.010 --> 05:29.060
+So the add method to there is a lock and only a method which has that lock so only the object which
+
+05:29.060 --> 05:32.410
+has that blog will be able to go in and execute this code.
+
+05:32.450 --> 05:35.720
+So I know you want to modify then you would need to get a lock.
+
+05:35.810 --> 05:41.750
+But if you want to read an element you don't really need to get the lock so that the copy on write concurrent
+
+05:41.750 --> 05:46.590
+collection approach there are copy and write the released copy on write Aricept.
+
+05:46.670 --> 05:50.740
+These use this specific implementation approach.
+
+05:50.810 --> 05:56.550
+These are very useful in approaches where there are very few rights and a lot of read.
+
+05:56.780 --> 06:03.130
+So let's say you have a situation where the underlying data structure does not change a lot.
+
+06:03.140 --> 06:04.750
+I mean very few modifications.
+
+06:04.850 --> 06:08.300
+But let's say there are a lot of three operations.
+
+06:08.300 --> 06:12.920
+So a lot of get operations on a specific collection in that kind of scenario.
+
+06:13.040 --> 06:16.830
+Copy and write concurrent collections approach would work perfectly fine.
+
+06:16.850 --> 06:23.120
+And you would I would recommend to use copy and write a list and copy and write a recipe in those kind
+
+06:23.120 --> 06:24.500
+of situations.
+
+06:24.500 --> 06:30.440
+A good example of that would be the subject observed were scenarios in this object up those scenarios.
+
+06:30.560 --> 06:36.350
+The object Abdulla's would really change right to if let's say I have hundred observers maybe one or
+
+06:36.350 --> 06:42.800
+two might be added or so but you'd want to loop for observers each time there is a notification that
+
+06:42.800 --> 06:43.970
+needs to be sent.
+
+06:44.120 --> 06:49.840
+So if I have 100 notifications that needs to be sent to all these observers I can read them very fast.
+
+06:49.850 --> 06:55.310
+However since the observers are not really modified very frequently using a copy on write concurrent
+
+06:55.310 --> 07:00.150
+collections approach like one of the collections we use that approach would be a great idea.

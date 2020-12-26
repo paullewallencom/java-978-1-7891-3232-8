@@ -1,0 +1,280 @@
+WEBVTT
+
+00:01.160 --> 00:05.300
+Let's welcome you to the section on object oriented programming basics.
+
+00:05.360 --> 00:11.000
+The first question we want to look at is kind of the basic question for Object-Oriented program what
+
+00:11.000 --> 00:12.570
+is a class.
+
+00:12.620 --> 00:16.140
+This is simply class on your screen right now.
+
+00:16.180 --> 00:23.600
+So cricket scorer it has the instance variable and it has a few methods which act on that particular
+
+00:23.720 --> 00:24.850
+instance variable.
+
+00:24.980 --> 00:30.950
+And here we have a main program which is using that particular class given this example.
+
+00:31.010 --> 00:34.310
+What is really a class what does a class really mean.
+
+00:34.310 --> 00:42.890
+A class is basically at template the way this cricket score is a template I can create any number of
+
+00:42.950 --> 00:44.930
+instances of this template.
+
+00:44.930 --> 00:51.290
+So just like a crosscourt that I'm creating in here I can create quarter one quarter to quarter three.
+
+00:51.290 --> 00:56.720
+So this is basically a template from which you create objects.
+
+00:56.720 --> 01:01.280
+So it's a template for creating multiple objects.
+
+01:01.280 --> 01:10.460
+The most important thing is a class defined state and behavior that an object can exhibit what is state
+
+01:10.460 --> 01:18.040
+of an object the state of object is the values that it has at that particular point in time.
+
+01:18.230 --> 01:20.090
+If you look at this example.
+
+01:20.210 --> 01:21.850
+So school is equal to.
+
+01:21.880 --> 01:22.370
+Scorer.
+
+01:22.410 --> 01:23.970
+Scorer not 6.
+
+01:24.170 --> 01:31.490
+So after I have a six what would happen this core value would include being prevented by 6 and scored
+
+01:31.490 --> 01:33.820
+would have a value of 6.
+
+01:33.860 --> 01:38.840
+That's the state of horror at that particular point in time.
+
+01:38.840 --> 01:46.260
+So the state of Korea at this point in time at this line of course is that it has a value of six.
+
+01:46.310 --> 01:50.080
+Similarly after this line it's six plus for 10.
+
+01:50.150 --> 01:53.410
+So score plus for the code becomes denser.
+
+01:53.420 --> 01:55.600
+That's the state of the score object.
+
+01:55.610 --> 01:58.490
+So basically you would look at the state.
+
+01:58.500 --> 02:06.900
+So this glass defines that this particular instance of this scoter would contain a state called score.
+
+02:07.100 --> 02:13.670
+So you can have multiple with a built in a specific class so you get a state suit all the values of
+
+02:13.700 --> 02:18.990
+all the values which can change so it can solve all the member ladybirds.
+
+02:19.010 --> 02:21.990
+So this is instantly with a member available.
+
+02:22.160 --> 02:29.030
+So this is part of the state of an object the behavior of the object behavior of a class.
+
+02:29.030 --> 02:34.850
+That's basically what all the objects of this class would get is the different math teacher present
+
+02:34.850 --> 02:35.300
+in here.
+
+02:35.300 --> 02:41.270
+So you have a behavior called for which basically increases the state of the object by four.
+
+02:41.390 --> 02:43.590
+You have a behavior called Six.
+
+02:43.590 --> 02:45.370
+It's the method six actually.
+
+02:45.380 --> 02:47.680
+So what is the behavior 6.
+
+02:47.840 --> 02:50.350
+It increments the score by six.
+
+02:50.450 --> 02:58.940
+To summarize a class is just a template and it defines the state of an object and a behavior.
+
+02:59.110 --> 03:00.520
+What is an object.
+
+03:00.560 --> 03:03.180
+We discuss that in the previous example as well.
+
+03:03.320 --> 03:08.260
+So object is nothing but an instance of a case a specific instance of the class.
+
+03:08.270 --> 03:10.610
+So this is scorer.
+
+03:10.910 --> 03:17.120
+I'm creating a scorer object of which class of cricket scores the plus you can have multiple instances
+
+03:17.120 --> 03:20.330
+of the same class created creative so I can say cricket scorer.
+
+03:20.330 --> 03:23.000
+Scorer one is equal to nuker gets colder.
+
+03:23.090 --> 03:28.070
+So that's possible that's good too because you would want to use your class multiple times to create
+
+03:28.070 --> 03:29.270
+multiple objects.
+
+03:29.300 --> 03:37.690
+That's basically an object and the object has a state and a behavior of this object.
+
+03:37.790 --> 03:40.640
+What are the methods that can be called that behavior.
+
+03:40.640 --> 03:43.500
+What are the values that are contained in this object.
+
+03:43.520 --> 03:44.900
+It's called the state.
+
+03:44.930 --> 03:46.640
+That's exactly what we were discussing here.
+
+03:46.640 --> 03:48.040
+So what is state of an object.
+
+03:48.200 --> 03:51.330
+The values assigned to instance variables are from object.
+
+03:51.430 --> 03:55.550
+What are the values value in the square object at this point.
+
+03:55.550 --> 03:58.210
+That's basically the state of an object.
+
+03:58.310 --> 04:03.060
+And as it stays here the state of the object might change with time.
+
+04:03.110 --> 04:09.380
+If I'm taking a vehicle object the state might be the speed of the vehicle and the speed of the vehicle
+
+04:09.380 --> 04:11.870
+might be different at different points in time.
+
+04:11.930 --> 04:18.950
+So the State of the object would change the time and this state change would be through the behavior.
+
+04:18.950 --> 04:26.030
+So the method of the object are what can change the state of the object and the behavior is basically
+
+04:26.030 --> 04:28.790
+the methods that are exposed from an object.
+
+04:28.790 --> 04:34.640
+So that's basically behavior behavior is basically the methods that are supported by an object in the
+
+04:34.940 --> 04:41.150
+previous example it's 6 4 and gets called The next thing we want to discuss is what is a superclass
+
+04:41.270 --> 04:43.150
+of every class in jour.
+
+04:43.240 --> 04:43.660
+OK.
+
+04:43.740 --> 04:44.930
+That basically object.
+
+04:44.940 --> 04:52.340
+This is kind of any class that you create in Jawa inherit from the object class.
+
+04:52.370 --> 04:58.640
+So that's the reason why when they create a string you have strings or two strings string dot hash called
+
+04:58.640 --> 04:59.970
+String dot call.
+
+05:00.030 --> 05:06.980
+These are birds which are already present in the object class and there you can also try this.
+
+05:07.000 --> 05:14.370
+If you do actually suit like this it would print that I extend object lipstick a quick look.
+
+05:14.440 --> 05:17.110
+So I'm creating a class called String examples.
+
+05:17.150 --> 05:21.570
+There is a class called actor with a staff member variable name.
+
+05:21.760 --> 05:22.960
+So you can see that in here.
+
+05:22.960 --> 05:25.800
+So we are actually creating two instances of this object.
+
+05:25.810 --> 05:27.460
+Brad Pitt and Tom Cruise.
+
+05:27.820 --> 05:30.590
+And these are having a couple of values.
+
+05:30.820 --> 05:39.610
+But if you look at Brad Pitt Daut and tapping it and I'm seeing different methods come in you can see
+
+05:39.790 --> 05:46.810
+here that it's getting a clone method from the objects getting equal to method from the object class
+
+05:47.190 --> 05:49.750
+find method from the object class.
+
+05:49.750 --> 05:53.710
+So these are the different methods that we actually inherit from the object.
+
+05:53.710 --> 05:58.990
+So if I actually go into the clone so you can look at all the different methods which are present in
+
+05:58.990 --> 05:59.700
+the object.
+
+05:59.730 --> 06:06.630
+So different methods which are present in the object class get class hash code equals to string nor
+
+06:06.630 --> 06:08.410
+define weight.
+
+06:08.470 --> 06:12.560
+So and obviously there is a clone and the final placement.
+
+06:12.730 --> 06:15.160
+So these are the different thing to chaplet isn't it.
+
+06:15.160 --> 06:19.260
+These are the different behaviors which are expect exhibited by the object class.
+
+06:19.630 --> 06:25.110
+And they say all the classes in Java inherit these methods.
+
+06:25.150 --> 06:33.500
+So that's the object class which is a superclass of all objects in Java are all classes in Java.

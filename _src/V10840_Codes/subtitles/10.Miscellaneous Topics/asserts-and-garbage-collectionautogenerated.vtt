@@ -1,0 +1,220 @@
+WEBVTT
+
+00:01.360 --> 00:01.970
+This we do.
+
+00:02.140 --> 00:05.380
+Let's look at a third and garbage collection.
+
+00:05.410 --> 00:12.810
+So what the assets so sessions are basically introduced in one point forward point four is when it's
+
+00:13.300 --> 00:14.740
+first introduced.
+
+00:14.740 --> 00:19.810
+So I'm defining a method so I am defending I can compute simple interest method.
+
+00:19.870 --> 00:27.330
+And for me principle should never be less than zero so it should always be greater than zero.
+
+00:27.520 --> 00:33.270
+So that's basically the condition I would want to check before I exude the logic of this method.
+
+00:33.880 --> 00:34.920
+So what do I do.
+
+00:34.990 --> 00:37.200
+I put an insert in here.
+
+00:37.360 --> 00:42.750
+So that's an answer to what happens is the principle is greater than zero.
+
+00:42.850 --> 00:47.130
+Then an error is thrown to an assertion error is thrown.
+
+00:47.140 --> 00:51.250
+So the important thing to remember is this is not an exception.
+
+00:51.250 --> 00:52.900
+This is an error.
+
+00:53.080 --> 00:57.510
+So whichever method is calling this will not be able to handle the exception at all.
+
+00:57.520 --> 01:00.170
+It's basically an error which is thrown out.
+
+01:00.190 --> 01:07.520
+So the thing is Israel's actions are used to check for basic constrain.
+
+01:07.520 --> 01:10.320
+So it's basically a way of saying this is a constraint.
+
+01:10.330 --> 01:13.700
+I expect everybody who is calling this method to adhere to.
+
+01:13.910 --> 01:18.140
+So that's where asserts that's what efforts are used for.
+
+01:18.310 --> 01:23.880
+And so are not to be used for validating input data.
+
+01:23.890 --> 01:28.710
+Not if I want if it's possible that somebody would call this method with a different value.
+
+01:28.900 --> 01:34.000
+And I'm in with the wrong while you and I would want to in those kind of situations develop have proper
+
+01:34.060 --> 01:35.240
+validation error.
+
+01:35.440 --> 01:37.160
+Then I should not use answered.
+
+01:37.210 --> 01:40.500
+So so it's not to validate input data in those kind of situations.
+
+01:40.510 --> 01:43.630
+Illegal argument exception would be a better option not an answer.
+
+01:43.620 --> 01:49.600
+So if principle is greater than zero then through any legal argument the exception is are only when
+
+01:49.960 --> 01:55.630
+you are sure that nobody will be quarreling with principle zero and you would want to check for that
+
+01:55.660 --> 02:01.360
+before you write your logic as we say in here in a public method only use assertions to check for cases
+
+02:01.450 --> 02:06.850
+which are never supposed to happen so that you not need to.
+
+02:07.000 --> 02:09.980
+You don't use assertions for validation.
+
+02:10.110 --> 02:15.120
+That's more garbage collection if you are familiar with languages like C++ and.
+
+02:15.220 --> 02:19.810
+When you create an object you are responsible for deallocating the memory to it.
+
+02:19.810 --> 02:25.540
+So you create an object called animal you are responsible to make sure that the object of the memory
+
+02:25.540 --> 02:30.900
+that you allocated to that object is deallocated when the program completes execution.
+
+02:31.180 --> 02:34.640
+But in Java We don't need to do that in Java.
+
+02:34.640 --> 02:41.710
+The memory management happens automatically and this process is called garbage collection.
+
+02:41.740 --> 02:44.710
+So basically how does garbage collection work.
+
+02:44.830 --> 02:49.700
+Let's look at this example small example in he has a calendar calendar is it called this.
+
+02:49.720 --> 02:51.280
+So we are building a new object.
+
+02:51.280 --> 02:58.570
+So what it does is it gives some memory to this object puts it on the heap or Sambit and has a reference
+
+02:58.570 --> 03:01.120
+variable created called calendar.
+
+03:01.380 --> 03:07.720
+But once you are out of this method once this method completes execution then this particular object
+
+03:07.720 --> 03:15.020
+which is created will not have any reference to it because this particular method is completed execution
+
+03:15.070 --> 03:17.800
+and this reference variable is no longer valid.
+
+03:17.830 --> 03:21.780
+So you would have something in memory without having a reference to it.
+
+03:21.790 --> 03:27.000
+So that's both kind of things are automatically garbage collected in Java.
+
+03:27.100 --> 03:31.020
+And this process of doing this is called garbage collection.
+
+03:31.020 --> 03:37.300
+The name of garbage collection is to have as much of a heap available for the program as possible.
+
+03:37.330 --> 03:42.600
+So basically as soon as a particular memory location does not have any references what does JVM do.
+
+03:42.700 --> 03:47.080
+It removes the object from memory or from the heap.
+
+03:47.080 --> 03:51.240
+The important question about garbage collection is when does it run actually.
+
+03:51.280 --> 03:54.880
+I mean what are we see here transept the whims and fancies of the JVM.
+
+03:54.890 --> 03:56.440
+That's not really as bad as that.
+
+03:56.560 --> 03:58.630
+You can control it a little bit.
+
+03:58.630 --> 04:05.380
+I mean you can define a few patterns with those on the JVM which kind of controls how and when a garbage
+
+04:05.380 --> 04:07.600
+collection is run.
+
+04:07.750 --> 04:14.540
+Typically the JVM runs garbage collection whenever it thinks it needs more memory.
+
+04:14.590 --> 04:18.890
+So whenever there is an available memory on the heap is lost.
+
+04:18.910 --> 04:23.120
+So when there is very less memory it runs garbage collection so it gets more memory.
+
+04:23.220 --> 04:28.320
+Also the other situation is when the fuse free so let's say if there is nothing happening on applications
+
+04:28.480 --> 04:29.170
+use free.
+
+04:29.200 --> 04:34.900
+So let's make the you do something so you can put in a garbage collection at that particular point in
+
+04:34.900 --> 04:35.550
+time.
+
+04:35.710 --> 04:43.330
+You can actually Kickoff something called System GC from a program to request JVM to start the garbage
+
+04:43.330 --> 04:44.820
+collection but it's just a request.
+
+04:44.830 --> 04:51.730
+It's not an order and ideally it's not recommended for you to keep the system that GC method from a
+
+04:51.730 --> 04:59.920
+program you'd rather convert you grab the configure garbage collection to parameters to the JVM that
+
+05:00.120 --> 05:01.300
+Dan.
+
+05:01.550 --> 05:08.930
+So even though there's a medical system that you see which is a request of the JVM I have never seen
+
+05:09.020 --> 05:12.110
+it being used in 15 years of my programming.
+
+05:12.350 --> 05:18.080
+And I wouldn't want to be in a program where it's being used as well that basically this is similar.
+
+05:18.080 --> 05:23.560
+GC In the short video this cause a little bit about that and a little bit about garbage collection.

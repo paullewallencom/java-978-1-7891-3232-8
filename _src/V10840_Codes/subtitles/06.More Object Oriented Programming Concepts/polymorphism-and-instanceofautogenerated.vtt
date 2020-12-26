@@ -1,0 +1,340 @@
+WEBVTT
+
+00:01.120 --> 00:05.710
+Let's not get to the section on advanced object oriented concepts.
+
+00:05.770 --> 00:11.550
+What are these advanced object concepts and what do you want to discuss in this specific section.
+
+00:11.560 --> 00:18.850
+So if we would start with polymorphism we would look at other things like instance of operator.
+
+00:18.850 --> 00:20.320
+I mean that's kind of a basic thing.
+
+00:20.320 --> 00:22.180
+Not really complex.
+
+00:22.270 --> 00:29.680
+We look at coupling causation encapsulation and things like that as well during this section.
+
+00:29.680 --> 00:36.700
+Other than that we would look at class static in a class and can you create classes within a method
+
+00:36.700 --> 00:37.330
+itself.
+
+00:37.330 --> 00:40.140
+And we would also look at what is an anonymous class.
+
+00:40.210 --> 00:45.790
+Those are the different things that we will discuss as part of this action on advanced object oriented
+
+00:45.790 --> 00:46.810
+concepts.
+
+00:46.810 --> 00:52.660
+As usual we would look at a lot of code examples and I would really recommend you to when you are seeing
+
+00:52.660 --> 00:53.560
+an example here.
+
+00:53.620 --> 00:58.610
+I would really recommend you to open that example in the code and see how it's working.
+
+00:58.680 --> 01:04.720
+So that's an exercise you should keep doing all this because just looking at it here might not really
+
+01:04.810 --> 01:06.580
+give you the complete understanding.
+
+01:06.580 --> 01:12.190
+I would really recommend you to spend some time on the idea with these examples and look at them and
+
+01:12.190 --> 01:13.650
+understand them completely.
+
+01:13.750 --> 01:15.990
+Let's start with what is polymorphism.
+
+01:16.000 --> 01:21.950
+Polymorphism is basically defined as same code giving different behavior.
+
+01:22.210 --> 01:25.970
+So the same piece of code won't run at different times.
+
+01:26.020 --> 01:27.980
+It gives you different behavior.
+
+01:28.390 --> 01:30.430
+Aha sounds interesting.
+
+01:30.460 --> 01:32.130
+What's that all about.
+
+01:32.140 --> 01:34.100
+Let's create a simple example.
+
+01:34.130 --> 01:41.510
+Mean we have an Animal class which in its shouts is don't know and there's a cat and a dog class with
+
+01:41.510 --> 01:43.150
+the shout method.
+
+01:43.180 --> 01:44.120
+All right then.
+
+01:44.230 --> 01:49.060
+And the cat's meow meow and dog is bobo.
+
+01:49.120 --> 01:54.300
+So that's basically the example that we have we have an annual class Cat exchanging animal and dog sitting
+
+01:54.310 --> 01:54.930
+animal.
+
+01:55.180 --> 02:05.020
+And with their respective shot methods defined now look at this cool piece of good animal animal one
+
+02:05.020 --> 02:06.590
+is equal to new animal.
+
+02:06.590 --> 02:12.410
+So I'm creating a new instance of animal and sending it to a reference variable of type animal.
+
+02:12.670 --> 02:16.070
+So I'm calling animal one dart shout.
+
+02:16.140 --> 02:17.180
+This print.
+
+02:17.260 --> 02:18.090
+Don't know.
+
+02:18.160 --> 02:23.440
+So you can try this example that this example is available so you can just search for animal and you
+
+02:23.440 --> 02:25.100
+should be able to see that.
+
+02:25.600 --> 02:29.170
+You can go there and you Ronit you'd see that it's printing don't.
+
+02:29.170 --> 02:34.670
+No I'm saying animal animal too is a whole new dog so here it's new animal so I'm taking it.
+
+02:34.960 --> 02:41.290
+I'm getting a new instance of dog and putting it in animal reference variable and I'm calling animal
+
+02:41.290 --> 02:45.440
+to that shout will it call the shout method in the animal.
+
+02:45.560 --> 02:47.740
+No it would print Bo-Bo.
+
+02:47.770 --> 02:49.550
+That's basically a dog.
+
+02:49.750 --> 02:54.730
+So what it's doing here is even though a reference variable is animal.
+
+02:54.790 --> 03:00.520
+And here I am doing animal window out here I'm doing animal to or shout the show method which is actually
+
+03:00.520 --> 03:07.930
+called is different based on the object you're referring to here I'm referring to the animal objects
+
+03:07.930 --> 03:09.570
+or animal shout is called.
+
+03:09.730 --> 03:13.460
+And here I'm referring to the dog object so dog shout is God.
+
+03:13.480 --> 03:20.680
+So even though the reference is the dimethyl in walk is the since the content of the object is different
+
+03:20.920 --> 03:26.700
+you're calling two different methods that basically what is called polymorphism.
+
+03:26.710 --> 03:34.210
+So basically what this allows us to do is I can create 10 different instances of animals I can loop
+
+03:34.240 --> 03:42.010
+around them and in the shout method and the shout method might be called on different animals.
+
+03:42.160 --> 03:44.830
+That's the magic of polymorphism.
+
+03:44.830 --> 03:49.950
+The important thing to note is that the dog has a methedrine.
+
+03:50.170 --> 03:55.680
+You cannot say something like animals to to run because that method is not available.
+
+03:55.690 --> 04:00.700
+So when I'm using an animal reference variable the only method to carry a label are the ones which are
+
+04:00.700 --> 04:02.790
+exposed by animal.
+
+04:03.010 --> 04:09.310
+Even though dog class has an extra method called Run and I'm showing a dog instance in the animal I
+
+04:09.310 --> 04:16.330
+would not be able to call something like animal to run backward give you a compilation to summarize
+
+04:16.450 --> 04:23.620
+the reference area bill will allow you to call only the methods which are available in that particular
+
+04:23.620 --> 04:29.660
+reference to animal would only allow you to an animal different would only allow you to call shout method
+
+04:30.010 --> 04:33.390
+because that's the only one which is defined in animals.
+
+04:33.540 --> 04:40.180
+How we were based on the content of the object which is referenced so based on the object which is referenced
+
+04:40.180 --> 04:45.290
+by this variable the method which is invoked might be different.
+
+04:45.310 --> 04:50.800
+So instead of calling the shout method inside the animal if the animal reference to a reference to a
+
+04:50.800 --> 04:56.890
+cat or dog it can call the appropriate method Choat method from a cat or appropriate child method from
+
+04:56.890 --> 05:03.120
+a dog that basically what is called polymorphs them the next question we would want to discuss is what
+
+05:03.120 --> 05:05.400
+is the use of instant of operator.
+
+05:05.920 --> 05:11.370
+You sort of operate in sort of operator basically checks if there's an if an object is of a specific
+
+05:11.820 --> 05:12.630
+type.
+
+05:12.630 --> 05:18.680
+So here if you look at it there are a lot of class and hierarchies that we are defining.
+
+05:18.920 --> 05:25.140
+So we have a subclass extending superclass and we have a superclass implementing this interface and
+
+05:25.140 --> 05:31.410
+also a subclass tool which is implement extending the superclass implementing interface.
+
+05:31.440 --> 05:35.360
+It's a little complicated but don't worry about it.
+
+05:35.370 --> 05:41.220
+Basically the summary is this is a complex hierarchy Jame and some of the class is the one which is
+
+05:41.220 --> 05:43.110
+not extending anything.
+
+05:43.110 --> 05:45.450
+So it extends object.
+
+05:45.630 --> 05:54.090
+So if I'm creating a few instances a subclass instance and actually creating a subclass instance and
+
+05:54.090 --> 06:01.450
+putting it in object that allowed because object is the superclass of all the classes subclass too.
+
+06:01.870 --> 06:05.130
+And I'm also creating an instance of the some of the class.
+
+06:05.140 --> 06:08.490
+So is that class instance of subclass.
+
+06:08.550 --> 06:09.130
+Yes.
+
+06:09.360 --> 06:19.230
+So because it contains the same class subclass an instance of superclass yes is a subclass object and
+
+06:19.250 --> 06:25.230
+instance of superclass you endl it's referenced by object variable the instance which we're putting
+
+06:25.230 --> 06:29.200
+in is that of a subclass So the answer would be true.
+
+06:29.320 --> 06:31.380
+When we use the instance of operator.
+
+06:31.560 --> 06:36.600
+The most important thing is what object is it referring to.
+
+06:36.600 --> 06:43.290
+So here this subclass object is referring to a subclass object so it's it is referencing an object of
+
+06:43.290 --> 06:47.280
+the type subclass so subclass instance of superclass.
+
+06:47.310 --> 06:49.440
+Yes it is so true.
+
+06:49.680 --> 06:54.120
+So that's basically why instance off can be used.
+
+06:54.110 --> 06:59.500
+The thing is instance or it can also be used with interfaces so you can see it here subclass.
+
+06:59.570 --> 07:02.140
+It is an intuitive interface.
+
+07:02.160 --> 07:08.480
+Yes because we define the interface in here and the subclass is also an element in the interface.
+
+07:08.550 --> 07:13.080
+So the subclass to you can see it here is implementing that particular class which is implementing the
+
+07:13.080 --> 07:19.600
+interface so it's class do is is an instance of interface disappears.
+
+07:19.760 --> 07:24.270
+It is not an instance of some other class that would require new forms.
+
+07:24.300 --> 07:30.150
+So basically the thing that you need to understand here is in of operator is used to check with if an
+
+07:30.150 --> 07:38.160
+object is of a specific type and the type can either be a class or an interface and ensures that a subclass
+
+07:39.460 --> 07:47.490
+will give you if you check instance off on it with any of its superclasses as well and same is the case
+
+07:47.490 --> 07:49.070
+of interfaces.
+
+07:49.140 --> 07:54.750
+And instead of a class which is implementing an interface if you check it with the instance of any of
+
+07:54.750 --> 07:56.480
+those interfaces you'd get it.
+
+07:56.640 --> 08:02.440
+True even if the superclass is the one actually implementing that particular interface.
+
+08:02.550 --> 08:07.530
+If this is really confusing don't worry at all we have this all nailed down for you.
+
+08:07.530 --> 08:10.930
+There's an example which is present in our project.
+
+08:10.960 --> 08:15.990
+All you need to do is do a complete shifty search for instance of examples.
+
+08:16.080 --> 08:19.360
+So this instance for example contains all the examples that we discussed.
+
+08:19.380 --> 08:25.560
+Now you can play around with that as an exercise and you can see that all the things that we were talking
+
+08:25.560 --> 08:27.100
+about are running well.
+
+08:27.210 --> 08:31.920
+So this would be a good exercise for you to understand the influence of operator completely.

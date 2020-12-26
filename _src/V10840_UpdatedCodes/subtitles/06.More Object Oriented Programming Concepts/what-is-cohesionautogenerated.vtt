@@ -1,0 +1,226 @@
+WEBVTT
+
+00:01.280 --> 00:06.900
+In the previous three deal we talked about coupling and this in this way you will talk about cohesion.
+
+00:06.930 --> 00:13.690
+So what is cohesion caution is basically how related the responsibilities of a specific class are.
+
+00:14.250 --> 00:17.040
+Ideally a class should be highly cohesive.
+
+00:17.040 --> 00:19.670
+That means all its responsibilities.
+
+00:19.760 --> 00:21.210
+What are the responsibilities of a class.
+
+00:21.210 --> 00:23.510
+How do you define them through their method.
+
+00:23.550 --> 00:28.040
+So all the method should be highly highly related to them.
+
+00:28.290 --> 00:31.370
+So let's look at an example problem.
+
+00:31.390 --> 00:35.710
+So what you have here is a class download and store.
+
+00:35.850 --> 00:40.530
+So if you look at this particular thing what it's doing is everything it's downloading from internet.
+
+00:40.530 --> 00:42.960
+Passing the data and putting into the database.
+
+00:43.230 --> 00:48.060
+What this program does is basically as you can see from the code it download something from the internet
+
+00:48.060 --> 00:50.820
+parses it and then to the database.
+
+00:50.820 --> 00:56.370
+So this is one way of organizing it right so you have a download and store class which downloads from
+
+00:56.370 --> 01:01.290
+the internet barters the data and then you turn it into the database.
+
+01:01.290 --> 01:03.620
+So this gas would do a lot of logic then.
+
+01:03.620 --> 01:09.000
+So this class would be responsible for understanding the protocol of how to talk to Internet and download
+
+01:09.000 --> 01:15.270
+the stuff from Internet and then it would need to have a parser to parse the data or translate the data
+
+01:15.270 --> 01:16.750
+into some other format.
+
+01:16.950 --> 01:23.120
+And then you need to store it into the database so it needs to to understand either ABC or J-P or whichever
+
+01:23.150 --> 01:28.110
+one technology you'd use to talk to the database and it would need to store it into the database as
+
+01:28.170 --> 01:28.700
+well.
+
+01:28.860 --> 01:32.090
+So this class has a lot of responsibilities.
+
+01:32.220 --> 01:37.260
+And as you can see downloading from internet is a different responsibility completely different responsibility
+
+01:37.260 --> 01:38.930
+compared to parsing data.
+
+01:39.060 --> 01:43.090
+And this is completely different responsibility comparing compelling story into the database.
+
+01:43.140 --> 01:51.030
+So you'd have any number of reasons for storing these chinning this class and that if something changes
+
+01:51.030 --> 01:53.400
+with hated a b or something you need to change it.
+
+01:53.460 --> 01:56.140
+If something is passing you need to change you do something.
+
+01:56.260 --> 01:58.930
+Change it's turning into the database you need to change it.
+
+01:59.010 --> 02:01.890
+I this would be changing all the time.
+
+02:01.950 --> 02:08.640
+A better solution like this is high I'm in very low cohesion in the sense that the responsibilities
+
+02:08.670 --> 02:11.850
+of the class are not really related to each other.
+
+02:11.940 --> 02:16.130
+They're quite unrelated responsibilities present for this particular class.
+
+02:16.290 --> 02:21.920
+A better solution would be to have different classes with their own responsibilities.
+
+02:21.930 --> 02:26.040
+So I would have a separate Internet download appliance which is responsible for downloading from the
+
+02:26.040 --> 02:26.860
+Internet.
+
+02:26.880 --> 02:30.180
+So this deals with all the HGP logic hold it up to the website.
+
+02:30.180 --> 02:33.440
+How do get that information and get it out.
+
+02:33.710 --> 02:36.400
+The data parser has the parse data.
+
+02:36.420 --> 02:44.550
+So this would really focus on once I have the DML downloaded How do I parse it and get it into a format
+
+02:44.580 --> 02:46.950
+I would need to understand.
+
+02:47.160 --> 02:49.880
+So that's the focus of this data parser.
+
+02:49.960 --> 02:54.630
+The data is stored on the other hand is focused on the data database.
+
+02:54.750 --> 03:01.410
+So it would get the data which is parsed and it would try and store it into the database so they don't
+
+03:01.410 --> 03:06.500
+read and store class is the high level class or that is responsible for creating instance of the classes
+
+03:06.500 --> 03:09.600
+and calling them we do not really know how it should be worked.
+
+03:09.600 --> 03:14.820
+It knows that Internet don't know that officially HTP so it will just say we don't need that download
+
+03:14.820 --> 03:19.950
+from intimate partner Babolat the database to store in the database.
+
+03:19.970 --> 03:24.720
+I mean really speaking there should be some kind of data which is passing between these stuff.
+
+03:24.720 --> 03:29.310
+I just wanted to make the example real simple too that you can understand it very easily if your arm
+
+03:29.310 --> 03:32.830
+is your classes in this way rather than this way.
+
+03:32.920 --> 03:36.300
+Then you have much better cohesion.
+
+03:36.390 --> 03:40.790
+This particular class only knows how to talk to each If nothing else all the.
+
+03:40.830 --> 03:46.720
+Even if I add more don't admit that you're would only be talking to actually be will not know how awkward
+
+03:46.750 --> 03:48.460
+it is to not know how to parse stuff.
+
+03:48.470 --> 03:50.640
+That's not the responsibility of this particular class.
+
+03:50.880 --> 03:55.650
+This class on the other hand oh I'm only responsible for parsing nothing else.
+
+03:55.650 --> 03:59.150
+So if I have multiple parts things to do OK create new method in here.
+
+03:59.280 --> 04:02.310
+But if it's not related to parsing get away from me.
+
+04:02.310 --> 04:04.170
+That's not my responsibility.
+
+04:04.170 --> 04:10.440
+I want to be highly cohesive and if I add other responsibilities to me like storing through a database
+
+04:10.470 --> 04:12.190
+I'll no longer be cohesive.
+
+04:12.390 --> 04:16.770
+And I would need to change whenever something in to is there was something in passing interest I don't
+
+04:16.770 --> 04:17.870
+want to be like that.
+
+04:18.090 --> 04:23.490
+I want to be highly cohesive and I have to have relaid and that means I have to have related responsibilities.
+
+04:23.640 --> 04:25.410
+That's what the data partner would do.
+
+04:25.560 --> 04:29.830
+And one other things which are related to parsing I'll take responsibility for.
+
+04:29.880 --> 04:35.310
+Similarly with database Storer and download and storage the class which would kind of say I don't get
+
+04:35.340 --> 04:36.350
+all the details.
+
+04:36.390 --> 04:39.300
+I'm at high level so I'll decide I'll walk you.
+
+04:39.300 --> 04:42.480
+You do what you need to do to get the things done.
+
+04:42.550 --> 04:47.670
+Areason classes in this way would lead to highly cohesive applications.
+
+04:47.670 --> 04:52.890
+So those are the two things that we discussed in this particular section until now.
+
+04:53.100 --> 04:58.430
+We talked about having low coupling and high cohesion and building next we do.

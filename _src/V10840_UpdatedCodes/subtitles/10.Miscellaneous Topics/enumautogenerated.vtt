@@ -1,0 +1,217 @@
+WEBVTT
+
+00:02.640 --> 00:06.350
+Let's not talk about another important concept called enim.
+
+00:06.390 --> 00:13.060
+Typically what we're used to in Java is to use strings to represent a different set of values.
+
+00:13.170 --> 00:20.670
+So I can use the string winder string Springs putting some and string fall to represent the fact that
+
+00:21.720 --> 00:30.060
+to represent the seasons the fact is that all these four together have something in common they're all
+
+00:30.150 --> 00:31.720
+different seasons.
+
+00:31.730 --> 00:40.020
+So Jawa has created this thing called ENM where you can define all the possible values a specific type
+
+00:40.030 --> 00:41.140
+can have.
+
+00:41.190 --> 00:46.010
+So the season can have forwell use winter spring summer and fall.
+
+00:46.200 --> 00:54.600
+And no I can have all these values in a single type and we can use seasonal or winter or season of spring
+
+00:54.600 --> 01:01.180
+season summer season or fall as these basic values for that particular in them.
+
+01:01.210 --> 01:07.290
+So this would love us writing code like this like for example one of the things we should be able to
+
+01:07.290 --> 01:12.500
+do is use a switch around them so I can do a switch around the genome.
+
+01:12.660 --> 01:19.030
+And basically we are like we have a method which is getting the expected maximum pressure.
+
+01:19.050 --> 01:21.610
+So if it's winter then we are doing fine spring and fall.
+
+01:21.610 --> 01:23.830
+We're reading in summer it's 20.
+
+01:24.120 --> 01:31.020
+This looks like some European country nice weather even in summer it doesn't do more than 20 degrees
+
+01:31.020 --> 01:32.070
+Celsius.
+
+01:32.070 --> 01:34.400
+So that's good weather.
+
+01:34.410 --> 01:41.510
+We can look at further Edwins examples of them in two classes in Grant and in them at once do.
+
+01:41.710 --> 01:45.060
+So let's quickly look at in advance.
+
+01:45.210 --> 01:48.610
+So the first thing is you can have it earlier.
+
+01:48.610 --> 01:52.150
+We'll have that in way where it was just winter spring summer and fall.
+
+01:52.290 --> 02:00.240
+But if he has a constructor defined so here I have it with a constructor defined and customized with
+
+02:00.330 --> 02:01.290
+in code.
+
+02:01.290 --> 02:04.600
+So now I have a variable in the name as well.
+
+02:04.710 --> 02:07.140
+So now I can define a value.
+
+02:07.150 --> 02:13.560
+So winder de-value this one spring the value is to some of the values to the fall the values for.
+
+02:13.830 --> 02:19.590
+And I can even have a called Get chord method to return the chord for a specific season.
+
+02:19.890 --> 02:23.590
+The other thing we can also create is a value of method.
+
+02:23.670 --> 02:29.970
+So given a specific value so the value of meant that what it does is if you pass a value to it don't
+
+02:30.120 --> 02:34.080
+spring if you will for pass a value for it and false.
+
+02:34.170 --> 02:39.870
+So what it does is it looks loops through the seasons and checks where the record matches record matches
+
+02:39.870 --> 02:40.540
+then it returns.
+
+02:40.530 --> 02:42.570
+That's this week's season man thing.
+
+02:42.690 --> 02:46.510
+And we already look at this get expected max temperature thing.
+
+02:46.590 --> 02:54.360
+So this would be this would allow this is using a switch to switch over this particular enim instance
+
+02:54.750 --> 02:55.450
+to return.
+
+02:55.500 --> 02:57.610
+What is the max expected temperature.
+
+02:57.720 --> 03:06.550
+So these are this is like an advanced Inam where we are assigning a code for that specific Inam value.
+
+03:06.660 --> 03:15.240
+And also we are having a method where you'd be able to convert the ESM into code or be called into him
+
+03:15.540 --> 03:16.650
+you can see that in here.
+
+03:16.650 --> 03:20.600
+So I'm saying See then don't get go slow season is a cold winter.
+
+03:20.630 --> 03:21.570
+So is get good.
+
+03:21.600 --> 03:22.420
+What does it return.
+
+03:22.440 --> 03:23.010
+One.
+
+03:23.040 --> 03:23.350
+Right.
+
+03:23.400 --> 03:26.760
+So Susan the core of winter is one that's true.
+
+03:26.910 --> 03:33.050
+And you can see see Zehnder get expected maximum temperature because the season is winter it would return.
+
+03:33.060 --> 03:35.160
+It would go to this method and it would return fire.
+
+03:35.160 --> 03:38.960
+So I would be printed and season customized value of four.
+
+03:39.030 --> 03:42.270
+So what season has a value of four.
+
+03:42.360 --> 03:45.400
+It's false that this would print fall in.
+
+03:45.420 --> 03:51.900
+So this is Edwins example of an enum where we are doing a lot more than the basic just having a list
+
+03:51.900 --> 03:53.170
+of values.
+
+03:53.280 --> 04:01.170
+And there's another one to ocean off ENM here where we are actually extending the ENM directly so here
+
+04:01.200 --> 04:07.950
+you are looking at I'm saying winter and I'm defending a customized method on there so I'm saying this
+
+04:07.950 --> 04:15.660
+is winter and the customized method is written five and the same kind of metal I'm putting on summer
+
+04:16.050 --> 04:17.590
+and the default metal.
+
+04:17.730 --> 04:19.120
+I can put it in here.
+
+04:19.140 --> 04:21.420
+So the default method is this.
+
+04:21.480 --> 04:26.390
+And for these two values are overriding the method and giving a new value.
+
+04:26.530 --> 04:29.850
+I mean this is just to show you what is possible within them.
+
+04:29.850 --> 04:31.440
+These are really complex.
+
+04:31.650 --> 04:37.170
+I would really why this kind of a code in the real prediction scenario is just to kind of give you a
+
+04:37.410 --> 04:40.170
+picture of what are the different things that are possible.
+
+04:40.410 --> 04:44.040
+But then you can have a variable you can have value.
+
+04:44.100 --> 04:47.910
+You can have a method and different kinds of things.
+
+04:47.970 --> 04:52.770
+I would recommend you to go to these a number once and you might want to and play around with these
+
+04:52.770 --> 04:56.750
+glasses to get their idea about what's happening in here.
+
+04:56.820 --> 05:03.120
+In this we deal we started with basic income and we looked at a couple of advanced examples of is really
+
+05:03.240 --> 05:05.910
+its methods and that as well.
+
+05:05.910 --> 05:07.770
+So I'm in the next media way.

@@ -1,0 +1,400 @@
+WEBVTT
+
+00:01.650 --> 00:07.740
+Let's know more into one of the most important topics in programming which is exception handling will
+
+00:07.770 --> 00:11.250
+discuss about different things related to exception handling.
+
+00:11.300 --> 00:17.120
+We'll talk about why the exception handling is important and different things technical things in the
+
+00:17.110 --> 00:23.880
+world in Exception handling with Java so things like finally try a little package and those kind of
+
+00:23.880 --> 00:28.710
+things will also look at the hierarchy of the Exception handling classes.
+
+00:28.890 --> 00:36.060
+So we'll talk about error exception check exception and check the exception rules and things like that.
+
+00:36.060 --> 00:41.760
+We'll also discuss about how do you create a custom exception and also we'll talk about a couple of
+
+00:41.760 --> 00:48.450
+new features which are introduced into Java or try with resources and we'll end this section by talking
+
+00:48.450 --> 00:51.150
+about exception handling best practices.
+
+00:51.150 --> 00:59.550
+So why is exception handling really important thing is lot of applications are large and complex and
+
+00:59.910 --> 01:01.830
+even for smaller applications.
+
+01:01.980 --> 01:07.890
+I've not really seen an application without defects defects and exceptions are quite common and they
+
+01:07.890 --> 01:10.590
+happen every minute every day.
+
+01:10.590 --> 01:16.590
+It's not really that bad programmers are the ones who create defects and exceptions not you in good
+
+01:16.590 --> 01:22.170
+programmers write code that might have defects and that also came through exceptions.
+
+01:22.170 --> 01:25.710
+So what are the important things about exception handling.
+
+01:25.710 --> 01:30.400
+The thing about exception handling is there are two different parts to it.
+
+01:30.480 --> 01:38.400
+For me the first one is giving a proper message to the user where the user or the application whenever
+
+01:38.400 --> 01:39.680
+an exception happens.
+
+01:39.810 --> 01:46.830
+You give him a proper message you give him a message saying OK does an exception happen if you want
+
+01:46.830 --> 01:47.670
+to find out more.
+
+01:47.670 --> 01:50.280
+Talk to the tech support or something of that kind.
+
+01:50.460 --> 01:56.700
+One of the good practices that we follow is to give a unique identifier to the exception we tell the
+
+01:56.700 --> 02:01.200
+user to say contact tech support with this specific unique identifier.
+
+02:01.200 --> 02:08.070
+The other important part is to have enough information for your support team or disapprove of a bird
+
+02:08.190 --> 02:09.570
+to debug the problem.
+
+02:09.570 --> 02:13.650
+So these are two important but the first one is a friendly message the user.
+
+02:13.650 --> 02:17.670
+The second one is N.F. information for the subadult to put to debug the problem.
+
+02:17.670 --> 02:20.090
+So what do we mean by enough information.
+
+02:20.250 --> 02:31.140
+We mean a proper stack trace a proper explanation of what context this application happened in and also
+
+02:31.140 --> 02:37.510
+log the unique identifier which was given to the user in the logs so that somebody can search for it
+
+02:37.510 --> 02:42.540
+in the log and find out that a unique identifier and get all the information about.
+
+02:42.590 --> 02:47.820
+Exception do things that are really important about exception handling is giving a proper message to
+
+02:47.820 --> 02:54.030
+the user and making sure that there is enough information available for the support up or support them
+
+02:54.630 --> 02:59.080
+to fix the problem or to identify what is the root cause of this particular problem.
+
+02:59.130 --> 03:05.550
+Exception handling in all languages in most of the languages follows a specific design pattern the design
+
+03:05.550 --> 03:10.560
+pattern which is talked about is Chain of Responsibility.
+
+03:10.560 --> 03:12.830
+So for example look at it in here.
+
+03:12.990 --> 03:19.380
+So a main method is calling method one method one is calling method and method through is throwing an
+
+03:19.380 --> 03:22.090
+exception as theoretical denial is just or two string.
+
+03:22.140 --> 03:24.110
+Obviously it throws an exception.
+
+03:24.150 --> 03:31.460
+So it would be handled in Java is that this method too strong an exception.
+
+03:31.530 --> 03:33.210
+Is this called from.
+
+03:33.210 --> 03:34.660
+This is called from methedrine.
+
+03:34.890 --> 03:37.050
+That is not right Gach inmate.
+
+03:37.110 --> 03:40.020
+So it does not know how to handle the exception which is thrown.
+
+03:40.230 --> 03:41.350
+So what it does do.
+
+03:41.490 --> 03:42.320
+What does it do.
+
+03:42.330 --> 03:45.880
+It says OK I don't know how to handle this method one you are calling me.
+
+03:45.900 --> 03:49.740
+So you try and handle this method one sees.
+
+03:49.770 --> 03:51.310
+Method 2 is called here.
+
+03:51.330 --> 03:52.610
+Do I have a try catch block.
+
+03:52.660 --> 03:58.160
+No I don't know how to handle these exceptions so I need to return it back to the calling method.
+
+03:58.230 --> 04:01.920
+It goes back to main means says OK we have it right.
+
+04:01.950 --> 04:03.240
+No I don't have it right.
+
+04:03.270 --> 04:06.540
+I don't know how to handle this so I'll throw it out.
+
+04:06.540 --> 04:13.140
+So what would happen is this will be the output you'd see the output seen exception in method and you'd
+
+04:13.170 --> 04:14.930
+see the complete stack trace.
+
+04:14.940 --> 04:22.500
+You are saying that OK main method is starting from the first line submitted to is the one which is
+
+04:22.500 --> 04:23.080
+throwing it.
+
+04:23.100 --> 04:28.530
+You can see which line off the code which is throwing and then it went to method 1 and then it went
+
+04:28.530 --> 04:29.190
+to main.
+
+04:29.310 --> 04:36.420
+And so you can see the entire stack trace which resulted in this exception when we do something called
+
+04:36.440 --> 04:38.180
+Eat or print directories.
+
+04:38.190 --> 04:43.230
+This flow of exception from one method to the calling method is called.
+
+04:43.440 --> 04:48.000
+It's one of the things which are defined in the chain of responsibility pattern.
+
+04:48.000 --> 04:54.080
+So basically chain of responsibility pattern is a veil of parsing a request between a chain of objects.
+
+04:54.090 --> 05:01.110
+So here method is one of the things in the chain method one is one of the things in the chain is the
+
+05:01.160 --> 05:02.450
+last thing in the chain.
+
+05:02.680 --> 05:07.550
+So whenever an exception is thrown what we are doing is a method to do know how to handle this method
+
+05:07.560 --> 05:09.090
+one do you know how to handle this.
+
+05:09.270 --> 05:11.370
+I mean do you know how to handle this.
+
+05:11.420 --> 05:14.560
+So that's kind of the message passing which happens.
+
+05:14.670 --> 05:17.940
+And in this specific example there's no exception different anyway.
+
+05:18.060 --> 05:19.590
+So it is thrown out.
+
+05:19.770 --> 05:25.890
+A good example of the Chain of Responsibility pattern is like a loan or leave approval process.
+
+05:26.460 --> 05:28.920
+Let's take a loan approval process.
+
+05:28.920 --> 05:30.250
+First it goes to the clerk.
+
+05:30.360 --> 05:35.230
+So if the amount requested is higher than what he can approve it goes to his manager.
+
+05:35.460 --> 05:40.990
+Probably if it's good that even his approval limits it would probably go to his director and so on so
+
+05:41.010 --> 05:43.380
+forth until it's approved or rejected.
+
+05:43.410 --> 05:48.860
+Same is the case with the exception handling and this pattern is called Chain of Responsibility pattern.
+
+05:48.960 --> 05:52.720
+What does the need for the finally block you are handling an exception.
+
+05:52.740 --> 05:59.100
+So there's a try catch block with the exception handling and you're logging the exception you're printing
+
+05:59.100 --> 06:01.730
+the exception to the trace.
+
+06:01.890 --> 06:02.580
+Why do you need.
+
+06:02.580 --> 06:07.920
+Finally what is the role that finally plays in a try catch block.
+
+06:07.950 --> 06:09.150
+That's the question.
+
+06:09.150 --> 06:11.780
+So for example look at this matter.
+
+06:11.850 --> 06:13.000
+What does this method do.
+
+06:13.020 --> 06:18.160
+So we are putting a connection we are calling connections not open so the connection is open and we
+
+06:18.160 --> 06:20.600
+are doing a little bit of logic in there here.
+
+06:20.640 --> 06:27.150
+We had coded up an exception so this exception to this would cause an exception to be thrown and we
+
+06:27.150 --> 06:30.510
+have taken or close called right after this.
+
+06:30.510 --> 06:35.410
+So what happened when the exception is thrown will not close get exudate the connection that closed
+
+06:35.430 --> 06:38.430
+will not be dead because this led through an exception.
+
+06:38.430 --> 06:45.160
+So we would directly go into the catch block and the like we let say I'm in really well implemented
+
+06:45.160 --> 06:50.550
+code this would be the logging it to a log or printing the stack trace or something of that kind.
+
+06:50.700 --> 06:53.970
+So we go to the cache block and go out.
+
+06:53.970 --> 07:00.270
+So the connection which is opened is not really closed so the connection is leaked and that's a problem.
+
+07:00.270 --> 07:03.360
+So that's where the finally block comes in.
+
+07:03.360 --> 07:08.820
+So what we do is instead of doing connection that closed directly in the right what we would do is we
+
+07:08.820 --> 07:09.510
+would move it.
+
+07:09.520 --> 07:16.610
+Finally what would happen is when an exception is thrown or not the connection or close would be called
+
+07:17.310 --> 07:19.720
+and the connection will be lost.
+
+07:19.770 --> 07:26.340
+So finally is basically used to do you any cleanup that you'd want to do whether an exception occurred
+
+07:26.400 --> 07:27.430
+or not.
+
+07:27.600 --> 07:33.600
+So the great thing about finally is that it will be exudate irrespective of whether an exception occurred
+
+07:33.660 --> 07:35.310
+or not.
+
+07:35.310 --> 07:41.100
+If you write the code down here somewhere down here then what would happen if an exception happens.
+
+07:41.100 --> 07:42.880
+That code is not executed.
+
+07:43.080 --> 07:45.760
+So that's basically when you use.
+
+07:45.780 --> 07:51.630
+Finally we were discussing that finally is always executed whether an exception is thrown or not.
+
+07:51.630 --> 07:53.130
+So what are the chances.
+
+07:53.130 --> 07:56.840
+I mean what are the scenarios where it finally is not executed.
+
+07:57.030 --> 08:03.000
+Basically there are two scenarios so let's see if I have 10 lines and finally and the second line and
+
+08:03.000 --> 08:04.550
+finally also throws an exception.
+
+08:04.560 --> 08:08.860
+So the there's an exception inside the finally block itself.
+
+08:09.060 --> 08:15.420
+Then the rest of the lines and finally are not executed or the JVM crashes so let's say it's crashing
+
+08:15.420 --> 08:18.050
+with an out-of-memory exception or something of that kind.
+
+08:18.180 --> 08:22.520
+In that kind of a scenario also you're finally will not be executed.
+
+08:22.520 --> 08:26.280
+You'll get this program below will finally be executed in this program.
+
+08:26.290 --> 08:28.860
+I mean the trick is there's a done here.
+
+08:28.860 --> 08:33.340
+So in the Gach what we are doing is systems that are Darcs Trindle and being written.
+
+08:33.380 --> 08:35.700
+So we'll finally get executed.
+
+08:36.000 --> 08:43.380
+The answer is yes finally gets executed and the connection gets lost even if there's a written statement
+
+08:43.970 --> 08:45.950
+is privatised or catch allowed.
+
+08:46.260 --> 08:47.970
+Yes it is.
+
+08:48.180 --> 08:52.260
+So you can see there's a try and there's just a Finally there's no catch in here.
+
+08:52.560 --> 08:56.250
+So that's allowed a great without a catch.
+
+08:56.250 --> 09:01.360
+And finally so attrite without catch and without fine leads not really a lot.
+
+09:01.380 --> 09:08.250
+So you should either have a catch order finally or have bought you cannot have a right without having
+
+09:08.310 --> 09:10.020
+either of a catch or a final.

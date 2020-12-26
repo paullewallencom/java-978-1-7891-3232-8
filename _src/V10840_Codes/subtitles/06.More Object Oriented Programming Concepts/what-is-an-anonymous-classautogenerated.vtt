@@ -1,0 +1,112 @@
+WEBVTT
+
+00:01.150 --> 00:05.650
+The next thing which we want to discuss in this short video is an anonymous class.
+
+00:05.690 --> 00:09.340
+And then with is basically one which does not have a name.
+
+00:09.430 --> 00:12.110
+So how can you really create a class which does not have any.
+
+00:12.160 --> 00:15.580
+If you look at the Animal class here the Animal class has a name right.
+
+00:15.590 --> 00:17.460
+This has a name called animal.
+
+00:17.680 --> 00:24.340
+However if I want to really create a anonymous class I can do something of this kind here I'm creating
+
+00:24.340 --> 00:31.390
+I'm a competitor so to implement the competitor interface I would need to override a method call it
+
+00:31.700 --> 00:32.570
+compare.
+
+00:32.770 --> 00:41.020
+So what I'm doing here is instead of defining a new competitor classing up some competitor extents implements
+
+00:41.020 --> 00:46.810
+competitor what I'm doing is emphatically creating the body of the class in here.
+
+00:46.810 --> 00:53.020
+So I'm defining dimethyl here and within open Breske close place and defining the complete Berretta
+
+00:53.110 --> 00:54.240
+right here.
+
+00:54.250 --> 01:01.830
+So this is a reverse comp. So basically price and reverses the order of the strings.
+
+01:01.840 --> 01:08.430
+I mean it kind of like it tries in reverse the alphabetical order of strings.
+
+01:08.590 --> 01:13.830
+So if you use the reverse comparator you'd see that this particular thing when I say apple.
+
+01:13.840 --> 01:16.620
+Boy it trippin in God boy Apple.
+
+01:16.760 --> 01:24.670
+That's one example of an anonymous class where I'm not really creating a class but I'm trying to directly
+
+01:24.670 --> 01:28.740
+define a class without a name right here.
+
+01:28.990 --> 01:33.980
+The other instances when I want to or I debark it in the new I'm getting a new animal.
+
+01:34.030 --> 01:35.740
+But in this new animal I want.
+
+01:35.740 --> 01:37.160
+All right debark.
+
+01:37.360 --> 01:38.600
+So I would want to say.
+
+01:38.800 --> 01:39.270
+All right.
+
+01:39.280 --> 01:43.810
+And instead of finding whatever that is printing I would want to see a subclass Barch.
+
+01:43.990 --> 01:48.410
+So you'd see that when I do animal back it create prints that subclass box.
+
+01:48.700 --> 01:54.970
+This is basically creating a new subclass of the animal so I'm Cregan you sapless of the animal but
+
+01:54.970 --> 01:58.600
+I don't want to really create a class and create a instance of it.
+
+01:58.600 --> 02:02.940
+So what I'm doing in here is directly creating an instance without a name.
+
+02:02.980 --> 02:09.630
+Usually anonymous classes are not really good things to create because they'll not be able to.
+
+02:09.650 --> 02:14.410
+I mean you know the name of the class so you'll not be able to reuse it anywhere else.
+
+02:14.410 --> 02:21.430
+So these basic instances where you use anonymous classes are weird you know for sure that a specific
+
+02:21.430 --> 02:23.510
+class will not be used again.
+
+02:23.710 --> 02:30.220
+So if I'm 100 percent sure that this specific thing is very very limited and it's only applicable in
+
+02:30.220 --> 02:34.530
+this specific scenario I would go and create an add on my skills.
+
+02:34.570 --> 02:37.760
+But usually it's a thing you try and avoid.
+
+02:37.780 --> 02:44.020
+So it's a good question but not really something you would want to use in the real world scenario.
+
+02:44.020 --> 02:49.170
+Most of the things that you're MIT must class until the next week you rely.

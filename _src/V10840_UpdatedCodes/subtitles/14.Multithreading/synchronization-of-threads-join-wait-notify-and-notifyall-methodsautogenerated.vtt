@@ -1,0 +1,409 @@
+WEBVTT
+
+00:02.010 --> 00:08.880
+What is synchronization of it and by synchronization of threads that let's look at a simple problem
+
+00:08.890 --> 00:10.830
+so you have this method.
+
+00:10.830 --> 00:13.030
+So this is the method.
+
+00:13.170 --> 00:14.420
+It's a very simple method.
+
+00:14.490 --> 00:21.440
+So we have we're setting a value into cell 1 cell 2 and 3 and we're adding them and returning it back.
+
+00:21.630 --> 00:24.690
+But we have sleep for some time in between.
+
+00:24.690 --> 00:30.330
+So in each of these we are actually sleeping for sometime in between let's say this method is called
+
+00:30.390 --> 00:32.220
+in two different threads.
+
+00:32.430 --> 00:39.250
+So if this method is called in two different threads then really funny things can happen.
+
+00:39.480 --> 00:48.840
+So what would happen is the thread one has completed setting cell one cell to and self-id the threat
+
+00:48.900 --> 00:52.400
+and Dig's discussion has shifted to thread.
+
+00:52.680 --> 00:57.390
+And what that thread did is it came in and it said de-value for cell 1.
+
+00:57.720 --> 01:04.170
+So we have value for cell 1 which is set by the thread to add the value for self to ancillary which
+
+01:04.170 --> 01:06.250
+is said by Thread 1.
+
+01:06.270 --> 01:11.660
+So what would happen when thread when exiguous cell one player said to split cell 3 it will lose this
+
+01:11.900 --> 01:14.350
+one value which was said by thread 2.
+
+01:14.580 --> 01:21.420
+So what other value which trade one set that was all were didn't because these traits are executing
+
+01:21.420 --> 01:29.670
+concurrently they are overriding the values which are said by one another and this is a very bad scenario
+
+01:29.880 --> 01:35.230
+because the trade when it thinks it asset value properly and it tries to sum them up.
+
+01:35.250 --> 01:41.010
+But actually the value which was set in Selborne is de-value which is currently in sell when is the
+
+01:41.010 --> 01:43.010
+value which is said by threat 2.
+
+01:43.200 --> 01:47.530
+And this can result in errors and a lot of bugs.
+
+01:47.840 --> 01:53.190
+The way you can prevent multiple threats from executing the same method is by using the synchronized
+
+01:53.190 --> 01:54.050
+keyword.
+
+01:54.060 --> 01:58.060
+So when I put a synchronized key word on a method then what would happen.
+
+01:58.260 --> 02:00.510
+Only one thread can be executing this.
+
+02:00.540 --> 02:06.750
+So once a thread is executed if thread when it's executing in the specific code then it will not be
+
+02:06.750 --> 02:10.970
+able to do anything so we'll come here see this method is synchronized.
+
+02:11.150 --> 02:12.030
+OK.
+
+02:12.270 --> 02:13.100
+I can't run it.
+
+02:13.120 --> 02:13.440
+It will.
+
+02:13.440 --> 02:16.540
+Wait wait wait until Tredwell completes execution.
+
+02:16.560 --> 02:20.110
+In this example we are using synchronized keyword or up method.
+
+02:20.190 --> 02:23.140
+So we are putting the synchronized keyword before the method.
+
+02:23.190 --> 02:25.040
+So this would be a synchronized method.
+
+02:25.170 --> 02:31.890
+And if I have then synchronized methods in a class then only one thread can at that time be executing
+
+02:31.980 --> 02:33.700
+any of those methods.
+
+02:33.810 --> 02:39.720
+All the other threads which want to exclude any other method which is synchronized have to wait within
+
+02:39.720 --> 02:40.300
+a class.
+
+02:40.320 --> 02:46.200
+There can only be one thread that's executing any of the synchronized code in that particular case.
+
+02:46.320 --> 02:48.910
+There is another concept called a synchronized block.
+
+02:49.170 --> 02:54.550
+Typically we use Tinkler's before method the synchronized word synchronized example.
+
+02:54.720 --> 03:01.110
+Or you can also have specific code in the method to be synchronized so let's say there is a hundred
+
+03:01.200 --> 03:04.800
+lines of code and I want only five lines of code to be synchronized.
+
+03:04.840 --> 03:08.800
+I can you think is this around this specific thing.
+
+03:08.910 --> 03:10.940
+Can a static method be synchronized.
+
+03:11.040 --> 03:11.560
+Yes.
+
+03:11.580 --> 03:19.930
+You can synchronize a static method as well however the synchronized civilization on the static but
+
+03:19.940 --> 03:24.450
+that is more at the class level it's not really at the instance level.
+
+03:24.600 --> 03:27.350
+Let's say I have to threat threat two and three.
+
+03:27.350 --> 03:34.640
+Three and I would want to read four to start only after three three completed execution thread to thread
+
+03:34.650 --> 03:35.090
+three.
+
+03:35.310 --> 03:39.430
+And I wanted four to start only after three completed execution.
+
+03:39.480 --> 03:45.570
+So I'm kicking off thread tree I'm picking up thread 2 and I'm calling thread three the join.
+
+03:45.690 --> 03:53.490
+What basically happened here is what you call three or join this court will wait for thread three to
+
+03:53.640 --> 03:58.660
+complete and only after the three three is completed we would kick off the thread.
+
+03:58.770 --> 04:04.590
+So join is basically to wait for a specific thread to complete execution.
+
+04:04.590 --> 04:07.590
+You can also use our time line.
+
+04:07.590 --> 04:13.980
+So here I am saying I would want to wait for 200 milliseconds or the end of execution of third for let's
+
+04:13.980 --> 04:16.210
+say the trade for did not complete execution.
+
+04:16.260 --> 04:23.160
+I mean the threat for the not complete execution by two thousand milliseconds then it would the execution
+
+04:23.160 --> 04:24.660
+would proceed to the next line.
+
+04:24.660 --> 04:26.870
+There are a lot of important matters in threat.
+
+04:26.970 --> 04:30.110
+Take a few of them and look at them in here.
+
+04:30.330 --> 04:35.510
+Trade he'll admit that he is one of the static methods in the class.
+
+04:35.570 --> 04:39.810
+He is basically a threat saying OK I have enough execution time.
+
+04:39.840 --> 04:43.280
+So please select another thread for execution.
+
+04:43.290 --> 04:50.310
+So what would happen is when a thread called better than the state of the test would go from running
+
+04:50.340 --> 04:51.080
+to reasonable.
+
+04:51.210 --> 04:58.650
+However if there are no threads no other thread which are of higher priority then the scheduler might
+
+04:58.650 --> 05:00.960
+be the same thread for running again.
+
+05:01.260 --> 05:03.520
+The other method is read sleep better.
+
+05:03.600 --> 05:10.530
+The sleep method makes that trade goes into going to sleep board or a wait mode for a specified number
+
+05:10.530 --> 05:15.230
+of a specified amount of time typically you specified the amount of time in milliseconds.
+
+05:15.390 --> 05:21.240
+What is it that look at there is a situation when to thread neutrally are waiting for each other.
+
+05:21.450 --> 05:27.200
+So if one is waiting for Thread 2 and thread 2 is waiting for Thread 1 then the situation is called
+
+05:27.200 --> 05:30.140
+a deadlock because they would keep waiting for ever.
+
+05:30.150 --> 05:35.670
+It can be even bigger kind of a cycle so that it is waiting for thread to thread is waiting for 3 3
+
+05:35.660 --> 05:37.750
+3 3 is waiting for Thread 1.
+
+05:37.770 --> 05:40.630
+So that's a bigger cycle but it's still a deadlock.
+
+05:40.650 --> 05:44.380
+So what are the important methods in Java for integrate communication.
+
+05:44.550 --> 05:51.120
+The product that's out of date notify and notify all deviate and ignore payment that is usually used
+
+05:51.120 --> 05:52.520
+in combination.
+
+05:52.520 --> 05:57.750
+What happens is if I call it bait method on the thread then on building or Diplomatique is called on
+
+05:57.750 --> 05:59.490
+it it would keep waiting.
+
+05:59.490 --> 06:05.700
+So when I call a wait method then it's basically saying I'll wait for another thread to notify me until
+
+06:05.700 --> 06:07.260
+I start execution.
+
+06:07.260 --> 06:08.790
+So this is how you do it right.
+
+06:08.880 --> 06:12.930
+Wait and notify is how it's shown in here.
+
+06:13.050 --> 06:18.860
+If more than one thread is waiting for an object you can also use notify all to know different all the
+
+06:18.870 --> 06:20.200
+threats which are waiting.
+
+06:20.250 --> 06:27.050
+So let's now look at a program where we would use most of the things that we discussed previously.
+
+06:27.160 --> 06:33.390
+Until we have been discussing things theoretically let's kind of try and run a program which would make
+
+06:33.390 --> 06:35.430
+it interesting more interesting for us.
+
+06:35.430 --> 06:37.280
+I have a class called calculator.
+
+06:37.380 --> 06:42.530
+And if you see this calculator extends thread and there is a run method in here.
+
+06:42.780 --> 06:49.020
+And inside the synchronized block I'm also doing a note for and inside the main method what we're doing
+
+06:49.050 --> 06:56.330
+is we are creating an instance of the thread and doing that thread start and we are waiting on the thread.
+
+06:56.340 --> 06:59.450
+So we're calling at Red Dot vate as well.
+
+06:59.520 --> 07:06.490
+What would happen is the main method would start waiting for the thread to give it didn't notify signals
+
+07:06.630 --> 07:13.520
+so you'd see that in here you're seeing that when I run the program the main method they put the bad
+
+07:13.560 --> 07:20.880
+execution of the run in the calculator and then wait for the notify one to notify is called the Main
+
+07:20.880 --> 07:21.480
+method.
+
+07:21.510 --> 07:25.060
+Stop waiting and it would start executing this code.
+
+07:25.410 --> 07:28.960
+Let's see what would happen if this line was not there.
+
+07:29.130 --> 07:32.260
+So let's come in out the whole block from here to here.
+
+07:32.430 --> 07:34.280
+What would you do that would be printed.
+
+07:34.280 --> 07:40.020
+I mean when I add up all these integers from 0 to 9 9 9 9 The result should be this.
+
+07:40.050 --> 07:43.590
+But here I am not doing vate for that specific thread.
+
+07:43.620 --> 07:47.330
+You would see what is the main method printing its printing is zero.
+
+07:47.700 --> 07:48.240
+Why.
+
+07:48.240 --> 07:51.980
+Because it's not waiting for the other thread to complete the execution.
+
+07:51.990 --> 07:58.110
+I really want the main method to wait until the other thread completes execution until the calculated
+
+07:58.110 --> 08:00.050
+threat exit execute.
+
+08:00.090 --> 08:02.150
+So I would want to wait for the thread.
+
+08:02.190 --> 08:06.600
+I would want to have a notify and only then complete the execution.
+
+08:06.600 --> 08:09.930
+So if you run this enough you are actually waiting.
+
+08:09.930 --> 08:13.620
+So the man is actually waiting for the train to complete execution.
+
+08:13.620 --> 08:15.100
+That's better not wait.
+
+08:15.120 --> 08:18.410
+And then you can print the result of the song.
+
+08:18.600 --> 08:20.270
+So that's interesting.
+
+08:20.370 --> 08:24.640
+I mean that's how you can have multiple threat to communicate with each other.
+
+08:24.810 --> 08:29.970
+So you have a threat called Main from which you are kicking off that thread called calculator and you
+
+08:29.970 --> 08:35.100
+are trying to communicate between them by using the vate and didn't know if it would cause a lot of
+
+08:35.100 --> 08:36.390
+examples of a threat.
+
+08:36.430 --> 08:43.620
+Executer service and the methods said threat in this specific video what I recommend you to do is to
+
+08:43.620 --> 08:49.670
+take a look at the trade examples class so as an exercise I would recommend you to take the trade examples
+
+08:49.680 --> 08:55.590
+class and you can look at all the things which are present in here and you can try and run the program
+
+08:55.830 --> 09:00.950
+and try and understand why and how the output is getting generated.
+
+09:00.960 --> 09:04.680
+So I would really recommend you to do that because it would really give you a good understanding of
+
+09:04.680 --> 09:06.550
+what happens behind that.
+
+09:06.720 --> 09:09.930
+So threat examples thread wait and notify two things.
+
+09:09.930 --> 09:13.680
+Two classes that you can look at at the end of this review.
+
+09:13.800 --> 09:15.060
+Thanks a lot for watching.
+
+09:15.090 --> 09:15.990
+And in the next step.
+
+09:15.990 --> 09:16.420
+Bullae.

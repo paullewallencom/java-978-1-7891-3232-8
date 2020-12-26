@@ -1,0 +1,361 @@
+WEBVTT
+
+00:00.240 --> 00:01.940
+Really come back in this we do.
+
+00:02.010 --> 00:06.460
+Let's look at a lot of discussion a lot of things about interfaces.
+
+00:06.600 --> 00:11.850
+So we'll talk about what is the interface how do you define an interface how do you implement that interface
+
+00:11.910 --> 00:17.550
+and ultimately look at a few tricky things about interfaces while also learning about whether you can
+
+00:17.880 --> 00:22.750
+extend an interface and whether you can extend multiple interfaces.
+
+00:22.750 --> 00:25.580
+I mean can a classic in multiple interfaces as well.
+
+00:25.770 --> 00:30.150
+So those are the different things that you discuss as part of this particular section.
+
+00:30.210 --> 00:31.970
+Let's start with the basic question.
+
+00:32.010 --> 00:38.550
+What is really an interface and interface basically defines a contract.
+
+00:38.790 --> 00:42.510
+What are the responsibilities of a specific class.
+
+00:42.510 --> 00:49.170
+So if I'm saying a class implement a specific interface then all the better to show defined in the interface
+
+00:49.380 --> 00:52.730
+are implemented by that particular class.
+
+00:52.740 --> 00:59.070
+So basically an interface defines what are the responsibilities for a specific class.
+
+00:59.070 --> 01:04.700
+So it's like saying hey you can do anything but you should add it to the signatures.
+
+01:04.710 --> 01:06.420
+That's basically an interface.
+
+01:06.630 --> 01:13.140
+So it can kind of represent the common actions between multiple classes so you have a set of classes
+
+01:13.410 --> 01:14.640
+which implement an interface.
+
+01:14.640 --> 01:19.980
+You can definitely be sure that all that which are defined in the interface are implemented in those
+
+01:19.980 --> 01:20.510
+classes.
+
+01:20.530 --> 01:24.510
+I mean there are of few clauses to that.
+
+01:24.660 --> 01:26.310
+I mean after classes and things like that.
+
+01:26.310 --> 01:33.660
+But in general all the concrete classes should implement everything that is defined in the interface.
+
+01:33.720 --> 01:36.600
+Java uses the interfaces beautifully.
+
+01:36.600 --> 01:43.290
+You have a map interface a collection interface and the methods which are inside the map interface.
+
+01:43.500 --> 01:51.090
+You can be sure that any concrete map implementation for example or hash map what is in the map would
+
+01:51.090 --> 01:54.110
+definitely be added by the hash map.
+
+01:54.240 --> 01:57.540
+So let's take a quick look at the map and the collection interface.
+
+01:57.540 --> 02:00.850
+Before we move into creating an interface on our own.
+
+02:00.960 --> 02:04.540
+Let's open up the jar that your map to look at what are the.
+
+02:04.560 --> 02:06.300
+In this particular case.
+
+02:06.300 --> 02:10.860
+So if you look at the map interface it defines a number of methods.
+
+02:10.890 --> 02:16.460
+So if you look at the interface it contains a number of methods which are defined in here.
+
+02:16.470 --> 02:22.020
+So you are seeing that there are a number of methods which are there some of the methods you don't have
+
+02:22.020 --> 02:26.130
+the body of the metro to they just contain the signature.
+
+02:26.130 --> 02:29.460
+So this is just the signature of that particular method.
+
+02:29.640 --> 02:34.670
+There are also method implementations for some of the methods.
+
+02:34.740 --> 02:41.310
+So what are the changes that are made in Java one point eight is that you can give a default implementation
+
+02:41.310 --> 02:43.270
+of a method in an interface.
+
+02:43.530 --> 02:46.200
+This wouldn't have been possible in Java 7.
+
+02:46.380 --> 02:52.530
+But since giallo one point eight The interfaces also can contain a default implementation for a specific
+
+02:52.530 --> 02:53.180
+method.
+
+02:53.310 --> 02:59.400
+Well here we are providing implementation for a specific method and as you can see here this is from
+
+03:00.130 --> 03:01.110
+1.8.
+
+03:01.320 --> 03:07.480
+So map interface defines the contract which should be added by any implementation of the map.
+
+03:07.530 --> 03:13.650
+So hash map or any other implementation of the map should airdate to this specific contract.
+
+03:13.650 --> 03:18.010
+How do you really define an interface the way you define an interface is very simple.
+
+03:18.350 --> 03:20.990
+We are making it more complex than necessary in here.
+
+03:21.000 --> 03:24.460
+So it's public abstract interface flyable.
+
+03:24.810 --> 03:27.590
+And we have a public abstract wired flight.
+
+03:27.840 --> 03:33.120
+Actually this public abstract is not really necessary any method which is defined in any interface by
+
+03:33.120 --> 03:37.870
+default as public and abstract and the abstract here also is not really necessary.
+
+03:37.870 --> 03:42.910
+So typically you'd see the signatures like public interface playable white flight.
+
+03:43.080 --> 03:46.900
+So you don't need to define the method in here.
+
+03:46.980 --> 03:52.810
+If you want to you can get a default implementation starting from Java 8 but it's not necessary to do
+
+03:52.880 --> 03:54.410
+a job implementation.
+
+03:54.590 --> 03:56.190
+So that's how you define an interface.
+
+03:56.190 --> 03:59.110
+So now you're defining an interface call flyable.
+
+03:59.340 --> 04:00.790
+So this is flat.
+
+04:00.810 --> 04:03.800
+So I am able to fly.
+
+04:04.140 --> 04:06.430
+So that's basically the action.
+
+04:06.480 --> 04:09.380
+Anything that implements floorball has to implement.
+
+04:09.600 --> 04:13.090
+So if you look at it right now like how do you implement an interface.
+
+04:13.090 --> 04:15.510
+It's basically But implementing flyable.
+
+04:15.690 --> 04:24.750
+So airplane implement flyable and fly and implement flyable and fly the best way to look at interfaces
+
+04:24.840 --> 04:29.500
+is the common actions that are supported between two classes.
+
+04:29.700 --> 04:35.120
+So if you look at board an airplane they have no real relationship between them at all.
+
+04:35.230 --> 04:41.880
+What they do one thing in common flight so interfaces are common actions.
+
+04:42.000 --> 04:47.460
+Jindalee interface represents common actions that two things can both form.
+
+04:47.640 --> 04:54.420
+So if you look at the map interface it defines the common actions that you can do on all the maps with
+
+04:54.420 --> 04:59.430
+its hash map or link hash map or any of such things.
+
+04:59.650 --> 05:05.980
+The list interface defines what you can do on an aerialist or a vector or anything that implements the
+
+05:05.980 --> 05:07.380
+list interface.
+
+05:07.390 --> 05:09.520
+So those are the actions that you can perform.
+
+05:09.520 --> 05:16.360
+Similarly here I know that on an airplane I can call the fly on a board I can perform the option fly
+
+05:16.390 --> 05:23.140
+as well so interface here represents the common actions that you can perform on a set of classes.
+
+05:23.290 --> 05:29.550
+Let's look at a few tricky things about interface so we know that variables in an interface are always
+
+05:29.590 --> 05:31.150
+public static final.
+
+05:31.330 --> 05:36.500
+So by default even if I don't say anything here in value when it's public static final.
+
+05:36.520 --> 05:37.790
+So that's number one.
+
+05:37.790 --> 05:40.030
+So no other modifier is allowed.
+
+05:40.060 --> 05:41.980
+So you cannot call a variable private.
+
+05:41.980 --> 05:50.230
+So if you do something like this I wait in use equal to then it's a compiler interface that are by default
+
+05:50.230 --> 05:56.200
+public and abstract so anything that you describe here is public and abstract and before Java 8 a concrete
+
+05:56.200 --> 05:58.210
+method cannot be created an interface.
+
+05:58.510 --> 06:05.290
+But now you can actually if you look at the default word method 5 and I'm able to define it.
+
+06:05.360 --> 06:12.420
+So this would have given me a compilation error in Giaours 7 but allowed from Java 8 words.
+
+06:12.490 --> 06:13.900
+Can you extend an interface.
+
+06:13.990 --> 06:16.060
+Yes you can.
+
+06:16.870 --> 06:21.540
+This sub interface one is now extending X extending example into this one.
+
+06:21.550 --> 06:23.200
+So it's adding a new method.
+
+06:23.200 --> 06:29.730
+I meant that so do a class which implements of interface one should not implement what is defined in
+
+06:29.740 --> 06:32.940
+so being the first one and what the word is defined in.
+
+06:33.040 --> 06:34.170
+Example.
+
+06:34.480 --> 06:37.690
+Interface what to what to omit that are declared by both these interfaces.
+
+06:37.690 --> 06:41.980
+Those should be defined in all the concrete implementations of the sub interface.
+
+06:41.980 --> 06:46.830
+One class a small trivia here is the fact that an interface can or text in the class.
+
+06:46.840 --> 06:54.580
+You can only extend that interface so it would not be possible to extend us in a classic in multiple
+
+06:54.580 --> 06:55.980
+interfaces.
+
+06:56.340 --> 06:56.740
+OK.
+
+06:56.920 --> 07:01.390
+One of the things which we discussed already is the fact that a class cannot extend multiple classes
+
+07:01.780 --> 07:08.320
+but you can not extend multiple interfaces but actually implement them on different interfaces.
+
+07:08.320 --> 07:13.960
+This question these are confusing question because it is going to extend multiple interfaces.
+
+07:13.960 --> 07:16.310
+Actually the answer is can it.
+
+07:16.420 --> 07:20.710
+The answer should be no because you cannot extend multiple interfaces.
+
+07:20.710 --> 07:27.700
+You have to implement multiple interfaces so a class can implement multiple interfaces and you can have
+
+07:27.700 --> 07:33.400
+a sampling class implementing multiple interfaces and then you have to implement all the methods which
+
+07:33.400 --> 07:36.140
+are defined in these two interfaces.
+
+07:36.190 --> 07:42.940
+So that's basically for example one of the classes in JDK that implement multiple interfaces is hash
+
+07:42.940 --> 07:43.620
+map.
+
+07:43.750 --> 07:48.620
+You can see it here hash map implement map cleanable anti realisable.
+
+07:48.860 --> 07:50.940
+What methods are serializable.
+
+07:51.100 --> 07:55.200
+Ha this is a marker interface which does not really define amateur.
+
+07:55.300 --> 08:01.690
+It just isn't marketing to freeze the cloner will also is a market interface.
+
+08:01.690 --> 08:08.200
+So the only real live interface which is in the past are implementing a map but you can see the fact
+
+08:08.200 --> 08:09.950
+that you can implement.
+
+08:09.980 --> 08:12.570
+I mean you can implement multiple interfaces.
+
+08:12.640 --> 08:17.600
+So those are few of the important things that you would need to know about interface.
+
+08:17.940 --> 08:19.440
+Discuss about interfaces.
+
+08:19.440 --> 08:22.570
+More when we talk about advanced object oriented programming.
+
+08:22.630 --> 08:25.990
+But for now let's take a break and I'll see you in the next two ETEO.

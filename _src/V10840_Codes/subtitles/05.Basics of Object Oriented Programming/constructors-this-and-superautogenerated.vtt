@@ -1,0 +1,301 @@
+WEBVTT
+
+00:02.780 --> 00:08.770
+When you come back in this section let's look at constructor's you look at what is a constrictor what
+
+00:08.770 --> 00:15.040
+is a default constructor and we look at a few examples pieces of code with constrictors and we look
+
+00:15.040 --> 00:22.310
+at how do you call a superclass constructor and also a few examples of this and super.
+
+00:22.390 --> 00:27.280
+So we'll discuss a lot of examples Judah's during this specific section.
+
+00:27.460 --> 00:33.460
+Let's start with what is a construct that we have used conceptus throughout this.
+
+00:33.580 --> 00:36.930
+We mean this course I'm getting a number of bands.
+
+00:37.060 --> 00:39.410
+A concept is used to create an object.
+
+00:39.460 --> 00:44.410
+So whenever we wanted to create an instance of an object we use a construct.
+
+00:44.590 --> 00:48.740
+So one example is new animal off Tommy.
+
+00:48.940 --> 00:51.390
+So that's a construct.
+
+00:51.460 --> 00:58.150
+So basically the important thing about the constructor is the fact that you use the name at the class
+
+00:58.150 --> 01:00.950
+so it has the same name as a class.
+
+01:01.150 --> 01:05.160
+It's allowed to have method name which is starting with caps.
+
+01:05.150 --> 01:09.280
+I mean this is more a convention rather than something that Jawa forces.
+
+01:09.580 --> 01:12.440
+If you look at all the methods they would start with this Mollet.
+
+01:12.690 --> 01:20.320
+But most I mean your constructor should start with caps because a class name byte convention you can
+
+01:20.320 --> 01:26.890
+have a small name as a last name as well but by convention all the class names would start with a capital
+
+01:26.890 --> 01:28.290
+letter and use chemical case.
+
+01:28.330 --> 01:32.850
+How would the method names alter use commonly guess but they would start with this model and the constructor
+
+01:32.860 --> 01:39.370
+would be the only method where you by convention have a capital letter.
+
+01:39.370 --> 01:43.360
+I mean if you want to break the rules and you want to use this more literate the class name that's allowed
+
+01:43.420 --> 01:44.690
+and you can do that.
+
+01:44.800 --> 01:48.550
+The other important thing you can notice in here is there's no written type for the constructor.
+
+01:48.550 --> 01:54.760
+So when I create a constructor the default the return type is class itself.
+
+01:55.000 --> 01:57.610
+I am using the constructor I create a specific instance of that.
+
+01:57.630 --> 02:03.970
+But let us to I mean you cannot even define that in here so you cannot put animal nothing which aren't
+
+02:03.970 --> 02:05.950
+allowed in Java to define it.
+
+02:06.190 --> 02:10.800
+And it can accept any number of parameters so you can have a one paramita constructor to parameter construct
+
+02:10.800 --> 02:12.480
+a 100 parameter constructor.
+
+02:12.480 --> 02:14.230
+The way you would want to have it.
+
+02:14.360 --> 02:19.060
+So the one which you have in here is a one argument constructor.
+
+02:19.060 --> 02:22.870
+The thing about one argument constructor is there is something called.
+
+02:22.900 --> 02:28.820
+Once you create a constructor then you override the default constructor in that particular class.
+
+02:28.840 --> 02:31.080
+So we'll look at that a little later.
+
+02:31.090 --> 02:37.360
+But what that would mean is I cannot now send you an e-mail because the default constructor is no longer
+
+02:37.360 --> 02:42.180
+applicable because I've created a constructor with one argument.
+
+02:42.400 --> 02:47.380
+So as soon as I created a constructor with one argument the default no argument constructor which is
+
+02:47.380 --> 02:52.600
+present in the class gets ordered and it's not really available anymore.
+
+02:52.750 --> 02:56.100
+The first thing which we'll discuss is a default constructor.
+
+02:56.140 --> 03:01.840
+So you'd see that this particular animal class has a string name but it does not have any constructor
+
+03:02.230 --> 03:06.080
+but still be able to create animals without passing anything.
+
+03:06.090 --> 03:13.470
+And this is because the compiler provides this class with a D for more argument Kunstler.
+
+03:13.660 --> 03:17.400
+So the default argument constructor is with what.
+
+03:17.410 --> 03:20.390
+Which enables us to create this particular thing.
+
+03:20.410 --> 03:26.500
+One thing you need to remember is if for this class I add in a constructor like this so if I add that
+
+03:26.500 --> 03:32.740
+in a constructor like this in this specific class then this piece of line would start would give you
+
+03:32.740 --> 03:34.450
+a compilation failure.
+
+03:34.690 --> 03:41.050
+This is because once you provide a constructor once or pro-white a constructor the default constructor
+
+03:41.060 --> 03:47.080
+no longer exists like here if I'm trying to do animal animals continue animal here it would give me
+
+03:47.080 --> 03:48.250
+a compiler error.
+
+03:48.410 --> 03:53.140
+So if this is an argument constructor or to argument constructor then the no argument constructor is
+
+03:53.150 --> 03:57.180
+just provided by default by Java will not be provided.
+
+03:57.370 --> 03:59.190
+So that's one thing you need to remember.
+
+03:59.200 --> 04:06.280
+If you provide a constructor then you are not like then no argument constructor is no longer allowed
+
+04:06.400 --> 04:07.320
+to be used.
+
+04:07.450 --> 04:14.850
+Let's say a class is extending on a class can we call the superclass constructor from the subclass constructor.
+
+04:14.860 --> 04:19.670
+The answer is yes you can call that using the super method code.
+
+04:19.780 --> 04:24.670
+So basically over here you are seeing animal and the animal is calling superheroes.
+
+04:24.670 --> 04:31.320
+So what it does is it calls like the Animal class in this example does not extend into that class.
+
+04:31.420 --> 04:35.320
+So what does a superclass think about it object.
+
+04:35.360 --> 04:39.140
+So it's calling the Object class constructor super in here.
+
+04:39.370 --> 04:44.830
+So these are you call the superclass constructor and you're writing the logic for that specific animal
+
+04:44.830 --> 04:45.610
+as well.
+
+04:45.610 --> 04:49.660
+Next question is when this piece of code compiled the answer is No.
+
+04:49.690 --> 04:54.760
+Because super If you are calling it it should always be the first line of the constructor.
+
+04:54.760 --> 04:57.050
+It cannot be a second line or a third line.
+
+04:57.220 --> 04:59.740
+There is another specific method called called this.
+
+04:59.740 --> 05:03.110
+When is it used and how is it related to strippers.
+
+05:03.290 --> 05:10.500
+So basically from a constructor I can call on the computer to get that done through this method.
+
+05:10.510 --> 05:16.190
+So from the Animal class I mean from the animal constructor with no arguments I would want to pass a
+
+05:16.190 --> 05:18.140
+default argument.
+
+05:18.140 --> 05:23.740
+So I'm calling this of default name then this constructor which is defined in here will be called.
+
+05:23.750 --> 05:26.180
+And this will be used to create the object.
+
+05:26.180 --> 05:32.660
+So this is how you can call one constructed from the constructor in the same class.
+
+05:32.660 --> 05:33.860
+How do you do that.
+
+05:33.920 --> 05:39.290
+You use the this method call and the interesting thing about a constructor is that you cannot really
+
+05:39.430 --> 05:40.560
+Garlick from it.
+
+05:40.790 --> 05:45.980
+You can say new animal that slick creating a instance of the animal but you cannot just say animal and
+
+05:45.990 --> 05:49.670
+Puddock open bracket close bracket and invoke it like a method.
+
+05:49.670 --> 05:54.920
+So if it was a method one I could call method 1 and that did some magic.
+
+05:55.040 --> 06:01.370
+But if it's a constructor having the same name as the class then you are not allowed to do this.
+
+06:01.600 --> 06:04.110
+Will this would give you a compilation.
+
+06:04.440 --> 06:12.530
+Another interesting thing is the fact that constructor gets called a superclass constructor gets called
+
+06:12.620 --> 06:15.600
+even when there is no explicit call.
+
+06:15.830 --> 06:21.640
+So for example I have an animal constructor dog constructor dog extenso animal.
+
+06:21.860 --> 06:25.250
+Labrador excellent dog and a constructor.
+
+06:25.610 --> 06:28.100
+And I'm pretty an instance of the Labrador.
+
+06:28.250 --> 06:34.730
+So what would happen is once I'm trying to create a Labrador by default the first line would contain
+
+06:34.810 --> 06:35.180
+super.
+
+06:35.190 --> 06:40.700
+So if I'm not calling super Java compiler that would put the super in here and it would call the dog
+
+06:41.120 --> 06:43.630
+and dog also has a super call.
+
+06:43.640 --> 06:50.810
+So it goes to animal complete animal comes back to dog complete dog comes back to Labrador and you'll
+
+06:50.810 --> 06:56.830
+see the output which you see at the bottom of the screen which is animal dog and Labrador.
+
+06:56.840 --> 07:00.290
+So those are the important things about constrictors.
+
+07:00.410 --> 07:06.830
+We saw what happens when no argument constructor is not defined and a one argument constructor is defined
+
+07:06.860 --> 07:09.970
+then you cannot call the not cumen constructor anymore.
+
+07:10.160 --> 07:11.970
+So what is a default constructor.
+
+07:12.020 --> 07:19.610
+And we saw a few examples of constructor as well and we saw this and this super method calls into constrictors.
+
+07:19.700 --> 07:22.760
+We'll talk more about constructors in the advanced examples.
+
+07:22.760 --> 07:23.730
+Until then though I.

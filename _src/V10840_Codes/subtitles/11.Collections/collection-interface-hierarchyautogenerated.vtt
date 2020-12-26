@@ -1,0 +1,214 @@
+WEBVTT
+
+00:00.300 --> 00:01.340
+We'll come back.
+
+00:01.350 --> 00:05.430
+And welcome to this all important topic of collection.
+
+00:05.490 --> 00:08.960
+What we look at in this section is collections.
+
+00:09.030 --> 00:13.740
+What are the important interfaces which are present in the collection interfaces.
+
+00:13.740 --> 00:21.340
+What are the important classes which are present in the collection hierarchy and how are they different.
+
+00:21.510 --> 00:23.820
+What collection do you want to use.
+
+00:23.820 --> 00:25.350
+In what scenario.
+
+00:25.590 --> 00:30.050
+Those are the kinds of things that we would want discussed as part of this section.
+
+00:30.240 --> 00:35.790
+So let's start with the basic question Why do we need collections in Joe.
+
+00:35.850 --> 00:42.420
+The fact is the basic structure in Jawa every It's not really dynamic in the sense that once you create
+
+00:42.420 --> 00:47.890
+an array you cannot really expand the size of it so you cannot create an array of 5 and make it an array
+
+00:47.890 --> 00:49.220
+of say 6.
+
+00:49.230 --> 00:51.070
+No that's not possible.
+
+00:51.090 --> 00:56.650
+So once you have defined an area the size of the array would remain the same throughout.
+
+00:56.700 --> 01:01.590
+If you want to add an element to all of the full area what you would need to do is create a new area
+
+01:01.590 --> 01:02.850
+of a bigger size.
+
+01:02.850 --> 01:05.970
+Copy the elements to it and add the new element.
+
+01:05.970 --> 01:08.990
+So that's the only way you can add things to an area.
+
+01:09.180 --> 01:16.770
+There is definitely a need for a data structure which is more dynamic and that's where the collections
+
+01:16.890 --> 01:18.650
+come in collections.
+
+01:18.740 --> 01:25.920
+I'd love to Addleman delete an element and a lot of other operations and there are a number of collections
+
+01:25.920 --> 01:31.740
+which are present in Java a few of which we would look as part of the next we'd use in this section
+
+01:32.070 --> 01:38.890
+the approach we will take in the sit in this section is we will understand the interfaces and the glasses.
+
+01:38.910 --> 01:42.250
+So at a high level for us we would start with the important phases.
+
+01:42.450 --> 01:47.200
+We would understand them in depth and then go into the specific classes.
+
+01:47.220 --> 01:53.910
+So what are the important interfaces in the collection how key interfaces are very important because
+
+01:53.940 --> 01:56.220
+they define what is allowed.
+
+01:56.220 --> 02:03.890
+What are the options that are allowed and based on which you can actually set constraints for the implementations.
+
+02:03.930 --> 02:12.960
+The basic interfaces which are the basic interface is collection so that the base collection based interface
+
+02:12.990 --> 02:22.940
+for all the classes in the collection hierarchy it is collection the set interface extents collection.
+
+02:23.100 --> 02:25.800
+So is the list interface.
+
+02:25.800 --> 02:31.050
+However does that interface only allows two unique things.
+
+02:31.050 --> 02:38.060
+It does not allow duplication to any implementation of the set interface should not have duplications.
+
+02:38.080 --> 02:41.810
+So I should not have the same element as in blue eyes.
+
+02:41.840 --> 02:45.790
+However in a list its a position based thing.
+
+02:45.870 --> 02:50.030
+So you can have the same element present multiple times.
+
+02:50.220 --> 02:52.970
+So set is all about unique things.
+
+02:53.040 --> 03:00.020
+So it does not help the application whereas list is about a list of things it does not work if there
+
+03:00.080 --> 03:05.630
+duplicate or not it only cares about the position each object is in.
+
+03:05.760 --> 03:13.560
+If you look at a list it has methods which allow adding element by a specific position or you can delete
+
+03:14.220 --> 03:21.000
+elements by a specific position or you can add elements without pursuing a position in which case it
+
+03:21.090 --> 03:22.910
+added at the end of the list.
+
+03:22.920 --> 03:30.210
+The other important interface which is present in the collections interfaces and it extends the collection
+
+03:30.390 --> 03:36.940
+is new interface cool however is to support an order of processing.
+
+03:37.080 --> 03:44.400
+So lets say I have a list of things to do and I want to order them in the way I want to execute them.
+
+03:44.580 --> 03:50.730
+Then I would put them in a queue and I would start picking up the next one from the queue and I would
+
+03:50.730 --> 03:52.560
+start processing it.
+
+03:52.560 --> 03:58.390
+So let's say it's See I mean queues are used extensively everywhere.
+
+03:58.410 --> 03:58.790
+Right.
+
+03:58.790 --> 04:05.970
+So I have a list of tasks to be processed through program and they are in a queue and the queue allows
+
+04:05.970 --> 04:12.210
+us to pick up the top mostly meant process it and then pick the next element processing and next element
+
+04:12.210 --> 04:13.340
+and process it.
+
+04:13.350 --> 04:15.940
+So thats basically a queue.
+
+04:16.050 --> 04:24.030
+So we have seen three interfaces set list and queue all of these accidents collection thirty's for duplicate
+
+04:24.170 --> 04:28.160
+messages for unique element listed for a list of things.
+
+04:28.170 --> 04:34.720
+Q Is more for a queuing kind of scenario you want to pick up the earliest one and process it.
+
+04:34.770 --> 04:36.630
+That kind of a scenario you would go for.
+
+04:36.630 --> 04:42.630
+Q The other interface which is present in the collections is map the most important thing about the
+
+04:42.630 --> 04:48.510
+map interface is the fact that it does not extend collection interface.
+
+04:48.600 --> 04:54.870
+So even though map is considered to be part of the collections hierarchy collections generally discussion
+
+04:54.870 --> 04:55.920
+about collections.
+
+04:55.960 --> 04:59.560
+It does not extend a collection interface.
+
+04:59.570 --> 05:05.770
+So the map is used to store key value pairs to a key aide.
+
+05:05.910 --> 05:08.790
+I want to store five at geesey.
+
+05:08.850 --> 05:10.250
+I have two.
+
+05:10.410 --> 05:12.540
+So let's have a series of alphabet.
+
+05:12.570 --> 05:18.270
+And I want to find out how many times each alphabet occurs so I can use the alphabet as the key and
+
+05:18.270 --> 05:20.710
+the number of terms it is present as the value.
+
+05:20.940 --> 05:28.080
+So A's present five times c present two times a map usually does present a key value pair kind of thing.
+
+05:28.080 --> 05:34.640
+So a key anagram you and the key kinds of acts as a unique identify it.
+
+05:34.680 --> 05:39.340
+Those are the important interfaces in the collection hierarchy.

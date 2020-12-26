@@ -1,0 +1,148 @@
+WEBVTT
+
+00:01.770 --> 00:07.020
+The next thing we would want to discuss is the role of a classloader in Java all Java programs are made
+
+00:07.020 --> 00:08.050
+up of classes.
+
+00:08.070 --> 00:10.460
+There are three different types of classes at a high level.
+
+00:10.500 --> 00:12.610
+One is the classes that you write.
+
+00:12.630 --> 00:16.890
+As a programmer the second ones are the classes that are in the frameworks that you use.
+
+00:16.890 --> 00:21.410
+For example spring scrouge they come up with their own set of classes.
+
+00:21.510 --> 00:28.470
+And the third things are the classes with the job we don't directly provides the system classes the
+
+00:28.470 --> 00:30.930
+collection classes and things like that.
+
+00:30.960 --> 00:36.630
+These are the different kinds of classes and you need something to load this up when you are running
+
+00:36.630 --> 00:37.590
+the java program.
+
+00:37.590 --> 00:43.890
+So when I'm planning a job program I need to load all these classes Java needs to find a specific class
+
+00:44.160 --> 00:46.320
+when I use it in the program.
+
+00:46.320 --> 00:47.580
+So who does that.
+
+00:47.580 --> 00:52.950
+That's basically the class load the class loader finds classes for us.
+
+00:53.010 --> 00:59.310
+There are three different kinds of class loaders based on where they would search for class.
+
+00:59.400 --> 01:05.690
+You can think of classloader as something which searches the classes for us and the types of classloader
+
+01:05.820 --> 01:11.850
+are based on where they would search for that particular class the three different types of classloader
+
+01:11.970 --> 01:18.030
+system extension and bootstrap system classloader extension classloader and the bootstrap classloader
+
+01:18.210 --> 01:21.150
+we would all use this thing called class.
+
+01:21.160 --> 01:24.630
+But we would go and set a specific jar in the class.
+
+01:24.630 --> 01:30.790
+But things like that the system classloader is responsible for loading classes from classpath.
+
+01:30.840 --> 01:36.630
+So whenever you delegate finding a class to a system classloader the way it does is search it searches
+
+01:36.630 --> 01:43.590
+inside all the jobs or all the folders which I mentioned in the class but the extension classloader
+
+01:43.890 --> 01:47.360
+searches inside the extension directory.
+
+01:47.370 --> 01:53.070
+If you look at all Jerry JDK they have this directory called XTi.
+
+01:53.130 --> 01:58.670
+You had this XTi Al-Oraibi and the Geordie library so you can see them in here.
+
+01:58.680 --> 02:07.830
+Jerry XTi lib the extension classloader looks in those folders for any jobs artlessness bootstrap classloader
+
+02:08.160 --> 02:12.730
+is the ones which load all the Jawa core files.
+
+02:12.750 --> 02:18.120
+Typically the system classloader is the one which will load all the things on the class but typically
+
+02:18.270 --> 02:23.790
+all the things in the jar in your wire those are the things which are loaded by user system classloader
+
+02:23.910 --> 02:29.250
+the extension classloader is basically where you are extending the existing Java and providing additional
+
+02:29.250 --> 02:30.150
+libraries.
+
+02:30.250 --> 02:37.020
+So that basically Library folders like Jerry XTi Ellie Ellaby and things like that show that you extension
+
+02:37.030 --> 02:42.520
+classloader and the bootstrap classloader is basically your base Java classes.
+
+02:42.550 --> 02:48.870
+So now I want to find a class what is the order in which these classloader are run would bootstrap run
+
+02:48.870 --> 02:49.260
+first.
+
+02:49.290 --> 02:53.990
+Or would system classloader on first order in which classes are loaded.
+
+02:54.270 --> 02:56.280
+It would start with the system classloader.
+
+02:56.280 --> 03:02.140
+So when I want to find a class that Jerry asked the system classloader do you have this class with you.
+
+03:02.220 --> 03:07.170
+So this system classloader would search the class but Aunty's whether there is a class available with
+
+03:07.170 --> 03:14.280
+it or I don't have it then it would go to the extension class loader does it find it here based on whether
+
+03:14.280 --> 03:20.760
+it finds it or not it would go to the bootstrap class loader if it still does not find declasse with
+
+03:20.760 --> 03:27.040
+the bootstrap classloader it would throw a familiar exception class not found exception.
+
+03:27.300 --> 03:33.120
+So basically if it followed the system class the class would be written as it goes to the exigeant classloader
+
+03:33.530 --> 03:39.530
+if it does not find it in the extension classloader then it would go to the bootstrap class load that
+
+03:39.600 --> 03:42.470
+the order in which the class orders are executed.
+
+03:42.480 --> 03:50.040
+To summarize class loaders are the things that load all the java classes for us and whenever the Geordie
+
+03:50.040 --> 03:53.300
+wants to find a class it goes to these.
+
+03:53.520 --> 03:59.450
+So it would go to the classloader in the order of system extension and bootstrap.

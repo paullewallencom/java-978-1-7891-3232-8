@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00.570 --> 00:06.730
+Let's not discuss about the bull arguments what are the arguments and what are the advantages that pro-white
+
+00:06.760 --> 00:07.160
+does.
+
+00:07.170 --> 00:12.910
+If you look at this method which is present some end followed by three Daut and a bite.
+
+00:13.050 --> 00:20.670
+So basically this is a variable argument Berryville argument is something which can accept multiple
+
+00:20.730 --> 00:23.250
+parameters of this type.
+
+00:23.250 --> 00:30.690
+So now what I would be able to do is when I define a method of this kind I can call it with three parameters
+
+00:30.870 --> 00:34.550
+for parameter or no parameters at all.
+
+00:34.560 --> 00:40.500
+So that's the flexibility that variable argument me legal arguments allowed me to call this method with
+
+00:40.800 --> 00:43.660
+any number of Badami this.
+
+00:43.680 --> 00:51.450
+So the Jawa implement this is once I define a variable as a variable argument.
+
+00:51.450 --> 00:57.040
+Then what I'd like Devey you'd be able to access the values are like an area.
+
+00:57.220 --> 01:00.710
+So these numbers is almost like an array in here.
+
+01:00.720 --> 01:07.800
+So I can loop around the numbers and I can take all the numbers and sum them up numbers is almost like
+
+01:07.800 --> 01:09.050
+an average.
+
+01:09.180 --> 01:12.100
+So this is basically what variable arguments are.
+
+01:12.270 --> 01:18.540
+So if you want to have some method for example here which is accepting three parameters.
+
+01:18.610 --> 01:20.390
+I mean what about those that are passed.
+
+01:20.730 --> 01:22.040
+You want to sum them up.
+
+01:22.080 --> 01:24.150
+This is a good way of defining it.
+
+01:24.150 --> 01:26.970
+This would have allowed me to create multiple methods.
+
+01:27.150 --> 01:30.150
+Accepting different number of arguments.
+
+01:30.300 --> 01:33.930
+So we'll look at a few tricky things regarding variable arguments.
+
+01:33.940 --> 01:38.810
+Now as we look at it earlier it's basically the type followed by three dots.
+
+01:38.940 --> 01:40.410
+This becomes a number.
+
+01:40.470 --> 01:43.660
+Now you can go here and say numbers door length.
+
+01:43.700 --> 01:45.110
+So simple to an Eric.
+
+01:45.220 --> 01:50.740
+There's a property called Lent which gives you the things so numbers inside it's actually like an error.
+
+01:50.760 --> 01:53.010
+You can see numbers is in.
+
+01:53.190 --> 01:57.680
+So internally it's being represented almost like an area.
+
+01:57.750 --> 02:00.660
+And so you can loop around it and things like that.
+
+02:00.840 --> 02:06.200
+So as we look it in here three arguments for arguments are arguments.
+
+02:06.210 --> 02:12.030
+The important thing about variable arguments is variable arguments should always be the last part of
+
+02:12.030 --> 02:13.200
+the method.
+
+02:13.230 --> 02:20.210
+You cannot have a variable argument as a first barometer of the method or in between the arguments of
+
+02:20.300 --> 02:25.860
+it that it should always be the last parameter of him and that it makes sense because if it's not the
+
+02:25.860 --> 02:31.050
+last parameter of the emitter and let's say you're calling it in this way then how do you how does one
+
+02:31.050 --> 02:32.730
+know which one is which.
+
+02:32.730 --> 02:36.250
+So that's the reason why Babydol argument should always be last baramin.
+
+02:36.300 --> 02:42.720
+So if you create a method like this you would get a compilation of not only simple types but even a
+
+02:43.350 --> 02:46.730
+complex class can be used as and with the argument.
+
+02:46.860 --> 02:50.620
+So if you look at this particular thing I'm having a bar.
+
+02:50.660 --> 02:56.970
+All right then with animals and I'm calling the looping around the animals and calling Department.
+
+02:57.180 --> 03:02.700
+So now I can call this bark method by passing a list of animals to it.
+
+03:02.760 --> 03:07.440
+So the thing is for using available argument it does not have to be a simple type.
+
+03:07.440 --> 03:07.960
+I mean it.
+
+03:08.100 --> 03:12.720
+I mean it it doesn't have to be a primitive or any of the simple things you can use very arguments with
+
+03:12.870 --> 03:15.480
+any of the complex types as well.
+
+03:15.480 --> 03:18.060
+In short we do video we looked at what are the arguments.
+
+03:18.120 --> 03:21.010
+When do you use the arguments.
+
+03:21.180 --> 03:25.740
+How do you create a method with where the argument and the fact that the argument should always be the
+
+03:25.740 --> 03:28.560
+last argument in a specific method.
+
+03:28.560 --> 03:32.040
+Also we look at the fact that variable argument.
+
+03:32.220 --> 03:36.630
+Even complex classes can be declared as we document.
+
+03:36.630 --> 03:38.410
+So those are the important things.
+
+03:38.430 --> 03:44.880
+I would recommend to play around with the variable arguments examples and get comfortable with the concept
+
+03:44.880 --> 03:47.580
+of the document until the next redo.

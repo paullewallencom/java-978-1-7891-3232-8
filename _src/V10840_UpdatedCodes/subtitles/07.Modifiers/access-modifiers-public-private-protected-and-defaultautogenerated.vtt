@@ -1,0 +1,391 @@
+WEBVTT
+
+00:01.350 --> 00:06.960
+Welcome back in the section we would start looking at modifiers we would look at what are the different
+
+00:06.990 --> 00:10.410
+modifiers which are pleasant in terms of the access.
+
+00:10.500 --> 00:17.240
+So the different access modifiers which represent our primate public predicted and default.
+
+00:17.370 --> 00:23.390
+Other than that there are a couple of other modifiers called Find them and static as well.
+
+00:23.640 --> 00:27.430
+So we would look at them in depth in this specific section.
+
+00:27.510 --> 00:30.610
+Let's start with the default class modifier.
+
+00:30.720 --> 00:33.100
+What is a default class mode for you.
+
+00:33.190 --> 00:38.760
+Basically if you look at this particular class this class and it's named as default access class.
+
+00:38.760 --> 00:43.360
+The reason it's a default access class is because there is nothing in front of it.
+
+00:43.380 --> 00:47.370
+So there is no public or private or anything before the class.
+
+00:47.370 --> 00:50.450
+This is usually how we would create a class public class.
+
+00:50.520 --> 00:51.930
+And the name of the class.
+
+00:52.050 --> 00:54.920
+But if you look at this there is no public before it.
+
+00:55.080 --> 01:00.410
+So that's why this class is default access class.
+
+01:00.450 --> 01:03.300
+So this is basically default access.
+
+01:03.300 --> 01:07.620
+So for this class you're giving default access.
+
+01:07.620 --> 01:14.150
+So the default access is when there is no access for their specified on the class.
+
+01:14.170 --> 01:17.090
+There is no access modifier specified on the specific class.
+
+01:17.610 --> 01:26.040
+And the other thing is default classes are visible only inside the same cage so only in this specific
+
+01:26.130 --> 01:29.680
+package the default class will be visible.
+
+01:30.090 --> 01:34.470
+That's the reason why default access is also called package access.
+
+01:34.470 --> 01:37.980
+Now let's look at another class in the same package.
+
+01:37.980 --> 01:41.510
+If you look at this is the class in the same package.
+
+01:41.670 --> 01:46.170
+So you can see that this has the same package same package.
+
+01:46.230 --> 01:55.240
+And in this class the default access class is available for using because they are in the same package.
+
+01:55.290 --> 01:59.920
+So another class in same package and different access class I'm in the same package.
+
+02:00.060 --> 02:04.080
+So you are able to access the default access class.
+
+02:04.160 --> 02:07.740
+However let's back it was difficult different.
+
+02:07.830 --> 02:16.410
+So if you look at this specific class you'll see that it's the access is B and here it's a.
+
+02:16.470 --> 02:20.480
+So the package is it's package it it's package B.
+
+02:20.520 --> 02:22.540
+So this is a different package.
+
+02:22.710 --> 02:29.140
+So if you're trying to access the default access class in here do you get a compiler error.
+
+02:29.280 --> 02:30.410
+To summarize.
+
+02:30.880 --> 02:33.450
+Default access is package access.
+
+02:33.450 --> 02:39.990
+So whenever a class has default access it means that it's only available for use inside the same package
+
+02:40.080 --> 02:45.890
+only it will not be available outside in a different package.
+
+02:45.930 --> 02:51.590
+The next access modifier is private access modifiers private access modifier.
+
+02:51.630 --> 02:54.930
+It's typically used on variables and methods.
+
+02:55.110 --> 03:01.050
+So you have member variables you have met that you have other control variables as well and you can
+
+03:01.200 --> 03:03.980
+put a private access modifier on them.
+
+03:04.000 --> 03:10.020
+Thing about private access modifier is that once you make a variable private it's only a label in the
+
+03:10.110 --> 03:12.090
+class they are declared.
+
+03:12.090 --> 03:17.040
+So they're not really available in any other class.
+
+03:17.040 --> 03:23.640
+So for example even in the case of a subclass the private variables are not available.
+
+03:23.850 --> 03:30.810
+So if I was superconscious with a private variable in this class I cannot be allowed to access the private
+
+03:30.810 --> 03:34.780
+variables so that the private access model fails.
+
+03:34.860 --> 03:41.850
+What will do for the next four questions is we look at these questions typically And then we have a
+
+03:41.850 --> 03:44.160
+few examples to look at them practically.
+
+03:44.310 --> 03:50.430
+So let's quickly get through this through understand these three these four different access modifiers
+
+03:50.850 --> 03:54.110
+and then we'd discuss them with examples.
+
+03:54.330 --> 04:01.710
+So to summarize I would like is more work can only be accessed a variable with a private access modifier
+
+04:01.740 --> 04:05.850
+can only be accessed in the class where it's defined.
+
+04:05.850 --> 04:07.570
+Nowhere else.
+
+04:07.590 --> 04:12.900
+The next one is the default for package X mortified that we have already discussed that can be accessed
+
+04:13.770 --> 04:16.500
+in that class as well as in the same package.
+
+04:16.500 --> 04:24.300
+So in the same package anyway the thing is available so if you don't persuade access modifier before
+
+04:24.300 --> 04:30.090
+a member variable or a member method then that particular variable is available inside other classes
+
+04:30.180 --> 04:32.520
+in the same package.
+
+04:32.760 --> 04:40.490
+And also the default variables and methods are available to subclasses in same package.
+
+04:40.500 --> 04:42.180
+It's basically the same.
+
+04:42.240 --> 04:46.750
+You have to be in the same package to be able to access protected access modifier.
+
+04:46.890 --> 04:53.400
+What is protected access modifier protects us modifier is basically those things which are available
+
+04:53.550 --> 04:55.370
+to sub class.
+
+04:55.560 --> 05:04.080
+So if I put up productive access modifier on a Member way the then it's available in all these classes.
+
+05:04.100 --> 05:07.610
+In addition it's also available in the same package.
+
+05:07.610 --> 05:15.950
+So when I put a product that is more the same package plus subclasses the way I would usually remember
+
+05:15.950 --> 05:24.680
+this is prior wadis Only same class default is same package protected the same package plus subclasses
+
+05:24.920 --> 05:26.420
+and public is everywhere.
+
+05:26.600 --> 05:33.470
+So once they put the public on the variable or a method then that is available for use anywhere in a
+
+05:33.470 --> 05:34.720
+job program.
+
+05:34.820 --> 05:37.570
+We'll look at a few examples.
+
+05:37.820 --> 05:46.220
+So what we're looking at right here is what access types of variables can be accessed from a class in
+
+05:46.220 --> 05:47.700
+the same package.
+
+05:47.870 --> 05:53.350
+So let's look at this example class quickly where does the example class contain.
+
+05:53.610 --> 05:55.270
+OK that's it.
+
+05:55.520 --> 05:59.040
+The exempli class basically contains it.
+
+05:59.060 --> 06:00.290
+So what access is this.
+
+06:00.290 --> 06:02.780
+This is a default access right because there's nothing declared.
+
+06:02.780 --> 06:06.460
+So this is public this is private This is protected.
+
+06:06.710 --> 06:12.020
+And we have a default method because it doesn't have an access password and you have a public matter
+
+06:12.250 --> 06:14.760
+a private method and a protected matter.
+
+06:14.780 --> 06:17.850
+This is all that is present in the example class.
+
+06:17.900 --> 06:22.820
+And the important thing to notice is the package in which it is present it's present in the member body
+
+06:22.820 --> 06:24.740
+for access.
+
+06:24.740 --> 06:32.980
+So now this particular x is reliable we would check when it's available and we will check what we believe
+
+06:33.050 --> 06:39.830
+are available and what kind of a class what we are doing in here is we didn't create setters getters
+
+06:39.860 --> 06:42.780
+and things like that for this variable.
+
+06:42.950 --> 06:45.790
+I mean the idea was just to explain what is acceptable and not.
+
+06:45.800 --> 06:52.920
+So we looked at the example class we'd had different variables with different scoops and we have a class
+
+06:52.940 --> 06:56.300
+in the same package you can see that they are in the same package.
+
+06:56.360 --> 06:59.750
+So this dishcloths is in the same package as the example class.
+
+06:59.750 --> 07:04.980
+What I'm doing is creating an instance of the example class and then trying to check what are available.
+
+07:05.090 --> 07:09.440
+So you can see that the public will able to are available in the public methods that are available be
+
+07:09.470 --> 07:12.090
+protected and the defaulting methods are also available.
+
+07:12.260 --> 07:14.980
+But the private ones are not available.
+
+07:14.990 --> 07:22.360
+So if you go and you come in this out you get a compilation error because the private label is private.
+
+07:22.390 --> 07:26.720
+The example class it will not be available to any other things.
+
+07:26.810 --> 07:32.170
+So in this case in the same package this is a class in the same package.
+
+07:32.180 --> 07:38.300
+So in that class in the same package the only kinds of variables that are available are public protected
+
+07:38.720 --> 07:40.010
+and the default.
+
+07:40.020 --> 07:44.270
+Now let's consider this class in a different package.
+
+07:44.270 --> 07:50.280
+So this basically discuss in a different package and we are creating an instance of the example.
+
+07:50.270 --> 07:54.710
+So we are creating an example and we are trying to access see what is available.
+
+07:54.920 --> 07:57.170
+You can see that in a different package.
+
+07:57.170 --> 08:00.210
+The only thing which is available is a public radio.
+
+08:00.230 --> 08:06.000
+But if you go ahead and come into any of these lines you'll see that it would give us a compilation
+
+08:06.020 --> 08:11.850
+error because other scopes are not available outside the package.
+
+08:11.860 --> 08:18.800
+So in a different package the default scope will not be visible and the same is the case that predicted
+
+08:18.860 --> 08:23.980
+predicted would only be visible in subclasses and inside the same package.
+
+08:24.020 --> 08:30.700
+If you look at a class in a different package or the only one which you can use from the example class
+
+08:30.770 --> 08:33.980
+are the public things.
+
+08:33.980 --> 08:39.000
+Now let's look at subclass in the same package subclass in the same package.
+
+08:39.140 --> 08:45.350
+It's no different from this class in the same package it has the same access as public wearables that
+
+08:45.350 --> 08:49.310
+are visible protected with people side with people and the default way they will side with the same
+
+08:49.310 --> 08:55.370
+is the case with the methods were full of subclass in different package so this subclass in different
+
+08:55.370 --> 09:00.410
+package in the sense that this is extending the example is less if you look at it subclass in different
+
+09:00.410 --> 09:03.210
+Bargas extent except examples less.
+
+09:03.410 --> 09:09.290
+And in this subclass in different package what would be visible all the predicted variables also will
+
+09:09.290 --> 09:12.750
+be with the built in normal class in a different package.
+
+09:12.830 --> 09:14.720
+Only the public radio will side with me.
+
+09:14.900 --> 09:21.710
+But in a subclass in a different package you can see that public is available as well as the protected
+
+09:21.710 --> 09:25.210
+variables are also visible as a good job programmer.
+
+09:25.220 --> 09:29.900
+You need to understand the different access modifiers where they are visible and make appropriate use
+
+09:29.900 --> 09:30.710
+of them.
+
+09:30.710 --> 09:35.720
+I would really recommend to start with this example class look at these things and play around with
+
+09:35.720 --> 09:40.240
+these five classes that would be a really good exercise for you to do.
+
+09:40.430 --> 09:44.670
+So those are the different access modifiers which are present in Jawa.
+
+09:44.750 --> 09:48.180
+I would really recommend you to play around with this as an exercise.
+
+09:48.440 --> 09:53.430
+At least 10 minutes with these things and try and understand them completely until the next read you
+
+09:53.580 --> 09:54.110
+bring back.

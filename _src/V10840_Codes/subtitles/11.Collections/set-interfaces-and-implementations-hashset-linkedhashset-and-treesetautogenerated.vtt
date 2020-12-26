@@ -1,0 +1,217 @@
+WEBVTT
+
+00:01.600 --> 00:08.170
+Let's now move on to the set interface in this review let's look at set interfaces and descent interface
+
+00:08.290 --> 00:12.700
+and a few examples exempli implementations of the said interface.
+
+00:12.700 --> 00:16.580
+The important thing about this interface is that it does not have duplication.
+
+00:16.750 --> 00:22.230
+So if object one equals object two then only one of them can be on the set.
+
+00:22.240 --> 00:28.060
+So as you can see there are not a lot of additional methods in the set interface or not a lot of additional
+
+00:28.060 --> 00:32.150
+important methods in the set interface compared to the collection interface.
+
+00:32.230 --> 00:36.760
+So the exact method in the collection interface our water present in the state as well.
+
+00:36.970 --> 00:43.090
+The only constraint The only additional constraint that it places in addition to the collections is
+
+00:43.090 --> 00:47.020
+the fact that you should not have any duplication in the elements in the list.
+
+00:47.020 --> 00:51.730
+There are a couple interfaces which are important in the thick interfaces.
+
+00:51.730 --> 00:55.260
+One is to the interface and the other one is navigable setting.
+
+00:55.270 --> 00:58.120
+That is if you look at desart it's interface.
+
+00:58.120 --> 01:01.280
+The main difference between targeted and set is sorting.
+
+01:01.510 --> 01:03.080
+So what does this water do.
+
+01:03.190 --> 01:10.460
+It maintains elements in a solid old order so set into this does not guarantee any order but a certain
+
+01:10.480 --> 01:14.590
+interface on the other hand keep the elements sorted.
+
+01:14.740 --> 01:22.330
+So in addition to the usual methods that are supported in set it support method stops it had said data
+
+01:22.360 --> 01:22.870
+set.
+
+01:23.050 --> 01:27.790
+So that's basically a subset of elements between this value and this value.
+
+01:28.030 --> 01:36.190
+And you can ask for head set and detailed set as when you can also ask for a first element and the last
+
+01:36.190 --> 01:38.770
+element because the elements are in an order.
+
+01:38.800 --> 01:43.450
+You can specifically ask for a first element and the last element as well.
+
+01:43.570 --> 01:51.520
+So that's the interface sorted set the other interface which is present in inset is the navigable set
+
+01:51.790 --> 01:55.090
+so navigate books that actually extends this sort of set.
+
+01:55.270 --> 01:59.500
+And it kind of gives you additional navigation methods.
+
+01:59.590 --> 02:05.770
+So it's a navigable said is nothing but a sort of set extended with navigation methods.
+
+02:05.950 --> 02:13.180
+So it does navigation method help you to find values which are close to something so let's say I wanted
+
+02:13.180 --> 02:19.550
+to find the nearest value which is lower than this or the nearest value which is higher than this or
+
+02:19.670 --> 02:23.220
+you you on the pole for the first element or pool for the last element.
+
+02:23.230 --> 02:28.180
+These kind of things we would be able to get through the navigable set.
+
+02:28.300 --> 02:31.260
+So the navigable said interface extend this Alderton endeavor.
+
+02:31.270 --> 02:38.970
+So if you look at the hierarchy it's set so it's a distance set and navigable set extends So it's set
+
+02:39.280 --> 02:45.820
+the main important thing about set is elements in a set all this is unique so salt added elements are
+
+02:45.820 --> 02:53.260
+unique and they are in sorted order and navigable to pro-white of the mean more navigation tool it helps
+
+02:53.260 --> 02:58.150
+you to find elements which are more than a specific element heavier than a specific element or portal
+
+02:58.150 --> 03:01.010
+for the first and last element kind of stuff.
+
+03:01.420 --> 03:03.090
+So that's this are set.
+
+03:03.100 --> 03:08.760
+Let's now look at a few implementations of said interface.
+
+03:08.760 --> 03:13.830
+So the first thing which we look at is the hash that the hash that implements that hash.
+
+03:13.830 --> 03:16.340
+That does not guarantee ordering.
+
+03:16.510 --> 03:19.590
+So anything that you see a word hash.
+
+03:19.690 --> 03:27.730
+So if you see something like hash then that particular class will never support order of insertion.
+
+03:27.730 --> 03:32.920
+So if I'm inserting an X be order then the elements might be stored in any order.
+
+03:32.920 --> 03:34.770
+Eggs B C B B.
+
+03:34.840 --> 03:37.490
+I mean there are a number of orders that are possible.
+
+03:37.690 --> 03:40.740
+So it might be stored in any specific order.
+
+03:40.750 --> 03:43.960
+So it does not get in the order.
+
+03:43.960 --> 03:47.890
+Heisted uses a kind of a hashing implementation.
+
+03:47.920 --> 03:55.210
+The next step is link Haslet that one important about anything linked is they would maintain the order
+
+03:55.210 --> 03:56.310
+of insertion.
+
+03:56.320 --> 04:04.390
+So link hash said maintains the order of insertion has said does not maintain the order of insertion.
+
+04:04.420 --> 04:11.740
+So if elements are inserted in order X be the way of storing it in eling has said would be X be as well.
+
+04:11.770 --> 04:15.200
+That's the main difference between the Hastert and that link has it.
+
+04:15.250 --> 04:20.400
+On the other hand a preset implement set and navigable set.
+
+04:20.410 --> 04:26.090
+And as we know navigable set extends the sorted set.
+
+04:26.110 --> 04:30.400
+So basically reset implements set started set and navigate will set.
+
+04:30.400 --> 04:33.610
+So the elements are stored in a sorted order.
+
+04:33.610 --> 04:39.070
+So if I am inserting HCB the order of storing them would be a b c.
+
+04:39.220 --> 04:42.610
+So that would be stored stored in sorted order.
+
+04:42.850 --> 04:48.910
+And it also has all the navigation methods that are implemented in navigable set.
+
+04:48.940 --> 04:55.830
+So the three sets that we discuss right now are have said links that entries set in a Hash said the
+
+04:55.910 --> 05:01.140
+the in institution is not maintained but it will not still duplicate.
+
+05:01.320 --> 05:08.250
+Just like any set up link has said on the other side maintains order of insertion and make sure that
+
+05:08.250 --> 05:16.080
+there are no duplicates and it does not maintain order of insertion but it stores them daily mints in
+
+05:16.080 --> 05:24.450
+the sorted order and thereby you can use navigable say to find out a specific element in a specific
+
+05:24.450 --> 05:31.110
+range or you can find out what is small and then a current Belgium and what is bigger than the current
+
+05:31.110 --> 05:33.760
+element and all that kind of good stuff.
+
+05:33.790 --> 05:39.640
+Until now we at a few said interface's there are three set interfaces.
+
+05:39.660 --> 05:47.010
+Basically the set started set and navigable set and we looked at three examples said classes as well
+
+05:47.310 --> 05:53.180
+hash said linked hash that entries said at a later point in this specific section.
+
+05:53.190 --> 05:56.440
+We'll look at a few code examples for these as well.
+
+05:56.820 --> 05:58.230
+But until then I.

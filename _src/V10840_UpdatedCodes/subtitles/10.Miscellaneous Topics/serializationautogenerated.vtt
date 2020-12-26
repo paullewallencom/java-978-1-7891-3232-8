@@ -1,0 +1,271 @@
+WEBVTT
+
+00:00.360 --> 00:00.690
+We.
+
+00:00.860 --> 00:04.200
+Let's discuss the things around serialization.
+
+00:04.260 --> 00:11.200
+So what is serialization our civilization is basically a way where you can actually see you and retrieve
+
+00:11.300 --> 00:13.170
+the state of an object.
+
+00:13.290 --> 00:18.780
+So you have an object and you'd want to stay with to define and you would want to retrieve the content
+
+00:18.780 --> 00:21.050
+of the object at a later point in time.
+
+00:21.120 --> 00:24.440
+In those kind of situations you would use serialization.
+
+00:24.480 --> 00:27.990
+So basically a civilization is basically two steps right.
+
+00:27.990 --> 00:33.270
+First one is civilization that can would object to some internal representation.
+
+00:33.270 --> 00:39.930
+So you want to serialize an object the serialization is the work you want to dig the internal representation
+
+00:40.020 --> 00:44.930
+or you want to take a file and convert that to an object to serialization.
+
+00:45.030 --> 00:46.350
+And the serialization.
+
+00:46.380 --> 00:52.410
+And there are two important methods that are there in the object output stream right object and read
+
+00:52.410 --> 00:58.430
+object create object could see delays that object would be the serialising things will look at that
+
+00:58.450 --> 01:00.070
+with an example with ease.
+
+01:00.270 --> 01:04.210
+How do you see an object using the Serializable interface.
+
+01:04.290 --> 01:09.630
+So this code to do a civilization is very very simple so you really create a file out here and being
+
+01:09.630 --> 01:14.700
+a file output stream with what is the file that should contain the civilized things.
+
+01:14.700 --> 01:23.190
+So I'm creating a rectangle that I see as the file which should contain the Serializable serialized
+
+01:23.760 --> 01:24.680
+object.
+
+01:24.780 --> 01:27.170
+So I would want to write this to this file.
+
+01:27.300 --> 01:33.570
+The content of the object to I'm creating a file load but I'm creating an object output stream using
+
+01:33.570 --> 01:40.230
+the file stream as the input so as to construct an argument and then I'm writing the object that actually
+
+01:40.230 --> 01:43.250
+do it and write and write object.
+
+01:43.350 --> 01:45.820
+Rectangle 5 Camors 6.
+
+01:45.850 --> 01:49.390
+So ending an object stream that flows that's it.
+
+01:49.420 --> 01:52.220
+This is how you use to utilize an object.
+
+01:52.230 --> 01:57.490
+The important thing about the rectangle class is the fact that it's serializable.
+
+01:57.510 --> 01:59.770
+Other than that it's all a normal class.
+
+01:59.940 --> 02:05.790
+So it's not there's nothing special about this rectangle class except the fact that it's implementing
+
+02:05.790 --> 02:09.840
+the Serializable interface except to read the answer.
+
+02:09.870 --> 02:16.290
+Right here it is to seal is an object of class should implement the Serializable interface so a rectangle
+
+02:16.290 --> 02:22.150
+class here is implementing the Serializable interface as a level is just a marker interface.
+
+02:22.160 --> 02:27.060
+It's not really having any methods that need to be defined it's just a marketing device to say that
+
+02:27.060 --> 02:34.600
+this class can be serialized that it will not talk about the reverse process which is DC realization.
+
+02:34.650 --> 02:39.810
+Realization is now I want to take the rectangle that SC or five which I created earlier and I would
+
+02:39.810 --> 02:44.260
+want to read the read it into a Rectangle object.
+
+02:44.460 --> 02:49.800
+So the way you do that is we're going to hear the process the same except that here you'd call the read
+
+02:49.800 --> 02:55.090
+object in the right object viewed as a real object and read it into the Rectangle object.
+
+02:55.170 --> 02:59.700
+So you can see that when I print the values it would be a rectangle that lent a rectangular grid and
+
+02:59.700 --> 03:07.410
+area it to 5 6 and that's basically serialization and deserialization you end up there is a lot of talk
+
+03:07.410 --> 03:11.950
+about that effectively civilization and the civilization are really simple.
+
+03:11.970 --> 03:15.480
+There's this big method and the object's output stream.
+
+03:15.690 --> 03:21.330
+And the object input stream to read and write the things in.
+
+03:21.330 --> 03:26.280
+So the only important thing that you need to remember is the object that you'd want to see you should
+
+03:26.280 --> 03:29.190
+implement this Serializable interface.
+
+03:29.190 --> 03:35.050
+Let's say I have a rectangle where I only want to see the last 10 objects.
+
+03:35.220 --> 03:38.160
+So let's say there is a variable called area here.
+
+03:38.190 --> 03:45.400
+I don't want to see delays the area because area is initialized when the object is created.
+
+03:45.420 --> 03:51.230
+So I don't want to store or I don't want to see the lies the variable in those kind of situations.
+
+03:51.240 --> 03:53.580
+We use something called transiency.
+
+03:53.760 --> 04:01.260
+So when I say variable i benchmark A MOMbo variable as transient then it will not be c lazed you'd see
+
+04:01.260 --> 04:08.240
+that when we read the object the rectangle is set to a default value which is zero.
+
+04:08.310 --> 04:10.670
+That's one thing you should be careful about.
+
+04:10.680 --> 04:15.880
+I mean the thing is when you DC relays the constructor of the object will not be called.
+
+04:15.960 --> 04:22.560
+So even though in this constructor initializing the area because when IDC relays the constructor is
+
+04:22.560 --> 04:26.620
+not really called The area is not properly initialized.
+
+04:26.640 --> 04:31.550
+Next we would want to discuss how to DCD serialize a hierarchy of objects.
+
+04:31.560 --> 04:35.340
+So here I have a house and this house has a wall.
+
+04:35.370 --> 04:39.660
+We want to serialized the entire hierarchy.
+
+04:39.720 --> 04:43.920
+If you look at this specific thing right now how is implements Serializable how in the world does not
+
+04:43.930 --> 04:45.360
+imply anti-realism well.
+
+04:45.540 --> 04:52.350
+So when we try to see Eliza how Eisenstein's what would we get we would get and not realisable exception
+
+04:52.620 --> 04:57.130
+to it because while it's not really serializable.
+
+04:57.420 --> 05:04.900
+So now we have two options One is we can make wild transients then one will not be serialized at all.
+
+05:05.110 --> 05:10.120
+So they will object will not be serialized so whenever the values are stored of the object the values
+
+05:10.120 --> 05:15.930
+inside the wall object will not be stored at least for and that's not a good option usually.
+
+05:15.970 --> 05:22.900
+So the other option is to make this voile object implement Serializable so that probably the preferred
+
+05:22.900 --> 05:32.140
+option will actually make will implement the realisable and you go ahead and serialize the entire hierarchy
+
+05:32.140 --> 05:32.920
+of house.
+
+05:32.930 --> 05:36.840
+Now the house can be serialized and the wall can be serialized as well.
+
+05:36.920 --> 05:43.000
+Serialize a hierarchy of things we would need to implement and we would need to implement realisable
+
+05:43.000 --> 05:45.630
+in each of the classes in the higher rate.
+
+05:45.850 --> 05:54.520
+As we discussed earlier the constructors are not called when a object is DC realized when an object
+
+05:54.520 --> 06:00.030
+is less initialization constructors and initializers does not take place.
+
+06:00.280 --> 06:02.400
+So the initialization does not happen.
+
+06:02.650 --> 06:08.710
+So the State of the object as it is loaded from the DC realized thing in the serialized file.
+
+06:08.860 --> 06:13.340
+That's exactly what would be the state of the object not the insulators and not become strippers who
+
+06:13.340 --> 06:14.570
+would be called.
+
+06:14.570 --> 06:20.020
+Also the important thing is static with evil are not really considered to be part of an object so they
+
+06:20.010 --> 06:23.250
+are not part of the serialization process.
+
+06:23.290 --> 06:28.280
+Static labels are considered to be part of the class and not of the object.
+
+06:28.360 --> 06:31.090
+So they are not part of this serialization.
+
+06:31.090 --> 06:37.270
+All the examples that we discuss in this specific deal are present in three different classes serialization
+
+06:37.270 --> 06:38.250
+example.
+
+06:38.330 --> 06:41.870
+See that as an example stewe anti-religious and examples.
+
+06:42.160 --> 06:46.380
+So this would contain a lot more information than what we are discussing in here.
+
+06:46.390 --> 06:52.150
+I would really recommend you to spend some time with these examples as an exercise and see if you have
+
+06:52.150 --> 06:54.230
+any questions about any of them.
+
+06:54.430 --> 06:57.070
+Good luck with that and in next we do pre-buy.

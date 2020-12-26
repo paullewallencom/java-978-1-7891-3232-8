@@ -1,0 +1,199 @@
+WEBVTT
+
+00:02.140 --> 00:02.780
+Welcome back.
+
+00:02.800 --> 00:09.610
+Let's start with the section on Jawa platform and let's start with the first question why is Java so
+
+00:09.610 --> 00:10.440
+popular.
+
+00:10.450 --> 00:17.270
+There are a number of programming languages C C++ Java and a lot of things which came after.
+
+00:17.350 --> 00:21.550
+Why is it that Java is the most popular of all languages.
+
+00:21.820 --> 00:28.190
+Why is it that Java is the one which is used to develop and apply applications for the big bad.
+
+00:28.210 --> 00:34.270
+I mean not all applications are using Java but a huge majority of the applications are built with Java.
+
+00:34.380 --> 00:34.950
+Why.
+
+00:35.080 --> 00:42.840
+The first reason why I think Java is very popular is because of its feature call platform independence.
+
+00:42.850 --> 00:50.230
+Once you have a Java executable that a jar file you can run it on any operating system whether it's
+
+00:50.230 --> 00:52.990
+Windows Mac or whatever operating system.
+
+00:53.000 --> 00:58.360
+So once you write a program somewhere you can take it and run it in any place.
+
+00:58.570 --> 01:03.750
+That's platform independent and that one of the main reasons why Jawa is very popular.
+
+01:03.940 --> 01:11.260
+The other reason I think is because Java is an object oriented language object oriented programming
+
+01:11.410 --> 01:15.660
+results in much maintainable called than structured programming.
+
+01:15.820 --> 01:19.840
+We would discuss these two things in detail in later sections.
+
+01:19.840 --> 01:25.570
+I think the two reasons are basically lack for independence and the fact that Java is an object oriented
+
+01:25.570 --> 01:26.740
+programming language.
+
+01:26.740 --> 01:32.980
+The next question we would want to discuss is what is platform independent and how does Java achieve
+
+01:32.980 --> 01:33.490
+it.
+
+01:33.490 --> 01:38.050
+Those are the two things we would discuss enough as we discussed in the previous question.
+
+01:38.080 --> 01:44.590
+Platform independent is basically the fact that I can build a Java program anywhere and I would be able
+
+01:44.590 --> 01:47.460
+to run on any other operating system.
+
+01:47.530 --> 01:49.740
+But basically what platform independence is.
+
+01:49.750 --> 01:52.900
+That's basically called Build once run anywhere.
+
+01:52.990 --> 01:58.100
+So you Billett want some any where whether it's Windows whether it's Unix whether it's Mac you build
+
+01:58.100 --> 01:59.040
+it anywhere.
+
+01:59.260 --> 02:04.030
+And then you would be able to run that program in all other operating systems.
+
+02:04.030 --> 02:07.990
+The question is how does Java achieve platform independence.
+
+02:07.990 --> 02:08.290
+Right.
+
+02:08.290 --> 02:15.130
+So how does Java ensure that you are able to run your program and even one of the important things to
+
+02:15.130 --> 02:20.810
+understand is that the executable code is different in different operating systems.
+
+02:20.850 --> 02:26.280
+They takes you to call in Unix is different from the executable code in Windows.
+
+02:26.320 --> 02:28.680
+How were the Java code that we write.
+
+02:28.740 --> 02:31.860
+I mean typically we write Java code in-door java files right.
+
+02:31.890 --> 02:34.070
+So the Java code is the same.
+
+02:34.140 --> 02:40.000
+So with the same Java code how are we able to get two different Exupery cords in different operating
+
+02:40.000 --> 02:40.940
+systems.
+
+02:41.170 --> 02:44.800
+That's the primary question with platform independence.
+
+02:44.860 --> 02:48.820
+The answer to that is in a jar concept called G.
+
+02:48.860 --> 02:51.720
+Free Java Twichell machine.
+
+02:51.760 --> 02:58.420
+When I compile Java code we get something called dark class files the dot class files contain something
+
+02:58.420 --> 03:03.880
+called byte code called bytecode is basically a Java internal representation.
+
+03:03.880 --> 03:11.530
+The magic of the JVM is the fact that it can convert bytecode to executable instructions in that particular
+
+03:11.590 --> 03:13.010
+operating system.
+
+03:13.210 --> 03:19.900
+So a Unix JVM can and would bytecode to exhaustible instructions on Unix Windows JVM would be able to
+
+03:19.910 --> 03:24.490
+convert byte code to executable instructions on Windows.
+
+03:24.670 --> 03:32.260
+And similarly the JVM SAY in other operating system basically the fact is that the JVM is in different
+
+03:32.260 --> 03:39.280
+operating systems different but they are having one thing in common.
+
+03:39.400 --> 03:42.800
+That's basically the fact that they can understand Java bytecode.
+
+03:43.090 --> 03:50.920
+So the Java Twichell machine basically can word the byte code to executable instructions of that specific
+
+03:50.920 --> 03:52.390
+operating system.
+
+03:52.390 --> 03:59.980
+So Jahweh achieves platform independence by having this intermediate format called bytecode which is
+
+04:00.070 --> 04:03.630
+understandable by different JVM.
+
+04:03.790 --> 04:11.380
+So the JVM is in different operating systems are able to understand this bytecode and can word the bytecode
+
+04:11.530 --> 04:15.580
+to excludable instructions in that specific operating system.
+
+04:15.580 --> 04:22.120
+To summarize Jobvite use platform independence through two important concepts one is the intermediate
+
+04:22.450 --> 04:24.480
+representation called the byte code.
+
+04:24.520 --> 04:27.290
+Your darkest files contain by code.
+
+04:27.310 --> 04:31.730
+The second important thing is the Java virtual machine the Jodrell machine.
+
+04:31.780 --> 04:37.570
+In any specific operating system we'll be able to convert bytecode to executable instructions of that
+
+04:37.570 --> 04:39.050
+operating system.
+
+04:39.070 --> 04:45.370
+So even though the exhaustible instructions are of uniques are different from that of Windows the way
+
+04:45.390 --> 04:52.530
+J.Y. chase platform independence is having a different JVM for Unix and a different JVM for Windows.
+
+04:52.600 --> 04:58.480
+However the common things for those two JVM is the fact that they both understand bytecode and they
+
+04:58.570 --> 05:04.850
+can word this byte code to be you instructions of that specific operating system.

@@ -1,0 +1,316 @@
+WEBVTT
+
+00:01.440 --> 00:07.700
+We'll come back in this quick We'll look at the different new features which were introduced in different
+
+00:07.700 --> 00:08.080
+ways.
+
+00:08.120 --> 00:14.840
+So if Joe thing is most of these new features which we had going to see in this particular video we
+
+00:14.900 --> 00:22.610
+have already discussed then just during the course completely but this is more to consolidate them and
+
+00:22.610 --> 00:28.490
+for you to be able to understand what are the features which would introduce a specific question of
+
+00:28.490 --> 00:29.400
+Jawa.
+
+00:29.420 --> 00:31.400
+So we will not discuss them in detail.
+
+00:31.400 --> 00:37.190
+I would really request you to go and look at that specific video if you are interested in understanding
+
+00:37.190 --> 00:38.750
+that feature complicite.
+
+00:38.990 --> 00:42.640
+The idea is to just have a list of features right here.
+
+00:42.800 --> 00:44.810
+Let's get started.
+
+00:44.960 --> 00:49.040
+We'll start with Java 5 because that was one of the words of Job.
+
+00:49.130 --> 00:52.120
+There were a lot of new things that were introduced.
+
+00:52.340 --> 00:57.920
+One of the main features which is missing in this list which was introduced in our fight is annotations
+
+00:58.250 --> 01:04.550
+I love and additions and additions is one of the biggest programming changes for me and Jolliffe I was
+
+01:04.610 --> 01:07.080
+where they were introduced.
+
+01:07.100 --> 01:12.300
+Other than that the other important thing to share introduced in our Fe are generics.
+
+01:12.620 --> 01:14.050
+We discuss about generics.
+
+01:14.060 --> 01:17.430
+We looked at a few examples of enhanced for loop as well.
+
+01:17.480 --> 01:18.950
+We looked at auto boxing.
+
+01:19.040 --> 01:22.070
+We looked at where the oral arguments and static input is.
+
+01:22.070 --> 01:24.630
+The other thing which was introduced in Java.
+
+01:24.860 --> 01:30.860
+So if you're using a static function then you can directly import that specific thing and use the function
+
+01:30.860 --> 01:37.090
+directly without specifying the class name that makes it more easy or more d'accord more readable.
+
+01:37.100 --> 01:41.290
+So that's another feature which was introduced in Java 5.
+
+01:41.300 --> 01:47.720
+The other important feature which was introduced in Java five of these concurrent connections we have
+
+01:48.470 --> 01:49.740
+until Java 5.
+
+01:49.940 --> 01:57.230
+The only way which was present to create multithreaded programs was to use the synchronized keyword
+
+01:58.100 --> 02:04.310
+in Java fight there are new approaches to copy and write components of app which are implemented and
+
+02:04.610 --> 02:08.420
+there are new concurrent collections which came in with these approaches.
+
+02:08.420 --> 02:12.470
+Will this cause a lot of them in the advanced collections section.
+
+02:12.470 --> 02:16.060
+The other thing which we look at during the threads was lock.
+
+02:16.130 --> 02:25.470
+So we looked at reentrant lock and we used locks in that specific to implement synchronization in somebody.
+
+02:25.520 --> 02:32.070
+The most important features which are implemented in Java Fae are which came in in Java fi where in
+
+02:32.280 --> 02:34.620
+to generics enhanced for loops.
+
+02:34.790 --> 02:37.670
+Static imports come in collections and locks.
+
+02:37.810 --> 02:44.960
+Let's move the Java 6 Jocic So what's not really a huge change in terms of the API.
+
+02:44.990 --> 02:51.410
+There were a few changes but they were very minor and there were a few performance improvement but I
+
+02:51.410 --> 02:55.110
+doubt if any of them are so significant that they deserve a mention here.
+
+02:55.370 --> 03:01.760
+So it's more like where the few important genius aspect of jealous jealousy when I again had a little
+
+03:01.760 --> 03:03.680
+bit more genius then Jawa six.
+
+03:03.680 --> 03:09.300
+So one of the important changes which was introduced in Java 7 was the diamond operator.
+
+03:09.530 --> 03:15.030
+So earlier we went what we wanted to create a map for example like this.
+
+03:15.110 --> 03:17.750
+I had to specify this in both places.
+
+03:17.870 --> 03:23.280
+So I had to specify string list of thread here and also here.
+
+03:23.600 --> 03:26.120
+So I had to specify it in two places.
+
+03:26.330 --> 03:30.420
+But with the diamond operator or with what is called the Diamond operator.
+
+03:30.430 --> 03:37.040
+Now you don't need just betrayed that duplicious So it's OK if I spent no specified the type of the
+
+03:37.040 --> 03:38.480
+things which are in the maps.
+
+03:38.480 --> 03:44.590
+This map is a map of with a key string and values that's list of the grid.
+
+03:45.200 --> 03:50.750
+In the earlier versions of Jalla I had to specify in here I want to create a tree map with a string
+
+03:50.840 --> 03:53.980
+and the values as list of grid.
+
+03:54.170 --> 03:57.730
+So I had to specify that here as well but with jealousy.
+
+03:57.860 --> 03:59.890
+You don't need to do that anymore.
+
+04:00.260 --> 04:06.710
+The other important thing which came in in Java 7 is you can use switch around strings as well until
+
+04:06.770 --> 04:07.490
+Java 6.
+
+04:07.490 --> 04:13.870
+The only things which you can use to switch around are numbers and also names.
+
+04:14.240 --> 04:18.410
+But with Jawa 7 we can also use switch statement on strings.
+
+04:18.830 --> 04:23.360
+And the other important feature which we already discussed during exception handling section is the
+
+04:23.720 --> 04:26.200
+PRI Gach private resources.
+
+04:26.210 --> 04:30.350
+So this is what is called Try with the resources by some people.
+
+04:30.350 --> 04:37.750
+It's basically you try around the and create the resource which you want to be managed directly in here.
+
+04:37.970 --> 04:43.160
+So you put your task at to try and put whichever resources you would want to manage in here.
+
+04:43.160 --> 04:46.720
+This is the example for private research is that we leave a bit earlier.
+
+04:47.000 --> 04:53.030
+So you are reading directly the buffered reader in here and we also discuss that with the resources
+
+04:53.090 --> 04:58.720
+is possible because Bufford leader implements the auto plausible interface so it implements the order
+
+04:58.760 --> 05:01.100
+plausible interface with the close function.
+
+05:01.170 --> 05:07.290
+So the buffered reader defines the function so we know what the operation complete whether there's an
+
+05:07.290 --> 05:09.380
+exception or not.
+
+05:09.480 --> 05:15.520
+Indefinably the order close would be called to close the file reader.
+
+05:15.540 --> 05:20.050
+The other feature which was introduced in July 7 is new literals with underscored.
+
+05:20.280 --> 05:24.420
+So basically what this means I can create inti just like this.
+
+05:24.420 --> 05:32.250
+So instead of saying Just thousand I can just say one underskirt thousand if I wanted to create a million
+
+05:33.040 --> 05:34.960
+them you can do something of this kind.
+
+05:34.960 --> 05:39.460
+So you can create numerical literals with underscores so that they are more readable.
+
+05:39.580 --> 05:41.560
+Obviously improved exception handling.
+
+05:41.560 --> 05:44.920
+We've already looked at breakage and drive with resources.
+
+05:44.920 --> 05:49.900
+The other exception which is the exception handling which is introduced is handling multiple exceptions
+
+05:49.900 --> 05:51.120
+in the same block.
+
+05:51.220 --> 05:56.670
+So you can catch exception one exception two exception three in the same block.
+
+05:56.680 --> 06:01.730
+So you don't need to write duplicate the code again and again in all these three blocks.
+
+06:01.750 --> 06:07.520
+So those are at a high level the important features in Joe 7 diamond operators string in which private
+
+06:07.540 --> 06:11.600
+resources mandibles exception handling numerical literals with underscores.
+
+06:11.720 --> 06:16.430
+OK for me Java 8 is one of the biggest releases of Java.
+
+06:16.930 --> 06:24.100
+I think if I really order reasons in terms of the importance I think the first years of Java is the
+
+06:24.130 --> 06:31.120
+most important one because that is the one which brought in Java but platform independent and all that
+
+06:31.120 --> 06:33.240
+good Object-Oriented features.
+
+06:33.280 --> 06:39.580
+The second important release for me is Java 5 because it brought in my favorite feature in Java which
+
+06:39.580 --> 06:41.290
+is annotations.
+
+06:41.320 --> 06:48.070
+The third important release for me is Java 8 and Jalla aid brought in a lot of functional programming
+
+06:48.070 --> 06:49.260
+concepts.
+
+06:49.270 --> 06:58.120
+Lang lambda expressions streams these are going to change how we do programming especially especially
+
+06:58.120 --> 07:04.530
+the functional programming concepts would change how we think and how we think what is possible.
+
+07:05.290 --> 07:09.320
+The other important change which gave me in Java 8 is Nashar.
+
+07:09.490 --> 07:11.110
+That's basically a javascript engine.
+
+07:11.140 --> 07:15.160
+That's a new javascript engine to run javascript on the JVM.
+
+07:15.160 --> 07:22.720
+There was an earlier javascript engine to run javascript in Java 7 and stuff but naturalist's highly
+
+07:22.720 --> 07:25.900
+performant compared to the earlier versions.
+
+07:25.900 --> 07:27.360
+The most important thing in Java.
+
+07:27.400 --> 07:33.190
+A dysfunctional programming and we have a separate section on functional programming with lambda expressions
+
+07:33.370 --> 07:34.630
+and streams.
+
+07:34.630 --> 07:36.140
+In this way do we look bad.
+
+07:36.280 --> 07:42.720
+What are the important features at a high level in Java 5 6 7 and Jawa.
+
+07:43.150 --> 07:44.590
+So there you go.
+
+07:44.590 --> 07:47.610
+Those are the new features that we wanted to talk about.

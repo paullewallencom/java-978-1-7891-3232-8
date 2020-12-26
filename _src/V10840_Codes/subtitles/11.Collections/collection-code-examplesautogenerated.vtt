@@ -1,0 +1,526 @@
+WEBVTT
+
+00:00.470 --> 00:06.860
+The previous read you really that different collection interfaces and what the different High-Level
+
+00:06.990 --> 00:10.130
+implementations that are present for each interface.
+
+00:10.150 --> 00:17.730
+So we just got a high level view of data collection classes in this review.
+
+00:17.840 --> 00:22.350
+We look at a lot of examples of code examples around these collections.
+
+00:22.350 --> 00:23.910
+Let's start with the basic one.
+
+00:23.910 --> 00:27.010
+The thing is when I'm doing any integers don't add five.
+
+00:27.270 --> 00:32.280
+What I'm doing is I'm being Arto boxing So what happens here is order boxing and it would create a new
+
+00:32.280 --> 00:34.850
+integer and put it into the list.
+
+00:34.880 --> 00:39.810
+So collections can only hold objects they cannot hold primitives.
+
+00:39.810 --> 00:41.510
+We are creating an aerialist in here.
+
+00:41.580 --> 00:47.020
+So we are creating a list at a list the way you are acting's internet illiterate using the ADD letter.
+
+00:47.100 --> 00:50.520
+So basically you can add without any index.
+
+00:50.520 --> 00:53.820
+Then the element is added at the end of the list so suchan.
+
+00:54.070 --> 00:59.160
+Now we decided to try we decided at the end of the list where I can add it to a specific index as well.
+
+00:59.160 --> 01:04.530
+So if I want to add that index zero then what would happen such it would be pushed out and Ganguli would
+
+01:04.530 --> 01:06.550
+be inserted at index.
+
+01:06.570 --> 01:13.440
+So if you add zero comma Dunkley then this is what would happen if you again add such when it would
+
+01:13.440 --> 01:16.650
+be added in because at least allows for duplicate.
+
+01:16.650 --> 01:21.920
+Like any other collection list also would support aerialist would also support the containment.
+
+01:21.930 --> 01:26.490
+So you can take campaigns drugget it would that are not true and you can migrate around the list using
+
+01:26.490 --> 01:28.900
+the threat of our default loop.
+
+01:29.010 --> 01:35.090
+The other method which are present in the list are index also so you can find where grogginess pleasant.
+
+01:35.160 --> 01:36.530
+So it returns true.
+
+01:36.630 --> 01:39.530
+In the previous list that we created there was no Bradman.
+
+01:39.540 --> 01:43.470
+So if an element is not present it would return minus 1.
+
+01:43.470 --> 01:51.590
+You can also use index to get the element so if you can take I want the batch matched index one similar
+
+01:51.600 --> 01:55.500
+to when I read the index for all the collection to start with the euro.
+
+01:55.590 --> 02:01.520
+So the index runs from zero to minus 1 where n is the size or zero the size of minus one Badgeman that
+
+02:01.530 --> 02:05.210
+get one would get the second element in the list.
+
+02:05.220 --> 02:09.280
+So in the list that we had the second element is such.
+
+02:09.360 --> 02:11.600
+So that's basically what is written back.
+
+02:11.820 --> 02:14.790
+And also there are two variations on the remove function.
+
+02:14.790 --> 02:20.460
+You can either remove the element then it's directly removed and now you have Ganguli such and such
+
+02:20.460 --> 02:21.540
+in all.
+
+02:21.540 --> 02:27.460
+You can remove the element at a specific index so I'm saying small element at index 1.
+
+02:27.460 --> 02:33.360
+So this searching which is at index 1 0 1 2 index 1 is this.
+
+02:33.360 --> 02:35.390
+So this is the one which is removed.
+
+02:35.400 --> 02:38.550
+The other thing you can do is start the collection.
+
+02:38.550 --> 02:41.230
+So here I am seeing collections dots part numbers.
+
+02:41.230 --> 02:46.580
+So this list is sorted and one two three four becomes four to one to the two.
+
+02:46.590 --> 02:53.010
+Can you explain why this is because we are storing strings they are sorted in the alphabetical order
+
+02:53.010 --> 03:00.110
+of these strings including creating an analyst with a crook under-class and I'm trying to sort the I
+
+03:00.140 --> 03:07.290
+mean I'm trying to print all the elements in there so the elements by default are in the insertion order
+
+03:07.290 --> 03:09.340
+so in such a pattern for such in next.
+
+03:09.360 --> 03:15.160
+David buntings if I created a secret would print that and such and read and Ponting as we expected.
+
+03:15.270 --> 03:20.520
+If the cricketer class does not implement the comparable interface so if the click of class does not
+
+03:20.520 --> 03:26.230
+impact implement the compatable interface then I will not be able to use collections of that sort.
+
+03:26.250 --> 03:33.780
+I'll be only be able to use the sart function collection or taught function on any or any class that
+
+03:33.780 --> 03:35.390
+implements the comparable.
+
+03:35.550 --> 03:39.480
+So here I am implementing the comparable now.
+
+03:39.630 --> 03:44.090
+Now if I can go ahead and because this is compared to is implemented I can use this.
+
+03:44.160 --> 03:49.740
+I can do a start around this to what we did was to make the Collect cricketer's class implement the
+
+03:49.740 --> 03:56.550
+comparable interface and then you'll be able to Sard the Cricketer's So now that started in the increasing
+
+03:56.550 --> 03:58.770
+order of their friends Bradman.
+
+03:58.830 --> 04:05.370
+9 9 9 6 you can see that they are indeed increasing order of their runs so collection that sort should
+
+04:05.370 --> 04:11.570
+be used on any list of any items where the item implements the comparable interface.
+
+04:11.730 --> 04:13.940
+The other option is also when you are creating.
+
+04:14.010 --> 04:19.740
+When you're doing the sort you can actually provide us startup so you can say I want to use a specific
+
+04:19.740 --> 04:20.220
+sorter.
+
+04:20.220 --> 04:22.880
+So how do we create a descending sorter.
+
+04:23.040 --> 04:28.950
+Basically you implement the competitor and say you implement the competitor interface and implement
+
+04:28.950 --> 04:33.300
+a competitor off two instances of that particular object which is mentioned in here.
+
+04:33.630 --> 04:38.090
+And then you can use this charter to start your cricketer's.
+
+04:38.490 --> 04:44.990
+As you can see the descending started Sarge's the batsman in the decreasing order of runs so such and
+
+04:45.000 --> 04:48.620
+comes first and Bradman comes last.
+
+04:48.660 --> 04:49.470
+Next List.
+
+04:49.500 --> 04:52.680
+Let's look at a few examples of set the set.
+
+04:52.680 --> 04:55.950
+The fact is that sets do not allow duplicate.
+
+04:55.950 --> 05:02.930
+So let's take half said and as we discussed earlier not implement in the end this doesn't happen.
+
+05:02.960 --> 05:09.340
+Ordering anything that starts with the hash if hash is the first four letters of class then it would
+
+05:09.340 --> 05:11.710
+not have pulled the ring so.
+
+05:11.980 --> 05:14.750
+So Hatchard also does not support our ordering.
+
+05:14.770 --> 05:21.340
+So you can see here like I am implementing such in first I'm adding such in first that could be read
+
+05:21.340 --> 05:28.960
+next such and I read a again out in such an this would read and false and because this is a duplicate
+
+05:28.960 --> 05:32.910
+it will not be added in in a set you cannot store duplicate.
+
+05:32.920 --> 05:40.280
+So you don't have such in Dravid Sachin it's just such in and it because Sachin is a duplicate.
+
+05:40.390 --> 05:45.820
+And next we are using a preset in a crusade as we discussed earlier.
+
+05:45.820 --> 05:48.320
+Objects are stored in a sorted order.
+
+05:48.520 --> 05:53.950
+So I'm adding such in so such an Dravet that it comes alphabetically before such intertribal it would
+
+05:53.950 --> 06:00.370
+be for such an next Ganguli Ganguli alphabetically sits between Drebin and such and so that's the order
+
+06:00.370 --> 06:03.370
+in which they would represent Krongard touching.
+
+06:03.370 --> 06:08.150
+Again he's a duplicate to not be added that basically you were preset.
+
+06:08.200 --> 06:14.280
+So we looked at a couple of examples of said classes so hash set and reset.
+
+06:14.320 --> 06:16.150
+Next we would look at hash map.
+
+06:16.150 --> 06:20.050
+So here I am creating a hash map with string and cricketer's.
+
+06:20.050 --> 06:23.630
+So the keys are string and the values are created.
+
+06:23.800 --> 06:31.210
+The key I'm using it as a name to name suchan and the cricketers object to these starting elements into
+
+06:31.210 --> 06:38.040
+the hash map using the put put Kikkoman value and I can do hash Molder get born.
+
+06:38.080 --> 06:39.060
+What does it do.
+
+06:39.070 --> 06:44.100
+It gets the Poynting element and it blends that to the bird and get Lara.
+
+06:44.170 --> 06:45.430
+So lala's is not here.
+
+06:45.430 --> 06:51.820
+So when I do get when the key is not found it will return a value not earlier Ponting had level doesn't
+
+06:51.820 --> 06:52.660
+find it rant.
+
+06:52.670 --> 06:56.750
+I'm using the key here again and putting a new instance of the character.
+
+06:56.800 --> 07:02.380
+What happens is the existing instance existing bonding will you get or redone and this well you would
+
+07:02.380 --> 07:03.430
+be replace.
+
+07:03.430 --> 07:06.520
+So if I do a hash map that get Ponting here it could be pointing.
+
+07:06.530 --> 07:11.560
+Eleven thousand eight hundred whatever is the latest value that I put in to the hash map the map on
+
+07:11.560 --> 07:16.690
+the other hand is storing the keys in the solitude order.
+
+07:16.840 --> 07:25.750
+So I'm adding such in first so suchan then I'm adding rabbit rabbit as a key is before such intertribal
+
+07:26.160 --> 07:33.880
+such in an extra Martling point so be it between DNS So David Ponting suchan and Bragman Bregman his
+
+07:33.880 --> 07:35.280
+first alphabetically.
+
+07:35.440 --> 07:37.370
+So it comes alphabetically first.
+
+07:37.570 --> 07:44.850
+So as you can see three map stores the keys it stores the elements in the order of their keys.
+
+07:44.860 --> 07:49.600
+Next we have the navigable set and the navigable map interfaces right.
+
+07:49.630 --> 07:56.050
+So reset implemented unnavigable set interface remapping elements the navigable map interface.
+
+07:56.080 --> 08:01.870
+So as we discussed earlier Chrisette stores things in the sorted order.
+
+08:02.050 --> 08:08.620
+So because the elements are in that order you can also navigate through them and try and get a set of
+
+08:08.620 --> 08:11.320
+things which are low or higher and things like that.
+
+08:11.410 --> 08:18.190
+So the navigable map interface on the map will set interface has methods which allow us to do that.
+
+08:18.220 --> 08:20.610
+So I'm adding a set of elements into it.
+
+08:20.880 --> 08:23.970
+I'm adding in a preset five numbers.
+
+08:24.190 --> 08:29.340
+So what you can do here is try and get elements lower than 25.
+
+08:29.340 --> 08:33.500
+So roosted said that lower than 25 how many are there.
+
+08:33.520 --> 08:34.860
+Just one five.
+
+08:34.900 --> 08:39.470
+I can also get the highest number which is lower than or equal to 25.
+
+08:39.550 --> 08:40.440
+How do you do that.
+
+08:40.540 --> 08:42.190
+That's using the floor method.
+
+08:42.340 --> 08:47.470
+You can get the lowest number that is higher than 25 so that's higher.
+
+08:47.680 --> 08:50.340
+So which is the lowest number which is higher than 25.
+
+08:50.430 --> 08:54.970
+Feeling is the lowest number which is higher than or equal to 25.
+
+08:54.970 --> 08:59.980
+So here if you look at it higher than 25 higher 25 and 35.
+
+08:59.990 --> 09:02.610
+So after 25 the next number is 35.
+
+09:02.650 --> 09:08.460
+On the other and ceiling on the other hand also takes the element which you passed into consideration
+
+09:08.510 --> 09:10.490
+25 is already an element in this.
+
+09:10.510 --> 09:18.170
+So it didn't 25 back and the same kind of things are possible with the remap as well because remap implement
+
+09:18.190 --> 09:24.520
+navigable maps so you have a lower key floor key hierarchy and the ceiling Kimmett.
+
+09:24.760 --> 09:29.860
+Next we'll look at a few examples of the priority queue as we looked at it earlier.
+
+09:29.870 --> 09:35.250
+Pretty cool stores element in the order of their priority natural order.
+
+09:35.410 --> 09:41.740
+So smaller them have higher priority natural ordering of numbers so small numbers have the higher priority.
+
+09:41.740 --> 09:48.430
+So I'm standing in here so I'm seeing parodic you don't offer so I'm offering up element into the queue
+
+09:48.470 --> 09:54.280
+so I'm putting an element into this specific strategy for 14 15 9 and 45.
+
+09:54.280 --> 10:00.630
+So if you play in the priority queue you'd see that it's storing elements in some random the Drunkery
+
+10:00.650 --> 10:07.760
+in the priority order when I do a peak you can see that I get the element with the highest priority
+
+10:07.810 --> 10:13.160
+the one with the highest priority as we saw earlier is the smallest number which is nine.
+
+10:13.160 --> 10:19.160
+So I get nine first the most important thing about the method is that it does not change the cue so
+
+10:19.160 --> 10:22.300
+the peak method just is the top element and the Q is nine.
+
+10:22.340 --> 10:24.290
+But I'm not going to take it out of the cube.
+
+10:24.290 --> 10:28.410
+So if you put in the cue here it's still 9:24 15 and 40 for.
+
+10:28.580 --> 10:34.040
+However the ball method is a little different ball but that would beg the element out of the cue.
+
+10:34.250 --> 10:39.080
+So when I do a ball it isn't 9 but nine is now removed from the cue.
+
+10:39.170 --> 10:44.560
+The remaining elements are in the cue or 24:15 and 45 in the earlier priority queue.
+
+10:44.600 --> 10:46.860
+What we did was we used the natural ordering.
+
+10:47.000 --> 10:52.400
+But you can actually define a competitor which would give high priority to the biggest number.
+
+10:52.400 --> 10:55.660
+So if you really want to create such a competitor you can't do that.
+
+10:55.820 --> 11:01.040
+And when you're creating the priority queue you can use a reverse competitor as well.
+
+11:01.040 --> 11:07.610
+So that's one of the parameters that you can pass in to the priority queue constructor.
+
+11:07.760 --> 11:13.550
+And now if I can add elements to the queue and they would be removed if you do speak of the highest
+
+11:13.550 --> 11:14.860
+element would come up.
+
+11:14.930 --> 11:17.930
+So the highest element has the highest priority.
+
+11:18.380 --> 11:20.720
+So that's your priority.
+
+11:20.720 --> 11:26.960
+Q Let's end this section by looking at a few static method to chapters and in the collections class.
+
+11:26.990 --> 11:33.200
+As we look at that as we discussed earlier collection is an interface collection's is a class collection's
+
+11:33.230 --> 11:35.490
+class has a lot of static methods.
+
+11:35.660 --> 11:36.700
+Some of them are in here.
+
+11:36.710 --> 11:42.470
+You can do a binary search so you can pass a list as an input and you can do a binary search with a
+
+11:42.470 --> 11:48.530
+specific key and you can also do a binary search by passing a competitor in as well.
+
+11:48.710 --> 11:50.210
+And you can reverse a list.
+
+11:50.450 --> 11:56.000
+And also you can start a list using these Dabic methods which are present in the collections class.
+
+11:56.000 --> 12:02.180
+So all the static method to represent the collections class are really useful to do operations on the
+
+12:02.630 --> 12:04.820
+collection objects.
+
+12:04.820 --> 12:09.710
+One of the most important things about collections is that there are so many collections that it can
+
+12:09.710 --> 12:13.980
+get really confusing to remember what we are talking about.
+
+12:14.120 --> 12:20.570
+So the best way I would suggest to you to do is to dig this collection hierarchy class and kind of take
+
+12:20.570 --> 12:25.090
+a print out or something of it and kind of look at it a few times.
+
+12:25.130 --> 12:31.160
+This collection hierarchy class has all the important things that you'd need to remember about all the
+
+12:31.160 --> 12:36.100
+collection classes that we discussed and this collection examples class.
+
+12:36.140 --> 12:44.300
+It's about 550 lines of code contains all the examples example pieces of code that we looked at in this
+
+12:44.540 --> 12:45.820
+particular section.
+
+12:46.010 --> 12:52.370
+So I would really recommend to you to do an exercise take 30 minutes spend some time looking at the
+
+12:52.370 --> 12:59.680
+collection hierarchy take a printout out something hang it somewhere and do whatever is in the collections
+
+12:59.690 --> 13:05.370
+examples at least once or twice try to go through it try to understand it in depth.
+
+13:05.540 --> 13:11.870
+And I'm sure if you complete these two examples you'd be really thorough about what there were things
+
+13:11.870 --> 13:14.290
+that you would need to know about corrections.
+
+13:14.370 --> 13:16.520
+And the next section bullae.
